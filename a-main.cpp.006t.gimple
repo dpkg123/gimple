@@ -7,6 +7,7 @@ void logError (const struct string & func, const struct string & file, int line)
 
   try
     {
+      # DEBUG BEGIN_STMT
       try
         {
           std::allocator<char>::allocator (&D.88807);
@@ -25,6 +26,7 @@ void logError (const struct string & func, const struct string & file, int line)
         }
       try
         {
+          # DEBUG BEGIN_STMT
           try
             {
               std::allocator<char>::allocator (&D.88810);
@@ -43,6 +45,7 @@ void logError (const struct string & func, const struct string & file, int line)
             }
           try
             {
+              # DEBUG BEGIN_STMT
               _1 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (&cerr, &RED);
               _2 = std::operator<< <std::char_traits<char> > (_1, "In ");
               _3 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (_2, func);
@@ -116,15 +119,19 @@ char_type std::ctype<char>::widen (const struct ctype * const this, char __c)
 {
   char_type D.97459;
 
+  # DEBUG BEGIN_STMT
   _1 = this->_M_widen_ok;
   if (_1 != 0) goto <D.97457>; else goto <D.97458>;
   <D.97457>:
+  # DEBUG BEGIN_STMT
   _2 = (int) __c;
   D.97459 = this->_M_widen[_2];
   // predicted unlikely by early return (on trees) predictor.
   return D.97459;
   <D.97458>:
+  # DEBUG BEGIN_STMT
   std::ctype<char>::_M_widen_init (this);
+  # DEBUG BEGIN_STMT
   _3 = this->D.40314._vptr.facet;
   _4 = _3 + 48;
   _5 = *_4;
@@ -299,12 +306,15 @@ size_t std::char_traits<char>::length (const char_type * __s)
   bool retval.0;
   size_t D.97477;
 
+  # DEBUG BEGIN_STMT
   retval.0 = std::__is_constant_evaluated ();
   if (retval.0 != 0) goto <D.97475>; else goto <D.97476>;
   <D.97475>:
+  # DEBUG BEGIN_STMT
   D.97477 = __gnu_cxx::char_traits<char>::length (__s);
   return D.97477;
   <D.97476>:
+  # DEBUG BEGIN_STMT
   D.97477 = __builtin_strlen (__s);
   return D.97477;
 }
@@ -316,6 +326,7 @@ bool std::__is_constant_evaluated ()
 
   try
     {
+      # DEBUG BEGIN_STMT
       D.97480 = 0;
       return D.97480;
     }
@@ -339,6 +350,7 @@ size_t __gnu_cxx::char_traits<char>::length (const char_type * __p)
   <D.89324>:
   __i = __i + 1;
   <D.89323>:
+  # DEBUG BEGIN_STMT
   _1 = __p + __i;
   try
     {
@@ -371,7 +383,7 @@ bool __gnu_cxx::char_traits<char>::eq (const char_type & __c1, const char_type &
 void std::__cxx11::basic_string<char>::_M_construct<const char*> (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.93714)
 {
   size_type __dnew;
-  typedef extern struct _Guard _Guard;
+  typedef struct _Guard _Guard;
   struct _Guard __guard;
 
   try
@@ -513,6 +525,7 @@ void std::char_traits<char>::assign (char_type & __c1, const char_type & __c2)
 {
   try
     {
+      # DEBUG BEGIN_STMT
       _1 = *__c2;
       *__c1 = _1;
     }
@@ -527,12 +540,15 @@ char_type * std::char_traits<char>::copy (char_type * __s1, const char_type * __
 {
   char_type * D.97507;
 
+  # DEBUG BEGIN_STMT
   if (__n == 0) goto <D.97505>; else goto <D.97506>;
   <D.97505>:
+  # DEBUG BEGIN_STMT
   D.97507 = __s1;
   // predicted unlikely by early return (on trees) predictor.
   return D.97507;
   <D.97506>:
+  # DEBUG BEGIN_STMT
   D.97507 = __builtin_memcpy (__s1, __s2, __n);
   return D.97507;
 }
@@ -796,6 +812,7 @@ _Ios_Iostate std::operator| (_Ios_Iostate __a, _Ios_Iostate __b)
 {
   _Ios_Iostate D.97536;
 
+  # DEBUG BEGIN_STMT
   D.97536 = __a | __b;
   return D.97536;
 }
@@ -890,15 +907,25 @@ void std::__cxx11::basic_string<char>::~basic_string (struct basic_string * cons
 
 void register_signal ()
 {
+  # DEBUG BEGIN_STMT
   signal (6, sighandle);
+  # DEBUG BEGIN_STMT
   signal (7, sighandle);
+  # DEBUG BEGIN_STMT
   signal (8, sighandle);
+  # DEBUG BEGIN_STMT
   signal (4, sighandle);
+  # DEBUG BEGIN_STMT
   signal (3, sighandle);
+  # DEBUG BEGIN_STMT
   signal (11, sighandle);
+  # DEBUG BEGIN_STMT
   signal (31, sighandle);
+  # DEBUG BEGIN_STMT
   signal (5, sighandle);
+  # DEBUG BEGIN_STMT
   signal (24, sighandle);
+  # DEBUG BEGIN_STMT
   signal (25, sighandle);
 }
 
@@ -923,10 +950,16 @@ void sighandle (int sig)
 
   try
     {
+      # DEBUG BEGIN_STMT
       signal (sig, 0B);
+      # DEBUG BEGIN_STMT
       clifd = open ("/proc/self/cmdline", 524288);
+      # DEBUG BEGIN_STMT
+      # DEBUG BEGIN_STMT
       bufsize = read (clifd, &buf, 1024);
+      # DEBUG BEGIN_STMT
       close (clifd);
+      # DEBUG BEGIN_STMT
       try
         {
           try
@@ -960,8 +993,10 @@ void sighandle (int sig)
         }
       try
         {
+          # DEBUG BEGIN_STMT
           _1 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (&cout, &errorMsg);
           std::basic_ostream<char>::operator<< (_1, endl);
+          # DEBUG BEGIN_STMT
           try
             {
               try
@@ -1023,8 +1058,10 @@ void sighandle (int sig)
             {
               D.89133 = {CLOBBER(eol)};
             }
+          # DEBUG BEGIN_STMT
           _2 = std::__cxx11::basic_string<char>::c_str (&errorMsg);
           write_log (_2);
+          # DEBUG BEGIN_STMT
           _3 = std::operator<< <std::char_traits<char> > (&cout, "[INFO] Log file path: ");
           try
             {
@@ -1044,43 +1081,56 @@ void sighandle (int sig)
             {
               D.89136 = {CLOBBER(eol)};
             }
+          # DEBUG BEGIN_STMT
+          # DEBUG BEGIN_STMT
           size = backtrace (&array, 50);
+          # DEBUG BEGIN_STMT
           stackTrace = backtrace_symbols (&array, size);
+          # DEBUG BEGIN_STMT
           {
             if (stackTrace != 0B) goto <D.97548>; else goto <D.97549>;
             <D.97548>:
             {
+              # DEBUG BEGIN_STMT
               _6 = std::operator<< <std::char_traits<char> > (&cout, "[INFO] Stack trace:");
               std::basic_ostream<char>::operator<< (_6, endl);
+              # DEBUG BEGIN_STMT
               write_log ("[INFO] Stack trace:");
+              # DEBUG BEGIN_STMT
               {
                 int i;
 
                 i = 0;
                 goto <D.89147>;
                 <D.89146>:
+                # DEBUG BEGIN_STMT
                 _7 = (long unsigned int) i;
                 _8 = _7 * 8;
                 _9 = stackTrace + _8;
                 _10 = *_9;
                 _11 = std::operator<< <std::char_traits<char> > (&cout, _10);
                 std::basic_ostream<char>::operator<< (_11, endl);
+                # DEBUG BEGIN_STMT
                 _12 = (long unsigned int) i;
                 _13 = _12 * 8;
                 _14 = stackTrace + _13;
                 _15 = *_14;
                 write_log (_15);
+                # DEBUG BEGIN_STMT
                 i = i + 1;
                 <D.89147>:
+                # DEBUG BEGIN_STMT
                 if (i < size) goto <D.89146>; else goto <D.89144>;
                 <D.89144>:
               }
+              # DEBUG BEGIN_STMT
               free (stackTrace);
             }
             goto <D.97550>;
             <D.97549>:
             <D.97550>:
           }
+          # DEBUG BEGIN_STMT
           exit (127);
         }
       finally
@@ -1110,7 +1160,9 @@ struct string std::__cxx11::to_string (int __val)
         const unsigned int __len;
         struct string __str [value-expr: *<retval>];
 
+        # DEBUG BEGIN_STMT
         __neg = __val < 0;
+        # DEBUG BEGIN_STMT
         if (__neg != 0) goto <D.97577>; else goto <D.97578>;
         <D.97577>:
         __val.9_1 = (unsigned int) __val;
@@ -1120,7 +1172,9 @@ struct string std::__cxx11::to_string (int __val)
         iftmp.8 = (unsigned int) __val;
         <D.97579>:
         __uval = iftmp.8;
+        # DEBUG BEGIN_STMT
         __len = std::__detail::__to_chars_len<unsigned int> (__uval, 10);
+        # DEBUG BEGIN_STMT
         _2 = (unsigned int) __neg;
         _3 = __len + _2;
         _4 = (long unsigned int) _3;
@@ -1142,9 +1196,11 @@ struct string std::__cxx11::to_string (int __val)
           }
         try
           {
+            # DEBUG BEGIN_STMT
             _5 = (long unsigned int) __neg;
             _6 = std::__cxx11::basic_string<char>::operator[] (<retval>, _5);
             std::__detail::__to_chars_10_impl<unsigned int> (_6, __len, __uval);
+            # DEBUG BEGIN_STMT
             return <retval>;
           }
         catch
@@ -1212,6 +1268,7 @@ unsigned int std::__detail::__to_chars_len<unsigned int> (unsigned int __value, 
         _8 = _7 / __b4;
         __value = (unsigned int) _8;
         __n = __n + 4;
+        # DEBUG BEGIN_STMT
         goto <D.90192>;
       }
     }
@@ -1265,6 +1322,7 @@ value_type & std::__cxx11::basic_string<char>::operator[] (struct basic_string *
   <D.97599>:
   __builtin_unreachable ();
   <D.97600>:
+  # DEBUG BEGIN_STMT
   _3 = std::__cxx11::basic_string<char>::_M_data (this);
   D.97601 = _3 + __pos;
   return D.97601;
@@ -1301,6 +1359,7 @@ void std::__detail::__to_chars_10_impl<unsigned int> (char * __first, unsigned i
           __pos = __pos + 4294967294;
         }
         <D.90265>:
+        # DEBUG BEGIN_STMT
         if (__val > 99) goto <D.90266>; else goto <D.90264>;
         <D.90264>:
         {
@@ -1788,8 +1847,10 @@ struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, 
                 std::operator<< <std::char_traits<char> > (&__ostr.D.76876, _5);
                 <D.97671>:
                 std::operator<< <std::char_traits<char> > (&__ostr.D.76876, __c);
+                # DEBUG BEGIN_STMT
                 __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator++ (&__for_begin);
                 <D.95695>:
+                # DEBUG BEGIN_STMT
                 retval.19 = __gnu_cxx::operator!=<const char*, std::__cxx11::basic_string<char> > (&__for_begin, &__for_end);
                 if (retval.19 != 0) goto <D.95694>; else goto <D.95692>;
                 <D.95692>:
@@ -2402,6 +2463,7 @@ streamsize std::ios_base::width (const struct ios_base * const this)
 {
   streamsize D.97711;
 
+  # DEBUG BEGIN_STMT
   D.97711 = this->_M_width;
   return D.97711;
 }
@@ -2967,6 +3029,7 @@ void write_log (const char * msg)
 
   try
     {
+      # DEBUG BEGIN_STMT
       try
         {
           D.89060 = get_log_path (); [return slot optimization]
@@ -2985,6 +3048,7 @@ void write_log (const char * msg)
         }
       try
         {
+          # DEBUG BEGIN_STMT
           {
             retval.23 = std::basic_ofstream<char>::is_open (&logfile);
             if (retval.23 != 0) goto <D.97781>; else goto <D.97782>;
@@ -2995,15 +3059,20 @@ void write_log (const char * msg)
 
               try
                 {
+                  # DEBUG BEGIN_STMT
                   _1 = time (0B);
                   t = _1;
+                  # DEBUG BEGIN_STMT
+                  # DEBUG BEGIN_STMT
                   _2 = localtime (&t);
                   strftime (&timestamp, 100, "%Y-%m-%d %H:%M:%S", _2);
+                  # DEBUG BEGIN_STMT
                   _3 = std::operator<< <std::char_traits<char> > (&logfile.D.51725, "[");
                   _4 = std::operator<< <std::char_traits<char> > (_3, &timestamp);
                   _5 = std::operator<< <std::char_traits<char> > (_4, "] ");
                   _6 = std::operator<< <std::char_traits<char> > (_5, msg);
                   std::basic_ostream<char>::operator<< (_6, endl);
+                  # DEBUG BEGIN_STMT
                   std::basic_ofstream<char>::close (&logfile);
                 }
               finally
@@ -3014,7 +3083,9 @@ void write_log (const char * msg)
             }
             goto <D.97783>;
             <D.97782>:
+            # DEBUG BEGIN_STMT
             std::operator<< <std::char_traits<char> > (&cerr, "[ERROR] Failed to open log file.\n");
+            # DEBUG BEGIN_STMT
             exit (123);
             <D.97783>:
           }
@@ -3033,6 +3104,7 @@ void write_log (const char * msg)
 
 struct string get_log_path ()
 {
+  # DEBUG BEGIN_STMT
   std::__cxx11::basic_string<char>::basic_string (<retval>, &log_path);
   return <retval>;
 }
@@ -3098,7 +3170,7 @@ struct allocator_type std::allocator_traits<std::allocator<char> >::select_on_co
 void std::__cxx11::basic_string<char>::_M_construct<char*> (struct basic_string * const this, char * __beg, char * __end, struct forward_iterator_tag D.94910)
 {
   size_type __dnew;
-  typedef extern struct _Guard _Guard;
+  typedef struct _Guard _Guard;
   struct _Guard __guard;
 
   try
@@ -3309,6 +3381,7 @@ _Ios_Openmode std::operator| (_Ios_Openmode __a, _Ios_Openmode __b)
 {
   _Ios_Openmode D.97821;
 
+  # DEBUG BEGIN_STMT
   D.97821 = __a | __b;
   return D.97821;
 }
@@ -3794,25 +3867,37 @@ void execute_script (const struct string & scriptPath)
 
   try
     {
+      # DEBUG BEGIN_STMT
+      # DEBUG BEGIN_STMT
       pipe (&stdout_pipe);
+      # DEBUG BEGIN_STMT
       pipe (&stderr_pipe);
+      # DEBUG BEGIN_STMT
       pid = fork ();
+      # DEBUG BEGIN_STMT
       {
         if (pid == 0) goto <D.97863>; else goto <D.97864>;
         <D.97863>:
+        # DEBUG BEGIN_STMT
         _1 = stdout_pipe[0];
         close (_1);
+        # DEBUG BEGIN_STMT
         _2 = stderr_pipe[0];
         close (_2);
+        # DEBUG BEGIN_STMT
         _3 = stdout_pipe[1];
         dup2 (_3, 1);
+        # DEBUG BEGIN_STMT
         _4 = stderr_pipe[1];
         dup2 (_4, 2);
+        # DEBUG BEGIN_STMT
         _5 = std::__cxx11::basic_string<char>::c_str (scriptPath);
         execl ("/bin/bash", "bash", _5, 0);
+        # DEBUG BEGIN_STMT
         _exit (1);
         <D.97864>:
         {
+          # DEBUG BEGIN_STMT
           {
             if (pid > 0) goto <D.97865>; else goto <D.97866>;
             <D.97865>:
@@ -3823,49 +3908,67 @@ void execute_script (const struct string & scriptPath)
 
               try
                 {
+                  # DEBUG BEGIN_STMT
                   _6 = stdout_pipe[1];
                   close (_6);
+                  # DEBUG BEGIN_STMT
                   _7 = stderr_pipe[1];
                   close (_7);
+                  # DEBUG BEGIN_STMT
+                  # DEBUG BEGIN_STMT
+                  # DEBUG BEGIN_STMT
                   goto <D.89293>;
                   <D.89294>:
+                  # DEBUG BEGIN_STMT
                   n.30_8 = (long unsigned int) n;
                   _9 = std::array<char, 128>::operator[] (&buffer, n.30_8);
                   *_9 = 0;
+                  # DEBUG BEGIN_STMT
                   _10 = std::operator<< <std::char_traits<char> > (&cout, "[SHINFO] ");
                   _11 = std::array<char, 128>::data (&buffer);
                   std::operator<< <std::char_traits<char> > (_10, _11);
                   <D.89293>:
+                  # DEBUG BEGIN_STMT
                   _12 = stdout_pipe[0];
                   _13 = std::array<char, 128>::data (&buffer);
                   n = read (_12, _13, 127);
                   retval.31 = n > 0;
                   if (retval.31 != 0) goto <D.89294>; else goto <D.89292>;
                   <D.89292>:
+                  # DEBUG BEGIN_STMT
                   goto <D.89296>;
                   <D.89297>:
+                  # DEBUG BEGIN_STMT
                   n.32_14 = (long unsigned int) n;
                   _15 = std::array<char, 128>::operator[] (&buffer, n.32_14);
                   *_15 = 0;
+                  # DEBUG BEGIN_STMT
                   _16 = std::operator<< <std::char_traits<char> > (&cerr, "[SHERR] ");
                   _17 = std::array<char, 128>::data (&buffer);
                   std::operator<< <std::char_traits<char> > (_16, _17);
                   <D.89296>:
+                  # DEBUG BEGIN_STMT
                   _18 = stderr_pipe[0];
                   _19 = std::array<char, 128>::data (&buffer);
                   n = read (_18, _19, 127);
                   retval.33 = n > 0;
                   if (retval.33 != 0) goto <D.89297>; else goto <D.89295>;
                   <D.89295>:
+                  # DEBUG BEGIN_STMT
                   _20 = stdout_pipe[0];
                   close (_20);
+                  # DEBUG BEGIN_STMT
                   _21 = stderr_pipe[0];
                   close (_21);
+                  # DEBUG BEGIN_STMT
+                  # DEBUG BEGIN_STMT
                   waitpid (pid, &status, 0);
+                  # DEBUG BEGIN_STMT
                   status.34_22 = status;
                   _23 = status.34_22 & 127;
                   if (_23 == 0) goto <D.97869>; else goto <D.97870>;
                   <D.97869>:
+                  # DEBUG BEGIN_STMT
                   _24 = std::operator<< <std::char_traits<char> > (&cout, "[INFO] Script ");
                   _25 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (_24, scriptPath);
                   _26 = std::operator<< <std::char_traits<char> > (_25, " exited with status ");
@@ -3876,6 +3979,7 @@ void execute_script (const struct string & scriptPath)
                   std::basic_ostream<char>::operator<< (_30, endl);
                   goto <D.97871>;
                   <D.97870>:
+                  # DEBUG BEGIN_STMT
                   status.36_31 = status;
                   _32 = (unsigned char) status.36_31;
                   _33 = _32 & 127;
@@ -3884,6 +3988,7 @@ void execute_script (const struct string & scriptPath)
                   _36 = _35 >> 1;
                   if (_36 > 0) goto <D.97872>; else goto <D.97873>;
                   <D.97872>:
+                  # DEBUG BEGIN_STMT
                   _37 = std::operator<< <std::char_traits<char> > (&cout, "[ERROR] Script ");
                   _38 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (_37, scriptPath);
                   _39 = std::operator<< <std::char_traits<char> > (_38, " terminated by signal ");
@@ -3904,7 +4009,9 @@ void execute_script (const struct string & scriptPath)
             }
             goto <D.97875>;
             <D.97866>:
+            # DEBUG BEGIN_STMT
             std::operator<< <std::char_traits<char> > (&cerr, "[ERROR] Failed to fork process.\n");
+            # DEBUG BEGIN_STMT
             exit (1);
             <D.97875>:
           }
@@ -4000,21 +4107,27 @@ void monitor_child (pid_t pid)
 
   try
     {
+      # DEBUG BEGIN_STMT
+      # DEBUG BEGIN_STMT
       timeout = 400;
+      # DEBUG BEGIN_STMT
       {
         int i;
 
         i = 0;
         goto <D.89307>;
         <D.89306>:
+        # DEBUG BEGIN_STMT
         _1 = waitpid (pid, &status, 1);
         retval.38 = pid == _1;
         if (retval.38 != 0) goto <D.97899>; else goto <D.97900>;
         <D.97899>:
+        # DEBUG BEGIN_STMT
         status.39_2 = status;
         _3 = status.39_2 & 127;
         if (_3 == 0) goto <D.97901>; else goto <D.97902>;
         <D.97901>:
+        # DEBUG BEGIN_STMT
         _4 = std::operator<< <std::char_traits<char> > (&cout, "[INFO] Script exited with status ");
         status.40_5 = status;
         _6 = status.40_5 >> 8;
@@ -4023,6 +4136,7 @@ void monitor_child (pid_t pid)
         std::basic_ostream<char>::operator<< (_8, endl);
         goto <D.97903>;
         <D.97902>:
+        # DEBUG BEGIN_STMT
         status.41_9 = status;
         _10 = (unsigned char) status.41_9;
         _11 = _10 & 127;
@@ -4031,6 +4145,7 @@ void monitor_child (pid_t pid)
         _14 = _13 >> 1;
         if (_14 > 0) goto <D.97904>; else goto <D.97905>;
         <D.97904>:
+        # DEBUG BEGIN_STMT
         _15 = std::operator<< <std::char_traits<char> > (&cout, "[ERROR] Script terminated by signal ");
         status.42_16 = status;
         _17 = status.42_16 & 127;
@@ -4040,24 +4155,33 @@ void monitor_child (pid_t pid)
         <D.97905>:
         <D.97906>:
         <D.97903>:
+        # DEBUG BEGIN_STMT
         // predicted unlikely by early return (on trees) predictor.
         return;
         <D.97900>:
+        # DEBUG BEGIN_STMT
         sleep (1);
+        # DEBUG BEGIN_STMT
         i = i + 1;
         <D.89307>:
+        # DEBUG BEGIN_STMT
         if (i <= 399) goto <D.89306>; else goto <D.89304>;
         <D.89304>:
       }
+      # DEBUG BEGIN_STMT
       _19 = kill (pid, 9);
       retval.43 = _19 == 0;
       if (retval.43 != 0) goto <D.97908>; else goto <D.97909>;
       <D.97908>:
+      # DEBUG BEGIN_STMT
       waitpid (pid, &status, 0);
+      # DEBUG BEGIN_STMT
       std::operator<< <std::char_traits<char> > (&cerr, "[INFO] Child process killed due to timeout.\n");
       goto <D.97910>;
       <D.97909>:
+      # DEBUG BEGIN_STMT
       std::operator<< <std::char_traits<char> > (&cerr, "[ERROR] Failed to kill child process.\n");
+      # DEBUG BEGIN_STMT
       exit (4);
       <D.97910>:
     }
@@ -4080,10 +4204,14 @@ int main ()
 
     try
       {
+        # DEBUG BEGIN_STMT
         register_signal ();
+        # DEBUG BEGIN_STMT
+        # DEBUG BEGIN_STMT
         std::__cxx11::basic_string<char>::basic_string (&result);
         try
           {
+            # DEBUG BEGIN_STMT
             try
               {
                 try
@@ -4115,8 +4243,10 @@ int main ()
               {
                 D.89313 = {CLOBBER(eol)};
               }
+            # DEBUG BEGIN_STMT
             _1 = std::__cxx11::basic_string<char>::c_str (&result);
             write_log (_1);
+            # DEBUG BEGIN_STMT
             D.97920 = 0;
             return D.97920;
           }
