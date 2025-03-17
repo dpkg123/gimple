@@ -1,0 +1,35 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=3596, cgraph_uid=1, symbol_order=0)
+
+
+Analyzing function body size: main/0
+
+IPA function summary for main/0
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:2.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+    puts/1 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+int main ()
+{
+  int D.3600;
+  int _3;
+
+  <bb 2> :
+  gimple_call <puts, NULL, "hi\n">
+  gimple_assign <integer_cst, _3, 0, NULL, NULL>
+
+  <bb 3> :
+gimple_label <<L0>>
+  gimple_return <_3>
+
+}
+
+
