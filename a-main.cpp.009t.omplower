@@ -265,7 +265,7 @@ gimple_bind <
 void std::__cxx11::basic_string<char>::_M_construct<const char*> (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.93550)
 gimple_bind <
   size_type __dnew;
-  typedef extern struct _Guard _Guard;
+  typedef struct _Guard _Guard;
   struct _Guard __guard;
 
   gimple_try <GIMPLE_TRY_FINALLY,
@@ -691,7 +691,7 @@ gimple_bind <
 void std::__cxx11::basic_string<char>::_M_construct<char*> (struct basic_string * const this, char * __beg, char * __end, struct forward_iterator_tag D.94746)
 gimple_bind <
   size_type __dnew;
-  typedef extern struct _Guard _Guard;
+  typedef struct _Guard _Guard;
   struct _Guard __guard;
 
   gimple_try <GIMPLE_TRY_FINALLY,
