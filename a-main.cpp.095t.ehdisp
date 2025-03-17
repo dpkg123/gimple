@@ -1,0 +1,1465 @@
+
+;; Function std::__cxx11::to_string (_ZNSt7__cxx119to_stringEi, funcdef_no=1189, decl_uid=29351, cgraph_uid=276, symbol_order=309)
+
+struct string std::__cxx11::to_string (int __val)
+{
+  const unsigned int __len;
+  const bool __neg;
+  unsigned int __val.9_1;
+  unsigned int _2;
+  unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  unsigned int iftmp.8_6;
+  unsigned int iftmp.8_9;
+  unsigned int iftmp.8_10;
+  char[16] * _13;
+  value_type & _15;
+  char * _16;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_debug BEGIN_STMT
+  gimple_assign <lt_expr, __neg_8, __val_7(D), 0, NULL>
+  gimple_debug BIND <__neg, __neg_8>
+  gimple_debug BEGIN_STMT
+  gimple_cond <lt_expr, __val_7(D), 0, NULL, NULL>
+    goto <bb 3>; [41.00%]
+  else
+    goto <bb 4>; [59.00%]
+
+  <bb 3> [local count: 440234144]:
+  gimple_assign <nop_expr, __val.9_1, __val_7(D), NULL, NULL>
+  gimple_assign <negate_expr, iftmp.8_10, __val.9_1, NULL, NULL>
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 633507681]:
+  gimple_assign <nop_expr, iftmp.8_9, __val_7(D), NULL, NULL>
+
+  <bb 5> [local count: 1073741824]:
+  # gimple_phi <iftmp.8_6, iftmp.8_10(3), iftmp.8_9(4)>
+  gimple_debug BIND <__uval, iftmp.8_6>
+  gimple_debug BEGIN_STMT
+  gimple_call <__to_chars_len, __len_12, iftmp.8_6, 10>
+  gimple_debug BIND <__len, __len_12>
+  gimple_debug BEGIN_STMT
+  gimple_assign <nop_expr, _2, __neg_8, NULL, NULL>
+  gimple_assign <plus_expr, _3, _2, __len_12, NULL>
+  gimple_assign <nop_expr, _4, _3, NULL, NULL>
+  gimple_debug BIND <this, &D.29556>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.29556>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, __str_14(D)>
+  gimple_debug BIND <__n, _4>
+  gimple_debug BIND <__c, 45>
+  gimple_debug BIND <__a, &D.29556>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <D#7, &MEM[(struct basic_string *)__str_14(D)]._M_dataplus>
+  gimple_debug BIND <this, __str_14(D)>
+  gimple_debug INLINE_ENTRY _M_local_data
+  gimple_assign <addr_expr, _13, &MEM[(struct basic_string *)__str_14(D)].D.28191._M_local_buf, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, D#7>
+  gimple_debug BIND <__dat, _13>
+  gimple_debug BIND <__a, &D.29556>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, D#7>
+  gimple_debug BIND <__a, &D.29556>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, D#7>
+  gimple_debug BIND <D.98414, &D.29556>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <D.98414, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__a, NULL>
+  gimple_assign <ssa_name, MEM[(struct _Alloc_hider *)__str_14(D)]._M_p, _13, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__dat, NULL>
+  gimple_debug BIND <__a, NULL>
+  gimple_call <_M_construct, NULL, __str_14(D), _4, 45>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__n, NULL>
+  gimple_debug BIND <__c, NULL>
+  gimple_debug BIND <__a, NULL>
+  gimple_debug BIND <this, &D.29556>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.29556>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_assign <nop_expr, _5, __neg_8, NULL, NULL>
+  gimple_debug BIND <this, __str_14(D)>
+  gimple_debug BIND <__pos, _5>
+  gimple_debug INLINE_ENTRY operator[]
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, __str_14(D)>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _16, MEM[(const struct basic_string *)__str_14(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <pointer_plus_expr, _15, _16, _5, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pos, NULL>
+  gimple_call <__to_chars_10_impl, NULL, _15, __len_12, iftmp.8_6>
+  gimple_debug BEGIN_STMT
+  gimple_return <__str_14(D)>
+
+}
+
+
+
+;; Function write_log (_ZL9write_logPKc, funcdef_no=3693, decl_uid=89057, cgraph_uid=1172, symbol_order=1735)
+
+void write_log (const char * msg)
+{
+  char timestamp[100];
+  time_t t;
+  struct ofstream logfile;
+  struct string D.89060;
+  long int _1;
+  struct tm * _2;
+  struct basic_ostream & _15;
+  struct basic_ostream & _17;
+  struct basic_ostream & _19;
+  struct basic_ostream & _22;
+  bool _31;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_debug BEGIN_STMT
+  gimple_call <get_log_path, D.89060> [return slot optimization]
+  gimple_call <__ct_comp , NULL, &logfile, &D.89060, 1>
+
+  <bb 3> [local count: 1073741824]:
+  gimple_debug BIND <this, &D.89060>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89060>
+  gimple_debug BIND <D#20, &D.89060._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89060], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89060, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89060, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &logfile>
+  gimple_debug INLINE_ENTRY is_open
+  gimple_debug BIND <D#1, &logfile._M_filebuf>
+  gimple_debug BIND <this, D#1>
+  gimple_debug INLINE_ENTRY is_open
+  gimple_call <is_open, _31, &MEM[(const struct basic_filebuf *)&logfile + 8B]._M_file>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_cond <ne_expr, _31, 0, NULL, NULL>
+    goto <bb 4>; [99.96%]
+  else
+    goto <bb 11>; [0.04%]
+
+  <bb 4> [local count: 1073312329]:
+  gimple_debug BEGIN_STMT
+  gimple_call <time, _1, 0B>
+  gimple_assign <ssa_name, t, _1, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BEGIN_STMT
+  gimple_call <localtime, _2, &t>
+  gimple_call <strftime, NULL, &timestamp, 100, "%Y-%m-%d %H:%M:%S", _2>
+  gimple_debug BEGIN_STMT
+  gimple_call <operator<<, _15, &logfile.D.51725, "[">
+
+  <bb 5> [local count: 1073312329]:
+  gimple_call <operator<<, _17, _15, &timestamp>
+
+  <bb 6> [local count: 1073312329]:
+  gimple_call <operator<<, _19, _17, "] ">
+
+  <bb 7> [local count: 1073312329]:
+  gimple_call <operator<<, _22, _19, msg_20(D)>
+
+  <bb 8> [local count: 1073312329]:
+  gimple_debug BIND <this, _22>
+  gimple_debug BIND <__pf, endl>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_call <endl, NULL, _22>
+
+  <bb 9> [local count: 1073312329]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pf, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_call <close, NULL, &logfile>
+
+  <bb 10> [local count: 1073312329]:
+  gimple_assign <constructor, t, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, timestamp, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &logfile>
+  gimple_assign <constructor, logfile, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <NULL>
+
+  <bb 11> [local count: 429496]:
+  gimple_debug BEGIN_STMT
+  gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to open log file.\n">
+
+  <bb 12> [local count: 429496]:
+  gimple_debug BEGIN_STMT
+  gimple_call <exit, NULL, 123>
+
+  <bb 13> [count: 0]:
+gimple_label <<L3>>
+  gimple_debug BIND <this, &D.89060>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89060>
+  gimple_debug BIND <D#20, &D.89060._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89060], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89060, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <3>
+
+  <bb 14> [count: 0]:
+gimple_label <<L6>>
+  gimple_assign <constructor, t, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, timestamp, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &logfile>
+  gimple_resx <6>
+
+}
+
+
+
+;; Function logError (_Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i, funcdef_no=3690, decl_uid=88804, cgraph_uid=1169, symbol_order=1731)
+
+void logError (const struct string & func, const struct string & file, int line)
+{
+  const struct string RESET;
+  const struct string RED;
+  struct allocator D.88810;
+  struct allocator D.88807;
+  long unsigned int _4;
+  char * _6;
+  struct basic_ostream & _8;
+  long int _10;
+  struct basic_ostream & _13;
+  struct basic_ostream & _16;
+  struct basic_ostream & _19;
+  struct basic_ostream & _22;
+  struct basic_ostream & _24;
+  char * _27;
+  long unsigned int _29;
+  long int _30;
+  struct basic_ostream & _31;
+  char * _32;
+  long unsigned int _33;
+  long int _34;
+  struct basic_ostream & _35;
+  char * _36;
+  long unsigned int _37;
+  long int _38;
+  struct basic_ostream & _39;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &D.88807>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.88807>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <__ct_comp , NULL, &RED, "\x1b[31m", &D.88807>
+  gimple_debug BIND <this, &D.88807>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.88807>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.88807, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &D.88810>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.88810>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <__ct_comp , NULL, &RESET, "\x1b[0m", &D.88810>
+
+  <bb 3> [local count: 1073741824]:
+  gimple_debug BIND <this, &D.88810>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.88810>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.88810, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <__os, &cerr>
+  gimple_debug BIND <__str, &RED>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_debug BIND <this, &RED>
+  gimple_debug INLINE_ENTRY data
+  gimple_debug BIND <this, &RED>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _27, RED._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &RED>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _29, RED._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <nop_expr, _10, _29, NULL, NULL>
+  gimple_call <__ostream_insert, _8, &cerr, _27, _10>
+
+  <bb 4> [local count: 1073741824]:
+  gimple_debug BIND <__os, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_call <operator<<, _13, _8, "In ">
+
+  <bb 5> [local count: 1073741824]:
+  gimple_debug BIND <__os, _13>
+  gimple_debug BIND <__str, func_14(D)>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_debug BIND <this, func_14(D)>
+  gimple_debug INLINE_ENTRY data
+  gimple_debug BIND <this, func_14(D)>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _6, MEM[(const struct basic_string *)func_14(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, func_14(D)>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _4, MEM[(const struct basic_string *)func_14(D)]._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <nop_expr, _30, _4, NULL, NULL>
+  gimple_call <__ostream_insert, _31, _13, _6, _30>
+
+  <bb 6> [local count: 1073741824]:
+  gimple_debug BIND <__os, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_call <operator<<, _16, _31, "() in ">
+
+  <bb 7> [local count: 1073741824]:
+  gimple_debug BIND <__os, _16>
+  gimple_debug BIND <__str, file_17(D)>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_debug BIND <this, file_17(D)>
+  gimple_debug INLINE_ENTRY data
+  gimple_debug BIND <this, file_17(D)>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _32, MEM[(const struct basic_string *)file_17(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, file_17(D)>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _33, MEM[(const struct basic_string *)file_17(D)]._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <nop_expr, _34, _33, NULL, NULL>
+  gimple_call <__ostream_insert, _35, _16, _32, _34>
+
+  <bb 8> [local count: 1073741824]:
+  gimple_debug BIND <__os, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_call <operator<<, _19, _35, " line ">
+
+  <bb 9> [local count: 1073741824]:
+  gimple_call <operator<<, _22, _19, line_20(D)>
+
+  <bb 10> [local count: 1073741824]:
+  gimple_call <operator<<, _24, _22, ":">
+
+  <bb 11> [local count: 1073741824]:
+  gimple_debug BIND <__os, _24>
+  gimple_debug BIND <__str, &RESET>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_debug BIND <this, &RESET>
+  gimple_debug INLINE_ENTRY data
+  gimple_debug BIND <this, &RESET>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _36, RESET._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &RESET>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _37, RESET._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <nop_expr, _38, _37, NULL, NULL>
+  gimple_call <__ostream_insert, _39, _24, _36, _38>
+
+  <bb 12> [local count: 1073741824]:
+  gimple_debug BIND <__os, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_debug BIND <this, _39>
+  gimple_debug BIND <__pf, endl>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_call <endl, NULL, _39>
+
+  <bb 13> [local count: 1073741824]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pf, NULL>
+  gimple_debug BIND <this, &RESET>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &RESET>
+  gimple_debug BIND <D#20, &RESET._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&RESET], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, RESET, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &RED>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &RED>
+  gimple_debug BIND <D#20, &RED._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&RED], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, RED, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, RED, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, RESET, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <NULL>
+
+  <bb 14> [count: 0]:
+gimple_label <<L4>>
+  gimple_debug BIND <this, &RESET>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &RESET>
+  gimple_debug BIND <D#20, &RESET._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&RESET], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, RESET, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <11>
+
+  <bb 15> [count: 0]:
+gimple_label <<L5>>
+  gimple_assign <constructor, D.88810, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BIND <this, &RED>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &RED>
+  gimple_debug BIND <D#20, &RED._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&RED], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, RED, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <6>
+
+}
+
+
+
+;; Function main (main, funcdef_no=3701, decl_uid=89308, cgraph_uid=1180, symbol_order=1743) (executed once)
+
+int main ()
+{
+  struct string result;
+  struct allocator D.89312;
+  const struct string D.89313;
+  char * _10;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_debug BEGIN_STMT
+  gimple_call <register_signal, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_assign <constructor, result, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <D#9, &result._M_dataplus>
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY _M_local_data
+  gimple_debug BIND <this, NULL>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, D#9>
+  gimple_debug BIND <__dat, &result.D.28191._M_local_buf>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&result], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, D#9>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, D#9>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <addr_expr, MEM[(struct _Alloc_hider *)&result]._M_p, &result.D.28191._M_local_buf, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__dat, NULL>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY _M_use_local_data
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &result>
+  gimple_debug BIND <__n, 0>
+  gimple_debug INLINE_ENTRY _M_set_length
+  gimple_debug BIND <this, &result>
+  gimple_debug BIND <__length, 0>
+  gimple_debug INLINE_ENTRY _M_length
+  gimple_assign <integer_cst, result._M_string_length, 0, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__length, NULL>
+  gimple_debug BIND <__c1, &result.D.28191._M_local_buf>
+  gimple_debug INLINE_ENTRY assign
+  gimple_debug BEGIN_STMT
+  gimple_assign <integer_cst, MEM[(char_type &)&result + 16], 0, NULL, NULL>
+  gimple_debug BIND <__c1, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__n, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &D.89312>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.89312>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <__ct_comp , NULL, &D.89313, "./log.sh", &D.89312>
+
+  <bb 3> [local count: 1073741824]:
+  gimple_call <execute_script, NULL, &D.89313>
+
+  <bb 4> [local count: 1073741824]:
+  gimple_debug BIND <this, &D.89313>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89313>
+  gimple_debug BIND <D#20, &D.89313._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89313], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89313, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.89312>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.89312>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89312, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89313, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY c_str
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _10, result._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <write_log, NULL, _10>
+
+  <bb 5> [local count: 1073741824]:
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &result>
+  gimple_debug BIND <D#20, &result._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&result], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, result, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, result, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <0>
+
+  <bb 6> [count: 0]:
+gimple_label <<L3>>
+  gimple_debug BIND <this, &D.89313>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89313>
+  gimple_debug BIND <D#20, &D.89313._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89313], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89313, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <6>
+
+  <bb 7> [count: 0]:
+gimple_label <<L7>>
+  gimple_assign <constructor, D.89312, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89313, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BIND <this, &result>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &result>
+  gimple_debug BIND <D#20, &result._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&result], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, result, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <2>
+
+}
+
+
+
+;; Function std::__detail::operator<< <char, std::char_traits<char>, const std::__cxx11::basic_string<char>&> (_ZNSt8__detaillsIcSt11char_traitsIcERKNSt7__cxx1112basic_stringIcS2_SaIcEEEEERSt13basic_ostreamIT_T0_ESD_RKNS_14_Quoted_stringIT1_SA_EE, funcdef_no=4337, decl_uid=93570, cgraph_uid=1816, symbol_order=2400)
+
+struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, const std::__cxx11::basic_string<char>&> (struct basic_ostream & __os, const struct _Quoted_string & __str)
+{
+  struct const_iterator D.99112;
+  struct const_iterator D.99111;
+  struct const_iterator D.99110;
+  struct const_iterator D.99105;
+  struct const_iterator D.99104;
+  struct const_iterator D.99103;
+  struct const_iterator __for_end;
+  struct const_iterator __for_begin;
+  const struct basic_string & __for_range;
+  char __c;
+  struct basic_ostringstream __ostr;
+  struct __string_type D.95691;
+  char _1;
+  char _2;
+  char _3;
+  char _4;
+  char _5;
+  long unsigned int _22;
+  char * _29;
+  char * _30;
+  const char * _31;
+  const char * _32;
+  char * _33;
+  long unsigned int _34;
+  long int _35;
+  struct basic_ostream & _36;
+
+  <bb 2> [local count: 118111600]:
+  gimple_call <__ct_comp , NULL, &__ostr>
+  gimple_assign <component_ref, _1, __str_11(D)->_M_delim, NULL, NULL>
+  gimple_call <operator<<, NULL, &__ostr.D.76876, _1>
+
+  <bb 3> [local count: 118111600]:
+  gimple_assign <component_ref, __for_range_13, __str_11(D)->_M_string, NULL, NULL>
+  gimple_debug BIND <__for_range, __for_range_13>
+  gimple_debug BIND <this, __for_range_13>
+  gimple_debug INLINE_ENTRY begin
+  gimple_debug BIND <this, __for_range_13>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _30, __for_range_13->_M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.99111>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_assign <constructor, D.99111, {CLOBBER}, NULL, NULL>
+  gimple_assign <ssa_name, D.99111._M_current, _30, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <var_decl, D.99112, D.99111, NULL, NULL>
+  gimple_assign <constructor, D.99111, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <var_decl, D.99110, D.99112, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <var_decl, __for_begin, D.99110, NULL, NULL>
+  gimple_assign <constructor, D.99110, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BIND <this, __for_range_13>
+  gimple_debug INLINE_ENTRY end
+  gimple_debug BIND <this, __for_range_13>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, __for_range_13>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _22, __for_range_13->_M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <pointer_plus_expr, _29, _30, _22, NULL>
+  gimple_debug BIND <this, &D.99104>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_assign <constructor, D.99104, {CLOBBER}, NULL, NULL>
+  gimple_assign <ssa_name, D.99104._M_current, _29, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <var_decl, D.99105, D.99104, NULL, NULL>
+  gimple_assign <constructor, D.99104, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <var_decl, D.99103, D.99105, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <var_decl, __for_end, D.99103, NULL, NULL>
+  gimple_assign <constructor, D.99103, {CLOBBER(eol)}, NULL, NULL>
+  goto <bb 9>; [100.00%]
+
+  <bb 4> [local count: 955630225]:
+  gimple_debug BIND <this, &__for_begin>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <mem_ref, __c_23, *_32, NULL, NULL>
+  gimple_debug BIND <__c, __c_23>
+  gimple_assign <component_ref, _2, __str_11(D)->_M_delim, NULL, NULL>
+  gimple_cond <eq_expr, _2, __c_23, NULL, NULL>
+    goto <bb 6>; [20.24%]
+  else
+    goto <bb 5>; [79.76%]
+
+  <bb 5> [local count: 762210669]:
+  gimple_assign <component_ref, _3, __str_11(D)->_M_escape, NULL, NULL>
+  gimple_cond <eq_expr, _3, __c_23, NULL, NULL>
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 7>; [66.00%]
+
+  <bb 6> [local count: 452571186]:
+  gimple_assign <component_ref, _4, __str_11(D)->_M_escape, NULL, NULL>
+  gimple_call <operator<<, NULL, &__ostr.D.76876, _4>
+
+  <bb 7> [local count: 955630227]:
+  gimple_call <operator<<, NULL, &__ostr.D.76876, __c_23>
+
+  <bb 8> [local count: 955630227]:
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &__for_begin>
+  gimple_debug INLINE_ENTRY operator++
+  gimple_assign <pointer_plus_expr, _31, _32, 1, NULL>
+  gimple_assign <ssa_name, __for_begin._M_current, _31, NULL, NULL>
+
+  <bb 9> [local count: 1073741824]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <__lhs, &__for_begin>
+  gimple_debug BIND <__rhs, &__for_end>
+  gimple_debug INLINE_ENTRY operator!=
+  gimple_assign <mem_ref, _32, MEM[(const char * const &)&__for_begin], NULL, NULL>
+  gimple_debug BIND <__lhs, NULL>
+  gimple_debug BIND <__rhs, NULL>
+  gimple_cond <ne_expr, _29, _32, NULL, NULL>
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 10>; [11.00%]
+
+  <bb 10> [local count: 118111600]:
+  gimple_assign <constructor, __for_begin, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, __for_end, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _5, __str_11(D)->_M_delim, NULL, NULL>
+  gimple_call <operator<<, NULL, &__ostr.D.76876, _5>
+
+  <bb 11> [local count: 118111600]:
+  gimple_debug BIND <this, &__ostr>
+  gimple_debug INLINE_ENTRY str
+  gimple_call <str, D.95691, &__ostr._M_stringbuf> [return slot optimization]
+
+  <bb 12> [local count: 118111600]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__os, __os_17(D)>
+  gimple_debug BIND <__str, &D.95691>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_debug BIND <this, &D.95691>
+  gimple_debug INLINE_ENTRY data
+  gimple_debug BIND <this, &D.95691>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _33, D.95691._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.95691>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _34, D.95691._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <nop_expr, _35, _34, NULL, NULL>
+  gimple_call <__ostream_insert, _36, __os_17(D), _33, _35>
+
+  <bb 13> [local count: 118111600]:
+  gimple_debug BIND <__os, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_debug BIND <this, &D.95691>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.95691>
+  gimple_debug BIND <D#20, &D.95691._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.95691], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.95691, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.95691, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &__ostr>
+  gimple_assign <constructor, __ostr, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <_36>
+
+  <bb 14> [count: 0]:
+gimple_label <<L12>>
+  gimple_debug BIND <this, &D.95691>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.95691>
+  gimple_debug BIND <D#20, &D.95691._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.95691], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.95691, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <6>
+
+  <bb 15> [count: 0]:
+gimple_label <<L14>>
+  gimple_assign <constructor, __for_begin, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, __for_end, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.95691, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &__ostr>
+  gimple_resx <2>
+
+}
+
+
+
+;; Function std::filesystem::__cxx11::operator<< <char, std::char_traits<char> > (_ZNSt10filesystem7__cxx11lsIcSt11char_traitsIcEEERSt13basic_ostreamIT_T0_ES8_RKNS0_4pathE, funcdef_no=4095, decl_uid=89137, cgraph_uid=1575, symbol_order=2151)
+
+struct basic_ostream & std::filesystem::__cxx11::operator<< <char, std::char_traits<char> > (struct basic_ostream & __os, const struct path & __p)
+{
+  struct _Quoted_string D.99154;
+  struct _Quoted_string D.99153;
+  struct _Quoted_string D.99152;
+  struct allocator D.93478;
+  struct basic_string D.93479;
+  struct _Quoted_string D.93569;
+  long unsigned int _2;
+  char * _6;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_debug BIND <this, &D.93478>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.93478>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, __p_3(D)>
+  gimple_debug BIND <__a, &D.93478>
+  gimple_debug INLINE_ENTRY string
+  gimple_debug BIND <D#18, &__p_3(D)->_M_pathname>
+  gimple_debug BIND <this, D#18>
+  gimple_debug INLINE_ENTRY c_str
+  gimple_debug BIND <this, D#18>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _6, MEM[(const struct basic_string *)__p_3(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <D#19, &__p_3(D)->_M_pathname>
+  gimple_debug BIND <this, D#19>
+  gimple_debug INLINE_ENTRY length
+  gimple_assign <component_ref, _2, MEM[(const struct basic_string *)__p_3(D)]._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <__ct_comp , NULL, &D.93479, _6, _2, &D.93478>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__a, NULL>
+  gimple_debug BIND <__string, &D.93479>
+  gimple_debug BIND <__delim, 34>
+  gimple_debug BIND <__escape, 92>
+  gimple_debug INLINE_ENTRY quoted
+  gimple_debug BIND <this, &D.99153>
+  gimple_debug BIND <__str, &D.93479>
+  gimple_debug BIND <__del, 34>
+  gimple_debug BIND <__esc, 92>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_assign <constructor, MEM[(struct __as_base  &)&D.99153], {CLOBBER}, NULL, NULL>
+  gimple_assign <addr_expr, D.99153._M_string, &D.93479, NULL, NULL>
+  gimple_assign <integer_cst, D.99153._M_delim, 34, NULL, NULL>
+  gimple_assign <integer_cst, D.99153._M_escape, 92, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_debug BIND <__del, NULL>
+  gimple_debug BIND <__esc, NULL>
+  gimple_assign <var_decl, D.99154, D.99153, NULL, NULL>
+  gimple_assign <constructor, D.99153, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <var_decl, D.99152, D.99154, NULL, NULL>
+  gimple_debug BIND <__string, NULL>
+  gimple_debug BIND <__delim, NULL>
+  gimple_debug BIND <__escape, NULL>
+  gimple_assign <var_decl, D.93569, D.99152, NULL, NULL>
+  gimple_assign <constructor, D.99152, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <operator<<, NULL, __os_4(D), &D.93569>
+
+  <bb 3> [local count: 1073741824]:
+  gimple_debug BIND <this, &D.93479>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.93479>
+  gimple_debug BIND <D#20, &D.93479._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.93479], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.93479, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.93478>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.93478>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.93478, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.93479, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.93569, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <__os_4(D)>
+
+  <bb 4> [count: 0]:
+gimple_label <<L1>>
+  gimple_debug BIND <this, &D.93479>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.93479>
+  gimple_debug BIND <D#20, &D.93479._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.93479], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.93479, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <5>
+
+}
+
+
+
+;; Function sighandle (_ZL9sighandlei, funcdef_no=3694, decl_uid=89119, cgraph_uid=1173, symbol_order=1736) (executed once)
+
+void sighandle (int sig)
+{
+  int i;
+  char * * stackTrace;
+  void * array[50];
+  struct string errorMsg;
+  char buf[1024];
+  struct path D.89136;
+  struct allocator D.89134;
+  const struct string D.89135;
+  struct allocator D.89132;
+  const struct string D.89133;
+  struct string D.89125;
+  struct basic_string D.89126;
+  long unsigned int _1;
+  long unsigned int _2;
+  char * * _3;
+  char * _4;
+  char * _5;
+  int _17;
+  struct basic_ostream & _25;
+  long int _28;
+  long unsigned int _31;
+  char * _34;
+  struct basic_ostream & _37;
+  struct basic_ostream & _40;
+  struct basic_ostream & _42;
+  int _45;
+  struct basic_ostream & _49;
+  struct basic_ostream & _53;
+  struct basic_string & _58;
+  char * _63;
+
+  <bb 2> [local count: 168730857]:
+  gimple_debug BEGIN_STMT
+  gimple_call <signal, NULL, sig_14(D), 0B>
+  gimple_debug BEGIN_STMT
+  gimple_call <open, _17, "/proc/self/cmdline", 524288>
+  gimple_debug BIND <clifd, _17>
+  gimple_debug BEGIN_STMT
+  gimple_debug BEGIN_STMT
+  gimple_call <read, NULL, _17, &buf, 1024>
+  gimple_debug BEGIN_STMT
+  gimple_call <close, NULL, _17>
+  gimple_debug BEGIN_STMT
+  gimple_call <to_string, D.89125, sig_14(D)> [return slot optimization]
+  gimple_call <operator+, D.89126, "[ERROR] Fatal error (", &D.89125> [return slot optimization]
+
+  <bb 3> [local count: 168730857]:
+  gimple_debug BIND <__lhs, &D.89126>
+  gimple_debug BIND <__rhs, "), the program has been stopped.">
+  gimple_debug INLINE_ENTRY operator+
+  gimple_call <append, _58, &D.89126, "), the program has been stopped.">
+
+  <bb 4> [local count: 168730857]:
+  gimple_call <__ct_comp , NULL, &errorMsg, _58>
+  gimple_debug BIND <__lhs, NULL>
+  gimple_debug BIND <__rhs, NULL>
+  gimple_debug BIND <this, &D.89126>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89126>
+  gimple_debug BIND <D#20, &D.89126._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89126], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89126, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.89125>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89125>
+  gimple_debug BIND <D#20, &D.89125._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89125], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89125, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89125, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89126, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <__os, &cout>
+  gimple_debug BIND <__str, &errorMsg>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_debug BIND <this, &errorMsg>
+  gimple_debug INLINE_ENTRY data
+  gimple_debug BIND <this, &errorMsg>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _34, errorMsg._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &errorMsg>
+  gimple_debug INLINE_ENTRY size
+  gimple_assign <component_ref, _31, errorMsg._M_string_length, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <nop_expr, _28, _31, NULL, NULL>
+  gimple_call <__ostream_insert, _25, &cout, _34, _28>
+
+  <bb 5> [local count: 168730857]:
+  gimple_debug BIND <__os, NULL>
+  gimple_debug BIND <__str, NULL>
+  gimple_debug BIND <this, _25>
+  gimple_debug BIND <__pf, endl>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_call <endl, NULL, _25>
+
+  <bb 6> [local count: 168730857]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pf, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &D.89132>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.89132>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <__ct_comp , NULL, &D.89133, "sighandle", &D.89132>
+
+  <bb 7> [local count: 168730857]:
+  gimple_debug BIND <this, &D.89134>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, &D.89134>
+  gimple_debug INLINE_ENTRY __ct 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <__ct_comp , NULL, &D.89135, "main.cpp", &D.89134>
+
+  <bb 8> [local count: 168730857]:
+  gimple_call <logError, NULL, &D.89133, &D.89135, 69>
+
+  <bb 9> [local count: 168730857]:
+  gimple_debug BIND <this, &D.89135>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89135>
+  gimple_debug BIND <D#20, &D.89135._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89135], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89135, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.89134>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.89134>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89134, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89135, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BIND <this, &D.89133>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89133>
+  gimple_debug BIND <D#20, &D.89133._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89133], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89133, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.89132>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.89132>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89132, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89133, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BIND <this, &errorMsg>
+  gimple_debug INLINE_ENTRY c_str
+  gimple_debug BIND <this, &errorMsg>
+  gimple_debug INLINE_ENTRY _M_data
+  gimple_assign <component_ref, _63, errorMsg._M_dataplus._M_p, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_call <write_log, NULL, _63>
+
+  <bb 10> [local count: 168730857]:
+  gimple_debug BEGIN_STMT
+  gimple_call <operator<<, _37, &cout, "[INFO] Log file path: ">
+
+  <bb 11> [local count: 168730857]:
+  gimple_call <current_path, D.89136> [return slot optimization]
+
+  <bb 12> [local count: 168730857]:
+  gimple_call <operator<<, _40, _37, &D.89136>
+
+  <bb 13> [local count: 168730857]:
+  gimple_call <operator<<, _42, _40, "/program_crash.log">
+
+  <bb 14> [local count: 168730857]:
+  gimple_debug BIND <this, _42>
+  gimple_debug BIND <__pf, endl>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_call <endl, NULL, _42>
+
+  <bb 15> [local count: 168730857]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pf, NULL>
+  gimple_debug BIND <this, &D.89136>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <D#33, &D.89136._M_cmpts>
+  gimple_debug BIND <this, D#33>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <__dt_comp , NULL, &MEM[(struct _List *)&D.89136 + 32B]._M_impl>
+  gimple_assign <constructor, MEM[(struct _List *)&D.89136 + 32B], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.89136._M_pathname>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89136._M_pathname>
+  gimple_debug BIND <D#20, &MEM[(struct basic_string *)&D.89136]._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89136], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct basic_string *)&D.89136], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89136, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89136, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_debug BEGIN_STMT
+  gimple_call <backtrace, _45, &array, 50>
+
+  <bb 16> [local count: 168730857]:
+  gimple_debug BIND <size, _45>
+  gimple_debug BEGIN_STMT
+  gimple_call <backtrace_symbols, stackTrace_47, &array, _45>
+  gimple_debug BIND <stackTrace, stackTrace_47>
+  gimple_debug BEGIN_STMT
+  gimple_cond <ne_expr, stackTrace_47, 0B, NULL, NULL>
+    goto <bb 17>; [70.00%]
+  else
+    goto <bb 26>; [30.00%]
+
+  <bb 17> [local count: 118111600]:
+  gimple_debug BEGIN_STMT
+  gimple_call <operator<<, _49, &cout, "[INFO] Stack trace:">
+
+  <bb 18> [local count: 118111600]:
+  gimple_debug BIND <this, _49>
+  gimple_debug BIND <__pf, endl>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_call <endl, NULL, _49>
+
+  <bb 19> [local count: 118111600]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pf, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_call <write_log, NULL, "[INFO] Stack trace:">
+
+  <bb 33> [local count: 118111600]:
+  goto <bb 24>; [100.00%]
+
+  <bb 20> [local count: 955630226]:
+  gimple_debug BEGIN_STMT
+  gimple_assign <nop_expr, _1, i_6, NULL, NULL>
+  gimple_assign <mult_expr, _2, _1, 8, NULL>
+  gimple_assign <pointer_plus_expr, _3, stackTrace_47, _2, NULL>
+  gimple_assign <mem_ref, _4, *_3, NULL, NULL>
+  gimple_call <operator<<, _53, &cout, _4>
+
+  <bb 21> [local count: 955630226]:
+  gimple_debug BIND <this, _53>
+  gimple_debug BIND <__pf, endl>
+  gimple_debug INLINE_ENTRY operator<<
+  gimple_call <endl, NULL, _53>
+
+  <bb 22> [local count: 955630226]:
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <__pf, NULL>
+  gimple_debug BEGIN_STMT
+  gimple_assign <mem_ref, _5, *_3, NULL, NULL>
+  gimple_call <write_log, NULL, _5>
+
+  <bb 23> [local count: 955630226]:
+  gimple_debug BEGIN_STMT
+  gimple_assign <plus_expr, i_55, i_6, 1, NULL>
+  gimple_debug BIND <i, i_55>
+
+  <bb 24> [local count: 1073741824]:
+  # gimple_phi <i_6, 0(33), i_55(23)>
+  gimple_debug BIND <i, i_6>
+  gimple_debug BEGIN_STMT
+  gimple_cond <lt_expr, i_6, _45, NULL, NULL>
+    goto <bb 20>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 25> [local count: 118111600]:
+  gimple_debug BEGIN_STMT
+  gimple_call <free, NULL, stackTrace_47>
+
+  <bb 26> [local count: 168730857]:
+  gimple_debug BEGIN_STMT
+  gimple_call <exit, NULL, 127>
+
+  <bb 27> [count: 0]:
+gimple_label <<L6>>
+  gimple_debug BIND <this, &D.89126>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89126>
+  gimple_debug BIND <D#20, &D.89126._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89126], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89126, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <5>
+
+  <bb 28> [count: 0]:
+gimple_label <<L7>>
+  gimple_debug BIND <this, &D.89125>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89125>
+  gimple_debug BIND <D#20, &D.89125._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89125], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89125, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <4>
+
+  <bb 29> [count: 0]:
+gimple_label <<L10>>
+  gimple_debug BIND <this, &D.89135>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89135>
+  gimple_debug BIND <D#20, &D.89135._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89135], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89135, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <18>
+
+  <bb 30> [count: 0]:
+gimple_label <<L11>>
+  gimple_debug BIND <this, &D.89134>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, &D.89134>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89134, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89135, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BIND <this, &D.89133>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89133>
+  gimple_debug BIND <D#20, &D.89133._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89133], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89133, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <14>
+
+  <bb 31> [count: 0]:
+gimple_label <<L18>>
+  gimple_debug BIND <this, &D.89136>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <D#33, &D.89136._M_cmpts>
+  gimple_debug BIND <this, D#33>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <__dt_comp , NULL, &MEM[(struct _List *)&D.89136 + 32B]._M_impl>
+  gimple_assign <constructor, MEM[(struct _List *)&D.89136 + 32B], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, &D.89136._M_pathname>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &D.89136._M_pathname>
+  gimple_debug BIND <D#20, &MEM[(struct basic_string *)&D.89136]._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.89136], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct basic_string *)&D.89136], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, D.89136, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <28>
+
+  <bb 32> [count: 0]:
+gimple_label <<L20>>
+  gimple_assign <constructor, D.89132, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89133, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.89136, {CLOBBER(eol)}, NULL, NULL>
+  gimple_debug BIND <this, &errorMsg>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_call <_M_dispose, NULL, &errorMsg>
+  gimple_debug BIND <D#20, &errorMsg._M_dataplus>
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, D#20>
+  gimple_debug INLINE_ENTRY __dt 
+  gimple_debug BIND <this, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&errorMsg], {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_assign <constructor, errorMsg, {CLOBBER}, NULL, NULL>
+  gimple_debug BIND <this, NULL>
+  gimple_resx <10>
+
+}
+
+
