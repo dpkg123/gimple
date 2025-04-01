@@ -1,5 +1,4 @@
 # 0 "main.cpp"
-# 1 "/home/user/out//"
 # 0 "<built-in>"
 # 0 "<命令行>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4

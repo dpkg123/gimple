@@ -7,7 +7,6 @@ gimple_bind <
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
-      gimple_debug BEGIN_STMT
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
           gimple_call <__ct_comp , NULL, &D.88807>
@@ -26,7 +25,6 @@ gimple_bind <
       >
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
-          gimple_debug BEGIN_STMT
           gimple_try <GIMPLE_TRY_FINALLY,
             EVAL <
               gimple_call <__ct_comp , NULL, &D.88810>
@@ -45,7 +43,6 @@ gimple_bind <
           >
           gimple_try <GIMPLE_TRY_FINALLY,
             EVAL <
-              gimple_debug BEGIN_STMT
               gimple_call <operator<<, _1, &cerr, &RED>
               gimple_call <operator<<, _2, _1, "In ">
               gimple_call <operator<<, _3, _2, func>
@@ -119,19 +116,15 @@ char_type std::ctype<char>::widen (const struct ctype * const this, char __c)
 gimple_bind <
   char_type D.97459;
 
-  gimple_debug BEGIN_STMT
   gimple_assign <component_ref, _1, this->_M_widen_ok, NULL, NULL>
   gimple_cond <ne_expr, _1, 0, <D.97457>, <D.97458>>
   gimple_label <<D.97457>>
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, _2, __c, NULL, NULL>
   gimple_assign <array_ref, D.97459, this->_M_widen[_2], NULL, NULL>
   // predicted unlikely by early return (on trees) predictor.
   gimple_return <D.97459>
   gimple_label <<D.97458>>
-  gimple_debug BEGIN_STMT
   gimple_call <_M_widen_init, NULL, this>
-  gimple_debug BEGIN_STMT
   gimple_assign <component_ref, _3, this->D.40314._vptr.facet, NULL, NULL>
   gimple_assign <pointer_plus_expr, _4, _3, 48, NULL>
   gimple_assign <mem_ref, _5, *_4, NULL, NULL>
@@ -140,12 +133,21 @@ gimple_bind <
 >
 
 
+char_type std::ctype<char>::do_widen (const struct ctype * const this, char __c)
+gimple_bind <
+  char_type D.97462;
+
+  gimple_assign <parm_decl, D.97462, __c, NULL, NULL>
+  gimple_return <D.97462>
+>
+
+
 struct basic_ostream & std::flush<char, std::char_traits<char> > (struct basic_ostream & __os)
 gimple_bind <
-  struct basic_ostream & D.97462;
+  struct basic_ostream & D.97464;
 
-  gimple_call <flush, D.97462, __os>
-  gimple_return <D.97462>
+  gimple_call <flush, D.97464, __os>
+  gimple_return <D.97464>
 >
 
 
@@ -189,7 +191,7 @@ gimple_bind <
 
 void std::__cxx11::basic_string<char>::basic_string<> (struct basic_string * const this, const char * __s, const struct allocator & __a)
 gimple_bind <
-  struct forward_iterator_tag D.97467;
+  struct forward_iterator_tag D.97469;
 
   gimple_assign <constructor, *this, {CLOBBER}, NULL, NULL>
   gimple_bind <
@@ -201,13 +203,13 @@ gimple_bind <
         gimple_bind <
           const char * __end;
 
-          gimple_cond <eq_expr, __s, 0B, <D.97465>, <D.97466>>
-          gimple_label <<D.97465>>
+          gimple_cond <eq_expr, __s, 0B, <D.97467>, <D.97468>>
+          gimple_label <<D.97467>>
           gimple_call <__throw_logic_error, NULL, "basic_string: construction from null is not valid">
-          gimple_label <<D.97466>>
+          gimple_label <<D.97468>>
           gimple_call <length, _3, __s>
           gimple_assign <pointer_plus_expr, __end, __s, _3, NULL>
-          gimple_call <_M_construct, NULL, this, __s, __end, D.97467>
+          gimple_call <_M_construct, NULL, this, __s, __end, D.97469>
         >
       >
       CLEANUP <
@@ -221,22 +223,22 @@ gimple_bind <
 
 char * std::__cxx11::basic_string<char>::_M_local_data (struct basic_string * const this)
 gimple_bind <
-  char * D.97470;
+  char * D.97472;
 
   gimple_assign <addr_expr, _1, &this->D.28191._M_local_buf, NULL, NULL>
-  gimple_call <pointer_to, D.97470, _1>
-  gimple_return <D.97470>
+  gimple_call <pointer_to, D.97472, _1>
+  gimple_return <D.97472>
 >
 
 
 char * std::__ptr_traits_ptr_to<char*, char, false>::pointer_to (element_type & __r)
 gimple_bind <
-  char * D.97472;
+  char * D.97474;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <parm_decl, D.97472, __r, NULL, NULL>
-      gimple_return <D.97472>
+      gimple_assign <parm_decl, D.97474, __r, NULL, NULL>
+      gimple_return <D.97474>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -304,31 +306,27 @@ gimple_bind <
 size_t std::char_traits<char>::length (const char_type * __s)
 gimple_bind <
   bool retval.0;
-  size_t D.97477;
+  size_t D.97479;
 
-  gimple_debug BEGIN_STMT
   gimple_call <__is_constant_evaluated, retval.0>
-  gimple_cond <ne_expr, retval.0, 0, <D.97475>, <D.97476>>
-  gimple_label <<D.97475>>
-  gimple_debug BEGIN_STMT
-  gimple_call <length, D.97477, __s>
-  gimple_return <D.97477>
-  gimple_label <<D.97476>>
-  gimple_debug BEGIN_STMT
-  gimple_call <__builtin_strlen, D.97477, __s>
-  gimple_return <D.97477>
+  gimple_cond <ne_expr, retval.0, 0, <D.97477>, <D.97478>>
+  gimple_label <<D.97477>>
+  gimple_call <length, D.97479, __s>
+  gimple_return <D.97479>
+  gimple_label <<D.97478>>
+  gimple_call <__builtin_strlen, D.97479, __s>
+  gimple_return <D.97479>
 >
 
 
 bool std::__is_constant_evaluated ()
 gimple_bind <
-  bool D.97480;
+  bool D.97482;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_debug BEGIN_STMT
-      gimple_assign <integer_cst, D.97480, 0, NULL, NULL>
-      gimple_return <D.97480>
+      gimple_assign <integer_cst, D.97482, 0, NULL, NULL>
+      gimple_return <D.97482>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -342,7 +340,7 @@ size_t __gnu_cxx::char_traits<char>::length (const char_type * __p)
 gimple_bind <
   bool retval.1;
   const char_type D.89317;
-  size_t D.97483;
+  size_t D.97485;
   size_t __i;
 
   gimple_assign <integer_cst, __i, 0, NULL, NULL>
@@ -350,7 +348,6 @@ gimple_bind <
   gimple_label <<D.89324>>
   gimple_assign <plus_expr, __i, __i, 1, NULL>
   gimple_label <<D.89323>>
-  gimple_debug BEGIN_STMT
   gimple_assign <pointer_plus_expr, _1, __p, __i, NULL>
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
@@ -364,26 +361,26 @@ gimple_bind <
   >
   gimple_cond <ne_expr, retval.1, 0, <D.89324>, <D.89322>>
   gimple_label <<D.89322>>
-  gimple_assign <var_decl, D.97483, __i, NULL, NULL>
-  gimple_return <D.97483>
+  gimple_assign <var_decl, D.97485, __i, NULL, NULL>
+  gimple_return <D.97485>
 >
 
 
 bool __gnu_cxx::char_traits<char>::eq (const char_type & __c1, const char_type & __c2)
 gimple_bind <
-  bool D.97485;
+  bool D.97487;
 
   gimple_assign <mem_ref, _1, *__c1, NULL, NULL>
   gimple_assign <mem_ref, _2, *__c2, NULL, NULL>
-  gimple_assign <eq_expr, D.97485, _1, _2, NULL>
-  gimple_return <D.97485>
+  gimple_assign <eq_expr, D.97487, _1, _2, NULL>
+  gimple_return <D.97487>
 >
 
 
 void std::__cxx11::basic_string<char>::_M_construct<const char*> (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.93714)
 gimple_bind <
   size_type __dnew;
-  typedef struct _Guard _Guard;
+  typedef extern struct _Guard _Guard;
   struct _Guard __guard;
 
   gimple_try <GIMPLE_TRY_FINALLY,
@@ -392,16 +389,16 @@ gimple_bind <
       gimple_assign <nop_expr, _2, _1, NULL, NULL>
       gimple_assign <ssa_name, __dnew, _2, NULL, NULL>
       gimple_assign <var_decl, __dnew.2_3, __dnew, NULL, NULL>
-      gimple_cond <gt_expr, __dnew.2_3, 15, <D.97487>, <D.97488>>
-      gimple_label <<D.97487>>
+      gimple_cond <gt_expr, __dnew.2_3, 15, <D.97489>, <D.97490>>
+      gimple_label <<D.97489>>
       gimple_call <_M_create, _4, this, &__dnew, 0>
       gimple_call <_M_data, NULL, this, _4>
       gimple_assign <var_decl, __dnew.3_5, __dnew, NULL, NULL>
       gimple_call <_M_capacity, NULL, this, __dnew.3_5>
-      gimple_goto <<D.97489>>
-      gimple_label <<D.97488>>
+      gimple_goto <<D.97491>>
+      gimple_label <<D.97490>>
       gimple_call <_M_use_local_data, NULL, this>
-      gimple_label <<D.97489>>
+      gimple_label <<D.97491>>
       gimple_call <__ct_comp , NULL, &__guard, this>
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
@@ -427,22 +424,22 @@ gimple_bind <
 __attribute__((nodiscard))
 difference_type std::distance<const char*> (const char * __first, const char * __last)
 gimple_bind <
-  difference_type D.97493;
+  difference_type D.97495;
   struct iterator_category D.95829;
-  struct random_access_iterator_tag D.97494;
+  struct random_access_iterator_tag D.97496;
 
   gimple_assign <parm_decl, __first.5_1, __first, NULL, NULL>
-  gimple_call <__distance, D.97493, __first.5_1, __last, D.97494>
-  gimple_return <D.97493>
+  gimple_call <__distance, D.97495, __first.5_1, __last, D.97496>
+  gimple_return <D.97495>
 >
 
 
 difference_type std::__distance<const char*> (const char * __first, const char * __last, struct random_access_iterator_tag D.96410)
 gimple_bind <
-  difference_type D.97496;
+  difference_type D.97498;
 
-  gimple_assign <pointer_diff_expr, D.97496, __last, __first, NULL>
-  gimple_return <D.97496>
+  gimple_assign <pointer_diff_expr, D.97498, __last, __first, NULL>
+  gimple_return <D.97498>
 >
 
 
@@ -461,12 +458,12 @@ gimple_bind <
 __attribute__((always_inline))
 char * std::__cxx11::basic_string<char>::_M_use_local_data (struct basic_string * const this)
 gimple_bind <
-  char * D.97498;
+  char * D.97500;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <_M_local_data, D.97498, this>
-      gimple_return <D.97498>
+      gimple_call <_M_local_data, D.97500, this>
+      gimple_return <D.97500>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -487,10 +484,10 @@ gimple_bind <
 
 char * std::__cxx11::basic_string<char>::_M_data (const struct basic_string * const this)
 gimple_bind <
-  char * D.97500;
+  char * D.97502;
 
-  gimple_assign <component_ref, D.97500, this->_M_dataplus._M_p, NULL, NULL>
-  gimple_return <D.97500>
+  gimple_assign <component_ref, D.97502, this->_M_dataplus._M_p, NULL, NULL>
+  gimple_return <D.97502>
 >
 
 
@@ -511,13 +508,13 @@ gimple_bind <
 
 void std::__cxx11::basic_string<char>::_S_copy (char * __d, const char * __s, size_type __n)
 gimple_bind <
-  gimple_cond <eq_expr, __n, 1, <D.97502>, <D.97503>>
-  gimple_label <<D.97502>>
-  gimple_call <assign, NULL, __d, __s>
-  gimple_goto <<D.97504>>
-  gimple_label <<D.97503>>
-  gimple_call <copy, NULL, __d, __s, __n>
+  gimple_cond <eq_expr, __n, 1, <D.97504>, <D.97505>>
   gimple_label <<D.97504>>
+  gimple_call <assign, NULL, __d, __s>
+  gimple_goto <<D.97506>>
+  gimple_label <<D.97505>>
+  gimple_call <copy, NULL, __d, __s, __n>
+  gimple_label <<D.97506>>
 >
 
 
@@ -525,7 +522,6 @@ void std::char_traits<char>::assign (char_type & __c1, const char_type & __c2)
 gimple_bind <
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_debug BEGIN_STMT
       gimple_assign <mem_ref, _1, *__c2, NULL, NULL>
       gimple_assign <ssa_name, *__c1, _1, NULL, NULL>
     >
@@ -538,19 +534,16 @@ gimple_bind <
 
 char_type * std::char_traits<char>::copy (char_type * __s1, const char_type * __s2, size_t __n)
 gimple_bind <
-  char_type * D.97507;
+  char_type * D.97509;
 
-  gimple_debug BEGIN_STMT
-  gimple_cond <eq_expr, __n, 0, <D.97505>, <D.97506>>
-  gimple_label <<D.97505>>
-  gimple_debug BEGIN_STMT
-  gimple_assign <parm_decl, D.97507, __s1, NULL, NULL>
+  gimple_cond <eq_expr, __n, 0, <D.97507>, <D.97508>>
+  gimple_label <<D.97507>>
+  gimple_assign <parm_decl, D.97509, __s1, NULL, NULL>
   // predicted unlikely by early return (on trees) predictor.
-  gimple_return <D.97507>
-  gimple_label <<D.97506>>
-  gimple_debug BEGIN_STMT
-  gimple_call <__builtin_memcpy, D.97507, __s1, __s2, __n>
-  gimple_return <D.97507>
+  gimple_return <D.97509>
+  gimple_label <<D.97508>>
+  gimple_call <__builtin_memcpy, D.97509, __s1, __s2, __n>
+  gimple_return <D.97509>
 >
 
 
@@ -587,13 +580,13 @@ gimple_bind <
         gimple_try <GIMPLE_TRY_FINALLY,
           EVAL <
             gimple_assign <component_ref, _1, this->_M_guarded, NULL, NULL>
-            gimple_cond <ne_expr, _1, 0B, <D.97509>, <D.97510>>
-            gimple_label <<D.97509>>
+            gimple_cond <ne_expr, _1, 0B, <D.97511>, <D.97512>>
+            gimple_label <<D.97511>>
             gimple_assign <component_ref, _2, this->_M_guarded, NULL, NULL>
             gimple_call <_M_dispose, NULL, _2>
-            gimple_goto <<D.97511>>
-            gimple_label <<D.97510>>
-            gimple_label <<D.97511>>
+            gimple_goto <<D.97513>>
+            gimple_label <<D.97512>>
+            gimple_label <<D.97513>>
           >
           CLEANUP <
             gimple_assign <constructor, *this, {CLOBBER}, NULL, NULL>
@@ -615,45 +608,45 @@ gimple_bind <
 
   gimple_call <_M_is_local, _1, this>
   gimple_assign <bit_not_expr, retval.6, _1, NULL, NULL>
-  gimple_cond <ne_expr, retval.6, 0, <D.97513>, <D.97514>>
-  gimple_label <<D.97513>>
+  gimple_cond <ne_expr, retval.6, 0, <D.97515>, <D.97516>>
+  gimple_label <<D.97515>>
   gimple_assign <component_ref, _2, this->D.28191._M_allocated_capacity, NULL, NULL>
   gimple_call <_M_destroy, NULL, this, _2>
-  gimple_goto <<D.97515>>
-  gimple_label <<D.97514>>
-  gimple_label <<D.97515>>
+  gimple_goto <<D.97517>>
+  gimple_label <<D.97516>>
+  gimple_label <<D.97517>>
 >
 
 
 bool std::__cxx11::basic_string<char>::_M_is_local (const struct basic_string * const this)
 gimple_bind <
-  bool D.97517;
+  bool D.97519;
 
   gimple_call <_M_data, _1, this>
   gimple_call <_M_local_data, _2, this>
-  gimple_assign <eq_expr, D.97517, _1, _2, NULL>
-  gimple_return <D.97517>
+  gimple_assign <eq_expr, D.97519, _1, _2, NULL>
+  gimple_return <D.97519>
 >
 
 
 const char * std::__cxx11::basic_string<char>::_M_local_data (const struct basic_string * const this)
 gimple_bind <
-  const char * D.97519;
+  const char * D.97521;
 
   gimple_assign <addr_expr, _1, &this->D.28191._M_local_buf, NULL, NULL>
-  gimple_call <pointer_to, D.97519, _1>
-  gimple_return <D.97519>
+  gimple_call <pointer_to, D.97521, _1>
+  gimple_return <D.97521>
 >
 
 
 const char * std::__ptr_traits_ptr_to<const char*, const char, false>::pointer_to (const element_type & __r)
 gimple_bind <
-  const char * D.97521;
+  const char * D.97523;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <parm_decl, D.97521, __r, NULL, NULL>
-      gimple_return <D.97521>
+      gimple_assign <parm_decl, D.97523, __r, NULL, NULL>
+      gimple_return <D.97523>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -681,10 +674,10 @@ gimple_bind <
 
 struct allocator_type & std::__cxx11::basic_string<char>::_M_get_allocator (struct basic_string * const this)
 gimple_bind <
-  struct allocator_type & D.97523;
+  struct allocator_type & D.97525;
 
-  gimple_assign <addr_expr, D.97523, &this->_M_dataplus, NULL, NULL>
-  gimple_return <D.97523>
+  gimple_assign <addr_expr, D.97525, &this->_M_dataplus, NULL, NULL>
+  gimple_return <D.97525>
 >
 
 
@@ -696,12 +689,12 @@ gimple_bind <
 
 void std::__new_allocator<char>::deallocate (struct __new_allocator * const this, char * __p, size_type __n)
 gimple_bind <
-  gimple_cond <ne_expr, 0, 0, <D.97525>, <D.97526>>
-  gimple_label <<D.97525>>
+  gimple_cond <ne_expr, 0, 0, <D.97527>, <D.97528>>
+  gimple_label <<D.97527>>
   gimple_call <operator delete, NULL, __p, __n, 1>
   // predicted unlikely by early return (on trees) predictor.
   gimple_return <NULL>
-  gimple_label <<D.97526>>
+  gimple_label <<D.97528>>
   gimple_call <operator delete, NULL, __p, __n>
 >
 
@@ -770,24 +763,24 @@ gimple_bind <
 
 struct basic_ostream & std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, const char * __s)
 gimple_bind <
-  struct basic_ostream & D.97531;
+  struct basic_ostream & D.97533;
 
-  gimple_cond <eq_expr, __s, 0B, <D.97528>, <D.97529>>
-  gimple_label <<D.97528>>
+  gimple_cond <eq_expr, __s, 0B, <D.97530>, <D.97531>>
+  gimple_label <<D.97530>>
   gimple_assign <component_ref, _1, __out->_vptr.basic_ostream, NULL, NULL>
   gimple_assign <pointer_plus_expr, _2, _1, 18446744073709551592, NULL>
   gimple_assign <mem_ref, _3, MEM[(long int *)_2], NULL, NULL>
   gimple_assign <nop_expr, _4, _3, NULL, NULL>
   gimple_assign <pointer_plus_expr, _5, __out, _4, NULL>
   gimple_call <setstate, NULL, _5, 1>
-  gimple_goto <<D.97530>>
-  gimple_label <<D.97529>>
+  gimple_goto <<D.97532>>
+  gimple_label <<D.97531>>
   gimple_call <length, _6, __s>
   gimple_assign <nop_expr, _7, _6, NULL, NULL>
   gimple_call <__ostream_insert, NULL, __out, __s, _7>
-  gimple_label <<D.97530>>
-  gimple_assign <parm_decl, D.97531, __out, NULL, NULL>
-  gimple_return <D.97531>
+  gimple_label <<D.97532>>
+  gimple_assign <parm_decl, D.97533, __out, NULL, NULL>
+  gimple_return <D.97533>
 >
 
 
@@ -801,43 +794,42 @@ gimple_bind <
 
 iostate std::basic_ios<char>::rdstate (const struct basic_ios * const this)
 gimple_bind <
-  iostate D.97534;
+  iostate D.97536;
 
-  gimple_assign <component_ref, D.97534, this->D.43795._M_streambuf_state, NULL, NULL>
-  gimple_return <D.97534>
+  gimple_assign <component_ref, D.97536, this->D.43795._M_streambuf_state, NULL, NULL>
+  gimple_return <D.97536>
 >
 
 
 _Ios_Iostate std::operator| (_Ios_Iostate __a, _Ios_Iostate __b)
 gimple_bind <
-  _Ios_Iostate D.97536;
+  _Ios_Iostate D.97538;
 
-  gimple_debug BEGIN_STMT
-  gimple_assign <bit_ior_expr, D.97536, __a, __b, NULL>
-  gimple_return <D.97536>
+  gimple_assign <bit_ior_expr, D.97538, __a, __b, NULL>
+  gimple_return <D.97538>
 >
 
 
 struct basic_ostream & std::operator<< <char, std::char_traits<char>, std::allocator<char> > (struct basic_ostream & __os, const struct basic_string & __str)
 gimple_bind <
-  struct basic_ostream & D.97538;
+  struct basic_ostream & D.97540;
 
   gimple_call <data, _1, __str>
   gimple_call <size, _2, __str>
   gimple_assign <nop_expr, _3, _2, NULL, NULL>
-  gimple_call <__ostream_insert, D.97538, __os, _1, _3>
-  gimple_return <D.97538>
+  gimple_call <__ostream_insert, D.97540, __os, _1, _3>
+  gimple_return <D.97540>
 >
 
 
 const char * std::__cxx11::basic_string<char>::data (const struct basic_string * const this)
 gimple_bind <
-  const char * D.97541;
+  const char * D.97543;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <_M_data, D.97541, this>
-      gimple_return <D.97541>
+      gimple_call <_M_data, D.97543, this>
+      gimple_return <D.97543>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -849,12 +841,12 @@ gimple_bind <
 
 size_type std::__cxx11::basic_string<char>::size (const struct basic_string * const this)
 gimple_bind <
-  size_type D.97543;
+  size_type D.97545;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <component_ref, D.97543, this->_M_string_length, NULL, NULL>
-      gimple_return <D.97543>
+      gimple_assign <component_ref, D.97545, this->_M_string_length, NULL, NULL>
+      gimple_return <D.97545>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -866,11 +858,11 @@ gimple_bind <
 
 struct __ostream_type & std::basic_ostream<char>::operator<< (struct basic_ostream * const this, struct __ostream_type & (*<T720f>) (struct __ostream_type &) __pf)
 gimple_bind <
-  struct __ostream_type & D.97545;
+  struct __ostream_type & D.97547;
 
   gimple_assign <parm_decl, __pf.7_1, __pf, NULL, NULL>
-  gimple_call <__pf.7_1, D.97545, this>
-  gimple_return <D.97545>
+  gimple_call <__pf.7_1, D.97547, this>
+  gimple_return <D.97547>
 >
 
 
@@ -907,25 +899,15 @@ gimple_bind <
 
 void register_signal ()
 gimple_bind <
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 6, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 7, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 8, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 4, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 3, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 11, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 31, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 5, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 24, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 25, sighandle>
 >
 
@@ -950,16 +932,10 @@ gimple_bind <
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
-      gimple_debug BEGIN_STMT
       gimple_call <signal, NULL, sig, 0B>
-      gimple_debug BEGIN_STMT
       gimple_call <open, clifd, "/proc/self/cmdline", 524288>
-      gimple_debug BEGIN_STMT
-      gimple_debug BEGIN_STMT
       gimple_call <read, bufsize, clifd, &buf, 1024>
-      gimple_debug BEGIN_STMT
       gimple_call <close, NULL, clifd>
-      gimple_debug BEGIN_STMT
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
           gimple_try <GIMPLE_TRY_FINALLY,
@@ -993,10 +969,8 @@ gimple_bind <
       >
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
-          gimple_debug BEGIN_STMT
           gimple_call <operator<<, _1, &cout, &errorMsg>
           gimple_call <operator<<, NULL, _1, endl>
-          gimple_debug BEGIN_STMT
           gimple_try <GIMPLE_TRY_FINALLY,
             EVAL <
               gimple_try <GIMPLE_TRY_FINALLY,
@@ -1058,10 +1032,8 @@ gimple_bind <
               gimple_assign <constructor, D.89133, {CLOBBER(eol)}, NULL, NULL>
             >
           >
-          gimple_debug BEGIN_STMT
           gimple_call <c_str, _2, &errorMsg>
           gimple_call <write_log, NULL, _2>
-          gimple_debug BEGIN_STMT
           gimple_call <operator<<, _3, &cout, "[INFO] Log file path: ">
           gimple_try <GIMPLE_TRY_FINALLY,
             EVAL <
@@ -1081,56 +1053,43 @@ gimple_bind <
               gimple_assign <constructor, D.89136, {CLOBBER(eol)}, NULL, NULL>
             >
           >
-          gimple_debug BEGIN_STMT
-          gimple_debug BEGIN_STMT
           gimple_call <backtrace, size, &array, 50>
-          gimple_debug BEGIN_STMT
           gimple_call <backtrace_symbols, stackTrace, &array, size>
-          gimple_debug BEGIN_STMT
           gimple_bind <
-            gimple_cond <ne_expr, stackTrace, 0B, <D.97548>, <D.97549>>
-            gimple_label <<D.97548>>
+            gimple_cond <ne_expr, stackTrace, 0B, <D.97550>, <D.97551>>
+            gimple_label <<D.97550>>
             gimple_bind <
-              gimple_debug BEGIN_STMT
               gimple_call <operator<<, _6, &cout, "[INFO] Stack trace:">
               gimple_call <operator<<, NULL, _6, endl>
-              gimple_debug BEGIN_STMT
               gimple_call <write_log, NULL, "[INFO] Stack trace:">
-              gimple_debug BEGIN_STMT
               gimple_bind <
                 int i;
 
                 gimple_assign <integer_cst, i, 0, NULL, NULL>
                 gimple_goto <<D.89147>>
                 gimple_label <<D.89146>>
-                gimple_debug BEGIN_STMT
                 gimple_assign <nop_expr, _7, i, NULL, NULL>
                 gimple_assign <mult_expr, _8, _7, 8, NULL>
                 gimple_assign <pointer_plus_expr, _9, stackTrace, _8, NULL>
                 gimple_assign <mem_ref, _10, *_9, NULL, NULL>
                 gimple_call <operator<<, _11, &cout, _10>
                 gimple_call <operator<<, NULL, _11, endl>
-                gimple_debug BEGIN_STMT
                 gimple_assign <nop_expr, _12, i, NULL, NULL>
                 gimple_assign <mult_expr, _13, _12, 8, NULL>
                 gimple_assign <pointer_plus_expr, _14, stackTrace, _13, NULL>
                 gimple_assign <mem_ref, _15, *_14, NULL, NULL>
                 gimple_call <write_log, NULL, _15>
-                gimple_debug BEGIN_STMT
                 gimple_assign <plus_expr, i, i, 1, NULL>
                 gimple_label <<D.89147>>
-                gimple_debug BEGIN_STMT
                 gimple_cond <lt_expr, i, size, <D.89146>, <D.89144>>
                 gimple_label <<D.89144>>
               >
-              gimple_debug BEGIN_STMT
               gimple_call <free, NULL, stackTrace>
             >
-            gimple_goto <<D.97550>>
-            gimple_label <<D.97549>>
-            gimple_label <<D.97550>>
+            gimple_goto <<D.97552>>
+            gimple_label <<D.97551>>
+            gimple_label <<D.97552>>
           >
-          gimple_debug BEGIN_STMT
           gimple_call <exit, NULL, 127>
         >
         CLEANUP <
@@ -1160,21 +1119,17 @@ gimple_bind <
         const unsigned int __len;
         struct string __str [value-expr: *<retval>];
 
-        gimple_debug BEGIN_STMT
         gimple_assign <lt_expr, __neg, __val, 0, NULL>
-        gimple_debug BEGIN_STMT
-        gimple_cond <ne_expr, __neg, 0, <D.97577>, <D.97578>>
-        gimple_label <<D.97577>>
+        gimple_cond <ne_expr, __neg, 0, <D.97579>, <D.97580>>
+        gimple_label <<D.97579>>
         gimple_assign <nop_expr, __val.9_1, __val, NULL, NULL>
         gimple_assign <negate_expr, iftmp.8, __val.9_1, NULL, NULL>
-        gimple_goto <<D.97579>>
-        gimple_label <<D.97578>>
+        gimple_goto <<D.97581>>
+        gimple_label <<D.97580>>
         gimple_assign <nop_expr, iftmp.8, __val, NULL, NULL>
-        gimple_label <<D.97579>>
+        gimple_label <<D.97581>>
         gimple_assign <var_decl, __uval, iftmp.8, NULL, NULL>
-        gimple_debug BEGIN_STMT
         gimple_call <__to_chars_len, __len, __uval, 10>
-        gimple_debug BEGIN_STMT
         gimple_assign <nop_expr, _2, __neg, NULL, NULL>
         gimple_assign <plus_expr, _3, __len, _2, NULL>
         gimple_assign <nop_expr, _4, _3, NULL, NULL>
@@ -1196,11 +1151,9 @@ gimple_bind <
         >
         gimple_try <GIMPLE_TRY_CATCH,
           EVAL <
-            gimple_debug BEGIN_STMT
             gimple_assign <nop_expr, _5, __neg, NULL, NULL>
             gimple_call <operator[], _6, <retval>, _5>
             gimple_call <__to_chars_10_impl, NULL, _6, __len, __uval>
-            gimple_debug BEGIN_STMT
             gimple_return <<retval>>
           >
           CLEANUP <
@@ -1219,7 +1172,7 @@ gimple_bind <
 
 unsigned int std::__detail::__to_chars_len<unsigned int> (unsigned int __value, int __base)
 gimple_bind <
-  unsigned int D.97584;
+  unsigned int D.97586;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
@@ -1239,36 +1192,35 @@ gimple_bind <
         gimple_assign <nop_expr, __b4, _4, NULL, NULL>
         gimple_label <<D.90192>>
         gimple_assign <nop_expr, __base.12_5, __base, NULL, NULL>
-        gimple_cond <lt_expr, __value, __base.12_5, <D.97582>, <D.97583>>
-        gimple_label <<D.97582>>
-        gimple_assign <var_decl, D.97584, __n, NULL, NULL>
+        gimple_cond <lt_expr, __value, __base.12_5, <D.97584>, <D.97585>>
+        gimple_label <<D.97584>>
+        gimple_assign <var_decl, D.97586, __n, NULL, NULL>
         // predicted unlikely by early return (on trees) predictor.
-        gimple_return <D.97584>
-        gimple_label <<D.97583>>
-        gimple_cond <lt_expr, __value, __b2, <D.97585>, <D.97586>>
+        gimple_return <D.97586>
         gimple_label <<D.97585>>
-        gimple_assign <plus_expr, D.97584, __n, 1, NULL>
-        // predicted unlikely by early return (on trees) predictor.
-        gimple_return <D.97584>
-        gimple_label <<D.97586>>
-        gimple_cond <lt_expr, __value, __b3, <D.97587>, <D.97588>>
+        gimple_cond <lt_expr, __value, __b2, <D.97587>, <D.97588>>
         gimple_label <<D.97587>>
-        gimple_assign <plus_expr, D.97584, __n, 2, NULL>
+        gimple_assign <plus_expr, D.97586, __n, 1, NULL>
         // predicted unlikely by early return (on trees) predictor.
-        gimple_return <D.97584>
+        gimple_return <D.97586>
         gimple_label <<D.97588>>
-        gimple_assign <nop_expr, _6, __value, NULL, NULL>
-        gimple_cond <gt_expr, __b4, _6, <D.97589>, <D.97590>>
+        gimple_cond <lt_expr, __value, __b3, <D.97589>, <D.97590>>
         gimple_label <<D.97589>>
-        gimple_assign <plus_expr, D.97584, __n, 3, NULL>
+        gimple_assign <plus_expr, D.97586, __n, 2, NULL>
         // predicted unlikely by early return (on trees) predictor.
-        gimple_return <D.97584>
+        gimple_return <D.97586>
         gimple_label <<D.97590>>
+        gimple_assign <nop_expr, _6, __value, NULL, NULL>
+        gimple_cond <gt_expr, __b4, _6, <D.97591>, <D.97592>>
+        gimple_label <<D.97591>>
+        gimple_assign <plus_expr, D.97586, __n, 3, NULL>
+        // predicted unlikely by early return (on trees) predictor.
+        gimple_return <D.97586>
+        gimple_label <<D.97592>>
         gimple_assign <nop_expr, _7, __value, NULL, NULL>
         gimple_assign <trunc_div_expr, _8, _7, __b4, NULL>
         gimple_assign <nop_expr, __value, _8, NULL, NULL>
         gimple_assign <plus_expr, __n, __n, 4, NULL>
-        gimple_debug BEGIN_STMT
         gimple_goto <<D.90192>>
       >
     >
@@ -1304,28 +1256,27 @@ value_type & std::__cxx11::basic_string<char>::operator[] (struct basic_string *
 gimple_bind <
   bool retval.13;
   bool iftmp.14;
-  value_type & D.97601;
+  value_type & D.97603;
 
   gimple_call <__is_constant_evaluated, _1>
-  gimple_cond <ne_expr, _1, 0, <D.97597>, <D.97595>>
-  gimple_label <<D.97597>>
-  gimple_call <size, _2, this>
-  gimple_cond <gt_expr, __pos, _2, <D.97598>, <D.97595>>
-  gimple_label <<D.97598>>
-  gimple_assign <integer_cst, iftmp.14, 1, NULL, NULL>
-  gimple_goto <<D.97596>>
-  gimple_label <<D.97595>>
-  gimple_assign <integer_cst, iftmp.14, 0, NULL, NULL>
-  gimple_label <<D.97596>>
-  gimple_assign <var_decl, retval.13, iftmp.14, NULL, NULL>
-  gimple_cond <ne_expr, retval.13, 0, <D.97599>, <D.97600>>
+  gimple_cond <ne_expr, _1, 0, <D.97599>, <D.97597>>
   gimple_label <<D.97599>>
-  gimple_call <__builtin_unreachable, NULL>
+  gimple_call <size, _2, this>
+  gimple_cond <gt_expr, __pos, _2, <D.97600>, <D.97597>>
   gimple_label <<D.97600>>
-  gimple_debug BEGIN_STMT
+  gimple_assign <integer_cst, iftmp.14, 1, NULL, NULL>
+  gimple_goto <<D.97598>>
+  gimple_label <<D.97597>>
+  gimple_assign <integer_cst, iftmp.14, 0, NULL, NULL>
+  gimple_label <<D.97598>>
+  gimple_assign <var_decl, retval.13, iftmp.14, NULL, NULL>
+  gimple_cond <ne_expr, retval.13, 0, <D.97601>, <D.97602>>
+  gimple_label <<D.97601>>
+  gimple_call <__builtin_unreachable, NULL>
+  gimple_label <<D.97602>>
   gimple_call <_M_data, _3, this>
-  gimple_assign <pointer_plus_expr, D.97601, _3, __pos, NULL>
-  gimple_return <D.97601>
+  gimple_assign <pointer_plus_expr, D.97603, _3, __pos, NULL>
+  gimple_return <D.97603>
 >
 
 
@@ -1359,12 +1310,11 @@ gimple_bind <
           gimple_assign <plus_expr, __pos, __pos, 4294967294, NULL>
         >
         gimple_label <<D.90265>>
-        gimple_debug BEGIN_STMT
         gimple_cond <gt_expr, __val, 99, <D.90266>, <D.90264>>
         gimple_label <<D.90264>>
         gimple_bind <
-          gimple_cond <gt_expr, __val, 9, <D.97603>, <D.97604>>
-          gimple_label <<D.97603>>
+          gimple_cond <gt_expr, __val, 9, <D.97605>, <D.97606>>
+          gimple_label <<D.97605>>
           gimple_bind <
             const unsigned int __num;
 
@@ -1376,12 +1326,12 @@ gimple_bind <
             gimple_assign <array_ref, _13, __digits[__num], NULL, NULL>
             gimple_assign <ssa_name, *__first, _13, NULL, NULL>
           >
-          gimple_goto <<D.97605>>
-          gimple_label <<D.97604>>
+          gimple_goto <<D.97607>>
+          gimple_label <<D.97606>>
           gimple_assign <nop_expr, _14, __val, NULL, NULL>
           gimple_assign <plus_expr, _15, _14, 48, NULL>
           gimple_assign <ssa_name, *__first, _15, NULL, NULL>
-          gimple_label <<D.97605>>
+          gimple_label <<D.97607>>
         >
       >
     >
@@ -1402,45 +1352,45 @@ gimple_bind <
 
 struct basic_string & std::__cxx11::basic_string<char>::insert (struct basic_string * const this, size_type __pos, const char * __s)
 gimple_bind <
-  struct basic_string & D.97608;
+  struct basic_string & D.97610;
 
   gimple_call <length, _1, __s>
-  gimple_call <replace, D.97608, this, __pos, 0, __s, _1>
-  gimple_return <D.97608>
+  gimple_call <replace, D.97610, this, __pos, 0, __s, _1>
+  gimple_return <D.97610>
 >
 
 
 struct basic_string & std::__cxx11::basic_string<char>::replace (struct basic_string * const this, size_type __pos, size_type __n1, const char * __s, size_type __n2)
 gimple_bind <
-  struct basic_string & D.97612;
+  struct basic_string & D.97614;
 
   gimple_call <_M_check, _1, this, __pos, "basic_string::replace">
   gimple_call <_M_limit, _2, this, __pos, __n1>
-  gimple_call <_M_replace, D.97612, this, _1, _2, __s, __n2>
-  gimple_return <D.97612>
+  gimple_call <_M_replace, D.97614, this, _1, _2, __s, __n2>
+  gimple_return <D.97614>
 >
 
 
 size_type std::__cxx11::basic_string<char>::_M_check (const struct basic_string * const this, size_type __pos, const char * __s)
 gimple_bind <
   bool retval.15;
-  size_type D.97619;
+  size_type D.97621;
 
   gimple_call <size, _1, this>
   gimple_assign <gt_expr, retval.15, __pos, _1, NULL>
-  gimple_cond <ne_expr, retval.15, 0, <D.97617>, <D.97618>>
-  gimple_label <<D.97617>>
+  gimple_cond <ne_expr, retval.15, 0, <D.97619>, <D.97620>>
+  gimple_label <<D.97619>>
   gimple_call <size, _2, this>
   gimple_call <__throw_out_of_range_fmt, NULL, "%s: __pos (which is %zu) > this->size() (which is %zu)", __s, __pos, _2>
-  gimple_label <<D.97618>>
-  gimple_assign <parm_decl, D.97619, __pos, NULL, NULL>
-  gimple_return <D.97619>
+  gimple_label <<D.97620>>
+  gimple_assign <parm_decl, D.97621, __pos, NULL, NULL>
+  gimple_return <D.97621>
 >
 
 
 size_type std::__cxx11::basic_string<char>::_M_limit (const struct basic_string * const this, size_type __pos, size_type __off)
 gimple_bind <
-  size_type D.97621;
+  size_type D.97623;
   size_type iftmp.16;
 
   gimple_try <GIMPLE_TRY_CATCH,
@@ -1451,16 +1401,16 @@ gimple_bind <
         gimple_call <size, _1, this>
         gimple_assign <minus_expr, _2, _1, __pos, NULL>
         gimple_assign <lt_expr, __testoff, __off, _2, NULL>
-        gimple_cond <ne_expr, __testoff, 0, <D.97623>, <D.97624>>
-        gimple_label <<D.97623>>
+        gimple_cond <ne_expr, __testoff, 0, <D.97625>, <D.97626>>
+        gimple_label <<D.97625>>
         gimple_assign <parm_decl, iftmp.16, __off, NULL, NULL>
-        gimple_goto <<D.97625>>
-        gimple_label <<D.97624>>
+        gimple_goto <<D.97627>>
+        gimple_label <<D.97626>>
         gimple_call <size, _3, this>
         gimple_assign <minus_expr, iftmp.16, _3, __pos, NULL>
-        gimple_label <<D.97625>>
-        gimple_assign <var_decl, D.97621, iftmp.16, NULL, NULL>
-        gimple_return <D.97621>
+        gimple_label <<D.97627>>
+        gimple_assign <var_decl, D.97623, iftmp.16, NULL, NULL>
+        gimple_return <D.97623>
       >
     >
     CLEANUP <
@@ -1486,20 +1436,20 @@ gimple_bind <
         gimple_try <GIMPLE_TRY_CATCH,
           EVAL <
             gimple_call <_M_is_local, retval.17, __str>
-            gimple_cond <ne_expr, retval.17, 0, <D.97628>, <D.97629>>
-            gimple_label <<D.97628>>
+            gimple_cond <ne_expr, retval.17, 0, <D.97630>, <D.97631>>
+            gimple_label <<D.97630>>
             gimple_assign <addr_expr, _4, &this->D.28191._M_local_buf, NULL, NULL>
             gimple_assign <addr_expr, _5, &__str->D.28191._M_local_buf, NULL, NULL>
             gimple_call <length, _6, __str>
             gimple_assign <plus_expr, _7, _6, 1, NULL>
             gimple_call <copy, NULL, _4, _5, _7>
-            gimple_goto <<D.97630>>
-            gimple_label <<D.97629>>
+            gimple_goto <<D.97632>>
+            gimple_label <<D.97631>>
             gimple_call <_M_data, _8, __str>
             gimple_call <_M_data, NULL, this, _8>
             gimple_assign <component_ref, _9, __str->D.28191._M_allocated_capacity, NULL, NULL>
             gimple_call <_M_capacity, NULL, this, _9>
-            gimple_label <<D.97630>>
+            gimple_label <<D.97632>>
             gimple_call <length, _10, __str>
             gimple_call <_M_length, NULL, this, _10>
             gimple_call <_M_local_data, _11, __str>
@@ -1539,12 +1489,12 @@ gimple_bind <
 
 size_type std::__cxx11::basic_string<char>::length (const struct basic_string * const this)
 gimple_bind <
-  size_type D.97632;
+  size_type D.97634;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <component_ref, D.97632, this->_M_string_length, NULL, NULL>
-      gimple_return <D.97632>
+      gimple_assign <component_ref, D.97634, this->_M_string_length, NULL, NULL>
+      gimple_return <D.97634>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -1564,13 +1514,13 @@ gimple_bind <
 
 struct basic_string & std::__cxx11::basic_string<char>::append (struct basic_string * const this, const char * __s)
 gimple_bind <
-  struct basic_string & D.97636;
+  struct basic_string & D.97638;
   const size_type __n;
 
   gimple_call <length, __n, __s>
   gimple_call <_M_check_length, NULL, this, 0, __n, "basic_string::append">
-  gimple_call <_M_append, D.97636, this, __s, __n>
-  gimple_return <D.97636>
+  gimple_call <_M_append, D.97638, this, __s, __n>
+  gimple_return <D.97638>
 >
 
 
@@ -1583,24 +1533,24 @@ gimple_bind <
   gimple_assign <minus_expr, _3, __n1, _2, NULL>
   gimple_assign <plus_expr, _4, _1, _3, NULL>
   gimple_assign <gt_expr, retval.18, __n2, _4, NULL>
-  gimple_cond <ne_expr, retval.18, 0, <D.97641>, <D.97642>>
-  gimple_label <<D.97641>>
+  gimple_cond <ne_expr, retval.18, 0, <D.97643>, <D.97644>>
+  gimple_label <<D.97643>>
   gimple_call <__throw_length_error, NULL, __s>
-  gimple_label <<D.97642>>
+  gimple_label <<D.97644>>
 >
 
 
 size_type std::__cxx11::basic_string<char>::max_size (const struct basic_string * const this)
 gimple_bind <
-  size_type D.97643;
+  size_type D.97645;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_call <_M_get_allocator, _1, this>
       gimple_call <max_size, _2, _1>
       gimple_assign <plus_expr, _3, _2, 18446744073709551615, NULL>
-      gimple_assign <trunc_div_expr, D.97643, _3, 2, NULL>
-      gimple_return <D.97643>
+      gimple_assign <trunc_div_expr, D.97645, _3, 2, NULL>
+      gimple_return <D.97645>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -1612,21 +1562,21 @@ gimple_bind <
 
 const struct allocator_type & std::__cxx11::basic_string<char>::_M_get_allocator (const struct basic_string * const this)
 gimple_bind <
-  const struct allocator_type & D.97645;
+  const struct allocator_type & D.97647;
 
-  gimple_assign <addr_expr, D.97645, &this->_M_dataplus, NULL, NULL>
-  gimple_return <D.97645>
+  gimple_assign <addr_expr, D.97647, &this->_M_dataplus, NULL, NULL>
+  gimple_return <D.97647>
 >
 
 
 size_type std::allocator_traits<std::allocator<char> >::max_size (const struct allocator_type & __a)
 gimple_bind <
-  size_type D.97647;
+  size_type D.97649;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <max_size, D.97647, __a>
-      gimple_return <D.97647>
+      gimple_call <max_size, D.97649, __a>
+      gimple_return <D.97649>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -1638,12 +1588,12 @@ gimple_bind <
 
 size_type std::__new_allocator<char>::max_size (const struct __new_allocator * const this)
 gimple_bind <
-  size_type D.97649;
+  size_type D.97651;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <_M_max_size, D.97649, this>
-      gimple_return <D.97649>
+      gimple_call <_M_max_size, D.97651, this>
+      gimple_return <D.97651>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -1655,12 +1605,12 @@ gimple_bind <
 
 size_type std::__new_allocator<char>::_M_max_size (const struct __new_allocator * const this)
 gimple_bind <
-  size_type D.97651;
+  size_type D.97653;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <integer_cst, D.97651, 9223372036854775807, NULL, NULL>
-      gimple_return <D.97651>
+      gimple_assign <integer_cst, D.97653, 9223372036854775807, NULL, NULL>
+      gimple_return <D.97653>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -1672,12 +1622,12 @@ gimple_bind <
 
 const char * std::__cxx11::basic_string<char>::c_str (const struct basic_string * const this)
 gimple_bind <
-  const char * D.97653;
+  const char * D.97655;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <_M_data, D.97653, this>
-      gimple_return <D.97653>
+      gimple_call <_M_data, D.97655, this>
+      gimple_return <D.97655>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -1692,7 +1642,7 @@ gimple_bind <
   struct _Quoted_string D.93569;
   struct basic_string D.93479;
   struct allocator D.93478;
-  struct basic_ostream & D.97655;
+  struct basic_ostream & D.97657;
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
@@ -1733,8 +1683,8 @@ gimple_bind <
       gimple_assign <constructor, D.93569, {CLOBBER(eol)}, NULL, NULL>
     >
   >
-  gimple_assign <parm_decl, D.97655, __os, NULL, NULL>
-  gimple_return <D.97655>
+  gimple_assign <parm_decl, D.97657, __os, NULL, NULL>
+  gimple_return <D.97657>
 >
 
 
@@ -1751,7 +1701,7 @@ gimple_bind <
 
 void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, const char * __s, size_type __n, const struct allocator & __a)
 gimple_bind <
-  struct forward_iterator_tag D.97665;
+  struct forward_iterator_tag D.97667;
 
   gimple_assign <constructor, *this, {CLOBBER}, NULL, NULL>
   gimple_bind <
@@ -1763,12 +1713,12 @@ gimple_bind <
         gimple_assign <eq_expr, _3, __s, 0B, NULL>
         gimple_assign <ne_expr, _4, __n, 0, NULL>
         gimple_assign <bit_and_expr, _5, _3, _4, NULL>
-        gimple_cond <ne_expr, _5, 0, <D.97663>, <D.97664>>
-        gimple_label <<D.97663>>
+        gimple_cond <ne_expr, _5, 0, <D.97665>, <D.97666>>
+        gimple_label <<D.97665>>
         gimple_call <__throw_logic_error, NULL, "basic_string: construction from null is not valid">
-        gimple_label <<D.97664>>
+        gimple_label <<D.97666>>
         gimple_assign <pointer_plus_expr, _6, __s, __n, NULL>
-        gimple_call <_M_construct, NULL, this, __s, _6, D.97665>
+        gimple_call <_M_construct, NULL, this, __s, _6, D.97667>
       >
       CLEANUP <
         gimple_assign <addr_expr, _7, &this->_M_dataplus, NULL, NULL>
@@ -1781,14 +1731,14 @@ gimple_bind <
 
 struct _Quoted_string std::quoted<char, std::char_traits<char>, std::allocator<char> > (const struct basic_string & __string, char __delim, char __escape)
 gimple_bind <
-  struct _Quoted_string D.97667;
+  struct _Quoted_string D.97669;
   struct _Quoted_string D.93558;
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
       gimple_call <__ct_comp , NULL, &D.93558, __string, __delim, __escape>
-      gimple_assign <var_decl, D.97667, D.93558, NULL, NULL>
-      gimple_return <D.97667>
+      gimple_assign <var_decl, D.97669, D.93558, NULL, NULL>
+      gimple_return <D.97669>
     >
     CLEANUP <
       gimple_assign <constructor, D.93558, {CLOBBER(eol)}, NULL, NULL>
@@ -1811,7 +1761,7 @@ gimple_bind <
 struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, const std::__cxx11::basic_string<char>&> (struct basic_ostream & __os, const struct _Quoted_string & __str)
 gimple_bind <
   bool retval.19;
-  struct basic_ostream & D.97674;
+  struct basic_ostream & D.97676;
   struct __string_type D.95691;
   struct basic_ostringstream __ostr;
 
@@ -1838,19 +1788,17 @@ gimple_bind <
                 gimple_call <operator*, _2, &__for_begin>
                 gimple_assign <mem_ref, __c, *_2, NULL, NULL>
                 gimple_assign <component_ref, _3, __str->_M_delim, NULL, NULL>
-                gimple_cond <eq_expr, __c, _3, <D.97670>, <D.97672>>
-                gimple_label <<D.97672>>
+                gimple_cond <eq_expr, __c, _3, <D.97672>, <D.97674>>
+                gimple_label <<D.97674>>
                 gimple_assign <component_ref, _4, __str->_M_escape, NULL, NULL>
-                gimple_cond <eq_expr, __c, _4, <D.97670>, <D.97671>>
-                gimple_label <<D.97670>>
+                gimple_cond <eq_expr, __c, _4, <D.97672>, <D.97673>>
+                gimple_label <<D.97672>>
                 gimple_assign <component_ref, _5, __str->_M_escape, NULL, NULL>
                 gimple_call <operator<<, NULL, &__ostr.D.76876, _5>
-                gimple_label <<D.97671>>
+                gimple_label <<D.97673>>
                 gimple_call <operator<<, NULL, &__ostr.D.76876, __c>
-                gimple_debug BEGIN_STMT
                 gimple_call <operator++, NULL, &__for_begin>
                 gimple_label <<D.95695>>
-                gimple_debug BEGIN_STMT
                 gimple_call <operator!=, retval.19, &__for_begin, &__for_end>
                 gimple_cond <ne_expr, retval.19, 0, <D.95694>, <D.95692>>
                 gimple_label <<D.95692>>
@@ -1868,8 +1816,8 @@ gimple_bind <
               gimple_call <str, D.95691, &__ostr> [return slot optimization]
               gimple_try <GIMPLE_TRY_FINALLY,
                 EVAL <
-                  gimple_call <operator<<, D.97674, __os, &D.95691>
-                  gimple_return <D.97674>
+                  gimple_call <operator<<, D.97676, __os, &D.95691>
+                  gimple_return <D.97676>
                 >
                 CLEANUP <
                   gimple_call <__dt_comp , NULL, &D.95691>
@@ -2270,7 +2218,7 @@ gimple_bind <
 
 struct const_iterator std::__cxx11::basic_string<char>::begin (const struct basic_string * const this)
 gimple_bind <
-  struct const_iterator D.97689;
+  struct const_iterator D.97691;
   struct const_iterator D.96329;
   const char * const D.96328;
 
@@ -2283,8 +2231,8 @@ gimple_bind <
               gimple_call <_M_data, _1, this>
               gimple_assign <ssa_name, D.96328, _1, NULL, NULL>
               gimple_call <__ct_comp , NULL, &D.96329, &D.96328>
-              gimple_assign <var_decl, D.97689, D.96329, NULL, NULL>
-              gimple_return <D.97689>
+              gimple_assign <var_decl, D.97691, D.96329, NULL, NULL>
+              gimple_return <D.97691>
             >
             CLEANUP <
               gimple_assign <constructor, D.96328, {CLOBBER(eol)}, NULL, NULL>
@@ -2323,7 +2271,7 @@ gimple_bind <
 
 struct const_iterator std::__cxx11::basic_string<char>::end (const struct basic_string * const this)
 gimple_bind <
-  struct const_iterator D.97693;
+  struct const_iterator D.97695;
   struct const_iterator D.96332;
   const char * const D.96331;
 
@@ -2338,8 +2286,8 @@ gimple_bind <
               gimple_assign <pointer_plus_expr, _3, _1, _2, NULL>
               gimple_assign <ssa_name, D.96331, _3, NULL, NULL>
               gimple_call <__ct_comp , NULL, &D.96332, &D.96331>
-              gimple_assign <var_decl, D.97693, D.96332, NULL, NULL>
-              gimple_return <D.97693>
+              gimple_assign <var_decl, D.97695, D.96332, NULL, NULL>
+              gimple_return <D.97695>
             >
             CLEANUP <
               gimple_assign <constructor, D.96331, {CLOBBER(eol)}, NULL, NULL>
@@ -2361,12 +2309,12 @@ gimple_bind <
 
 const char & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator* (const struct __normal_iterator * const this)
 gimple_bind <
-  const char & D.97697;
+  const char & D.97699;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <component_ref, D.97697, this->_M_current, NULL, NULL>
-      gimple_return <D.97697>
+      gimple_assign <component_ref, D.97699, this->_M_current, NULL, NULL>
+      gimple_return <D.97699>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -2378,15 +2326,15 @@ gimple_bind <
 
 struct __normal_iterator & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator++ (struct __normal_iterator * const this)
 gimple_bind <
-  struct __normal_iterator & D.97699;
+  struct __normal_iterator & D.97701;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <component_ref, _1, this->_M_current, NULL, NULL>
       gimple_assign <pointer_plus_expr, _2, _1, 1, NULL>
       gimple_assign <ssa_name, this->_M_current, _2, NULL, NULL>
-      gimple_assign <parm_decl, D.97699, this, NULL, NULL>
-      gimple_return <D.97699>
+      gimple_assign <parm_decl, D.97701, this, NULL, NULL>
+      gimple_return <D.97701>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -2399,7 +2347,7 @@ gimple_bind <
 __attribute__((nodiscard))
 bool __gnu_cxx::operator!=<const char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
 gimple_bind <
-  bool D.97701;
+  bool D.97703;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
@@ -2407,8 +2355,8 @@ gimple_bind <
       gimple_assign <mem_ref, _2, *_1, NULL, NULL>
       gimple_call <base, _3, __rhs>
       gimple_assign <mem_ref, _4, *_3, NULL, NULL>
-      gimple_assign <ne_expr, D.97701, _2, _4, NULL>
-      gimple_return <D.97701>
+      gimple_assign <ne_expr, D.97703, _2, _4, NULL>
+      gimple_return <D.97703>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -2420,12 +2368,12 @@ gimple_bind <
 
 const char * const & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::base (const struct __normal_iterator * const this)
 gimple_bind <
-  const char * const & D.97703;
+  const char * const & D.97705;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <addr_expr, D.97703, &this->_M_current, NULL, NULL>
-      gimple_return <D.97703>
+      gimple_assign <addr_expr, D.97705, &this->_M_current, NULL, NULL>
+      gimple_return <D.97705>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -2438,7 +2386,7 @@ gimple_bind <
 struct basic_ostream & std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, char __c)
 gimple_bind <
   bool retval.20;
-  struct basic_ostream & D.97708;
+  struct basic_ostream & D.97710;
 
   gimple_assign <component_ref, _1, __out->_vptr.basic_ostream, NULL, NULL>
   gimple_assign <pointer_plus_expr, _2, _1, 18446744073709551592, NULL>
@@ -2447,25 +2395,24 @@ gimple_bind <
   gimple_assign <pointer_plus_expr, _5, __out, _4, NULL>
   gimple_call <width, _6, _5>
   gimple_assign <ne_expr, retval.20, _6, 0, NULL>
-  gimple_cond <ne_expr, retval.20, 0, <D.97706>, <D.97707>>
-  gimple_label <<D.97706>>
-  gimple_call <__ostream_insert, D.97708, __out, &__c, 1>
-  gimple_return <D.97708>
-  gimple_label <<D.97707>>
+  gimple_cond <ne_expr, retval.20, 0, <D.97708>, <D.97709>>
+  gimple_label <<D.97708>>
+  gimple_call <__ostream_insert, D.97710, __out, &__c, 1>
+  gimple_return <D.97710>
+  gimple_label <<D.97709>>
   gimple_assign <parm_decl, __c.21_7, __c, NULL, NULL>
   gimple_call <put, NULL, __out, __c.21_7>
-  gimple_assign <parm_decl, D.97708, __out, NULL, NULL>
-  gimple_return <D.97708>
+  gimple_assign <parm_decl, D.97710, __out, NULL, NULL>
+  gimple_return <D.97710>
 >
 
 
 streamsize std::ios_base::width (const struct ios_base * const this)
 gimple_bind <
-  streamsize D.97711;
+  streamsize D.97713;
 
-  gimple_debug BEGIN_STMT
-  gimple_assign <component_ref, D.97711, this->_M_width, NULL, NULL>
-  gimple_return <D.97711>
+  gimple_assign <component_ref, D.97713, this->_M_width, NULL, NULL>
+  gimple_return <D.97713>
 >
 
 
@@ -2505,16 +2452,16 @@ gimple_bind <
         char_type * __hi;
 
         gimple_call <_M_high_mark, __hi, this>
-        gimple_cond <ne_expr, __hi, 0B, <D.97714>, <D.97715>>
-        gimple_label <<D.97714>>
+        gimple_cond <ne_expr, __hi, 0B, <D.97716>, <D.97717>>
+        gimple_label <<D.97716>>
         gimple_assign <addr_expr, _2, &this->D.76593, NULL, NULL>
         gimple_call <pbase, _3, _2>
         gimple_call <assign, NULL, <retval>, _3, __hi>
-        gimple_goto <<D.97716>>
-        gimple_label <<D.97715>>
+        gimple_goto <<D.97718>>
+        gimple_label <<D.97717>>
         gimple_assign <addr_expr, _4, &this->_M_string, NULL, NULL>
         gimple_call <operator=, NULL, <retval>, _4>
-        gimple_label <<D.97716>>
+        gimple_label <<D.97718>>
       >
       gimple_return <<retval>>
     >
@@ -2573,7 +2520,7 @@ gimple_bind <
 __attribute__((always_inline))
 char_type * std::__cxx11::basic_stringbuf<char>::_M_high_mark (const struct basic_stringbuf * const this)
 gimple_bind <
-  char_type * D.97724;
+  char_type * D.97726;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
@@ -2583,8 +2530,8 @@ gimple_bind <
 
           gimple_assign <addr_expr, _1, &this->D.76593, NULL, NULL>
           gimple_call <pptr, __pptr, _1>
-          gimple_cond <ne_expr, __pptr, 0B, <D.97720>, <D.97721>>
-          gimple_label <<D.97720>>
+          gimple_cond <ne_expr, __pptr, 0B, <D.97722>, <D.97723>>
+          gimple_label <<D.97722>>
           gimple_bind <
             char_type * __egptr;
 
@@ -2593,20 +2540,20 @@ gimple_bind <
             gimple_assign <eq_expr, _3, __egptr, 0B, NULL>
             gimple_assign <gt_expr, _4, __pptr, __egptr, NULL>
             gimple_assign <bit_ior_expr, _5, _3, _4, NULL>
-            gimple_cond <ne_expr, _5, 0, <D.97722>, <D.97723>>
-            gimple_label <<D.97722>>
-            gimple_assign <var_decl, D.97724, __pptr, NULL, NULL>
+            gimple_cond <ne_expr, _5, 0, <D.97724>, <D.97725>>
+            gimple_label <<D.97724>>
+            gimple_assign <var_decl, D.97726, __pptr, NULL, NULL>
             // predicted unlikely by early return (on trees) predictor.
-            gimple_return <D.97724>
-            gimple_label <<D.97723>>
-            gimple_assign <var_decl, D.97724, __egptr, NULL, NULL>
+            gimple_return <D.97726>
+            gimple_label <<D.97725>>
+            gimple_assign <var_decl, D.97726, __egptr, NULL, NULL>
             // predicted unlikely by early return (on trees) predictor.
-            gimple_return <D.97724>
+            gimple_return <D.97726>
           >
-          gimple_label <<D.97721>>
+          gimple_label <<D.97723>>
         >
-        gimple_assign <integer_cst, D.97724, 0B, NULL, NULL>
-        gimple_return <D.97724>
+        gimple_assign <integer_cst, D.97726, 0B, NULL, NULL>
+        gimple_return <D.97726>
       >
     >
     CLEANUP <
@@ -2619,34 +2566,34 @@ gimple_bind <
 
 char_type * std::basic_streambuf<char>::pptr (const struct basic_streambuf * const this)
 gimple_bind <
-  char_type * D.97726;
+  char_type * D.97728;
 
-  gimple_assign <component_ref, D.97726, this->_M_out_cur, NULL, NULL>
-  gimple_return <D.97726>
+  gimple_assign <component_ref, D.97728, this->_M_out_cur, NULL, NULL>
+  gimple_return <D.97728>
 >
 
 
 char_type * std::basic_streambuf<char>::egptr (const struct basic_streambuf * const this)
 gimple_bind <
-  char_type * D.97728;
+  char_type * D.97730;
 
-  gimple_assign <component_ref, D.97728, this->_M_in_end, NULL, NULL>
-  gimple_return <D.97728>
+  gimple_assign <component_ref, D.97730, this->_M_in_end, NULL, NULL>
+  gimple_return <D.97730>
 >
 
 
 char_type * std::basic_streambuf<char>::pbase (const struct basic_streambuf * const this)
 gimple_bind <
-  char_type * D.97730;
+  char_type * D.97732;
 
-  gimple_assign <component_ref, D.97730, this->_M_out_beg, NULL, NULL>
-  gimple_return <D.97730>
+  gimple_assign <component_ref, D.97732, this->_M_out_beg, NULL, NULL>
+  gimple_return <D.97732>
 >
 
 
 struct basic_string & std::__cxx11::basic_string<char>::assign<char*> (struct basic_string * const this, char * __first, char * __last)
 gimple_bind <
-  struct basic_string & D.97732;
+  struct basic_string & D.97734;
   struct __const_iterator D.97131;
   struct iterator D.97114;
   struct __const_iterator D.97132;
@@ -2664,8 +2611,8 @@ gimple_bind <
                 EVAL <
                   gimple_call <end, D.97124, this>
                   gimple_call <__ct_comp , NULL, &D.97132, &D.97124>
-                  gimple_call <replace, D.97732, this, D.97131, D.97132, __first, __last>
-                  gimple_return <D.97732>
+                  gimple_call <replace, D.97734, this, D.97131, D.97132, __first, __last>
+                  gimple_return <D.97734>
                 >
                 CLEANUP <
                   gimple_assign <constructor, D.97124, {CLOBBER(eol)}, NULL, NULL>
@@ -2691,7 +2638,7 @@ gimple_bind <
 
 struct iterator std::__cxx11::basic_string<char>::begin (struct basic_string * const this)
 gimple_bind <
-  struct iterator D.97743;
+  struct iterator D.97745;
   struct iterator D.97213;
   char * const D.97212;
 
@@ -2704,8 +2651,8 @@ gimple_bind <
               gimple_call <_M_data, _1, this>
               gimple_assign <ssa_name, D.97212, _1, NULL, NULL>
               gimple_call <__ct_comp , NULL, &D.97213, &D.97212>
-              gimple_assign <var_decl, D.97743, D.97213, NULL, NULL>
-              gimple_return <D.97743>
+              gimple_assign <var_decl, D.97745, D.97213, NULL, NULL>
+              gimple_return <D.97745>
             >
             CLEANUP <
               gimple_assign <constructor, D.97212, {CLOBBER(eol)}, NULL, NULL>
@@ -2744,7 +2691,7 @@ gimple_bind <
 
 struct iterator std::__cxx11::basic_string<char>::end (struct basic_string * const this)
 gimple_bind <
-  struct iterator D.97747;
+  struct iterator D.97749;
   struct iterator D.97216;
   char * const D.97215;
 
@@ -2759,8 +2706,8 @@ gimple_bind <
               gimple_assign <pointer_plus_expr, _3, _1, _2, NULL>
               gimple_assign <ssa_name, D.97215, _3, NULL, NULL>
               gimple_call <__ct_comp , NULL, &D.97216, &D.97215>
-              gimple_assign <var_decl, D.97747, D.97216, NULL, NULL>
-              gimple_return <D.97747>
+              gimple_assign <var_decl, D.97749, D.97216, NULL, NULL>
+              gimple_return <D.97749>
             >
             CLEANUP <
               gimple_assign <constructor, D.97215, {CLOBBER(eol)}, NULL, NULL>
@@ -2800,12 +2747,12 @@ gimple_bind <
 
 char * const & __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >::base (const struct __normal_iterator * const this)
 gimple_bind <
-  char * const & D.97751;
+  char * const & D.97753;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <addr_expr, D.97751, &this->_M_current, NULL, NULL>
-      gimple_return <D.97751>
+      gimple_assign <addr_expr, D.97753, &this->_M_current, NULL, NULL>
+      gimple_return <D.97753>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -2817,7 +2764,7 @@ gimple_bind <
 
 struct basic_string & std::__cxx11::basic_string<char>::replace (struct basic_string * const this, struct __const_iterator __i1, struct __const_iterator __i2, char * __k1, char * __k2)
 gimple_bind <
-  struct basic_string & D.97753;
+  struct basic_string & D.97755;
   struct iterator D.97226;
 
   gimple_try <GIMPLE_TRY_FINALLY,
@@ -2829,8 +2776,8 @@ gimple_bind <
       gimple_assign <nop_expr, _4, _3, NULL, NULL>
       gimple_assign <pointer_diff_expr, _5, __k2, __k1, NULL>
       gimple_assign <nop_expr, _6, _5, NULL, NULL>
-      gimple_call <replace, D.97753, this, _2, _4, __k1, _6>
-      gimple_return <D.97753>
+      gimple_call <replace, D.97755, this, _2, _4, __k1, _6>
+      gimple_return <D.97755>
     >
     CLEANUP <
       gimple_assign <constructor, D.97226, {CLOBBER(eol)}, NULL, NULL>
@@ -2842,29 +2789,7 @@ gimple_bind <
 __attribute__((nodiscard))
 long int __gnu_cxx::operator-<const char*, char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
 gimple_bind <
-  long int D.97758;
-
-  gimple_try <GIMPLE_TRY_CATCH,
-    EVAL <
-      gimple_call <base, _1, __lhs>
-      gimple_assign <mem_ref, _2, *_1, NULL, NULL>
-      gimple_call <base, _3, __rhs>
-      gimple_assign <mem_ref, _4, *_3, NULL, NULL>
-      gimple_assign <pointer_diff_expr, D.97758, _2, _4, NULL>
-      gimple_return <D.97758>
-    >
-    CLEANUP <
-      gimple_eh_must_not_throw <terminate>
-    >
-  >
-  gimple_call <__builtin_unreachable, NULL>
->
-
-
-__attribute__((nodiscard))
-difference_type __gnu_cxx::operator-<const char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
-gimple_bind <
-  difference_type D.97760;
+  long int D.97760;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
@@ -2883,40 +2808,62 @@ gimple_bind <
 >
 
 
+__attribute__((nodiscard))
+difference_type __gnu_cxx::operator-<const char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
+gimple_bind <
+  difference_type D.97762;
+
+  gimple_try <GIMPLE_TRY_CATCH,
+    EVAL <
+      gimple_call <base, _1, __lhs>
+      gimple_assign <mem_ref, _2, *_1, NULL, NULL>
+      gimple_call <base, _3, __rhs>
+      gimple_assign <mem_ref, _4, *_3, NULL, NULL>
+      gimple_assign <pointer_diff_expr, D.97762, _2, _4, NULL>
+      gimple_return <D.97762>
+    >
+    CLEANUP <
+      gimple_eh_must_not_throw <terminate>
+    >
+  >
+  gimple_call <__builtin_unreachable, NULL>
+>
+
+
 struct basic_string & std::__cxx11::basic_string<char>::operator= (struct basic_string * const this, const struct basic_string & __str)
 gimple_bind <
-  struct basic_string & D.97762;
+  struct basic_string & D.97764;
 
-  gimple_call <assign, D.97762, this, __str>
-  gimple_return <D.97762>
+  gimple_call <assign, D.97764, this, __str>
+  gimple_return <D.97764>
 >
 
 
 struct basic_string & std::__cxx11::basic_string<char>::assign (struct basic_string * const this, const struct basic_string & __str)
 gimple_bind <
   bool retval.22;
-  struct basic_string & D.97775;
+  struct basic_string & D.97777;
 
   gimple_bind <
-    gimple_cond <ne_expr, 0, 0, <D.97765>, <D.97766>>
-    gimple_label <<D.97765>>
+    gimple_cond <ne_expr, 0, 0, <D.97767>, <D.97768>>
+    gimple_label <<D.97767>>
     gimple_bind <
       gimple_bind <
-        gimple_cond <ne_expr, 0, 0, <D.97767>, <D.97768>>
-        gimple_label <<D.97767>>
+        gimple_cond <ne_expr, 0, 0, <D.97769>, <D.97770>>
+        gimple_label <<D.97769>>
         gimple_bind <
           gimple_bind <
             gimple_call <size, _1, __str>
             gimple_assign <le_expr, retval.22, _1, 15, NULL>
-            gimple_cond <ne_expr, retval.22, 0, <D.97770>, <D.97771>>
-            gimple_label <<D.97770>>
+            gimple_cond <ne_expr, retval.22, 0, <D.97772>, <D.97773>>
+            gimple_label <<D.97772>>
             gimple_assign <component_ref, _2, this->D.28191._M_allocated_capacity, NULL, NULL>
             gimple_call <_M_destroy, NULL, this, _2>
             gimple_call <_M_use_local_data, _3, this>
             gimple_call <_M_data, NULL, this, _3>
             gimple_call <_M_set_length, NULL, this, 0>
-            gimple_goto <<D.97772>>
-            gimple_label <<D.97771>>
+            gimple_goto <<D.97774>>
+            gimple_label <<D.97773>>
             gimple_bind <
               const long unsigned int __len;
               struct allocator __alloc;
@@ -2947,24 +2894,24 @@ gimple_bind <
                 >
               >
             >
-            gimple_label <<D.97772>>
+            gimple_label <<D.97774>>
           >
         >
-        gimple_goto <<D.97773>>
-        gimple_label <<D.97768>>
-        gimple_label <<D.97773>>
+        gimple_goto <<D.97775>>
+        gimple_label <<D.97770>>
+        gimple_label <<D.97775>>
       >
       gimple_call <_M_get_allocator, _7, this>
       gimple_call <_M_get_allocator, _8, __str>
       gimple_call <__alloc_on_copy, NULL, _7, _8>
     >
-    gimple_goto <<D.97774>>
-    gimple_label <<D.97766>>
-    gimple_label <<D.97774>>
+    gimple_goto <<D.97776>>
+    gimple_label <<D.97768>>
+    gimple_label <<D.97776>>
   >
   gimple_call <_M_assign, NULL, this, __str>
-  gimple_assign <parm_decl, D.97775, this, NULL, NULL>
-  gimple_return <D.97775>
+  gimple_assign <parm_decl, D.97777, this, NULL, NULL>
+  gimple_return <D.97777>
 >
 
 
@@ -3029,7 +2976,6 @@ gimple_bind <
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
-      gimple_debug BEGIN_STMT
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
           gimple_call <get_log_path, D.89060> [return slot optimization]
@@ -3048,31 +2994,25 @@ gimple_bind <
       >
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
-          gimple_debug BEGIN_STMT
           gimple_bind <
             gimple_call <is_open, retval.23, &logfile>
-            gimple_cond <ne_expr, retval.23, 0, <D.97781>, <D.97782>>
-            gimple_label <<D.97781>>
+            gimple_cond <ne_expr, retval.23, 0, <D.97783>, <D.97784>>
+            gimple_label <<D.97783>>
             gimple_bind <
               time_t t;
               char timestamp[100];
 
               gimple_try <GIMPLE_TRY_FINALLY,
                 EVAL <
-                  gimple_debug BEGIN_STMT
                   gimple_call <time, _1, 0B>
                   gimple_assign <ssa_name, t, _1, NULL, NULL>
-                  gimple_debug BEGIN_STMT
-                  gimple_debug BEGIN_STMT
                   gimple_call <localtime, _2, &t>
                   gimple_call <strftime, NULL, &timestamp, 100, "%Y-%m-%d %H:%M:%S", _2>
-                  gimple_debug BEGIN_STMT
                   gimple_call <operator<<, _3, &logfile.D.51725, "[">
                   gimple_call <operator<<, _4, _3, &timestamp>
                   gimple_call <operator<<, _5, _4, "] ">
                   gimple_call <operator<<, _6, _5, msg>
                   gimple_call <operator<<, NULL, _6, endl>
-                  gimple_debug BEGIN_STMT
                   gimple_call <close, NULL, &logfile>
                 >
                 CLEANUP <
@@ -3081,13 +3021,11 @@ gimple_bind <
                 >
               >
             >
-            gimple_goto <<D.97783>>
-            gimple_label <<D.97782>>
-            gimple_debug BEGIN_STMT
+            gimple_goto <<D.97785>>
+            gimple_label <<D.97784>>
             gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to open log file.\n">
-            gimple_debug BEGIN_STMT
             gimple_call <exit, NULL, 123>
-            gimple_label <<D.97783>>
+            gimple_label <<D.97785>>
           >
         >
         CLEANUP <
@@ -3104,7 +3042,6 @@ gimple_bind <
 
 struct string get_log_path ()
 gimple_bind <
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, <retval>, &log_path>
   gimple_return <<retval>>
 >
@@ -3113,7 +3050,7 @@ gimple_bind <
 void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, const struct basic_string & __str)
 gimple_bind <
   struct allocator D.92567;
-  struct forward_iterator_tag D.97794;
+  struct forward_iterator_tag D.97796;
 
   gimple_assign <constructor, *this, {CLOBBER}, NULL, NULL>
   gimple_bind <
@@ -3142,7 +3079,7 @@ gimple_bind <
         gimple_call <_M_data, _5, __str>
         gimple_call <length, _6, __str>
         gimple_assign <pointer_plus_expr, _7, _5, _6, NULL>
-        gimple_call <_M_construct, NULL, this, _4, _7, D.97794>
+        gimple_call <_M_construct, NULL, this, _4, _7, D.97796>
       >
       CLEANUP <
         gimple_assign <addr_expr, _8, &this->_M_dataplus, NULL, NULL>
@@ -3170,7 +3107,7 @@ gimple_bind <
 void std::__cxx11::basic_string<char>::_M_construct<char*> (struct basic_string * const this, char * __beg, char * __end, struct forward_iterator_tag D.94910)
 gimple_bind <
   size_type __dnew;
-  typedef struct _Guard _Guard;
+  typedef extern struct _Guard _Guard;
   struct _Guard __guard;
 
   gimple_try <GIMPLE_TRY_FINALLY,
@@ -3179,16 +3116,16 @@ gimple_bind <
       gimple_assign <nop_expr, _2, _1, NULL, NULL>
       gimple_assign <ssa_name, __dnew, _2, NULL, NULL>
       gimple_assign <var_decl, __dnew.24_3, __dnew, NULL, NULL>
-      gimple_cond <gt_expr, __dnew.24_3, 15, <D.97799>, <D.97800>>
-      gimple_label <<D.97799>>
+      gimple_cond <gt_expr, __dnew.24_3, 15, <D.97801>, <D.97802>>
+      gimple_label <<D.97801>>
       gimple_call <_M_create, _4, this, &__dnew, 0>
       gimple_call <_M_data, NULL, this, _4>
       gimple_assign <var_decl, __dnew.25_5, __dnew, NULL, NULL>
       gimple_call <_M_capacity, NULL, this, __dnew.25_5>
-      gimple_goto <<D.97801>>
-      gimple_label <<D.97800>>
+      gimple_goto <<D.97803>>
+      gimple_label <<D.97802>>
       gimple_call <_M_use_local_data, NULL, this>
-      gimple_label <<D.97801>>
+      gimple_label <<D.97803>>
       gimple_call <__ct_comp , NULL, &__guard, this>
       gimple_try <GIMPLE_TRY_FINALLY,
         EVAL <
@@ -3214,22 +3151,22 @@ gimple_bind <
 __attribute__((nodiscard))
 difference_type std::distance<char*> (char * __first, char * __last)
 gimple_bind <
-  difference_type D.97805;
+  difference_type D.97807;
   struct iterator_category D.96131;
-  struct random_access_iterator_tag D.97806;
+  struct random_access_iterator_tag D.97808;
 
   gimple_assign <parm_decl, __first.27_1, __first, NULL, NULL>
-  gimple_call <__distance, D.97805, __first.27_1, __last, D.97806>
-  gimple_return <D.97805>
+  gimple_call <__distance, D.97807, __first.27_1, __last, D.97808>
+  gimple_return <D.97807>
 >
 
 
 difference_type std::__distance<char*> (char * __first, char * __last, struct random_access_iterator_tag D.96582)
 gimple_bind <
-  difference_type D.97808;
+  difference_type D.97810;
 
-  gimple_assign <pointer_diff_expr, D.97808, __last, __first, NULL>
-  gimple_return <D.97808>
+  gimple_assign <pointer_diff_expr, D.97810, __last, __first, NULL>
+  gimple_return <D.97810>
 >
 
 
@@ -3265,13 +3202,13 @@ gimple_bind <
         gimple_try <GIMPLE_TRY_FINALLY,
           EVAL <
             gimple_assign <component_ref, _1, this->_M_guarded, NULL, NULL>
-            gimple_cond <ne_expr, _1, 0B, <D.97810>, <D.97811>>
-            gimple_label <<D.97810>>
+            gimple_cond <ne_expr, _1, 0B, <D.97812>, <D.97813>>
+            gimple_label <<D.97812>>
             gimple_assign <component_ref, _2, this->_M_guarded, NULL, NULL>
             gimple_call <_M_dispose, NULL, _2>
-            gimple_goto <<D.97812>>
-            gimple_label <<D.97811>>
-            gimple_label <<D.97812>>
+            gimple_goto <<D.97814>>
+            gimple_label <<D.97813>>
+            gimple_label <<D.97814>>
           >
           CLEANUP <
             gimple_assign <constructor, *this, {CLOBBER}, NULL, NULL>
@@ -3357,43 +3294,42 @@ gimple_bind <
   gimple_call <operator|, _2, __mode, 16>
   gimple_call <open, _3, _1, __s, _2>
   gimple_assign <eq_expr, retval.28, _3, 0B, NULL>
-  gimple_cond <ne_expr, retval.28, 0, <D.97817>, <D.97818>>
-  gimple_label <<D.97817>>
+  gimple_cond <ne_expr, retval.28, 0, <D.97819>, <D.97820>>
+  gimple_label <<D.97819>>
   gimple_assign <component_ref, _4, this->D.51725._vptr.basic_ostream, NULL, NULL>
   gimple_assign <pointer_plus_expr, _5, _4, 18446744073709551592, NULL>
   gimple_assign <mem_ref, _6, MEM[(long int *)_5], NULL, NULL>
   gimple_assign <nop_expr, _7, _6, NULL, NULL>
   gimple_assign <pointer_plus_expr, _8, this, _7, NULL>
   gimple_call <setstate, NULL, _8, 4>
-  gimple_goto <<D.97819>>
-  gimple_label <<D.97818>>
+  gimple_goto <<D.97821>>
+  gimple_label <<D.97820>>
   gimple_assign <component_ref, _9, this->D.51725._vptr.basic_ostream, NULL, NULL>
   gimple_assign <pointer_plus_expr, _10, _9, 18446744073709551592, NULL>
   gimple_assign <mem_ref, _11, MEM[(long int *)_10], NULL, NULL>
   gimple_assign <nop_expr, _12, _11, NULL, NULL>
   gimple_assign <pointer_plus_expr, _13, this, _12, NULL>
   gimple_call <clear, NULL, _13, 0>
-  gimple_label <<D.97819>>
+  gimple_label <<D.97821>>
 >
 
 
 _Ios_Openmode std::operator| (_Ios_Openmode __a, _Ios_Openmode __b)
 gimple_bind <
-  _Ios_Openmode D.97821;
+  _Ios_Openmode D.97823;
 
-  gimple_debug BEGIN_STMT
-  gimple_assign <bit_ior_expr, D.97821, __a, __b, NULL>
-  gimple_return <D.97821>
+  gimple_assign <bit_ior_expr, D.97823, __a, __b, NULL>
+  gimple_return <D.97823>
 >
 
 
 struct __filebuf_type * std::basic_filebuf<char>::open (struct basic_filebuf * const this, const struct string & __s, openmode __mode)
 gimple_bind <
-  struct __filebuf_type * D.97823;
+  struct __filebuf_type * D.97825;
 
   gimple_call <c_str, _1, __s>
-  gimple_call <open, D.97823, this, _1, __mode>
-  gimple_return <D.97823>
+  gimple_call <open, D.97825, this, _1, __mode>
+  gimple_return <D.97825>
 >
 
 
@@ -3472,23 +3408,23 @@ gimple_bind <
 
 bool std::basic_ofstream<char>::is_open (struct basic_ofstream * const this)
 gimple_bind <
-  bool D.97829;
+  bool D.97831;
 
   gimple_assign <addr_expr, _1, &this->_M_filebuf, NULL, NULL>
-  gimple_call <is_open, D.97829, _1>
-  gimple_return <D.97829>
+  gimple_call <is_open, D.97831, _1>
+  gimple_return <D.97831>
 >
 
 
 bool std::basic_filebuf<char>::is_open (const struct basic_filebuf * const this)
 gimple_bind <
-  bool D.97831;
+  bool D.97833;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &this->_M_file, NULL, NULL>
-      gimple_call <is_open, D.97831, _1>
-      gimple_return <D.97831>
+      gimple_call <is_open, D.97833, _1>
+      gimple_return <D.97833>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3505,17 +3441,17 @@ gimple_bind <
   gimple_assign <addr_expr, _1, &this->_M_filebuf, NULL, NULL>
   gimple_call <close, _2, _1>
   gimple_assign <eq_expr, retval.29, _2, 0B, NULL>
-  gimple_cond <ne_expr, retval.29, 0, <D.97834>, <D.97835>>
-  gimple_label <<D.97834>>
+  gimple_cond <ne_expr, retval.29, 0, <D.97836>, <D.97837>>
+  gimple_label <<D.97836>>
   gimple_assign <component_ref, _3, this->D.51725._vptr.basic_ostream, NULL, NULL>
   gimple_assign <pointer_plus_expr, _4, _3, 18446744073709551592, NULL>
   gimple_assign <mem_ref, _5, MEM[(long int *)_4], NULL, NULL>
   gimple_assign <nop_expr, _6, _5, NULL, NULL>
   gimple_assign <pointer_plus_expr, _7, this, _6, NULL>
   gimple_call <setstate, NULL, _7, 4>
-  gimple_goto <<D.97836>>
-  gimple_label <<D.97835>>
-  gimple_label <<D.97836>>
+  gimple_goto <<D.97838>>
+  gimple_label <<D.97837>>
+  gimple_label <<D.97838>>
 >
 
 
@@ -3641,14 +3577,14 @@ gimple_bind <
               gimple_assign <addr_expr, _1, &this->_M_t.D.82893, NULL, NULL>
               gimple_call <_M_ptr, __ptr, _1>
               gimple_assign <mem_ref, _2, *__ptr, NULL, NULL>
-              gimple_cond <ne_expr, _2, 0B, <D.97838>, <D.97839>>
-              gimple_label <<D.97838>>
+              gimple_cond <ne_expr, _2, 0B, <D.97840>, <D.97841>>
+              gimple_label <<D.97840>>
               gimple_call <get_deleter, _3, this>
               gimple_assign <mem_ref, _4, MEM[(struct _Impl * &)__ptr], NULL, NULL>
               gimple_call <operator(), NULL, _3, _4>
-              gimple_goto <<D.97840>>
-              gimple_label <<D.97839>>
-              gimple_label <<D.97840>>
+              gimple_goto <<D.97842>>
+              gimple_label <<D.97841>>
+              gimple_label <<D.97842>>
               gimple_assign <integer_cst, *__ptr, 0B, NULL, NULL>
             >
           >
@@ -3668,13 +3604,13 @@ gimple_bind <
 
 struct _Impl * & std::__uniq_ptr_impl<std::filesystem::__cxx11::path::_List::_Impl, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_ptr (struct __uniq_ptr_impl * const this)
 gimple_bind <
-  struct _Impl * & D.97841;
+  struct _Impl * & D.97843;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &this->_M_t, NULL, NULL>
-      gimple_call <get, D.97841, _1>
-      gimple_return <D.97841>
+      gimple_call <get, D.97843, _1>
+      gimple_return <D.97843>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3686,13 +3622,13 @@ gimple_bind <
 
 struct _Impl * & std::get<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct tuple & __t)
 gimple_bind <
-  struct _Impl * & D.97843;
+  struct _Impl * & D.97845;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &__t->D.82524, NULL, NULL>
-      gimple_call <__get_helper, D.97843, _1>
-      gimple_return <D.97843>
+      gimple_call <__get_helper, D.97845, _1>
+      gimple_return <D.97845>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3704,12 +3640,12 @@ gimple_bind <
 
 struct _Impl * & std::__get_helper<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
 gimple_bind <
-  struct _Impl * & D.97845;
+  struct _Impl * & D.97847;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <_M_head, D.97845, __t>
-      gimple_return <D.97845>
+      gimple_call <_M_head, D.97847, __t>
+      gimple_return <D.97847>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3721,13 +3657,13 @@ gimple_bind <
 
 struct _Impl * & std::_Tuple_impl<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
 gimple_bind <
-  struct _Impl * & D.97847;
+  struct _Impl * & D.97849;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &__t->D.81359, NULL, NULL>
-      gimple_call <_M_head, D.97847, _1>
-      gimple_return <D.97847>
+      gimple_call <_M_head, D.97849, _1>
+      gimple_return <D.97849>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3739,12 +3675,12 @@ gimple_bind <
 
 struct _Impl * & std::_Head_base<0, std::filesystem::__cxx11::path::_List::_Impl*, false>::_M_head (struct _Head_base & __b)
 gimple_bind <
-  struct _Impl * & D.97849;
+  struct _Impl * & D.97851;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <addr_expr, D.97849, &__b->_M_head_impl, NULL, NULL>
-      gimple_return <D.97849>
+      gimple_assign <addr_expr, D.97851, &__b->_M_head_impl, NULL, NULL>
+      gimple_return <D.97851>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3756,13 +3692,13 @@ gimple_bind <
 
 struct deleter_type & std::unique_ptr<std::filesystem::__cxx11::path::_List::_Impl, std::filesystem::__cxx11::path::_List::_Impl_deleter>::get_deleter (struct unique_ptr * const this)
 gimple_bind <
-  struct deleter_type & D.97851;
+  struct deleter_type & D.97853;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &this->_M_t.D.82893, NULL, NULL>
-      gimple_call <_M_deleter, D.97851, _1>
-      gimple_return <D.97851>
+      gimple_call <_M_deleter, D.97853, _1>
+      gimple_return <D.97853>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3774,13 +3710,13 @@ gimple_bind <
 
 struct _Impl_deleter & std::__uniq_ptr_impl<std::filesystem::__cxx11::path::_List::_Impl, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_deleter (struct __uniq_ptr_impl * const this)
 gimple_bind <
-  struct _Impl_deleter & D.97853;
+  struct _Impl_deleter & D.97855;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &this->_M_t, NULL, NULL>
-      gimple_call <get, D.97853, _1>
-      gimple_return <D.97853>
+      gimple_call <get, D.97855, _1>
+      gimple_return <D.97855>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3792,28 +3728,11 @@ gimple_bind <
 
 struct __tuple_element_t & std::get<1, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct tuple & __t)
 gimple_bind <
-  struct __tuple_element_t & D.97855;
+  struct __tuple_element_t & D.97857;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_call <__get_helper, D.97855, __t>
-      gimple_return <D.97855>
-    >
-    CLEANUP <
-      gimple_eh_must_not_throw <terminate>
-    >
-  >
-  gimple_call <__builtin_unreachable, NULL>
->
-
-
-struct _Impl_deleter & std::__get_helper<1, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
-gimple_bind <
-  struct _Impl_deleter & D.97857;
-
-  gimple_try <GIMPLE_TRY_CATCH,
-    EVAL <
-      gimple_call <_M_head, D.97857, __t>
+      gimple_call <__get_helper, D.97857, __t>
       gimple_return <D.97857>
     >
     CLEANUP <
@@ -3824,7 +3743,7 @@ gimple_bind <
 >
 
 
-struct _Impl_deleter & std::_Tuple_impl<1, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
+struct _Impl_deleter & std::__get_helper<1, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
 gimple_bind <
   struct _Impl_deleter & D.97859;
 
@@ -3841,14 +3760,31 @@ gimple_bind <
 >
 
 
-struct _Impl_deleter & std::_Head_base<1, std::filesystem::__cxx11::path::_List::_Impl_deleter, true>::_M_head (struct _Head_base & __b)
+struct _Impl_deleter & std::_Tuple_impl<1, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
 gimple_bind <
   struct _Impl_deleter & D.97861;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <addr_expr, D.97861, &__b->_M_head_impl, NULL, NULL>
+      gimple_call <_M_head, D.97861, __t>
       gimple_return <D.97861>
+    >
+    CLEANUP <
+      gimple_eh_must_not_throw <terminate>
+    >
+  >
+  gimple_call <__builtin_unreachable, NULL>
+>
+
+
+struct _Impl_deleter & std::_Head_base<1, std::filesystem::__cxx11::path::_List::_Impl_deleter, true>::_M_head (struct _Head_base & __b)
+gimple_bind <
+  struct _Impl_deleter & D.97863;
+
+  gimple_try <GIMPLE_TRY_CATCH,
+    EVAL <
+      gimple_assign <addr_expr, D.97863, &__b->_M_head_impl, NULL, NULL>
+      gimple_return <D.97863>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -3868,40 +3804,28 @@ gimple_bind <
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
-      gimple_debug BEGIN_STMT
-      gimple_debug BEGIN_STMT
       gimple_call <pipe, NULL, &stdout_pipe>
-      gimple_debug BEGIN_STMT
       gimple_call <pipe, NULL, &stderr_pipe>
-      gimple_debug BEGIN_STMT
       gimple_call <fork, pid>
-      gimple_debug BEGIN_STMT
       gimple_bind <
-        gimple_cond <eq_expr, pid, 0, <D.97863>, <D.97864>>
-        gimple_label <<D.97863>>
-        gimple_debug BEGIN_STMT
+        gimple_cond <eq_expr, pid, 0, <D.97865>, <D.97866>>
+        gimple_label <<D.97865>>
         gimple_assign <array_ref, _1, stdout_pipe[0], NULL, NULL>
         gimple_call <close, NULL, _1>
-        gimple_debug BEGIN_STMT
         gimple_assign <array_ref, _2, stderr_pipe[0], NULL, NULL>
         gimple_call <close, NULL, _2>
-        gimple_debug BEGIN_STMT
         gimple_assign <array_ref, _3, stdout_pipe[1], NULL, NULL>
         gimple_call <dup2, NULL, _3, 1>
-        gimple_debug BEGIN_STMT
         gimple_assign <array_ref, _4, stderr_pipe[1], NULL, NULL>
         gimple_call <dup2, NULL, _4, 2>
-        gimple_debug BEGIN_STMT
         gimple_call <c_str, _5, scriptPath>
         gimple_call <execl, NULL, "/bin/bash", "bash", _5, 0>
-        gimple_debug BEGIN_STMT
         gimple_call <_exit, NULL, 1>
-        gimple_label <<D.97864>>
+        gimple_label <<D.97866>>
         gimple_bind <
-          gimple_debug BEGIN_STMT
           gimple_bind <
-            gimple_cond <gt_expr, pid, 0, <D.97865>, <D.97866>>
-            gimple_label <<D.97865>>
+            gimple_cond <gt_expr, pid, 0, <D.97867>, <D.97868>>
+            gimple_label <<D.97867>>
             gimple_bind <
               struct array buffer;
               ssize_t n;
@@ -3909,67 +3833,49 @@ gimple_bind <
 
               gimple_try <GIMPLE_TRY_FINALLY,
                 EVAL <
-                  gimple_debug BEGIN_STMT
                   gimple_assign <array_ref, _6, stdout_pipe[1], NULL, NULL>
                   gimple_call <close, NULL, _6>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <array_ref, _7, stderr_pipe[1], NULL, NULL>
                   gimple_call <close, NULL, _7>
-                  gimple_debug BEGIN_STMT
-                  gimple_debug BEGIN_STMT
-                  gimple_debug BEGIN_STMT
                   gimple_goto <<D.89293>>
                   gimple_label <<D.89294>>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <nop_expr, n.30_8, n, NULL, NULL>
                   gimple_call <operator[], _9, &buffer, n.30_8>
                   gimple_assign <integer_cst, *_9, 0, NULL, NULL>
-                  gimple_debug BEGIN_STMT
                   gimple_call <operator<<, _10, &cout, "[SHINFO] ">
                   gimple_call <data, _11, &buffer>
                   gimple_call <operator<<, NULL, _10, _11>
                   gimple_label <<D.89293>>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <array_ref, _12, stdout_pipe[0], NULL, NULL>
                   gimple_call <data, _13, &buffer>
                   gimple_call <read, n, _12, _13, 127>
                   gimple_assign <gt_expr, retval.31, n, 0, NULL>
                   gimple_cond <ne_expr, retval.31, 0, <D.89294>, <D.89292>>
                   gimple_label <<D.89292>>
-                  gimple_debug BEGIN_STMT
                   gimple_goto <<D.89296>>
                   gimple_label <<D.89297>>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <nop_expr, n.32_14, n, NULL, NULL>
                   gimple_call <operator[], _15, &buffer, n.32_14>
                   gimple_assign <integer_cst, *_15, 0, NULL, NULL>
-                  gimple_debug BEGIN_STMT
                   gimple_call <operator<<, _16, &cerr, "[SHERR] ">
                   gimple_call <data, _17, &buffer>
                   gimple_call <operator<<, NULL, _16, _17>
                   gimple_label <<D.89296>>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <array_ref, _18, stderr_pipe[0], NULL, NULL>
                   gimple_call <data, _19, &buffer>
                   gimple_call <read, n, _18, _19, 127>
                   gimple_assign <gt_expr, retval.33, n, 0, NULL>
                   gimple_cond <ne_expr, retval.33, 0, <D.89297>, <D.89295>>
                   gimple_label <<D.89295>>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <array_ref, _20, stdout_pipe[0], NULL, NULL>
                   gimple_call <close, NULL, _20>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <array_ref, _21, stderr_pipe[0], NULL, NULL>
                   gimple_call <close, NULL, _21>
-                  gimple_debug BEGIN_STMT
-                  gimple_debug BEGIN_STMT
                   gimple_call <waitpid, NULL, pid, &status, 0>
-                  gimple_debug BEGIN_STMT
                   gimple_assign <var_decl, status.34_22, status, NULL, NULL>
                   gimple_assign <bit_and_expr, _23, status.34_22, 127, NULL>
-                  gimple_cond <eq_expr, _23, 0, <D.97869>, <D.97870>>
-                  gimple_label <<D.97869>>
-                  gimple_debug BEGIN_STMT
+                  gimple_cond <eq_expr, _23, 0, <D.97871>, <D.97872>>
+                  gimple_label <<D.97871>>
                   gimple_call <operator<<, _24, &cout, "[INFO] Script ">
                   gimple_call <operator<<, _25, _24, scriptPath>
                   gimple_call <operator<<, _26, _25, " exited with status ">
@@ -3978,18 +3884,16 @@ gimple_bind <
                   gimple_assign <bit_and_expr, _29, _28, 255, NULL>
                   gimple_call <operator<<, _30, _26, _29>
                   gimple_call <operator<<, NULL, _30, endl>
-                  gimple_goto <<D.97871>>
-                  gimple_label <<D.97870>>
-                  gimple_debug BEGIN_STMT
+                  gimple_goto <<D.97873>>
+                  gimple_label <<D.97872>>
                   gimple_assign <var_decl, status.36_31, status, NULL, NULL>
                   gimple_assign <nop_expr, _32, status.36_31, NULL, NULL>
                   gimple_assign <bit_and_expr, _33, _32, 127, NULL>
                   gimple_assign <plus_expr, _34, _33, 1, NULL>
                   gimple_assign <nop_expr, _35, _34, NULL, NULL>
                   gimple_assign <rshift_expr, _36, _35, 1, NULL>
-                  gimple_cond <gt_expr, _36, 0, <D.97872>, <D.97873>>
-                  gimple_label <<D.97872>>
-                  gimple_debug BEGIN_STMT
+                  gimple_cond <gt_expr, _36, 0, <D.97874>, <D.97875>>
+                  gimple_label <<D.97874>>
                   gimple_call <operator<<, _37, &cout, "[ERROR] Script ">
                   gimple_call <operator<<, _38, _37, scriptPath>
                   gimple_call <operator<<, _39, _38, " terminated by signal ">
@@ -3997,10 +3901,10 @@ gimple_bind <
                   gimple_assign <bit_and_expr, _41, status.37_40, 127, NULL>
                   gimple_call <operator<<, _42, _39, _41>
                   gimple_call <operator<<, NULL, _42, endl>
-                  gimple_goto <<D.97874>>
+                  gimple_goto <<D.97876>>
+                  gimple_label <<D.97875>>
+                  gimple_label <<D.97876>>
                   gimple_label <<D.97873>>
-                  gimple_label <<D.97874>>
-                  gimple_label <<D.97871>>
                 >
                 CLEANUP <
                   gimple_assign <constructor, buffer, {CLOBBER(eol)}, NULL, NULL>
@@ -4008,13 +3912,11 @@ gimple_bind <
                 >
               >
             >
-            gimple_goto <<D.97875>>
-            gimple_label <<D.97866>>
-            gimple_debug BEGIN_STMT
+            gimple_goto <<D.97877>>
+            gimple_label <<D.97868>>
             gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to fork process.\n">
-            gimple_debug BEGIN_STMT
             gimple_call <exit, NULL, 1>
-            gimple_label <<D.97875>>
+            gimple_label <<D.97877>>
           >
         >
       >
@@ -4030,13 +3932,13 @@ gimple_bind <
 __attribute__((nodiscard))
 value_type & std::array<char, 128>::operator[] (struct array * const this, size_type __n)
 gimple_bind <
-  value_type & D.97890;
+  value_type & D.97892;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &this->_M_elems, NULL, NULL>
-      gimple_call <_S_ref, D.97890, _1, __n>
-      gimple_return <D.97890>
+      gimple_call <_S_ref, D.97892, _1, __n>
+      gimple_return <D.97892>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -4048,12 +3950,12 @@ gimple_bind <
 
 char & std::__array_traits<char, 128>::_S_ref (const char[128] & __t, size_t __n)
 gimple_bind <
-  char & D.97892;
+  char & D.97894;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <addr_expr, D.97892, &(*__t)[__n], NULL, NULL>
-      gimple_return <D.97892>
+      gimple_assign <addr_expr, D.97894, &(*__t)[__n], NULL, NULL>
+      gimple_return <D.97894>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -4066,13 +3968,13 @@ gimple_bind <
 __attribute__((nodiscard, const))
 value_type * std::array<char, 128>::data (struct array * const this)
 gimple_bind <
-  value_type * D.97894;
+  value_type * D.97896;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
       gimple_assign <addr_expr, _1, &this->_M_elems, NULL, NULL>
-      gimple_call <_S_ptr, D.97894, _1>
-      gimple_return <D.97894>
+      gimple_call <_S_ptr, D.97896, _1>
+      gimple_return <D.97896>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -4084,12 +3986,12 @@ gimple_bind <
 
 char * std::__array_traits<char, 128>::_S_ptr (const char[128] & __t)
 gimple_bind <
-  char * D.97896;
+  char * D.97898;
 
   gimple_try <GIMPLE_TRY_CATCH,
     EVAL <
-      gimple_assign <parm_decl, D.97896, __t, NULL, NULL>
-      gimple_return <D.97896>
+      gimple_assign <parm_decl, D.97898, __t, NULL, NULL>
+      gimple_return <D.97898>
     >
     CLEANUP <
       gimple_eh_must_not_throw <terminate>
@@ -4108,83 +4010,66 @@ gimple_bind <
 
   gimple_try <GIMPLE_TRY_FINALLY,
     EVAL <
-      gimple_debug BEGIN_STMT
-      gimple_debug BEGIN_STMT
       gimple_assign <integer_cst, timeout, 400, NULL, NULL>
-      gimple_debug BEGIN_STMT
       gimple_bind <
         int i;
 
         gimple_assign <integer_cst, i, 0, NULL, NULL>
         gimple_goto <<D.89307>>
         gimple_label <<D.89306>>
-        gimple_debug BEGIN_STMT
         gimple_call <waitpid, _1, pid, &status, 1>
         gimple_assign <eq_expr, retval.38, pid, _1, NULL>
-        gimple_cond <ne_expr, retval.38, 0, <D.97899>, <D.97900>>
-        gimple_label <<D.97899>>
-        gimple_debug BEGIN_STMT
+        gimple_cond <ne_expr, retval.38, 0, <D.97901>, <D.97902>>
+        gimple_label <<D.97901>>
         gimple_assign <var_decl, status.39_2, status, NULL, NULL>
         gimple_assign <bit_and_expr, _3, status.39_2, 127, NULL>
-        gimple_cond <eq_expr, _3, 0, <D.97901>, <D.97902>>
-        gimple_label <<D.97901>>
-        gimple_debug BEGIN_STMT
+        gimple_cond <eq_expr, _3, 0, <D.97903>, <D.97904>>
+        gimple_label <<D.97903>>
         gimple_call <operator<<, _4, &cout, "[INFO] Script exited with status ">
         gimple_assign <var_decl, status.40_5, status, NULL, NULL>
         gimple_assign <rshift_expr, _6, status.40_5, 8, NULL>
         gimple_assign <bit_and_expr, _7, _6, 255, NULL>
         gimple_call <operator<<, _8, _4, _7>
         gimple_call <operator<<, NULL, _8, endl>
-        gimple_goto <<D.97903>>
-        gimple_label <<D.97902>>
-        gimple_debug BEGIN_STMT
+        gimple_goto <<D.97905>>
+        gimple_label <<D.97904>>
         gimple_assign <var_decl, status.41_9, status, NULL, NULL>
         gimple_assign <nop_expr, _10, status.41_9, NULL, NULL>
         gimple_assign <bit_and_expr, _11, _10, 127, NULL>
         gimple_assign <plus_expr, _12, _11, 1, NULL>
         gimple_assign <nop_expr, _13, _12, NULL, NULL>
         gimple_assign <rshift_expr, _14, _13, 1, NULL>
-        gimple_cond <gt_expr, _14, 0, <D.97904>, <D.97905>>
-        gimple_label <<D.97904>>
-        gimple_debug BEGIN_STMT
+        gimple_cond <gt_expr, _14, 0, <D.97906>, <D.97907>>
+        gimple_label <<D.97906>>
         gimple_call <operator<<, _15, &cout, "[ERROR] Script terminated by signal ">
         gimple_assign <var_decl, status.42_16, status, NULL, NULL>
         gimple_assign <bit_and_expr, _17, status.42_16, 127, NULL>
         gimple_call <operator<<, _18, _15, _17>
         gimple_call <operator<<, NULL, _18, endl>
-        gimple_goto <<D.97906>>
+        gimple_goto <<D.97908>>
+        gimple_label <<D.97907>>
+        gimple_label <<D.97908>>
         gimple_label <<D.97905>>
-        gimple_label <<D.97906>>
-        gimple_label <<D.97903>>
-        gimple_debug BEGIN_STMT
         // predicted unlikely by early return (on trees) predictor.
         gimple_return <NULL>
-        gimple_label <<D.97900>>
-        gimple_debug BEGIN_STMT
+        gimple_label <<D.97902>>
         gimple_call <sleep, NULL, 1>
-        gimple_debug BEGIN_STMT
         gimple_assign <plus_expr, i, i, 1, NULL>
         gimple_label <<D.89307>>
-        gimple_debug BEGIN_STMT
         gimple_cond <le_expr, i, 399, <D.89306>, <D.89304>>
         gimple_label <<D.89304>>
       >
-      gimple_debug BEGIN_STMT
       gimple_call <kill, _19, pid, 9>
       gimple_assign <eq_expr, retval.43, _19, 0, NULL>
-      gimple_cond <ne_expr, retval.43, 0, <D.97908>, <D.97909>>
-      gimple_label <<D.97908>>
-      gimple_debug BEGIN_STMT
-      gimple_call <waitpid, NULL, pid, &status, 0>
-      gimple_debug BEGIN_STMT
-      gimple_call <operator<<, NULL, &cerr, "[INFO] Child process killed due to timeout.\n">
-      gimple_goto <<D.97910>>
-      gimple_label <<D.97909>>
-      gimple_debug BEGIN_STMT
-      gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to kill child process.\n">
-      gimple_debug BEGIN_STMT
-      gimple_call <exit, NULL, 4>
+      gimple_cond <ne_expr, retval.43, 0, <D.97910>, <D.97911>>
       gimple_label <<D.97910>>
+      gimple_call <waitpid, NULL, pid, &status, 0>
+      gimple_call <operator<<, NULL, &cerr, "[INFO] Child process killed due to timeout.\n">
+      gimple_goto <<D.97912>>
+      gimple_label <<D.97911>>
+      gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to kill child process.\n">
+      gimple_call <exit, NULL, 4>
+      gimple_label <<D.97912>>
     >
     CLEANUP <
       gimple_assign <constructor, status, {CLOBBER(eol)}, NULL, NULL>
@@ -4197,7 +4082,7 @@ int main ()
 gimple_bind <
   const struct string D.89313;
   struct allocator D.89312;
-  int D.97920;
+  int D.97922;
 
   gimple_bind <
     struct array buffer;
@@ -4205,14 +4090,10 @@ gimple_bind <
 
     gimple_try <GIMPLE_TRY_FINALLY,
       EVAL <
-        gimple_debug BEGIN_STMT
         gimple_call <register_signal, NULL>
-        gimple_debug BEGIN_STMT
-        gimple_debug BEGIN_STMT
         gimple_call <__ct_comp , NULL, &result>
         gimple_try <GIMPLE_TRY_FINALLY,
           EVAL <
-            gimple_debug BEGIN_STMT
             gimple_try <GIMPLE_TRY_FINALLY,
               EVAL <
                 gimple_try <GIMPLE_TRY_FINALLY,
@@ -4244,12 +4125,10 @@ gimple_bind <
                 gimple_assign <constructor, D.89313, {CLOBBER(eol)}, NULL, NULL>
               >
             >
-            gimple_debug BEGIN_STMT
             gimple_call <c_str, _1, &result>
             gimple_call <write_log, NULL, _1>
-            gimple_debug BEGIN_STMT
-            gimple_assign <integer_cst, D.97920, 0, NULL, NULL>
-            gimple_return <D.97920>
+            gimple_assign <integer_cst, D.97922, 0, NULL, NULL>
+            gimple_return <D.97922>
           >
           CLEANUP <
             gimple_call <__dt_comp , NULL, &result>
@@ -4262,8 +4141,8 @@ gimple_bind <
       >
     >
   >
-  gimple_assign <integer_cst, D.97920, 0, NULL, NULL>
-  gimple_return <D.97920>
+  gimple_assign <integer_cst, D.97922, 0, NULL, NULL>
+  gimple_return <D.97922>
 >
 
 
@@ -4277,10 +4156,10 @@ void __static_initialization_and_destruction_0 (int __initialize_p, int __priori
 gimple_bind <
   struct allocator D.89048;
 
-  gimple_cond <eq_expr, __initialize_p, 1, <D.97930>, <D.97931>>
-  gimple_label <<D.97930>>
-  gimple_cond <eq_expr, __priority, 65535, <D.97932>, <D.97933>>
+  gimple_cond <eq_expr, __initialize_p, 1, <D.97932>, <D.97933>>
   gimple_label <<D.97932>>
+  gimple_cond <eq_expr, __priority, 65535, <D.97934>, <D.97935>>
+  gimple_label <<D.97934>>
   gimple_call <__ct_comp , NULL, &__ioinit>
   gimple_call <__cxa_atexit, NULL, __dt_comp , &__ioinit, &__dso_handle>
   gimple_try <GIMPLE_TRY_FINALLY,
@@ -4300,12 +4179,12 @@ gimple_bind <
     >
   >
   gimple_call <__cxa_atexit, NULL, __dt_comp , &log_path, &__dso_handle>
-  gimple_goto <<D.97934>>
-  gimple_label <<D.97933>>
-  gimple_label <<D.97934>>
-  gimple_goto <<D.97935>>
-  gimple_label <<D.97931>>
+  gimple_goto <<D.97936>>
   gimple_label <<D.97935>>
+  gimple_label <<D.97936>>
+  gimple_goto <<D.97937>>
+  gimple_label <<D.97933>>
+  gimple_label <<D.97937>>
 >
 
 

@@ -1,0 +1,2712 @@
+
+;; Function __dt_base  (_ZNSt10filesystem7__cxx114pathD2Ev, funcdef_no=0, decl_uid=11612, cgraph_uid=2, symbol_order=1442) (executed once)
+
+void __dt_base  (struct path * const this)
+{
+  char * _4;
+  const char[16] * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  struct _Impl * _8;
+  struct _Impl_deleter & _9;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <mem_ref, _8, MEM[(struct _Impl * &)this_1(D) + 32], NULL, NULL>
+  gimple_cond <ne_expr, _8, 0B, NULL, NULL>
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 7>; [46.53%]
+
+  <bb 7> [local count: 499612072]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 574129753]:
+  gimple_assign <addr_expr, _9, &MEM[(struct _Head_base &)this_1(D) + 32]._M_head_impl, NULL, NULL>
+  gimple_call <operator(), NULL, _9, _8>
+
+  <bb 4> [local count: 1073741824]:
+  gimple_assign <constructor, MEM[(struct _List *)this_1(D) + 32B], {CLOBBER}, NULL, NULL>
+  gimple_assign <component_ref, _4, MEM[(const struct basic_string *)this_1(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <addr_expr, _5, &MEM[(const struct basic_string *)this_1(D)].D.11592._M_local_buf, NULL, NULL>
+  gimple_cond <ne_expr, _4, _5, NULL, NULL>
+    goto <bb 5>; [53.47%]
+  else
+    goto <bb 8>; [46.53%]
+
+  <bb 8> [local count: 499612072]:
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 574129753]:
+  gimple_assign <component_ref, _6, MEM[(struct basic_string *)this_1(D)].D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _7, _6, 1, NULL>
+  gimple_call <operator delete, NULL, _4, _7>
+
+  <bb 6> [local count: 1073741824]:
+  gimple_assign <constructor, *this_1(D), {CLOBBER}, NULL, NULL>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function operator<<.isra (_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c.isra.0, funcdef_no=2, decl_uid=11721, cgraph_uid=49, symbol_order=3420) (executed once)
+
+void operator<<.isra (struct basic_ostream & __out, char __c)
+{
+  int (*__vtbl_ptr_type) () * _2;
+  long int _3;
+  sizetype _4;
+  struct ios_base * _5;
+  long int _6;
+  char _8;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <component_ref, _2, __out_1(D)->_vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _3, MEM[(long int *)_2 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _4, _3, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _5, __out_1(D), _4, NULL>
+  gimple_assign <component_ref, _6, MEM[(const struct ios_base *)_5]._M_width, NULL, NULL>
+  gimple_cond <ne_expr, _6, 0, NULL, NULL>
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  gimple_call <__ostream_insert, NULL, __out_1(D), &__c, 1>
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  gimple_assign <parm_decl, _8, __c, NULL, NULL>
+  gimple_call <put, NULL, __out_1(D), _8>
+
+  <bb 5> [local count: 1073741824]:
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function endl.isra (_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_.isra.0, funcdef_no=5, decl_uid=11689, cgraph_uid=13, symbol_order=3417) (executed once)
+
+void endl.isra (struct basic_ostream & __os)
+{
+  int (*__vtbl_ptr_type) () * _2;
+  long int _3;
+  sizetype _4;
+  struct basic_ios * _5;
+  struct basic_ostream & _7;
+  const struct __ctype_type * _13;
+  char _15;
+  char _17;
+  char _19;
+  int (*__vtbl_ptr_type) () * _20;
+  int (*__vtbl_ptr_type) () _21;
+  char _22;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <component_ref, _2, __os_1(D)->_vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _3, MEM[(long int *)_2 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _4, _3, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _5, __os_1(D), _4, NULL>
+  gimple_assign <mem_ref, _13, MEM[(const struct __ctype_type * *)_5 + 240B], NULL, NULL>
+  gimple_cond <eq_expr, _13, 0B, NULL, NULL>
+    goto <bb 3>; [0.04%]
+  else
+    goto <bb 4>; [99.96%]
+
+  <bb 3> [local count: 429496]:
+  gimple_call <__throw_bad_cast, NULL>
+
+  <bb 4> [local count: 1073312329]:
+  gimple_assign <component_ref, _15, MEM[(const struct ctype *)_13]._M_widen_ok, NULL, NULL>
+  gimple_cond <ne_expr, _15, 0, NULL, NULL>
+    goto <bb 5>; [51.12%]
+  else
+    goto <bb 6>; [48.88%]
+
+  <bb 5> [local count: 548677267]:
+  gimple_assign <array_ref, _17, MEM[(const struct ctype *)_13]._M_widen[10], NULL, NULL>
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 524635063]:
+  gimple_call <_M_widen_init, NULL, _13>
+  gimple_assign <component_ref, _20, MEM[(const struct ctype *)_13].D.11531._vptr.facet, NULL, NULL>
+  gimple_assign <mem_ref, _21, MEM[(int (*__vtbl_ptr_type) () *)_20 + 48B], NULL, NULL>
+  gimple_call <OBJ_TYPE_REF(_21;(struct ctype)_13->6B), _22, _13, 10>
+
+  <bb 7> [local count: 1073312330]:
+  # gimple_phi <_19, _17(5), _22(6)>
+  gimple_call <put, _7, __os_1(D), _19>
+  gimple_call <flush, NULL, _7>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function do_widen (_ZNKSt5ctypeIcE8do_widenEc, funcdef_no=10, decl_uid=11571, cgraph_uid=1, symbol_order=499)
+
+char_type do_widen (const struct ctype * const this, char __c)
+{
+  <bb 2> [local count: 1073741824]:
+  gimple_return <__c_1(D)>
+
+}
+
+
+
+;; Function write_log (_ZL9write_logPKc, funcdef_no=11, decl_uid=11615, cgraph_uid=4, symbol_order=1735)
+
+void write_log (const char * msg)
+{
+  size_type __dnew;
+  char timestamp[100];
+  time_t t;
+  struct ofstream logfile;
+  struct string D.12027;
+  long int _1;
+  struct tm * _2;
+  char * _24;
+  long unsigned int _25;
+  bool _27;
+  char * _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long int _32;
+  char * _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  int (*__vtbl_ptr_type) () * pretmp_68;
+  const void * _69;
+  long int _70;
+  sizetype _71;
+  struct basic_ostream * _72;
+  const void * _73;
+  char * prephitmp_75;
+  long unsigned int prephitmp_76;
+  long int _77;
+  sizetype _78;
+  struct basic_ostream * _79;
+  char * _80;
+  sizetype _81;
+  long int pretmp_82;
+  char * _83;
+  long unsigned int _84;
+  char _86;
+  char * _89;
+  char * _93;
+  struct __filebuf_type * _98;
+  _Ios_Iostate _107;
+  _Ios_Iostate _108;
+  long unsigned int _109;
+  long int _110;
+  int (*__vtbl_ptr_type) () * _111;
+  long int _112;
+  sizetype _113;
+  struct basic_ios * _114;
+  _Ios_Iostate _115;
+  _Ios_Iostate _116;
+  int (*__vtbl_ptr_type) () * _117;
+  long int _118;
+  sizetype _119;
+  struct basic_ios * _120;
+  struct basic_ostream & _122;
+  const struct __ctype_type * _124;
+  char _126;
+  char _128;
+  char _130;
+  int (*__vtbl_ptr_type) () * _131;
+  int (*__vtbl_ptr_type) () _132;
+  char _133;
+  struct __filebuf_type * _136;
+  int (*__vtbl_ptr_type) () * _137;
+  long int _138;
+  sizetype _139;
+  struct basic_ios * _140;
+  _Ios_Iostate _141;
+  _Ios_Iostate _142;
+  long int _146;
+  sizetype _147;
+  struct basic_ostream * _148;
+  struct basic_ios * _149;
+  char * pretmp_151;
+  void * _153;
+  long unsigned int pretmp_159;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <addr_expr, MEM[(struct _Alloc_hider *)&D.12027]._M_p, &MEM <char[16]> [(void *)&D.12027 + 16B], NULL, NULL>
+  gimple_assign <component_ref, _24, MEM[(const struct basic_string *)&log_path]._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _25, MEM[(const struct basic_string *)&log_path]._M_string_length, NULL, NULL>
+  gimple_assign <ssa_name, __dnew, _25, NULL, NULL>
+  gimple_cond <gt_expr, _25, 15, NULL, NULL>
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  gimple_call <_M_create, _83, &D.12027, &__dnew, 0>
+  gimple_assign <ssa_name, D.12027._M_dataplus._M_p, _83, NULL, NULL>
+  gimple_assign <var_decl, _84, __dnew, NULL, NULL>
+  gimple_assign <ssa_name, D.12027.D.11592._M_allocated_capacity, _84, NULL, NULL>
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 719407024]:
+  gimple_cond <eq_expr, _25, 1, NULL, NULL>
+    goto <bb 5>; [67.00%]
+  else
+    goto <bb 6>; [33.00%]
+
+  <bb 5> [local count: 365072224]:
+  gimple_assign <mem_ref, _86, MEM[(const char_type &)_24], NULL, NULL>
+  gimple_assign <ssa_name, MEM[(char_type &)&D.12027 + 16], _86, NULL, NULL>
+  goto <bb 8>; [100.00%]
+
+  <bb 6> [local count: 362271902]:
+  gimple_cond <eq_expr, _25, 0, NULL, NULL>
+    goto <bb 68>; [100.00%]
+  else
+    goto <bb 69>; [0.00%]
+
+  <bb 68> [local count: 362271902]:
+  goto <bb 8>; [100.00%]
+
+  <bb 69> [local count: 0]:
+
+  <bb 7> [local count: 346397698]:
+  # gimple_phi <_93, &MEM <char[16]> [(void *)&D.12027 + 16B](69), _83(3)>
+  gimple_call <__builtin_memcpy, NULL, _93, _24, _25>
+  gimple_assign <var_decl, pretmp_159, __dnew, NULL, NULL>
+  gimple_assign <component_ref, pretmp_151, D.12027._M_dataplus._M_p, NULL, NULL>
+
+  <bb 8> [local count: 1073741824]:
+  # gimple_phi <prephitmp_76, _25(5), pretmp_159(7), _25(68)>
+  # gimple_phi <prephitmp_75, &MEM <char[16]> [(void *)&D.12027 + 16B](5), pretmp_151(7), &MEM <char[16]> [(void *)&D.12027 + 16B](68)>
+  gimple_assign <ssa_name, D.12027._M_string_length, prephitmp_76, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _89, prephitmp_75, prephitmp_76, NULL>
+  gimple_assign <integer_cst, MEM[(char_type &)_89], 0, NULL, NULL>
+  gimple_assign <constructor, __dnew, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, MEM[(struct basic_ofstream *)&logfile], {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, MEM[(struct basic_ios *)&logfile + 256B], {CLOBBER}, NULL, NULL>
+  gimple_call <__ct_base , NULL, &MEM[(struct basic_ios *)&logfile + 256B].D.11566>
+  gimple_assign <addr_expr, MEM[(struct basic_ios *)&logfile + 256B].D.11566._vptr.ios_base, &MEM <int (*__vtbl_ptr_type) ()[4]> [(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_tie, 0B, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_fill, 0, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_fill_init, 0, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_streambuf, 0B, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_ctype, 0B, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_num_put, 0B, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_ios *)&logfile + 256B]._M_num_get, 0B, NULL, NULL>
+  gimple_assign <mem_ref, _69, MEM[(const void * *)&_ZTTSt14basic_ofstreamIcSt11char_traitsIcEE + 8B], NULL, NULL>
+  gimple_assign <ssa_name, MEM[(struct basic_ostream *)&logfile]._vptr.basic_ostream, _69, NULL, NULL>
+  gimple_assign <mem_ref, _70, MEM[(long int *)_69 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _71, _70, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _72, &logfile.D.11681, _71, NULL>
+  gimple_assign <mem_ref, _73, MEM[(const void * *)&_ZTTSt14basic_ofstreamIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_assign <ssa_name, MEM[(struct basic_ios *)_72].D.11566._vptr.ios_base, _73, NULL, NULL>
+  gimple_call <init, NULL, _72, 0B>
+
+  <bb 9> [local count: 671850997]:
+  gimple_assign <addr_expr, MEM[(struct basic_ofstream *)&logfile].D.11681._vptr.basic_ostream, &MEM <int (*__vtbl_ptr_type) ()[10]> [(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 24B], NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct basic_ios *)&logfile + 256B].D.11566._vptr.ios_base, &MEM <int (*__vtbl_ptr_type) ()[10]> [(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 64B], NULL, NULL>
+  gimple_call <__ct_comp , NULL, &logfile._M_filebuf>
+
+  <bb 10> [local count: 671850997]:
+  gimple_call <init, NULL, &MEM <struct ofstream> [(void *)&logfile + 256B], &logfile._M_filebuf.D.11676>
+
+  <bb 11> [local count: 671850997]:
+  gimple_assign <mem_ref, _80, MEM[(char * *)&D.12027], NULL, NULL>
+  gimple_call <open, _98, &logfile._M_filebuf, _80, 17>
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [count: 0]:
+gimple_label <<L10>>
+  goto <bb 20>; [100.00%]
+
+  <bb 13> [local count: 671850997]:
+  gimple_assign <component_ref, pretmp_68, logfile.D.11681._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, pretmp_82, MEM[(long int *)pretmp_68 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _81, pretmp_82, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _149, &logfile, _81, NULL>
+  gimple_cond <eq_expr, _98, 0B, NULL, NULL>
+    goto <bb 14>; [30.00%]
+  else
+    goto <bb 16>; [70.00%]
+
+  <bb 14> [local count: 201555297]:
+  gimple_assign <component_ref, _107, MEM[(const struct basic_ios *)_149].D.11566._M_streambuf_state, NULL, NULL>
+  gimple_assign <bit_ior_expr, _108, _107, 4, NULL>
+  gimple_call <clear, NULL, _149, _108>
+  goto <bb 70>; [100.00%]
+
+  <bb 15> [count: 0]:
+gimple_label <<L11>>
+  goto <bb 20>; [100.00%]
+
+  <bb 16> [local count: 470295699]:
+  gimple_call <clear, NULL, _149, 0>
+
+  <bb 71> [local count: 470295699]:
+  goto <bb 18>; [100.00%]
+
+  <bb 17> [count: 0]:
+gimple_label <<L12>>
+  goto <bb 20>; [100.00%]
+
+  <bb 70> [local count: 201555297]:
+
+  <bb 18> [local count: 671850997]:
+  gimple_assign <component_ref, _28, D.12027._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12027.D.11592._M_local_buf, _28, NULL, NULL>
+    goto <bb 27>; [53.47%]
+  else
+    goto <bb 72>; [46.53%]
+
+  <bb 72> [local count: 312612270]:
+  goto <bb 28>; [100.00%]
+
+  <bb 19> [count: 0]:
+gimple_label <<L9>>
+
+  <bb 20> [count: 0]:
+gimple_label <<L2>>
+  gimple_call <__dt_comp , NULL, &logfile._M_filebuf>
+  gimple_resx <13>
+
+  <bb 21> [count: 0]:
+gimple_label <<L13>>
+  goto <bb 23>; [100.00%]
+
+  <bb 22> [count: 0]:
+gimple_label <<L8>>
+
+  <bb 23> [count: 0]:
+gimple_label <<L3>>
+  gimple_assign <ssa_name, MEM[(struct basic_ostream *)&logfile]._vptr.basic_ostream, _69, NULL, NULL>
+  gimple_assign <mem_ref, _77, MEM[(long int *)_69 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _78, _77, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _79, &logfile.D.11681, _78, NULL>
+  gimple_assign <ssa_name, MEM[(struct basic_ios *)_79].D.11566._vptr.ios_base, _73, NULL, NULL>
+  gimple_resx <12>
+
+  <bb 24> [count: 0]:
+gimple_label <<L14>>
+  goto <bb 26>; [100.00%]
+
+  <bb 25> [count: 0]:
+gimple_label <<L7>>
+
+  <bb 26> [count: 0]:
+gimple_label <<L4>>
+  gimple_assign <addr_expr, MEM[(struct basic_ios *)&logfile + 256B].D.11566._vptr.ios_base, &MEM <int (*__vtbl_ptr_type) ()[4]> [(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_call <__dt_base , NULL, &MEM[(struct basic_ios *)&logfile + 256B].D.11566>
+  gimple_assign <constructor, MEM[(struct basic_ios *)&logfile + 256B], {CLOBBER}, NULL, NULL>
+  gimple_resx <11>
+
+  <bb 27> [local count: 359238727]:
+  gimple_assign <component_ref, _29, D.12027.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _30, _29, 1, NULL>
+  gimple_call <operator delete, NULL, _28, _30>
+
+  <bb 28> [local count: 671850997]:
+  gimple_assign <constructor, D.12027, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12027, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <is_open, _27, &MEM[(const struct basic_filebuf *)&logfile + 8B]._M_file>
+  gimple_cond <ne_expr, _27, 0, NULL, NULL>
+    goto <bb 29>; [99.96%]
+  else
+    goto <bb 60>; [0.04%]
+
+  <bb 29> [local count: 671582257]:
+  gimple_call <time, _1, 0B>
+  gimple_assign <ssa_name, t, _1, NULL, NULL>
+  gimple_call <localtime, _2, &t>
+  gimple_call <strftime, NULL, &timestamp, 100, "%Y-%m-%d %H:%M:%S", _2>
+  gimple_call <__ostream_insert, NULL, &logfile.D.11681, "[", 1>
+
+  <bb 30> [local count: 671582257]:
+  gimple_call <__builtin_strlen, _31, &timestamp>
+  gimple_assign <nop_expr, _32, _31, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &logfile.D.11681, &timestamp, _32>
+  goto <bb 32>; [100.00%]
+
+  <bb 31> [count: 0]:
+gimple_label <<L16>>
+  goto <bb 67>; [100.00%]
+
+  <bb 32> [local count: 671582257]:
+  gimple_call <__ostream_insert, NULL, &logfile.D.11681, "] ", 2>
+  goto <bb 34>; [100.00%]
+
+  <bb 33> [count: 0]:
+gimple_label <<L17>>
+  goto <bb 67>; [100.00%]
+
+  <bb 34> [local count: 671582257]:
+  gimple_cond <eq_expr, msg_13(D), 0B, NULL, NULL>
+    goto <bb 35>; [30.00%]
+  else
+    goto <bb 37>; [70.00%]
+
+  <bb 35> [local count: 201474675]:
+  gimple_assign <component_ref, _111, logfile._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _112, MEM[(long int *)_111 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _113, _112, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _114, &logfile.D.11681, _113, NULL>
+  gimple_assign <component_ref, _115, MEM[(const struct basic_ios *)_114].D.11566._M_streambuf_state, NULL, NULL>
+  gimple_assign <bit_ior_expr, _116, _115, 1, NULL>
+  gimple_call <clear, NULL, _114, _116>
+  goto <bb 73>; [100.00%]
+
+  <bb 36> [count: 0]:
+gimple_label <<L18>>
+  goto <bb 67>; [100.00%]
+
+  <bb 37> [local count: 470107581]:
+  gimple_call <__builtin_strlen, _109, msg_13(D)>
+  gimple_assign <nop_expr, _110, _109, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &logfile.D.11681, msg_13(D), _110>
+
+  <bb 74> [local count: 470107581]:
+  goto <bb 39>; [100.00%]
+
+  <bb 38> [count: 0]:
+gimple_label <<L19>>
+  goto <bb 67>; [100.00%]
+
+  <bb 73> [local count: 201474675]:
+
+  <bb 39> [local count: 671582257]:
+  gimple_assign <component_ref, _117, MEM[(struct basic_ostream *)&logfile]._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _118, MEM[(long int *)_117 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _119, _118, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _120, &logfile.D.11681, _119, NULL>
+  gimple_assign <mem_ref, _124, MEM[(const struct __ctype_type * *)_120 + 240B], NULL, NULL>
+  gimple_cond <eq_expr, _124, 0B, NULL, NULL>
+    goto <bb 40>; [0.04%]
+  else
+    goto <bb 42>; [99.96%]
+
+  <bb 40> [local count: 268632]:
+  gimple_call <__throw_bad_cast, NULL>
+
+  <bb 41> [count: 0]:
+gimple_label <<L20>>
+  goto <bb 67>; [100.00%]
+
+  <bb 42> [local count: 671313625]:
+  gimple_assign <component_ref, _126, MEM[(const struct ctype *)_124]._M_widen_ok, NULL, NULL>
+  gimple_cond <ne_expr, _126, 0, NULL, NULL>
+    goto <bb 43>; [51.12%]
+  else
+    goto <bb 44>; [48.88%]
+
+  <bb 43> [local count: 343175527]:
+  gimple_assign <array_ref, _128, MEM[(const struct ctype *)_124]._M_widen[10], NULL, NULL>
+  goto <bb 48>; [100.00%]
+
+  <bb 44> [local count: 328138097]:
+  gimple_call <_M_widen_init, NULL, _124>
+  goto <bb 46>; [100.00%]
+
+  <bb 45> [count: 0]:
+gimple_label <<L21>>
+  goto <bb 67>; [100.00%]
+
+  <bb 46> [local count: 328138097]:
+  gimple_assign <component_ref, _131, MEM[(const struct ctype *)_124].D.11531._vptr.facet, NULL, NULL>
+  gimple_assign <mem_ref, _132, MEM[(int (*__vtbl_ptr_type) () *)_131 + 48B], NULL, NULL>
+  gimple_call <OBJ_TYPE_REF(_132;(struct ctype)_124->6B), _133, _124, 10>
+  goto <bb 75>; [100.00%]
+
+  <bb 47> [count: 0]:
+gimple_label <<L22>>
+  goto <bb 67>; [100.00%]
+
+  <bb 75> [local count: 328138097]:
+
+  <bb 48> [local count: 671313625]:
+  # gimple_phi <_130, _128(43), _133(75)>
+  gimple_call <put, _122, &logfile.D.11681, _130>
+  goto <bb 50>; [100.00%]
+
+  <bb 49> [count: 0]:
+gimple_label <<L23>>
+  goto <bb 67>; [100.00%]
+
+  <bb 50> [local count: 671313625]:
+  gimple_call <flush, NULL, _122>
+  goto <bb 52>; [100.00%]
+
+  <bb 51> [count: 0]:
+gimple_label <<L24>>
+  goto <bb 67>; [100.00%]
+
+  <bb 52> [local count: 671313625]:
+  gimple_call <close, _136, &logfile._M_filebuf>
+  goto <bb 54>; [100.00%]
+
+  <bb 53> [count: 0]:
+gimple_label <<L25>>
+  goto <bb 67>; [100.00%]
+
+  <bb 54> [local count: 671313625]:
+  gimple_cond <eq_expr, _136, 0B, NULL, NULL>
+    goto <bb 55>; [17.43%]
+  else
+    goto <bb 76>; [82.57%]
+
+  <bb 55> [local count: 117009965]:
+  gimple_assign <component_ref, _137, logfile.D.11681._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _138, MEM[(long int *)_137 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _139, _138, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _140, &logfile, _139, NULL>
+  gimple_assign <component_ref, _141, MEM[(const struct basic_ios *)_140].D.11566._M_streambuf_state, NULL, NULL>
+  gimple_assign <bit_ior_expr, _142, _141, 4, NULL>
+  gimple_call <clear, NULL, _140, _142>
+
+  <bb 77> [local count: 117009965]:
+  goto <bb 57>; [100.00%]
+
+  <bb 56> [count: 0]:
+gimple_label <<L26>>
+  goto <bb 67>; [100.00%]
+
+  <bb 76> [local count: 554303660]:
+
+  <bb 57> [local count: 671313625]:
+  gimple_assign <constructor, t, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, timestamp, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <addr_expr, logfile.D.11681._vptr.basic_ostream, &MEM <int (*__vtbl_ptr_type) ()[10]> [(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 24B], NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct basic_ios *)&logfile + 256B].D.11566._vptr.ios_base, &MEM <int (*__vtbl_ptr_type) ()[10]> [(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 64B], NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct basic_filebuf *)&logfile + 8B].D.11676._vptr.basic_streambuf, &MEM <int (*__vtbl_ptr_type) ()[16]> [(void *)&_ZTVSt13basic_filebufIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_call <close, NULL, &logfile._M_filebuf>
+
+  <bb 78> [local count: 671313625]:
+
+  <bb 58> [local count: 671313625]:
+  gimple_call <__dt_comp , NULL, &MEM[(struct basic_filebuf *)&logfile + 8B]._M_file>
+  gimple_assign <addr_expr, MEM[(struct basic_streambuf *)&logfile + 8B]._vptr.basic_streambuf, &MEM <int (*__vtbl_ptr_type) ()[16]> [(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_call <__dt_comp , NULL, &MEM[(struct basic_streambuf *)&logfile + 8B]._M_buf_locale>
+  gimple_assign <constructor, MEM[(struct basic_filebuf *)&logfile + 8B], {CLOBBER}, NULL, NULL>
+  gimple_assign <ssa_name, MEM[(struct basic_ostream *)&logfile]._vptr.basic_ostream, _69, NULL, NULL>
+  gimple_assign <mem_ref, _146, MEM[(long int *)_69 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _147, _146, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _148, &logfile.D.11681, _147, NULL>
+  gimple_assign <ssa_name, MEM[(struct basic_ios *)_148].D.11566._vptr.ios_base, _73, NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct basic_ios *)&logfile + 256B].D.11566._vptr.ios_base, &MEM <int (*__vtbl_ptr_type) ()[4]> [(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_call <__dt_base , NULL, &MEM[(struct basic_ios *)&logfile + 256B].D.11566>
+  gimple_assign <constructor, logfile, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, logfile, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <NULL>
+
+  <bb 59> [count: 0]:
+gimple_label <<L5>>
+  gimple_call <__builtin_eh_pointer, _153, 15>
+  gimple_call <__cxa_begin_catch, NULL, _153>
+  gimple_call <__cxa_end_catch, NULL>
+  goto <bb 58>; [0.00%]
+
+  <bb 60> [local count: 268740]:
+  gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to open log file.\n">
+  goto <bb 62>; [100.00%]
+
+  <bb 61> [count: 0]:
+gimple_label <<L27>>
+  goto <bb 67>; [100.00%]
+
+  <bb 62> [local count: 268740]:
+  gimple_call <exit, NULL, 123>
+
+  <bb 63> [count: 0]:
+gimple_label <<L0>>
+  gimple_assign <component_ref, _33, D.12027._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12027.D.11592._M_local_buf, _33, NULL, NULL>
+    goto <bb 64>; [0.00%]
+  else
+    goto <bb 79>; [0.00%]
+
+  <bb 79> [count: 0]:
+  goto <bb 65>; [100.00%]
+
+  <bb 64> [count: 0]:
+  gimple_assign <component_ref, _34, D.12027.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _35, _34, 1, NULL>
+  gimple_call <operator delete, NULL, _33, _35>
+
+  <bb 65> [count: 0]:
+  gimple_assign <constructor, D.12027, {CLOBBER}, NULL, NULL>
+  gimple_resx <3>
+
+  <bb 66> [count: 0]:
+gimple_label <<L15>>
+
+  <bb 67> [count: 0]:
+gimple_label <<L1>>
+  gimple_assign <constructor, t, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, timestamp, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &logfile>
+  gimple_resx <6>
+
+}
+
+
+
+;; Function _M_construct (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag, funcdef_no=15, decl_uid=11701, cgraph_uid=27, symbol_order=2299)
+
+void _M_construct (struct basic_string * const this, char * __beg, char * __end, struct forward_iterator_tag D.12065)
+{
+  size_type __dnew;
+  long unsigned int _1;
+  long unsigned int _2;
+  long int _8;
+  char * _12;
+  char * _18;
+  char _19;
+  char * _20;
+  long unsigned int pretmp_21;
+  long unsigned int prephitmp_29;
+  char * pretmp_32;
+  long unsigned int pretmp_37;
+  char * _41;
+  char * pretmp_42;
+  char * prephitmp_49;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <pointer_diff_expr, _8, __end_7(D), __beg_6(D), NULL>
+  gimple_assign <nop_expr, _1, _8, NULL, NULL>
+  gimple_assign <ssa_name, __dnew, _1, NULL, NULL>
+  gimple_cond <gt_expr, _1, 15, NULL, NULL>
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  gimple_call <_M_create, _12, this_10(D), &__dnew, 0>
+  gimple_assign <ssa_name, this_10(D)->_M_dataplus._M_p, _12, NULL, NULL>
+  gimple_assign <var_decl, _2, __dnew, NULL, NULL>
+  gimple_assign <ssa_name, this_10(D)->D.11592._M_allocated_capacity, _2, NULL, NULL>
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 719407024]:
+  gimple_assign <component_ref, _20, MEM[(const struct basic_string *)this_10(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <eq_expr, _1, 1, NULL, NULL>
+    goto <bb 5>; [67.00%]
+  else
+    goto <bb 6>; [33.00%]
+
+  <bb 5> [local count: 365072224]:
+  gimple_assign <mem_ref, _19, MEM[(const char_type &)__beg_6(D)], NULL, NULL>
+  gimple_assign <ssa_name, MEM[(char_type &)_20], _19, NULL, NULL>
+  gimple_assign <var_decl, pretmp_37, __dnew, NULL, NULL>
+  gimple_assign <component_ref, pretmp_42, MEM[(const struct basic_string *)this_10(D)]._M_dataplus._M_p, NULL, NULL>
+  goto <bb 8>; [100.00%]
+
+  <bb 6> [local count: 362271902]:
+  gimple_cond <eq_expr, _1, 0, NULL, NULL>
+    goto <bb 9>; [100.00%]
+  else
+    goto <bb 10>; [0.00%]
+
+  <bb 9> [local count: 362271902]:
+  goto <bb 8>; [100.00%]
+
+  <bb 10> [local count: 0]:
+
+  <bb 7> [local count: 346397698]:
+  # gimple_phi <_41, _20(10), _12(3)>
+  gimple_call <__builtin_memcpy, NULL, _41, __beg_6(D), _1>
+  gimple_assign <var_decl, pretmp_21, __dnew, NULL, NULL>
+  gimple_assign <component_ref, pretmp_32, MEM[(const struct basic_string *)this_10(D)]._M_dataplus._M_p, NULL, NULL>
+
+  <bb 8> [local count: 1073741824]:
+  # gimple_phi <prephitmp_29, pretmp_37(5), pretmp_21(7), _1(9)>
+  # gimple_phi <prephitmp_49, pretmp_42(5), pretmp_32(7), _20(9)>
+  gimple_assign <ssa_name, this_10(D)->_M_string_length, prephitmp_29, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _18, prephitmp_49, prephitmp_29, NULL>
+  gimple_assign <integer_cst, MEM[(char_type &)_18], 0, NULL, NULL>
+  gimple_assign <constructor, __dnew, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function _M_construct (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag, funcdef_no=25, decl_uid=11730, cgraph_uid=61, symbol_order=2196)
+
+void _M_construct (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.12220)
+{
+  size_type __dnew;
+  long unsigned int _1;
+  long unsigned int _2;
+  long int _8;
+  char * _12;
+  char * _18;
+  char _19;
+  char * _20;
+  long unsigned int pretmp_21;
+  long unsigned int prephitmp_29;
+  char * pretmp_32;
+  long unsigned int pretmp_37;
+  char * _41;
+  char * pretmp_42;
+  char * prephitmp_49;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <pointer_diff_expr, _8, __end_7(D), __beg_6(D), NULL>
+  gimple_assign <nop_expr, _1, _8, NULL, NULL>
+  gimple_assign <ssa_name, __dnew, _1, NULL, NULL>
+  gimple_cond <gt_expr, _1, 15, NULL, NULL>
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  gimple_call <_M_create, _12, this_10(D), &__dnew, 0>
+  gimple_assign <ssa_name, this_10(D)->_M_dataplus._M_p, _12, NULL, NULL>
+  gimple_assign <var_decl, _2, __dnew, NULL, NULL>
+  gimple_assign <ssa_name, this_10(D)->D.11592._M_allocated_capacity, _2, NULL, NULL>
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 719407024]:
+  gimple_assign <component_ref, _20, MEM[(const struct basic_string *)this_10(D)]._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <eq_expr, _1, 1, NULL, NULL>
+    goto <bb 5>; [67.00%]
+  else
+    goto <bb 6>; [33.00%]
+
+  <bb 5> [local count: 365072224]:
+  gimple_assign <mem_ref, _19, MEM[(const char_type &)__beg_6(D)], NULL, NULL>
+  gimple_assign <ssa_name, MEM[(char_type &)_20], _19, NULL, NULL>
+  gimple_assign <var_decl, pretmp_37, __dnew, NULL, NULL>
+  gimple_assign <component_ref, pretmp_42, MEM[(const struct basic_string *)this_10(D)]._M_dataplus._M_p, NULL, NULL>
+  goto <bb 8>; [100.00%]
+
+  <bb 6> [local count: 362271902]:
+  gimple_cond <eq_expr, _1, 0, NULL, NULL>
+    goto <bb 9>; [100.00%]
+  else
+    goto <bb 10>; [0.00%]
+
+  <bb 9> [local count: 362271902]:
+  goto <bb 8>; [100.00%]
+
+  <bb 10> [local count: 0]:
+
+  <bb 7> [local count: 346397698]:
+  # gimple_phi <_41, _20(10), _12(3)>
+  gimple_call <__builtin_memcpy, NULL, _41, __beg_6(D), _1>
+  gimple_assign <var_decl, pretmp_21, __dnew, NULL, NULL>
+  gimple_assign <component_ref, pretmp_32, MEM[(const struct basic_string *)this_10(D)]._M_dataplus._M_p, NULL, NULL>
+
+  <bb 8> [local count: 1073741824]:
+  # gimple_phi <prephitmp_29, pretmp_37(5), pretmp_21(7), _1(9)>
+  # gimple_phi <prephitmp_49, pretmp_42(5), pretmp_32(7), _20(9)>
+  gimple_assign <ssa_name, this_10(D)->_M_string_length, prephitmp_29, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _18, prephitmp_49, prephitmp_29, NULL>
+  gimple_assign <integer_cst, MEM[(char_type &)_18], 0, NULL, NULL>
+  gimple_assign <constructor, __dnew, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function __ct_base .constprop (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_.constprop.0, funcdef_no=29, decl_uid=11753, cgraph_uid=75, symbol_order=3410) (executed once)
+
+void __ct_base .constprop (struct basic_string * const this, const char * __s)
+{
+  struct forward_iterator_tag D.12257;
+  const char * __end;
+  char[16] * _2;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <constructor, *this_1(D), {CLOBBER}, NULL, NULL>
+  gimple_assign <addr_expr, _2, &this_1(D)->D.11592._M_local_buf, NULL, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)this_1(D)], {CLOBBER}, NULL, NULL>
+  gimple_assign <ssa_name, MEM[(struct _Alloc_hider *)this_1(D)]._M_p, _2, NULL, NULL>
+  gimple_call <__builtin_strlen, _4, __s_3(D)>
+  gimple_assign <pointer_plus_expr, __end_5, __s_3(D), _4, NULL>
+  gimple_call <_M_construct, NULL, this_1(D), __s_3(D), __end_5, D.12257>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function main (main, funcdef_no=30, decl_uid=11727, cgraph_uid=56, symbol_order=1743) (executed once)
+
+int main ()
+{
+  int stdout_pipe[2];
+  int stderr_pipe[2];
+  pid_t pid;
+  struct array buffer;
+  int status;
+  struct string result;
+  const struct string D.12266;
+  char * _6;
+  char * _9;
+  long unsigned int _11;
+  long unsigned int _15;
+  char * _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  char * _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  char * _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  int _54;
+  int _55;
+  int _56;
+  int _57;
+  char * _58;
+  int _59;
+  int _60;
+  long int _61;
+  long unsigned int _62;
+  int _63;
+  long int _64;
+  long unsigned int _65;
+  int _66;
+  int _67;
+  int _68;
+  int _69;
+  int _70;
+  char * _71;
+  long unsigned int _72;
+  long int _73;
+  struct basic_ostream & _74;
+  int _75;
+  int _76;
+  int _77;
+  struct basic_ostream & _78;
+  unsigned char _79;
+  unsigned char _80;
+  unsigned char _81;
+  signed char _82;
+  signed char _83;
+  char * _84;
+  long unsigned int _85;
+  long int _86;
+  struct basic_ostream & _87;
+  int _88;
+  int _89;
+  struct basic_ostream & _90;
+  long unsigned int _91;
+  long int _92;
+  long unsigned int _93;
+  long int _94;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_call <signal, NULL, 6, sighandle>
+  gimple_call <signal, NULL, 7, sighandle>
+  gimple_call <signal, NULL, 8, sighandle>
+  gimple_call <signal, NULL, 4, sighandle>
+  gimple_call <signal, NULL, 3, sighandle>
+  gimple_call <signal, NULL, 11, sighandle>
+  gimple_call <signal, NULL, 31, sighandle>
+  gimple_call <signal, NULL, 5, sighandle>
+  gimple_call <signal, NULL, 24, sighandle>
+  gimple_call <signal, NULL, 25, sighandle>
+  gimple_assign <constructor, MEM[(struct basic_string *)&result], {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&result], {CLOBBER}, NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct _Alloc_hider *)&result]._M_p, &result.D.11592._M_local_buf, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(struct basic_string *)&result]._M_string_length, 0, NULL, NULL>
+  gimple_assign <integer_cst, MEM[(char_type &)&result + 16], 0, NULL, NULL>
+  gimple_call <__ct_base .constprop, NULL, &D.12266, "./log.sh">
+
+  <bb 3> [local count: 1073741824]:
+  gimple_call <pipe, NULL, &stdout_pipe>
+  gimple_call <pipe, NULL, &stderr_pipe>
+  gimple_call <fork, pid_53>
+  gimple_cond <eq_expr, pid_53, 0, NULL, NULL>
+    goto <bb 4>; [0.04%]
+  else
+    goto <bb 7>; [99.96%]
+
+  <bb 4> [local count: 429493]:
+  gimple_assign <array_ref, _54, stdout_pipe[0], NULL, NULL>
+  gimple_call <close, NULL, _54>
+
+  <bb 5> [local count: 429493]:
+  gimple_assign <array_ref, _55, stderr_pipe[0], NULL, NULL>
+  gimple_call <close, NULL, _55>
+  goto <bb 6>; [100.00%]
+
+  <bb 53> [count: 0]:
+gimple_label <<L4>>
+  goto <bb 41>; [100.00%]
+
+  <bb 6> [local count: 429493]:
+  gimple_assign <array_ref, _56, stdout_pipe[1], NULL, NULL>
+  gimple_call <dup2, NULL, _56, 1>
+  gimple_assign <array_ref, _57, stderr_pipe[1], NULL, NULL>
+  gimple_call <dup2, NULL, _57, 2>
+  gimple_assign <component_ref, _58, D.12266._M_dataplus._M_p, NULL, NULL>
+  gimple_call <execl, NULL, "/bin/bash", "bash", _58, 0>
+  gimple_call <_exit, NULL, 1>
+
+  <bb 54> [count: 0]:
+gimple_label <<L5>>
+  goto <bb 41>; [100.00%]
+
+  <bb 7> [local count: 1073312331]:
+  gimple_cond <gt_expr, pid_53, 0, NULL, NULL>
+    goto <bb 8>; [99.96%]
+  else
+    goto <bb 34>; [0.04%]
+
+  <bb 8> [local count: 1072883002]:
+  gimple_assign <array_ref, _59, stdout_pipe[1], NULL, NULL>
+  gimple_call <close, NULL, _59>
+  goto <bb 9>; [100.00%]
+
+  <bb 55> [count: 0]:
+gimple_label <<L6>>
+  goto <bb 41>; [100.00%]
+
+  <bb 9> [local count: 1072883002]:
+  gimple_assign <array_ref, _60, stderr_pipe[1], NULL, NULL>
+  gimple_call <close, NULL, _60>
+  goto <bb 48>; [100.00%]
+
+  <bb 56> [count: 0]:
+gimple_label <<L7>>
+  goto <bb 41>; [100.00%]
+
+  <bb 48> [local count: 1072883002]:
+  goto <bb 12>; [100.00%]
+
+  <bb 10> [local count: 8680598899]:
+  gimple_assign <nop_expr, _62, _61, NULL, NULL>
+  gimple_assign <integer_cst, MEM <const char[128]> [(value_type &)&buffer][_62], 0, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cout, "[SHINFO] ", 9>
+  goto <bb 11>; [100.00%]
+
+  <bb 57> [count: 0]:
+gimple_label <<L8>>
+  goto <bb 41>; [100.00%]
+
+  <bb 11> [local count: 8680598899]:
+  gimple_call <__builtin_strlen, _91, &buffer._M_elems>
+  gimple_assign <nop_expr, _92, _91, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cout, &buffer._M_elems, _92>
+  goto <bb 50>; [100.00%]
+
+  <bb 58> [count: 0]:
+gimple_label <<L9>>
+  goto <bb 41>; [100.00%]
+
+  <bb 50> [local count: 8680598899]:
+
+  <bb 12> [local count: 9753481893]:
+  gimple_assign <array_ref, _63, stdout_pipe[0], NULL, NULL>
+  gimple_call <read, _61, _63, &buffer._M_elems, 127>
+  goto <bb 13>; [100.00%]
+
+  <bb 59> [count: 0]:
+gimple_label <<L10>>
+  goto <bb 41>; [100.00%]
+
+  <bb 13> [local count: 9753481893]:
+  gimple_cond <gt_expr, _61, 0, NULL, NULL>
+    goto <bb 10>; [89.00%]
+  else
+    goto <bb 47>; [11.00%]
+
+  <bb 47> [local count: 1072883002]:
+  goto <bb 16>; [100.00%]
+
+  <bb 14> [local count: 8680598899]:
+  gimple_assign <nop_expr, _65, _64, NULL, NULL>
+  gimple_assign <integer_cst, MEM <const char[128]> [(value_type &)&buffer][_65], 0, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cerr, "[SHERR] ", 8>
+  goto <bb 15>; [100.00%]
+
+  <bb 60> [count: 0]:
+gimple_label <<L11>>
+  goto <bb 41>; [100.00%]
+
+  <bb 15> [local count: 8680598899]:
+  gimple_call <__builtin_strlen, _93, &buffer._M_elems>
+  gimple_assign <nop_expr, _94, _93, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cerr, &buffer._M_elems, _94>
+  goto <bb 49>; [100.00%]
+
+  <bb 61> [count: 0]:
+gimple_label <<L12>>
+  goto <bb 41>; [100.00%]
+
+  <bb 49> [local count: 8680598899]:
+
+  <bb 16> [local count: 9753481893]:
+  gimple_assign <array_ref, _66, stderr_pipe[0], NULL, NULL>
+  gimple_call <read, _64, _66, &buffer._M_elems, 127>
+  goto <bb 17>; [100.00%]
+
+  <bb 62> [count: 0]:
+gimple_label <<L13>>
+  goto <bb 41>; [100.00%]
+
+  <bb 17> [local count: 9753481893]:
+  gimple_cond <gt_expr, _64, 0, NULL, NULL>
+    goto <bb 14>; [89.00%]
+  else
+    goto <bb 18>; [11.00%]
+
+  <bb 18> [local count: 1072883002]:
+  gimple_assign <array_ref, _67, stdout_pipe[0], NULL, NULL>
+  gimple_call <close, NULL, _67>
+  goto <bb 19>; [100.00%]
+
+  <bb 63> [count: 0]:
+gimple_label <<L14>>
+  goto <bb 41>; [100.00%]
+
+  <bb 19> [local count: 1072883002]:
+  gimple_assign <array_ref, _68, stderr_pipe[0], NULL, NULL>
+  gimple_call <close, NULL, _68>
+  goto <bb 20>; [100.00%]
+
+  <bb 64> [count: 0]:
+gimple_label <<L15>>
+  goto <bb 41>; [100.00%]
+
+  <bb 20> [local count: 1072883002]:
+  gimple_call <waitpid, NULL, pid_53, &status, 0>
+  goto <bb 21>; [100.00%]
+
+  <bb 65> [count: 0]:
+gimple_label <<L16>>
+  goto <bb 41>; [100.00%]
+
+  <bb 21> [local count: 1072883002]:
+  gimple_assign <var_decl, _69, status, NULL, NULL>
+  gimple_assign <bit_and_expr, _70, _69, 127, NULL>
+  gimple_cond <eq_expr, _70, 0, NULL, NULL>
+    goto <bb 22>; [33.00%]
+  else
+    goto <bb 27>; [67.00%]
+
+  <bb 22> [local count: 354051391]:
+  gimple_call <__ostream_insert, NULL, &cout, "[INFO] Script ", 14>
+  goto <bb 23>; [100.00%]
+
+  <bb 66> [count: 0]:
+gimple_label <<L17>>
+  goto <bb 41>; [100.00%]
+
+  <bb 23> [local count: 354051391]:
+  gimple_assign <component_ref, _71, D.12266._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _72, D.12266._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _73, _72, NULL, NULL>
+  gimple_call <__ostream_insert, _74, &cout, _71, _73>
+  goto <bb 24>; [100.00%]
+
+  <bb 67> [count: 0]:
+gimple_label <<L18>>
+  goto <bb 41>; [100.00%]
+
+  <bb 24> [local count: 354051391]:
+  gimple_call <__ostream_insert, NULL, _74, " exited with status ", 20>
+  goto <bb 25>; [100.00%]
+
+  <bb 68> [count: 0]:
+gimple_label <<L19>>
+  goto <bb 41>; [100.00%]
+
+  <bb 25> [local count: 354051391]:
+  gimple_assign <var_decl, _75, status, NULL, NULL>
+  gimple_assign <rshift_expr, _76, _75, 8, NULL>
+  gimple_assign <bit_and_expr, _77, _76, 255, NULL>
+  gimple_call <operator<<, _78, _74, _77>
+  goto <bb 26>; [100.00%]
+
+  <bb 69> [count: 0]:
+gimple_label <<L20>>
+  goto <bb 41>; [100.00%]
+
+  <bb 26> [local count: 354051391]:
+  gimple_call <endl.isra, NULL, _78>
+  goto <bb 86>; [100.00%]
+
+  <bb 71> [count: 0]:
+gimple_label <<L21>>
+  goto <bb 41>; [100.00%]
+
+  <bb 86> [local count: 354051391]:
+
+  <bb 70> [local count: 1072883006]:
+  goto <bb 33>; [100.00%]
+
+  <bb 27> [local count: 718831612]:
+  gimple_assign <nop_expr, _79, _69, NULL, NULL>
+  gimple_assign <bit_and_expr, _80, _79, 127, NULL>
+  gimple_assign <plus_expr, _81, _80, 1, NULL>
+  gimple_assign <nop_expr, _82, _81, NULL, NULL>
+  gimple_assign <rshift_expr, _83, _82, 1, NULL>
+  gimple_cond <gt_expr, _83, 0, NULL, NULL>
+    goto <bb 28>; [41.48%]
+  else
+    goto <bb 87>; [58.52%]
+
+  <bb 87> [local count: 420660257]:
+  goto <bb 70>; [100.00%]
+
+  <bb 28> [local count: 298171358]:
+  gimple_call <__ostream_insert, NULL, &cout, "[ERROR] Script ", 15>
+  goto <bb 29>; [100.00%]
+
+  <bb 73> [count: 0]:
+gimple_label <<L22>>
+  goto <bb 41>; [100.00%]
+
+  <bb 29> [local count: 298171358]:
+  gimple_assign <component_ref, _84, D.12266._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _85, D.12266._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _86, _85, NULL, NULL>
+  gimple_call <__ostream_insert, _87, &cout, _84, _86>
+  goto <bb 30>; [100.00%]
+
+  <bb 74> [count: 0]:
+gimple_label <<L23>>
+  goto <bb 41>; [100.00%]
+
+  <bb 30> [local count: 298171358]:
+  gimple_call <__ostream_insert, NULL, _87, " terminated by signal ", 22>
+  goto <bb 31>; [100.00%]
+
+  <bb 75> [count: 0]:
+gimple_label <<L24>>
+  goto <bb 41>; [100.00%]
+
+  <bb 31> [local count: 298171358]:
+  gimple_assign <var_decl, _88, status, NULL, NULL>
+  gimple_assign <bit_and_expr, _89, _88, 127, NULL>
+  gimple_call <operator<<, _90, _87, _89>
+  goto <bb 32>; [100.00%]
+
+  <bb 76> [count: 0]:
+gimple_label <<L25>>
+  goto <bb 41>; [100.00%]
+
+  <bb 32> [local count: 298171358]:
+  gimple_call <endl.isra, NULL, _90>
+
+  <bb 88> [local count: 298171358]:
+  goto <bb 70>; [100.00%]
+
+  <bb 78> [count: 0]:
+gimple_label <<L26>>
+  goto <bb 41>; [100.00%]
+
+  <bb 33> [local count: 1072883002]:
+  gimple_assign <constructor, buffer, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, status, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, stdout_pipe, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, stderr_pipe, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _6, D.12266._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12266.D.11592._M_local_buf, _6, NULL, NULL>
+    goto <bb 36>; [53.47%]
+  else
+    goto <bb 79>; [46.53%]
+
+  <bb 79> [local count: 499212462]:
+  goto <bb 37>; [100.00%]
+
+  <bb 34> [local count: 429320]:
+  gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to fork process.\n">
+  goto <bb 35>; [100.00%]
+
+  <bb 80> [count: 0]:
+gimple_label <<L27>>
+  goto <bb 41>; [100.00%]
+
+  <bb 35> [local count: 429320]:
+  gimple_call <exit, NULL, 1>
+
+  <bb 36> [local count: 573670537]:
+  gimple_assign <component_ref, _15, D.12266.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _11, _15, 1, NULL>
+  gimple_call <operator delete, NULL, _6, _11>
+
+  <bb 37> [local count: 1072883002]:
+  gimple_assign <constructor, D.12266, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12266, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _9, result._M_dataplus._M_p, NULL, NULL>
+  gimple_call <write_log, NULL, _9>
+  goto <bb 38>; [100.00%]
+
+  <bb 81> [count: 0]:
+gimple_label <<L28>>
+  goto <bb 44>; [100.00%]
+
+  <bb 38> [local count: 1072883002]:
+  gimple_assign <component_ref, _16, result._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &result.D.11592._M_local_buf, _16, NULL, NULL>
+    goto <bb 39>; [53.47%]
+  else
+    goto <bb 82>; [46.53%]
+
+  <bb 82> [local count: 499212462]:
+  goto <bb 40>; [100.00%]
+
+  <bb 39> [local count: 573670537]:
+  gimple_assign <component_ref, _17, result.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _18, _17, 1, NULL>
+  gimple_call <operator delete, NULL, _16, _18>
+
+  <bb 40> [local count: 1072883002]:
+  gimple_assign <constructor, result, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, result, {CLOBBER(eol)}, NULL, NULL>
+  gimple_return <0>
+
+  <bb 52> [count: 0]:
+gimple_label <<L3>>
+
+  <bb 41> [count: 0]:
+gimple_label <<L0>>
+  gimple_assign <constructor, status, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, buffer, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, stderr_pipe, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, stdout_pipe, {CLOBBER}, NULL, NULL>
+  gimple_assign <component_ref, _19, D.12266._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12266.D.11592._M_local_buf, _19, NULL, NULL>
+    goto <bb 42>; [0.00%]
+  else
+    goto <bb 83>; [0.00%]
+
+  <bb 83> [count: 0]:
+  goto <bb 43>; [100.00%]
+
+  <bb 42> [count: 0]:
+  gimple_assign <component_ref, _20, D.12266.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _21, _20, 1, NULL>
+  gimple_call <operator delete, NULL, _19, _21>
+
+  <bb 43> [count: 0]:
+  gimple_assign <constructor, D.12266, {CLOBBER}, NULL, NULL>
+  gimple_resx <6>
+
+  <bb 84> [count: 0]:
+gimple_label <<L29>>
+  goto <bb 44>; [100.00%]
+
+  <bb 51> [count: 0]:
+gimple_label <<L2>>
+
+  <bb 44> [count: 0]:
+gimple_label <<L1>>
+  gimple_assign <constructor, D.12266, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _22, result._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &result.D.11592._M_local_buf, _22, NULL, NULL>
+    goto <bb 45>; [0.00%]
+  else
+    goto <bb 85>; [0.00%]
+
+  <bb 85> [count: 0]:
+  goto <bb 46>; [100.00%]
+
+  <bb 45> [count: 0]:
+  gimple_assign <component_ref, _23, result.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _24, _23, 1, NULL>
+  gimple_call <operator delete, NULL, _22, _24>
+
+  <bb 46> [count: 0]:
+  gimple_assign <constructor, result, {CLOBBER}, NULL, NULL>
+  gimple_resx <2>
+
+}
+
+
+
+;; Function __dt_base  (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED2Ev, funcdef_no=33, decl_uid=11740, cgraph_uid=65, symbol_order=2512)
+
+void __dt_base  (struct basic_stringbuf * const this)
+{
+  struct locale * _5;
+  char * _6;
+  const char[16] * _7;
+  long unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <addr_expr, this_2(D)->D.11739._vptr.basic_streambuf, &MEM <int (*__vtbl_ptr_type) ()[16]> [(void *)&_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE + 16B], NULL, NULL>
+  gimple_assign <component_ref, _6, MEM[(const struct basic_string *)this_2(D) + 72B]._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <addr_expr, _7, &MEM[(const struct basic_string *)this_2(D) + 72B].D.11592._M_local_buf, NULL, NULL>
+  gimple_cond <ne_expr, _6, _7, NULL, NULL>
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 5>; [46.53%]
+
+  <bb 5> [local count: 499612072]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 574129753]:
+  gimple_assign <component_ref, _8, MEM[(struct basic_string *)this_2(D) + 72B].D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _9, _8, 1, NULL>
+  gimple_call <operator delete, NULL, _6, _9>
+
+  <bb 4> [local count: 1073741824]:
+  gimple_assign <constructor, MEM[(struct basic_string *)this_2(D) + 72B], {CLOBBER}, NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct basic_streambuf *)this_2(D)]._vptr.basic_streambuf, &MEM <int (*__vtbl_ptr_type) ()[16]> [(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_assign <addr_expr, _5, &MEM[(struct basic_streambuf *)this_2(D)]._M_buf_locale, NULL, NULL>
+  gimple_call <__dt_comp , NULL, _5>
+  gimple_assign <constructor, *this_2(D), {CLOBBER}, NULL, NULL>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function __dt_del  (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev, funcdef_no=35, decl_uid=11742, cgraph_uid=67, symbol_order=2514)
+
+void __dt_del  (struct basic_stringbuf * const this)
+{
+  char * _6;
+  const char[16] * _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct locale * _10;
+
+  <bb 2> [local count: 1073741824]:
+  gimple_assign <addr_expr, this_2(D)->D.11739._vptr.basic_streambuf, &MEM <int (*__vtbl_ptr_type) ()[16]> [(void *)&_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE + 16B], NULL, NULL>
+  gimple_assign <component_ref, _6, MEM[(const struct basic_string *)this_2(D) + 72B]._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <addr_expr, _7, &MEM[(const struct basic_string *)this_2(D) + 72B].D.11592._M_local_buf, NULL, NULL>
+  gimple_cond <ne_expr, _6, _7, NULL, NULL>
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 5>; [46.53%]
+
+  <bb 5> [local count: 499612072]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 574129753]:
+  gimple_assign <component_ref, _8, MEM[(struct basic_string *)this_2(D) + 72B].D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _9, _8, 1, NULL>
+  gimple_call <operator delete, NULL, _6, _9>
+
+  <bb 4> [local count: 1073741824]:
+  gimple_assign <constructor, MEM[(struct basic_string *)this_2(D) + 72B], {CLOBBER}, NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct basic_streambuf *)this_2(D)]._vptr.basic_streambuf, &MEM <int (*__vtbl_ptr_type) ()[16]> [(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B], NULL, NULL>
+  gimple_assign <addr_expr, _10, &MEM[(struct basic_streambuf *)this_2(D)]._M_buf_locale, NULL, NULL>
+  gimple_call <__dt_comp , NULL, _10>
+  gimple_assign <constructor, *this_2(D), {CLOBBER}, NULL, NULL>
+  gimple_call <operator delete, NULL, this_2(D), 104>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function _GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i (_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i, funcdef_no=36, decl_uid=11743, cgraph_uid=69, symbol_order=3043) (executed once)
+
+void _GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i ()
+{
+  <bb 2> [local count: 1073741824]:
+  gimple_call <__ct_comp , NULL, &__ioinit>
+  gimple_call <__cxa_atexit, NULL, __dt_comp , &__ioinit, &__dso_handle>
+  gimple_call <__ct_base .constprop, NULL, &log_path, "./program_crash.log">
+  gimple_call <__cxa_atexit, NULL, __dt_comp , &log_path, &__dso_handle>
+  gimple_return <NULL>
+
+}
+
+
+
+;; Function sighandle (_ZL9sighandlei, funcdef_no=39, decl_uid=11708, cgraph_uid=34, symbol_order=1736) (executed once)
+
+void sighandle (int sig)
+{
+  char __c;
+  char __c;
+  struct __string_type D.12567;
+  struct basic_ostringstream __ostr;
+  char __c;
+  const char * SR.233;
+  struct forward_iterator_tag D.12538;
+  struct basic_string D.12531;
+  const struct string RESET;
+  const struct string RED;
+  unsigned int __pos;
+  const unsigned int __num;
+  const unsigned int __num;
+  unsigned int __val;
+  const bool __neg;
+  unsigned int __value;
+  unsigned int __n;
+  int i;
+  char * * stackTrace;
+  void * array[50];
+  struct string errorMsg;
+  char buf[1024];
+  struct path D.12387;
+  const struct string D.12385;
+  const struct string D.12383;
+  struct string D.12382;
+  struct basic_string D.12381;
+  long unsigned int _1;
+  long unsigned int _2;
+  char * * _3;
+  char * _4;
+  char * _5;
+  int _17;
+  long int _23;
+  long unsigned int _25;
+  char * _28;
+  struct basic_string & _31;
+  int _41;
+  struct basic_string & _53;
+  struct basic_ostream & _58;
+  char * _59;
+  long unsigned int _60;
+  long unsigned int _61;
+  char * _62;
+  long unsigned int _63;
+  long unsigned int _64;
+  char * _65;
+  char * _66;
+  long unsigned int _67;
+  long unsigned int _68;
+  char * _69;
+  long unsigned int _70;
+  long unsigned int _71;
+  char * _72;
+  long unsigned int _73;
+  long unsigned int _74;
+  char * _75;
+  long unsigned int _76;
+  long unsigned int _77;
+  char * _78;
+  long unsigned int _79;
+  long unsigned int _80;
+  char * _81;
+  long unsigned int _82;
+  long unsigned int _83;
+  char * _84;
+  long unsigned int _85;
+  long unsigned int _86;
+  unsigned int _168;
+  unsigned int _172;
+  unsigned int _174;
+  unsigned int _177;
+  long unsigned int _178;
+  unsigned int _182;
+  unsigned int _183;
+  unsigned int _184;
+  long unsigned int _185;
+  long unsigned int _187;
+  char * _188;
+  value_type & _189;
+  unsigned int _190;
+  unsigned int _193;
+  unsigned int _196;
+  sizetype _198;
+  char * _199;
+  char _200;
+  unsigned int _201;
+  sizetype _202;
+  char * _203;
+  char _204;
+  unsigned int _208;
+  char _209;
+  char _210;
+  char _211;
+  char _212;
+  char * _213;
+  long unsigned int _214;
+  long int _215;
+  struct basic_ostream & _216;
+  char * _217;
+  long unsigned int _218;
+  long int _219;
+  struct basic_ostream & _220;
+  char * _221;
+  long unsigned int _222;
+  long int _223;
+  struct basic_ostream & _224;
+  struct basic_ostream & _225;
+  char * _226;
+  long unsigned int _227;
+  long int _228;
+  struct basic_ostream & _229;
+  char * _230;
+  long unsigned int _231;
+  long unsigned int _232;
+  char * _233;
+  long unsigned int _234;
+  long unsigned int _235;
+  char * _236;
+  long unsigned int _237;
+  long unsigned int _238;
+  char * _239;
+  long unsigned int _240;
+  long unsigned int _241;
+  char * _242;
+  long unsigned int _243;
+  char * _244;
+  long unsigned int _245;
+  long unsigned int _246;
+  char * _247;
+  long unsigned int _248;
+  long unsigned int _249;
+  bool _251;
+  bool _252;
+  bool _253;
+  const char * _254;
+  bool _255;
+  bool _256;
+  char * _257;
+  long unsigned int _258;
+  char * _259;
+  const char * _265;
+  bool _266;
+  char * _267;
+  long unsigned int _268;
+  long int _269;
+  char * _271;
+  long unsigned int _272;
+  long unsigned int _273;
+  char * _274;
+  long unsigned int _275;
+  long unsigned int _276;
+  int (*__vtbl_ptr_type) () * _285;
+  long int _286;
+  sizetype _287;
+  struct ios_base * _288;
+  long int _289;
+  long unsigned int _293;
+  long int _294;
+  int (*__vtbl_ptr_type) () * _295;
+  long int _296;
+  sizetype _297;
+  struct basic_ios * _298;
+  _Ios_Iostate _299;
+  _Ios_Iostate _300;
+  int (*__vtbl_ptr_type) () * _301;
+  long int _302;
+  sizetype _303;
+  struct basic_ios * _304;
+  struct basic_ostream & _306;
+  long unsigned int _307;
+  const struct __ctype_type * _308;
+  char _310;
+  char _312;
+  char _314;
+  int (*__vtbl_ptr_type) () * _315;
+  int (*__vtbl_ptr_type) () _316;
+  char _317;
+  long unsigned int _392;
+  char cstore_415;
+  int (*__vtbl_ptr_type) () * pretmp_624;
+  long int pretmp_625;
+  sizetype _626;
+  struct ios_base * _627;
+  long int pretmp_628;
+  unsigned int _629;
+
+  <bb 2> [local count: 168730857]:
+  gimple_call <signal, NULL, sig_14(D), 0B>
+  gimple_call <open, _17, "/proc/self/cmdline", 524288>
+  gimple_call <read, NULL, _17, &buf, 1024>
+  gimple_call <close, NULL, _17>
+  gimple_assign <lt_expr, __neg_166, sig_14(D), 0, NULL>
+  gimple_assign <nop_expr, _629, sig_14(D), NULL, NULL>
+  gimple_cond <ne_expr, __neg_166, 0, NULL, NULL>
+    goto <bb 3>; [41.00%]
+  else
+    goto <bb 188>; [59.00%]
+
+  <bb 188> [local count: 99551206]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 69179651]:
+  gimple_assign <negate_expr, _168, _629, NULL, NULL>
+
+  <bb 4> [local count: 168730857]:
+  # gimple_phi <_190, _168(3), _629(188)>
+  gimple_cond <le_expr, _190, 9, NULL, NULL>
+    goto <bb 189>; [2.75%]
+  else
+    goto <bb 5>; [97.25%]
+
+  <bb 189> [local count: 4640099]:
+  goto <bb 15>; [100.00%]
+
+  <bb 5> [local count: 164090758]:
+  gimple_cond <le_expr, _190, 99, NULL, NULL>
+    goto <bb 190>; [2.75%]
+  else
+    goto <bb 6>; [97.25%]
+
+  <bb 190> [local count: 4512496]:
+  goto <bb 9>; [100.00%]
+
+  <bb 6> [local count: 159578262]:
+  gimple_cond <le_expr, _190, 999, NULL, NULL>
+    goto <bb 191>; [2.75%]
+  else
+    goto <bb 7>; [97.25%]
+
+  <bb 191> [local count: 4388403]:
+  goto <bb 11>; [100.00%]
+
+  <bb 7> [local count: 155189859]:
+  gimple_assign <nop_expr, _307, _190, NULL, NULL>
+  gimple_cond <le_expr, _190, 9999, NULL, NULL>
+    goto <bb 192>; [2.75%]
+  else
+    goto <bb 183>; [97.25%]
+
+  <bb 8> [local count: 1390606826]:
+  gimple_cond <le_expr, __value_179, 99, NULL, NULL>
+    goto <bb 193>; [2.75%]
+  else
+    goto <bb 10>; [97.25%]
+
+  <bb 193> [local count: 38241693]:
+
+  <bb 9> [local count: 42754190]:
+  # gimple_phi <__n_37, __n_181(193), 1(190)>
+  gimple_assign <plus_expr, _172, __n_37, 1, NULL>
+  goto <bb 15>; [100.00%]
+
+  <bb 10> [local count: 1352365133]:
+  gimple_cond <le_expr, __value_179, 999, NULL, NULL>
+    goto <bb 194>; [2.75%]
+  else
+    goto <bb 12>; [97.25%]
+
+  <bb 194> [local count: 37190046]:
+
+  <bb 11> [local count: 41578449]:
+  # gimple_phi <__n_389, __n_181(194), 1(191)>
+  gimple_assign <plus_expr, _174, __n_389, 2, NULL>
+  goto <bb 15>; [100.00%]
+
+  <bb 12> [local count: 1315175088]:
+  gimple_cond <le_expr, __value_179, 9999, NULL, NULL>
+    goto <bb 195>; [2.75%]
+  else
+    goto <bb 187>; [97.25%]
+
+  <bb 195> [local count: 36167320]:
+  goto <bb 13>; [100.00%]
+
+  <bb 187> [local count: 1279007768]:
+  goto <bb 14>; [100.00%]
+
+  <bb 192> [local count: 4267722]:
+
+  <bb 13> [local count: 40435041]:
+  # gimple_phi <__n_250, __n_181(195), 1(192)>
+  gimple_assign <plus_expr, _177, __n_250, 3, NULL>
+  goto <bb 15>; [100.00%]
+
+  <bb 183> [local count: 150922137]:
+
+  <bb 14> [local count: 1429929905]:
+  # gimple_phi <_392, _178(187), _307(183)>
+  # gimple_phi <__n_429, __n_181(187), 1(183)>
+  gimple_assign <trunc_div_expr, _178, _392, 10000, NULL>
+  gimple_assign <nop_expr, __value_179, _178, NULL, NULL>
+  gimple_assign <plus_expr, __n_181, __n_429, 4, NULL>
+  gimple_cond <le_expr, __value_179, 9, NULL, NULL>
+    goto <bb 196>; [2.75%]
+  else
+    goto <bb 8>; [97.25%]
+
+  <bb 196> [local count: 39323078]:
+
+  <bb 15> [local count: 168730856]:
+  # gimple_phi <_183, __n_181(196), _172(9), _174(11), _177(13), 1(189)>
+  gimple_assign <nop_expr, _182, __neg_166, NULL, NULL>
+  gimple_assign <plus_expr, _184, _182, _183, NULL>
+  gimple_assign <nop_expr, _185, _184, NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct _Alloc_hider *)&D.12382]._M_p, &MEM <char[16]> [(void *)&D.12382 + 16B], NULL, NULL>
+  gimple_call <_M_construct, NULL, &D.12382, _185, 45>
+  gimple_assign <nop_expr, _187, __neg_166, NULL, NULL>
+  gimple_assign <component_ref, _188, D.12382._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _189, _188, _187, NULL>
+  gimple_assign <plus_expr, __pos_191, _183, 4294967295, NULL>
+  gimple_cond <gt_expr, _190, 99, NULL, NULL>
+    goto <bb 182>; [89.00%]
+  else
+    goto <bb 197>; [11.00%]
+
+  <bb 182> [local count: 150170462]:
+
+  <bb 16> [local count: 1365186024]:
+  # gimple_phi <__val_264, __val_195(186), _190(182)>
+  # gimple_phi <__pos_263, __pos_205(186), __pos_191(182)>
+  gimple_assign <trunc_mod_expr, _193, __val_264, 100, NULL>
+  gimple_assign <mult_expr, __num_194, _193, 2, NULL>
+  gimple_assign <trunc_div_expr, __val_195, __val_264, 100, NULL>
+  gimple_assign <plus_expr, _196, __num_194, 1, NULL>
+  gimple_assign <nop_expr, _198, __pos_263, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _199, _189, _198, NULL>
+  gimple_assign <array_ref, _200, __digits[_196], NULL, NULL>
+  gimple_assign <ssa_name, *_199, _200, NULL, NULL>
+  gimple_assign <plus_expr, _201, __pos_263, 4294967295, NULL>
+  gimple_assign <nop_expr, _202, _201, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _203, _189, _202, NULL>
+  gimple_assign <array_ref, _204, __digits[__num_194], NULL, NULL>
+  gimple_assign <ssa_name, *_203, _204, NULL, NULL>
+  gimple_assign <plus_expr, __pos_205, __pos_263, 4294967294, NULL>
+  gimple_cond <gt_expr, __val_264, 9999, NULL, NULL>
+    goto <bb 186>; [89.00%]
+  else
+    goto <bb 198>; [11.00%]
+
+  <bb 198> [local count: 150170462]:
+  goto <bb 17>; [100.00%]
+
+  <bb 186> [local count: 1215015562]:
+  goto <bb 16>; [100.00%]
+
+  <bb 197> [local count: 18560394]:
+
+  <bb 17> [local count: 168730856]:
+  # gimple_phi <__val_428, __val_195(198), _190(197)>
+  gimple_cond <gt_expr, __val_428, 9, NULL, NULL>
+    goto <bb 18>; [50.00%]
+  else
+    goto <bb 19>; [50.00%]
+
+  <bb 18> [local count: 84365429]:
+  gimple_assign <mult_expr, __num_207, __val_428, 2, NULL>
+  gimple_assign <plus_expr, _208, __num_207, 1, NULL>
+  gimple_assign <array_ref, _209, __digits[_208], NULL, NULL>
+  gimple_assign <ssa_name, MEM[(char *)_189 + 1B], _209, NULL, NULL>
+  gimple_assign <array_ref, _210, __digits[__num_207], NULL, NULL>
+  goto <bb 20>; [100.00%]
+
+  <bb 19> [local count: 84365429]:
+  gimple_assign <nop_expr, _211, __val_428, NULL, NULL>
+  gimple_assign <plus_expr, _212, _211, 48, NULL>
+
+  <bb 20> [local count: 168730856]:
+  # gimple_phi <cstore_415, _210(18), _212(19)>
+  gimple_assign <ssa_name, MEM[(char *)_189], cstore_415, NULL, NULL>
+  gimple_call <insert, _53, &D.12382, 0, "[ERROR] Fatal error (">
+
+  <bb 21> [local count: 168730856]:
+  gimple_call <__ct_comp , NULL, &D.12381, _53>
+  gimple_call <append, _31, &D.12381, "), the program has been stopped.">
+
+  <bb 22> [local count: 168730856]:
+  gimple_call <__ct_comp , NULL, &errorMsg, _31>
+  gimple_assign <component_ref, _62, D.12381._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12381.D.11592._M_local_buf, _62, NULL, NULL>
+    goto <bb 23>; [53.47%]
+  else
+    goto <bb 199>; [46.53%]
+
+  <bb 199> [local count: 78510467]:
+  goto <bb 24>; [100.00%]
+
+  <bb 23> [local count: 90220389]:
+  gimple_assign <component_ref, _63, D.12381.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _64, _63, 1, NULL>
+  gimple_call <operator delete, NULL, _62, _64>
+
+  <bb 24> [local count: 168730856]:
+  gimple_assign <constructor, D.12381, {CLOBBER}, NULL, NULL>
+  gimple_assign <component_ref, _59, D.12382._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12382.D.11592._M_local_buf, _59, NULL, NULL>
+    goto <bb 25>; [53.47%]
+  else
+    goto <bb 200>; [46.53%]
+
+  <bb 200> [local count: 78510467]:
+  goto <bb 26>; [100.00%]
+
+  <bb 25> [local count: 90220389]:
+  gimple_assign <component_ref, _60, D.12382.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _61, _60, 1, NULL>
+  gimple_call <operator delete, NULL, _59, _61>
+
+  <bb 26> [local count: 168730856]:
+  gimple_assign <constructor, D.12382, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12382, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.12381, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _28, errorMsg._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _25, errorMsg._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _23, _25, NULL, NULL>
+  gimple_call <__ostream_insert, _58, &cout, _28, _23>
+
+  <bb 27> [local count: 168730856]:
+  gimple_call <endl.isra, NULL, _58>
+  goto <bb 29>; [100.00%]
+
+  <bb 28> [count: 0]:
+gimple_label <<L13>>
+  goto <bb 177>; [100.00%]
+
+  <bb 29> [local count: 168730856]:
+  gimple_call <__ct_base .constprop, NULL, &D.12383, "sighandle">
+  goto <bb 31>; [100.00%]
+
+  <bb 30> [count: 0]:
+gimple_label <<L14>>
+  goto <bb 177>; [100.00%]
+
+  <bb 31> [local count: 168730856]:
+  gimple_call <__ct_base .constprop, NULL, &D.12385, "main.cpp">
+
+  <bb 32> [local count: 168730856]:
+  gimple_call <__ct_base .constprop, NULL, &RED, "\x1b[31m">
+
+  <bb 33> [local count: 168730856]:
+  gimple_call <__ct_base .constprop, NULL, &RESET, "\x1b[0m">
+
+  <bb 34> [local count: 168730856]:
+  gimple_assign <component_ref, _213, RED._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _214, RED._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _215, _214, NULL, NULL>
+  gimple_call <__ostream_insert, _216, &cerr, _213, _215>
+
+  <bb 35> [local count: 168730856]:
+  gimple_call <__ostream_insert, NULL, _216, "In ", 3>
+  goto <bb 37>; [100.00%]
+
+  <bb 36> [count: 0]:
+gimple_label <<L19>>
+  goto <bb 59>; [100.00%]
+
+  <bb 37> [local count: 168730856]:
+  gimple_assign <component_ref, _217, D.12383._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _218, D.12383._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _219, _218, NULL, NULL>
+  gimple_call <__ostream_insert, _220, _216, _217, _219>
+  goto <bb 39>; [100.00%]
+
+  <bb 38> [count: 0]:
+gimple_label <<L20>>
+  goto <bb 59>; [100.00%]
+
+  <bb 39> [local count: 168730856]:
+  gimple_call <__ostream_insert, NULL, _220, "() in ", 6>
+  goto <bb 41>; [100.00%]
+
+  <bb 40> [count: 0]:
+gimple_label <<L21>>
+  goto <bb 59>; [100.00%]
+
+  <bb 41> [local count: 168730856]:
+  gimple_assign <component_ref, _221, D.12385._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _222, D.12385._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _223, _222, NULL, NULL>
+  gimple_call <__ostream_insert, _224, _220, _221, _223>
+  goto <bb 43>; [100.00%]
+
+  <bb 42> [count: 0]:
+gimple_label <<L22>>
+  goto <bb 59>; [100.00%]
+
+  <bb 43> [local count: 168730856]:
+  gimple_call <__ostream_insert, NULL, _224, " line ", 6>
+  goto <bb 45>; [100.00%]
+
+  <bb 44> [count: 0]:
+gimple_label <<L23>>
+  goto <bb 59>; [100.00%]
+
+  <bb 45> [local count: 168730856]:
+  gimple_call <operator<<, _225, _224, 69>
+  goto <bb 47>; [100.00%]
+
+  <bb 46> [count: 0]:
+gimple_label <<L24>>
+  goto <bb 59>; [100.00%]
+
+  <bb 47> [local count: 168730856]:
+  gimple_call <__ostream_insert, NULL, _225, ":", 1>
+  goto <bb 49>; [100.00%]
+
+  <bb 48> [count: 0]:
+gimple_label <<L25>>
+  goto <bb 59>; [100.00%]
+
+  <bb 49> [local count: 168730856]:
+  gimple_assign <component_ref, _226, RESET._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _227, RESET._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _228, _227, NULL, NULL>
+  gimple_call <__ostream_insert, _229, _225, _226, _228>
+  goto <bb 51>; [100.00%]
+
+  <bb 50> [count: 0]:
+gimple_label <<L26>>
+  goto <bb 59>; [100.00%]
+
+  <bb 51> [local count: 168730856]:
+  gimple_call <endl.isra, NULL, _229>
+  goto <bb 53>; [100.00%]
+
+  <bb 52> [count: 0]:
+gimple_label <<L27>>
+  goto <bb 59>; [100.00%]
+
+  <bb 53> [local count: 168730856]:
+  gimple_assign <component_ref, _230, RESET._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &RESET.D.11592._M_local_buf, _230, NULL, NULL>
+    goto <bb 54>; [53.47%]
+  else
+    goto <bb 201>; [46.53%]
+
+  <bb 201> [local count: 78510467]:
+  goto <bb 55>; [100.00%]
+
+  <bb 54> [local count: 90220389]:
+  gimple_assign <component_ref, _231, RESET.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _232, _231, 1, NULL>
+  gimple_call <operator delete, NULL, _230, _232>
+
+  <bb 55> [local count: 168730856]:
+  gimple_assign <constructor, RESET, {CLOBBER}, NULL, NULL>
+  gimple_assign <component_ref, _233, RED._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &RED.D.11592._M_local_buf, _233, NULL, NULL>
+    goto <bb 56>; [53.47%]
+  else
+    goto <bb 202>; [46.53%]
+
+  <bb 202> [local count: 78510467]:
+  goto <bb 57>; [100.00%]
+
+  <bb 56> [local count: 90220389]:
+  gimple_assign <component_ref, _234, RED.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _235, _234, 1, NULL>
+  gimple_call <operator delete, NULL, _233, _235>
+
+  <bb 57> [local count: 168730856]:
+  gimple_assign <constructor, RED, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, RED, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, RESET, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _69, D.12385._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12385.D.11592._M_local_buf, _69, NULL, NULL>
+    goto <bb 68>; [53.47%]
+  else
+    goto <bb 203>; [46.53%]
+
+  <bb 203> [local count: 78510467]:
+  goto <bb 69>; [100.00%]
+
+  <bb 58> [count: 0]:
+gimple_label <<L18>>
+
+  <bb 59> [count: 0]:
+gimple_label <<L6>>
+  gimple_assign <component_ref, _236, RESET._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &RESET.D.11592._M_local_buf, _236, NULL, NULL>
+    goto <bb 60>; [0.00%]
+  else
+    goto <bb 204>; [0.00%]
+
+  <bb 204> [count: 0]:
+  goto <bb 61>; [100.00%]
+
+  <bb 60> [count: 0]:
+  gimple_assign <component_ref, _237, RESET.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _238, _237, 1, NULL>
+  gimple_call <operator delete, NULL, _236, _238>
+
+  <bb 61> [count: 0]:
+  gimple_assign <constructor, RESET, {CLOBBER}, NULL, NULL>
+  gimple_resx <35>
+
+  <bb 62> [count: 0]:
+gimple_label <<L28>>
+  goto <bb 64>; [100.00%]
+
+  <bb 63> [count: 0]:
+gimple_label <<L17>>
+
+  <bb 64> [count: 0]:
+gimple_label <<L7>>
+  gimple_assign <component_ref, _239, RED._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &RED.D.11592._M_local_buf, _239, NULL, NULL>
+    goto <bb 65>; [0.00%]
+  else
+    goto <bb 205>; [0.00%]
+
+  <bb 205> [count: 0]:
+  goto <bb 66>; [100.00%]
+
+  <bb 65> [count: 0]:
+  gimple_assign <component_ref, _240, RED.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _241, _240, 1, NULL>
+  gimple_call <operator delete, NULL, _239, _241>
+
+  <bb 66> [count: 0]:
+  gimple_assign <constructor, RED, {CLOBBER}, NULL, NULL>
+  gimple_resx <34>
+
+  <bb 67> [count: 0]:
+gimple_label <<L29>>
+  goto <bb 164>; [100.00%]
+
+  <bb 68> [local count: 90220389]:
+  gimple_assign <component_ref, _70, D.12385.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _71, _70, 1, NULL>
+  gimple_call <operator delete, NULL, _69, _71>
+
+  <bb 69> [local count: 168730856]:
+  gimple_assign <constructor, D.12385, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12385, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _66, D.12383._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12383.D.11592._M_local_buf, _66, NULL, NULL>
+    goto <bb 70>; [53.47%]
+  else
+    goto <bb 206>; [46.53%]
+
+  <bb 206> [local count: 78510467]:
+  goto <bb 71>; [100.00%]
+
+  <bb 70> [local count: 90220389]:
+  gimple_assign <component_ref, _67, D.12383.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _68, _67, 1, NULL>
+  gimple_call <operator delete, NULL, _66, _68>
+
+  <bb 71> [local count: 168730856]:
+  gimple_assign <constructor, D.12383, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12383, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _65, errorMsg._M_dataplus._M_p, NULL, NULL>
+  gimple_call <write_log, NULL, _65>
+  goto <bb 73>; [100.00%]
+
+  <bb 72> [count: 0]:
+gimple_label <<L30>>
+  goto <bb 177>; [100.00%]
+
+  <bb 73> [local count: 168730856]:
+  gimple_call <__ostream_insert, NULL, &cout, "[INFO] Log file path: ", 22>
+  goto <bb 75>; [100.00%]
+
+  <bb 74> [count: 0]:
+gimple_label <<L31>>
+  goto <bb 177>; [100.00%]
+
+  <bb 75> [local count: 168730856]:
+  gimple_call <current_path, D.12387> [return slot optimization]
+  goto <bb 77>; [100.00%]
+
+  <bb 76> [count: 0]:
+gimple_label <<L32>>
+  goto <bb 177>; [100.00%]
+
+  <bb 77> [local count: 168730856]:
+  gimple_assign <component_ref, _242, MEM[(const struct basic_string *)&D.12387]._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _243, MEM[(const struct basic_string *)&D.12387]._M_string_length, NULL, NULL>
+  gimple_assign <constructor, D.12531, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, MEM[(struct _Alloc_hider *)&D.12531], {CLOBBER}, NULL, NULL>
+  gimple_assign <addr_expr, MEM[(struct _Alloc_hider *)&D.12531]._M_p, &D.12531.D.11592._M_local_buf, NULL, NULL>
+  gimple_assign <eq_expr, _251, _242, 0B, NULL>
+  gimple_assign <ne_expr, _252, _243, 0, NULL>
+  gimple_assign <bit_and_expr, _253, _251, _252, NULL>
+  gimple_cond <ne_expr, _253, 0, NULL, NULL>
+    goto <bb 78>; [0.04%]
+  else
+    goto <bb 79>; [99.96%]
+
+  <bb 78> [local count: 67492]:
+  gimple_call <__throw_logic_error, NULL, "basic_string: construction from null is not valid">
+
+  <bb 79> [local count: 168663364]:
+  gimple_assign <pointer_plus_expr, _254, _242, _243, NULL>
+  gimple_call <_M_construct, NULL, &D.12531, _242, _254, D.12538>
+  goto <bb 81>; [100.00%]
+
+  <bb 80> [count: 0]:
+gimple_label <<L34>>
+  goto <bb 174>; [100.00%]
+
+  <bb 81> [local count: 168663364]:
+  gimple_call <__ct_comp , NULL, &__ostr>
+
+  <bb 82> [local count: 168663364]:
+  gimple_call <operator<<.isra, NULL, &__ostr.D.11801, 34>
+
+  <bb 83> [local count: 168663364]:
+  gimple_assign <component_ref, _257, D.12531._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _258, D.12531._M_string_length, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _259, _257, _258, NULL>
+  gimple_cond <ne_expr, _257, _259, NULL, NULL>
+    goto <bb 181>; [89.00%]
+  else
+    goto <bb 207>; [11.00%]
+
+  <bb 207> [local count: 18552970]:
+
+  <bb 84> [local count: 168663364]:
+  gimple_call <operator<<.isra, NULL, &__ostr.D.11801, 34>
+  goto <bb 99>; [100.00%]
+
+  <bb 181> [local count: 150110394]:
+
+  <bb 85> [local count: 1364639950]:
+  # gimple_phi <SR.233_283, _265(185), _257(181)>
+  gimple_assign <mem_ref, __c_261, *SR.233_283, NULL, NULL>
+  gimple_assign <eq_expr, _266, __c_261, 92, NULL>
+  gimple_assign <eq_expr, _256, __c_261, 34, NULL>
+  gimple_assign <bit_ior_expr, _255, _256, _266, NULL>
+  gimple_assign <component_ref, pretmp_624, __ostr._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, pretmp_625, MEM[(long int *)pretmp_624 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _626, pretmp_625, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _627, &__ostr.D.11801, _626, NULL>
+  gimple_assign <component_ref, pretmp_628, MEM[(const struct ios_base *)_627]._M_width, NULL, NULL>
+  gimple_cond <ne_expr, _255, 0, NULL, NULL>
+    goto <bb 86>; [47.36%]
+  else
+    goto <bb 208>; [52.64%]
+
+  <bb 208> [local count: 718368299]:
+  goto <bb 92>; [100.00%]
+
+  <bb 86> [local count: 646271649]:
+  gimple_assign <integer_cst, __c, 92, NULL, NULL>
+  gimple_cond <ne_expr, pretmp_628, 0, NULL, NULL>
+    goto <bb 87>; [50.00%]
+  else
+    goto <bb 89>; [50.00%]
+
+  <bb 87> [local count: 323135825]:
+  gimple_call <__ostream_insert, NULL, &__ostr.D.11801, &__c, 1>
+  goto <bb 209>; [100.00%]
+
+  <bb 88> [count: 0]:
+gimple_label <<L37>>
+  goto <bb 110>; [100.00%]
+
+  <bb 89> [local count: 323135825]:
+  gimple_call <put, NULL, &__ostr.D.11801, 92>
+
+  <bb 210> [local count: 323135825]:
+  goto <bb 91>; [100.00%]
+
+  <bb 90> [count: 0]:
+gimple_label <<L38>>
+  goto <bb 110>; [100.00%]
+
+  <bb 209> [local count: 323135825]:
+
+  <bb 91> [local count: 646271650]:
+  gimple_assign <constructor, __c, {CLOBBER(eol)}, NULL, NULL>
+
+  <bb 92> [local count: 1364639953]:
+  gimple_assign <ssa_name, __c, __c_261, NULL, NULL>
+  gimple_assign <component_ref, _285, __ostr._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _286, MEM[(long int *)_285 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _287, _286, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _288, &__ostr.D.11801, _287, NULL>
+  gimple_assign <component_ref, _289, MEM[(const struct ios_base *)_288]._M_width, NULL, NULL>
+  gimple_cond <ne_expr, _289, 0, NULL, NULL>
+    goto <bb 93>; [50.00%]
+  else
+    goto <bb 95>; [50.00%]
+
+  <bb 93> [local count: 682319977]:
+  gimple_call <__ostream_insert, NULL, &__ostr.D.11801, &__c, 1>
+  goto <bb 211>; [100.00%]
+
+  <bb 94> [count: 0]:
+gimple_label <<L39>>
+  goto <bb 110>; [100.00%]
+
+  <bb 95> [local count: 682319977]:
+  gimple_call <put, NULL, &__ostr.D.11801, __c_261>
+
+  <bb 212> [local count: 682319977]:
+  goto <bb 97>; [100.00%]
+
+  <bb 96> [count: 0]:
+gimple_label <<L40>>
+  goto <bb 110>; [100.00%]
+
+  <bb 211> [local count: 682319977]:
+
+  <bb 97> [local count: 1364639954]:
+  gimple_assign <constructor, __c, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _265, SR.233_283, 1, NULL>
+  gimple_cond <ne_expr, _259, _265, NULL, NULL>
+    goto <bb 185>; [89.00%]
+  else
+    goto <bb 213>; [11.00%]
+
+  <bb 213> [local count: 150110394]:
+  goto <bb 84>; [100.00%]
+
+  <bb 185> [local count: 1214529560]:
+  goto <bb 85>; [100.00%]
+
+  <bb 98> [count: 0]:
+gimple_label <<L41>>
+  goto <bb 110>; [100.00%]
+
+  <bb 99> [local count: 168663364]:
+  gimple_call <str, D.12567, &__ostr._M_stringbuf> [return slot optimization]
+  goto <bb 101>; [100.00%]
+
+  <bb 100> [count: 0]:
+gimple_label <<L42>>
+  goto <bb 110>; [100.00%]
+
+  <bb 101> [local count: 168663364]:
+  gimple_assign <component_ref, _267, D.12567._M_dataplus._M_p, NULL, NULL>
+  gimple_assign <component_ref, _268, D.12567._M_string_length, NULL, NULL>
+  gimple_assign <nop_expr, _269, _268, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cout, _267, _269>
+
+  <bb 102> [local count: 168663364]:
+  gimple_assign <component_ref, _271, D.12567._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12567.D.11592._M_local_buf, _271, NULL, NULL>
+    goto <bb 103>; [53.47%]
+  else
+    goto <bb 214>; [46.53%]
+
+  <bb 214> [local count: 78479063]:
+  goto <bb 104>; [100.00%]
+
+  <bb 103> [local count: 90184300]:
+  gimple_assign <component_ref, _272, D.12567.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _273, _272, 1, NULL>
+  gimple_call <operator delete, NULL, _271, _273>
+
+  <bb 104> [local count: 168663364]:
+  gimple_assign <constructor, D.12567, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12567, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &__ostr>
+  gimple_assign <constructor, __ostr, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _244, D.12531._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12531.D.11592._M_local_buf, _244, NULL, NULL>
+    goto <bb 112>; [53.47%]
+  else
+    goto <bb 215>; [46.53%]
+
+  <bb 215> [local count: 78479063]:
+  goto <bb 113>; [100.00%]
+
+  <bb 105> [count: 0]:
+gimple_label <<L9>>
+  gimple_assign <component_ref, _274, D.12567._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12567.D.11592._M_local_buf, _274, NULL, NULL>
+    goto <bb 106>; [0.00%]
+  else
+    goto <bb 216>; [0.00%]
+
+  <bb 216> [count: 0]:
+  goto <bb 107>; [100.00%]
+
+  <bb 106> [count: 0]:
+  gimple_assign <component_ref, _275, D.12567.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _276, _275, 1, NULL>
+  gimple_call <operator delete, NULL, _274, _276>
+
+  <bb 107> [count: 0]:
+  gimple_assign <constructor, D.12567, {CLOBBER}, NULL, NULL>
+  gimple_resx <38>
+
+  <bb 108> [count: 0]:
+gimple_label <<L43>>
+  goto <bb 110>; [100.00%]
+
+  <bb 109> [count: 0]:
+gimple_label <<L36>>
+
+  <bb 110> [count: 0]:
+gimple_label <<L10>>
+  gimple_assign <constructor, D.12567, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &__ostr>
+  gimple_resx <37>
+
+  <bb 111> [count: 0]:
+gimple_label <<L44>>
+  goto <bb 116>; [100.00%]
+
+  <bb 112> [local count: 90184300]:
+  gimple_assign <component_ref, _245, D.12531.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _246, _245, 1, NULL>
+  gimple_call <operator delete, NULL, _244, _246>
+
+  <bb 113> [local count: 168663364]:
+  gimple_assign <constructor, D.12531, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12531, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cout, "/program_crash.log", 18>
+  goto <bb 120>; [100.00%]
+
+  <bb 114> [count: 0]:
+gimple_label <<L45>>
+  goto <bb 174>; [100.00%]
+
+  <bb 115> [count: 0]:
+gimple_label <<L35>>
+
+  <bb 116> [count: 0]:
+gimple_label <<L8>>
+  gimple_assign <constructor, __ostr, {CLOBBER}, NULL, NULL>
+  gimple_assign <component_ref, _247, D.12531._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12531.D.11592._M_local_buf, _247, NULL, NULL>
+    goto <bb 117>; [0.00%]
+  else
+    goto <bb 217>; [0.00%]
+
+  <bb 217> [count: 0]:
+  goto <bb 118>; [100.00%]
+
+  <bb 117> [count: 0]:
+  gimple_assign <component_ref, _248, D.12531.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _249, _248, 1, NULL>
+  gimple_call <operator delete, NULL, _247, _249>
+
+  <bb 118> [count: 0]:
+  gimple_assign <constructor, D.12531, {CLOBBER}, NULL, NULL>
+  gimple_resx <36>
+
+  <bb 119> [count: 0]:
+gimple_label <<L46>>
+  goto <bb 174>; [100.00%]
+
+  <bb 120> [local count: 168663364]:
+  gimple_call <endl.isra, NULL, &cout>
+  goto <bb 122>; [100.00%]
+
+  <bb 121> [count: 0]:
+gimple_label <<L47>>
+  goto <bb 174>; [100.00%]
+
+  <bb 122> [local count: 168663364]:
+  gimple_call <__dt_comp , NULL, &D.12387>
+  gimple_assign <constructor, D.12387, {CLOBBER(eol)}, NULL, NULL>
+  gimple_call <backtrace, _41, &array, 50>
+  goto <bb 124>; [100.00%]
+
+  <bb 123> [count: 0]:
+gimple_label <<L48>>
+  goto <bb 177>; [100.00%]
+
+  <bb 124> [local count: 168663364]:
+  gimple_call <backtrace_symbols, stackTrace_43, &array, _41>
+  gimple_cond <ne_expr, stackTrace_43, 0B, NULL, NULL>
+    goto <bb 125>; [70.00%]
+  else
+    goto <bb 218>; [30.00%]
+
+  <bb 125> [local count: 118064355]:
+  gimple_call <__ostream_insert, NULL, &cout, "[INFO] Stack trace:", 19>
+  goto <bb 127>; [100.00%]
+
+  <bb 126> [count: 0]:
+gimple_label <<L49>>
+  goto <bb 177>; [100.00%]
+
+  <bb 127> [local count: 118064355]:
+  gimple_call <endl.isra, NULL, &cout>
+  goto <bb 129>; [100.00%]
+
+  <bb 128> [count: 0]:
+gimple_label <<L50>>
+  goto <bb 177>; [100.00%]
+
+  <bb 129> [local count: 118064355]:
+  gimple_call <write_log, NULL, "[INFO] Stack trace:">
+  goto <bb 131>; [100.00%]
+
+  <bb 130> [count: 0]:
+gimple_label <<L51>>
+  goto <bb 177>; [100.00%]
+
+  <bb 131> [local count: 118064355]:
+  gimple_cond <gt_expr, _41, 0, NULL, NULL>
+    goto <bb 180>; [89.00%]
+  else
+    goto <bb 219>; [11.00%]
+
+  <bb 219> [local count: 12987079]:
+
+  <bb 132> [local count: 117683491]:
+  gimple_call <free, NULL, stackTrace_43>
+  goto <bb 154>; [100.00%]
+
+  <bb 180> [local count: 105077276]:
+
+  <bb 133> [local count: 952166428]:
+  # gimple_phi <i_284, i_49(184), 0(180)>
+  gimple_assign <nop_expr, _1, i_284, NULL, NULL>
+  gimple_assign <mult_expr, _2, _1, 8, NULL>
+  gimple_assign <pointer_plus_expr, _3, stackTrace_43, _2, NULL>
+  gimple_assign <mem_ref, _4, *_3, NULL, NULL>
+  gimple_cond <eq_expr, _4, 0B, NULL, NULL>
+    goto <bb 134>; [30.00%]
+  else
+    goto <bb 136>; [70.00%]
+
+  <bb 134> [local count: 285649925]:
+  gimple_assign <component_ref, _295, cout._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _296, MEM[(long int *)_295 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _297, _296, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _298, &cout, _297, NULL>
+  gimple_assign <component_ref, _299, MEM[(const struct basic_ios *)_298].D.11566._M_streambuf_state, NULL, NULL>
+  gimple_assign <bit_ior_expr, _300, _299, 1, NULL>
+  gimple_call <clear, NULL, _298, _300>
+  goto <bb 220>; [100.00%]
+
+  <bb 135> [count: 0]:
+gimple_label <<L52>>
+  goto <bb 177>; [100.00%]
+
+  <bb 136> [local count: 666516502]:
+  gimple_call <__builtin_strlen, _293, _4>
+  gimple_assign <nop_expr, _294, _293, NULL, NULL>
+  gimple_call <__ostream_insert, NULL, &cout, _4, _294>
+
+  <bb 221> [local count: 666516502]:
+  goto <bb 138>; [100.00%]
+
+  <bb 137> [count: 0]:
+gimple_label <<L53>>
+  goto <bb 177>; [100.00%]
+
+  <bb 220> [local count: 285649925]:
+
+  <bb 138> [local count: 952166430]:
+  gimple_assign <component_ref, _301, cout._vptr.basic_ostream, NULL, NULL>
+  gimple_assign <mem_ref, _302, MEM[(long int *)_301 + -24B], NULL, NULL>
+  gimple_assign <nop_expr, _303, _302, NULL, NULL>
+  gimple_assign <pointer_plus_expr, _304, &cout, _303, NULL>
+  gimple_assign <mem_ref, _308, MEM[(const struct __ctype_type * *)_304 + 240B], NULL, NULL>
+  gimple_cond <eq_expr, _308, 0B, NULL, NULL>
+    goto <bb 139>; [0.04%]
+  else
+    goto <bb 141>; [99.96%]
+
+  <bb 139> [local count: 380866]:
+  gimple_call <__throw_bad_cast, NULL>
+
+  <bb 140> [count: 0]:
+gimple_label <<L54>>
+  goto <bb 177>; [100.00%]
+
+  <bb 141> [local count: 951785564]:
+  gimple_assign <component_ref, _310, MEM[(const struct ctype *)_308]._M_widen_ok, NULL, NULL>
+  gimple_cond <ne_expr, _310, 0, NULL, NULL>
+    goto <bb 142>; [51.12%]
+  else
+    goto <bb 143>; [48.88%]
+
+  <bb 142> [local count: 486552783]:
+  gimple_assign <array_ref, _312, MEM[(const struct ctype *)_308]._M_widen[10], NULL, NULL>
+  goto <bb 147>; [100.00%]
+
+  <bb 143> [local count: 465232779]:
+  gimple_call <_M_widen_init, NULL, _308>
+  goto <bb 145>; [100.00%]
+
+  <bb 144> [count: 0]:
+gimple_label <<L55>>
+  goto <bb 177>; [100.00%]
+
+  <bb 145> [local count: 465232779]:
+  gimple_assign <component_ref, _315, MEM[(const struct ctype *)_308].D.11531._vptr.facet, NULL, NULL>
+  gimple_assign <mem_ref, _316, MEM[(int (*__vtbl_ptr_type) () *)_315 + 48B], NULL, NULL>
+  gimple_call <OBJ_TYPE_REF(_316;(struct ctype)_308->6B), _317, _308, 10>
+  goto <bb 222>; [100.00%]
+
+  <bb 146> [count: 0]:
+gimple_label <<L56>>
+  goto <bb 177>; [100.00%]
+
+  <bb 222> [local count: 465232779]:
+
+  <bb 147> [local count: 951785564]:
+  # gimple_phi <_314, _312(142), _317(222)>
+  gimple_call <put, _306, &cout, _314>
+  goto <bb 149>; [100.00%]
+
+  <bb 148> [count: 0]:
+gimple_label <<L57>>
+  goto <bb 177>; [100.00%]
+
+  <bb 149> [local count: 951785564]:
+  gimple_call <flush, NULL, _306>
+  goto <bb 151>; [100.00%]
+
+  <bb 150> [count: 0]:
+gimple_label <<L58>>
+  goto <bb 177>; [100.00%]
+
+  <bb 151> [local count: 951785564]:
+  gimple_assign <mem_ref, _5, *_3, NULL, NULL>
+  gimple_call <write_log, NULL, _5>
+  goto <bb 153>; [100.00%]
+
+  <bb 152> [count: 0]:
+gimple_label <<L59>>
+  goto <bb 177>; [100.00%]
+
+  <bb 153> [local count: 951785564]:
+  gimple_assign <plus_expr, i_49, i_284, 1, NULL>
+  gimple_cond <gt_expr, _41, i_49, NULL, NULL>
+    goto <bb 184>; [89.00%]
+  else
+    goto <bb 223>; [11.00%]
+
+  <bb 223> [local count: 104696411]:
+  goto <bb 132>; [100.00%]
+
+  <bb 184> [local count: 847089153]:
+  goto <bb 133>; [100.00%]
+
+  <bb 218> [local count: 50599009]:
+
+  <bb 154> [local count: 168282499]:
+  gimple_call <exit, NULL, 127>
+
+  <bb 155> [count: 0]:
+gimple_label <<L0>>
+  gimple_assign <component_ref, _72, D.12381._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12381.D.11592._M_local_buf, _72, NULL, NULL>
+    goto <bb 156>; [0.00%]
+  else
+    goto <bb 224>; [0.00%]
+
+  <bb 224> [count: 0]:
+  goto <bb 157>; [100.00%]
+
+  <bb 156> [count: 0]:
+  gimple_assign <component_ref, _73, D.12381.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _74, _73, 1, NULL>
+  gimple_call <operator delete, NULL, _72, _74>
+
+  <bb 157> [count: 0]:
+  gimple_assign <constructor, D.12381, {CLOBBER}, NULL, NULL>
+  gimple_resx <5>
+
+  <bb 158> [count: 0]:
+gimple_label <<L60>>
+  goto <bb 160>; [100.00%]
+
+  <bb 159> [count: 0]:
+gimple_label <<L11>>
+
+  <bb 160> [count: 0]:
+gimple_label <<L1>>
+  gimple_assign <component_ref, _75, D.12382._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12382.D.11592._M_local_buf, _75, NULL, NULL>
+    goto <bb 161>; [0.00%]
+  else
+    goto <bb 225>; [0.00%]
+
+  <bb 225> [count: 0]:
+  goto <bb 162>; [100.00%]
+
+  <bb 161> [count: 0]:
+  gimple_assign <component_ref, _76, D.12382.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _77, _76, 1, NULL>
+  gimple_call <operator delete, NULL, _75, _77>
+
+  <bb 162> [count: 0]:
+  gimple_assign <constructor, D.12382, {CLOBBER}, NULL, NULL>
+  gimple_resx <4>
+
+  <bb 163> [count: 0]:
+gimple_label <<L16>>
+
+  <bb 164> [count: 0]:
+gimple_label <<L2>>
+  gimple_assign <constructor, RED, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, RESET, {CLOBBER}, NULL, NULL>
+  gimple_assign <component_ref, _78, D.12385._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12385.D.11592._M_local_buf, _78, NULL, NULL>
+    goto <bb 165>; [0.00%]
+  else
+    goto <bb 226>; [0.00%]
+
+  <bb 226> [count: 0]:
+  goto <bb 166>; [100.00%]
+
+  <bb 165> [count: 0]:
+  gimple_assign <component_ref, _79, D.12385.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _80, _79, 1, NULL>
+  gimple_call <operator delete, NULL, _78, _80>
+
+  <bb 166> [count: 0]:
+  gimple_assign <constructor, D.12385, {CLOBBER}, NULL, NULL>
+  gimple_resx <18>
+
+  <bb 167> [count: 0]:
+gimple_label <<L61>>
+  goto <bb 169>; [100.00%]
+
+  <bb 168> [count: 0]:
+gimple_label <<L15>>
+
+  <bb 169> [count: 0]:
+gimple_label <<L3>>
+  gimple_assign <constructor, D.12385, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _81, D.12383._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &D.12383.D.11592._M_local_buf, _81, NULL, NULL>
+    goto <bb 170>; [0.00%]
+  else
+    goto <bb 227>; [0.00%]
+
+  <bb 227> [count: 0]:
+  goto <bb 171>; [100.00%]
+
+  <bb 170> [count: 0]:
+  gimple_assign <component_ref, _82, D.12383.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _83, _82, 1, NULL>
+  gimple_call <operator delete, NULL, _81, _83>
+
+  <bb 171> [count: 0]:
+  gimple_assign <constructor, D.12383, {CLOBBER}, NULL, NULL>
+  gimple_resx <14>
+
+  <bb 172> [count: 0]:
+gimple_label <<L62>>
+  goto <bb 177>; [100.00%]
+
+  <bb 173> [count: 0]:
+gimple_label <<L33>>
+
+  <bb 174> [count: 0]:
+gimple_label <<L4>>
+  gimple_assign <constructor, D.12538, {CLOBBER}, NULL, NULL>
+  gimple_assign <constructor, D.12531, {CLOBBER}, NULL, NULL>
+  gimple_call <__dt_comp , NULL, &D.12387>
+  gimple_resx <28>
+
+  <bb 175> [count: 0]:
+gimple_label <<L63>>
+  goto <bb 177>; [100.00%]
+
+  <bb 176> [count: 0]:
+gimple_label <<L12>>
+
+  <bb 177> [count: 0]:
+gimple_label <<L5>>
+  gimple_assign <constructor, D.12383, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <constructor, D.12387, {CLOBBER(eol)}, NULL, NULL>
+  gimple_assign <component_ref, _84, errorMsg._M_dataplus._M_p, NULL, NULL>
+  gimple_cond <ne_expr, &errorMsg.D.11592._M_local_buf, _84, NULL, NULL>
+    goto <bb 178>; [0.00%]
+  else
+    goto <bb 228>; [0.00%]
+
+  <bb 228> [count: 0]:
+  goto <bb 179>; [100.00%]
+
+  <bb 178> [count: 0]:
+  gimple_assign <component_ref, _85, errorMsg.D.11592._M_allocated_capacity, NULL, NULL>
+  gimple_assign <plus_expr, _86, _85, 1, NULL>
+  gimple_call <operator delete, NULL, _84, _86>
+
+  <bb 179> [count: 0]:
+  gimple_assign <constructor, errorMsg, {CLOBBER}, NULL, NULL>
+  gimple_resx <10>
+
+}
+
+

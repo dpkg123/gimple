@@ -1,0 +1,509 @@
+120 fre "RPO blocks" "__dt_base " 5
+120 fre "RPO iterations == 10" "__dt_base " 1
+120 fre "RPO blocks visited" "__dt_base " 5
+120 fre "RPO num values == 13" "__dt_base " 1
+120 fre "RPO blocks executable" "__dt_base " 5
+120 fre "RPO block visited times == 1" "__dt_base " 5
+120 fre "RPO num lattice == 13" "__dt_base " 1
+120 fre "RPO num avail == 6" "__dt_base " 1
+123 vrp "Incremental SSA update" "__dt_base " 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "__dt_base " 3
+151 pre "RPO blocks" "__dt_base " 7
+151 pre "RPO iterations == 10" "__dt_base " 1
+151 pre "compute_antic iterations == 2" "__dt_base " 1
+151 pre "RPO blocks visited" "__dt_base " 7
+151 pre "RPO num values == 13" "__dt_base " 1
+151 pre "RPO blocks executable" "__dt_base " 7
+151 pre "RPO block visited times == 1" "__dt_base " 7
+151 pre "RPO num lattice == 13" "__dt_base " 1
+151 pre "insert iterations == 1" "__dt_base " 1
+151 pre "RPO num avail == 6" "__dt_base " 1
+201 fre "RPO blocks" "__dt_base " 5
+201 fre "RPO iterations == 10" "__dt_base " 1
+201 fre "RPO blocks visited" "__dt_base " 5
+201 fre "RPO num values == 13" "__dt_base " 1
+201 fre "RPO blocks executable" "__dt_base " 5
+201 fre "RPO block visited times == 1" "__dt_base " 5
+201 fre "RPO num lattice == 13" "__dt_base " 1
+201 fre "RPO num avail == 6" "__dt_base " 1
+292 combine "two-insn combine" "__dt_base " 3
+93 inline "Symbol to SSA rewrite" "operator<<.isra" 1
+120 fre "RPO blocks" "operator<<.isra" 5
+120 fre "RPO num lattice == 12" "operator<<.isra" 1
+120 fre "RPO iterations == 10" "operator<<.isra" 1
+120 fre "RPO blocks visited" "operator<<.isra" 5
+120 fre "RPO num values == 12" "operator<<.isra" 1
+120 fre "RPO blocks executable" "operator<<.isra" 5
+120 fre "RPO block visited times == 1" "operator<<.isra" 5
+120 fre "RPO num avail == 8" "operator<<.isra" 1
+123 vrp "Incremental SSA update" "operator<<.isra" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "operator<<.isra" 1
+126 stdarg "unused VAR_DECLs removed" "operator<<.isra" 1
+151 pre "RPO num lattice == 10" "operator<<.isra" 1
+151 pre "RPO blocks" "operator<<.isra" 4
+151 pre "RPO iterations == 10" "operator<<.isra" 1
+151 pre "compute_antic iterations == 2" "operator<<.isra" 1
+151 pre "RPO blocks visited" "operator<<.isra" 4
+151 pre "RPO num values == 10" "operator<<.isra" 1
+151 pre "RPO blocks executable" "operator<<.isra" 4
+151 pre "RPO block visited times == 1" "operator<<.isra" 4
+151 pre "insert iterations == 1" "operator<<.isra" 1
+151 pre "RPO num avail == 6" "operator<<.isra" 1
+201 fre "RPO num lattice == 10" "operator<<.isra" 1
+201 fre "RPO blocks" "operator<<.isra" 4
+201 fre "RPO iterations == 10" "operator<<.isra" 1
+201 fre "RPO blocks visited" "operator<<.isra" 4
+201 fre "RPO num values == 10" "operator<<.isra" 1
+201 fre "RPO blocks executable" "operator<<.isra" 4
+201 fre "RPO block visited times == 1" "operator<<.isra" 4
+201 fre "RPO num avail == 6" "operator<<.isra" 1
+292 combine "two-insn combine" "operator<<.isra" 2
+93 inline "Symbol to SSA rewrite" "endl.isra" 2
+110 ccp "Copies propagated" "endl.isra" 9
+110 ccp "Constants propagated" "endl.isra" 1
+110 ccp "Statements deleted" "endl.isra" 6
+120 fre "RPO blocks" "endl.isra" 6
+120 fre "RPO iterations == 10" "endl.isra" 1
+120 fre "RPO blocks visited" "endl.isra" 6
+120 fre "RPO num lattice == 20" "endl.isra" 1
+120 fre "RPO blocks executable" "endl.isra" 6
+120 fre "RPO block visited times == 1" "endl.isra" 6
+120 fre "RPO num avail == 13" "endl.isra" 1
+120 fre "RPO num values == 20" "endl.isra" 1
+123 vrp "Incremental SSA update" "endl.isra" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "endl.isra" 2
+126 stdarg "unused VAR_DECLs removed" "endl.isra" 2
+151 pre "RPO blocks" "endl.isra" 6
+151 pre "RPO num avail == 12" "endl.isra" 1
+151 pre "RPO iterations == 10" "endl.isra" 1
+151 pre "compute_antic iterations == 2" "endl.isra" 1
+151 pre "RPO blocks visited" "endl.isra" 6
+151 pre "RPO num lattice == 19" "endl.isra" 1
+151 pre "RPO num values == 19" "endl.isra" 1
+151 pre "RPO blocks executable" "endl.isra" 6
+151 pre "RPO block visited times == 1" "endl.isra" 6
+151 pre "insert iterations == 1" "endl.isra" 1
+201 fre "RPO blocks" "endl.isra" 6
+201 fre "RPO num avail == 12" "endl.isra" 1
+201 fre "RPO iterations == 10" "endl.isra" 1
+201 fre "RPO blocks visited" "endl.isra" 6
+201 fre "RPO num lattice == 19" "endl.isra" 1
+201 fre "RPO num values == 19" "endl.isra" 1
+201 fre "RPO blocks executable" "endl.isra" 6
+201 fre "RPO block visited times == 1" "endl.isra" 6
+292 combine "two-insn combine" "endl.isra" 3
+93 inline "unused VAR_DECLs removed" "do_widen" 6
+93 inline "Symbol to SSA rewrite" "do_widen" 1
+120 fre "RPO blocks" "do_widen" 1
+120 fre "RPO iterations == 10" "do_widen" 1
+120 fre "RPO blocks visited" "do_widen" 1
+120 fre "RPO num values == 0" "do_widen" 1
+120 fre "RPO blocks executable" "do_widen" 1
+120 fre "RPO block visited times == 1" "do_widen" 1
+120 fre "RPO num avail == 0" "do_widen" 1
+120 fre "RPO num lattice == 0" "do_widen" 1
+151 pre "RPO blocks" "do_widen" 1
+151 pre "RPO iterations == 10" "do_widen" 1
+151 pre "compute_antic iterations == 2" "do_widen" 1
+151 pre "RPO blocks visited" "do_widen" 1
+151 pre "RPO num lattice == 0" "do_widen" 1
+151 pre "RPO blocks executable" "do_widen" 1
+151 pre "RPO block visited times == 1" "do_widen" 1
+151 pre "RPO num avail == 0" "do_widen" 1
+151 pre "insert iterations == 1" "do_widen" 1
+151 pre "RPO num values == 0" "do_widen" 1
+201 fre "RPO blocks" "do_widen" 1
+201 fre "RPO iterations == 10" "do_widen" 1
+201 fre "RPO blocks visited" "do_widen" 1
+201 fre "RPO num lattice == 0" "do_widen" 1
+201 fre "RPO blocks executable" "do_widen" 1
+201 fre "RPO block visited times == 1" "do_widen" 1
+201 fre "RPO num avail == 0" "do_widen" 1
+201 fre "RPO num values == 0" "do_widen" 1
+292 combine "two-insn combine" "do_widen" 1
+93 inline "Symbol to SSA rewrite" "write_log" 2
+110 ccp "Copies propagated" "write_log" 10
+110 ccp "Constants propagated" "write_log" 23
+110 ccp "Statements deleted" "write_log" 21
+120 fre "RPO blocks" "write_log" 49
+120 fre "RPO iterations == 10" "write_log" 1
+120 fre "RPO blocks visited" "write_log" 47
+120 fre "RPO block visited times == 0" "write_log" 2
+120 fre "RPO num values == 178" "write_log" 1
+120 fre "RPO num avail == 74" "write_log" 1
+120 fre "RPO blocks executable" "write_log" 47
+120 fre "RPO block visited times == 1" "write_log" 47
+120 fre "Eliminated" "write_log" 3
+120 fre "RPO num lattice == 178" "write_log" 1
+122 threadfull "Jumps threaded" "write_log" 1
+123 vrp "Incremental SSA update" "write_log" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "write_log" 13
+125 dce "PHI nodes deleted" "write_log" 1
+125 dce "Statements deleted" "write_log" 1
+126 stdarg "unused VAR_DECLs removed" "write_log" 4
+138 dom "Constants propagated" "write_log" 1
+138 dom "Redundant expressions eliminated" "write_log" 2
+138 dom "Jumps threaded" "write_log" 1
+139 copyprop "Statements deleted" "write_log" 3
+142 dce "PHI nodes deleted" "write_log" 1
+151 pre "Symbol to SSA rewrite" "write_log" 1
+151 pre "Eliminated" "write_log" 10
+151 pre "insert iterations == 1" "write_log" 1
+151 pre "RPO block visited times == 1" "write_log" 78
+151 pre "RPO num lattice == 166" "write_log" 1
+151 pre "Insertions" "write_log" 6
+151 pre "RPO num avail == 71" "write_log" 1
+151 pre "compute_antic iterations == 2" "write_log" 1
+151 pre "RPO blocks visited" "write_log" 78
+151 pre "RPO num values == 166" "write_log" 1
+151 pre "RPO blocks" "write_log" 78
+151 pre "HOIST inserted" "write_log" 4
+151 pre "RPO iterations == 10" "write_log" 1
+151 pre "RPO blocks executable" "write_log" 78
+151 pre "New PHIs" "write_log" 2
+192 slp "SLP optimize perm iterations == 2" "write_log" 3
+201 fre "RPO blocks" "write_log" 66
+201 fre "RPO iterations == 10" "write_log" 1
+201 fre "RPO num values == 163" "write_log" 1
+201 fre "RPO blocks visited" "write_log" 66
+201 fre "RPO blocks executable" "write_log" 66
+201 fre "RPO block visited times == 1" "write_log" 66
+201 fre "Eliminated" "write_log" 1
+201 fre "RPO num lattice == 163" "write_log" 1
+201 fre "RPO num avail == 69" "write_log" 1
+206 vrp "Statements folded" "write_log" 1
+292 combine "two-insn combine" "write_log" 28
+93 inline "unused VAR_DECLs removed" "_M_construct" 42
+93 inline "Symbol to SSA rewrite" "_M_construct" 1
+120 fre "Eliminated" "_M_construct" 1
+120 fre "RPO num lattice == 30" "_M_construct" 1
+120 fre "RPO block visited times == 0" "_M_construct" 2
+120 fre "RPO num values == 30" "_M_construct" 1
+120 fre "RPO num avail == 9" "_M_construct" 1
+120 fre "RPO blocks visited" "_M_construct" 9
+120 fre "RPO blocks" "_M_construct" 11
+120 fre "RPO blocks executable" "_M_construct" 9
+120 fre "RPO block visited times == 1" "_M_construct" 9
+120 fre "RPO iterations == 10" "_M_construct" 1
+122 threadfull "Incremental SSA update" "_M_construct" 1
+122 threadfull "Jumps threaded" "_M_construct" 1
+123 vrp "Incremental SSA update" "_M_construct" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "_M_construct" 7
+125 dce "PHI nodes deleted" "_M_construct" 1
+125 dce "Statements deleted" "_M_construct" 1
+126 stdarg "unused VAR_DECLs removed" "_M_construct" 1
+138 dom "Incremental SSA update" "_M_construct" 1
+138 dom "Redundant expressions eliminated" "_M_construct" 1
+138 dom "Jumps threaded" "_M_construct" 1
+139 copyprop "Copies propagated" "_M_construct" 1
+139 copyprop "Statements deleted" "_M_construct" 2
+142 dce "PHI nodes deleted" "_M_construct" 1
+151 pre "RPO num avail == 10" "_M_construct" 1
+151 pre "Eliminated" "_M_construct" 2
+151 pre "RPO num values == 24" "_M_construct" 1
+151 pre "insert iterations == 1" "_M_construct" 1
+151 pre "RPO block visited times == 1" "_M_construct" 9
+151 pre "Insertions" "_M_construct" 4
+151 pre "compute_antic iterations == 2" "_M_construct" 1
+151 pre "RPO blocks visited" "_M_construct" 9
+151 pre "RPO blocks" "_M_construct" 9
+151 pre "RPO num lattice == 24" "_M_construct" 1
+151 pre "RPO iterations == 10" "_M_construct" 1
+151 pre "RPO blocks executable" "_M_construct" 9
+151 pre "New PHIs" "_M_construct" 2
+201 fre "RPO blocks" "_M_construct" 7
+201 fre "RPO iterations == 10" "_M_construct" 1
+201 fre "RPO num avail == 14" "_M_construct" 1
+201 fre "RPO blocks visited" "_M_construct" 7
+201 fre "RPO num lattice == 28" "_M_construct" 1
+201 fre "RPO blocks executable" "_M_construct" 7
+201 fre "RPO block visited times == 1" "_M_construct" 7
+201 fre "RPO num values == 28" "_M_construct" 1
+254 resx "Symbol to SSA rewrite" "_M_construct" 1
+260 optimized "unused VAR_DECLs removed" "_M_construct" 2
+292 combine "two-insn combine" "_M_construct" 3
+93 inline "unused VAR_DECLs removed" "_M_construct" 4
+93 inline "Symbol to SSA rewrite" "_M_construct" 1
+93 inline "Symbol to SSA rewrite" "_M_construct" 1
+120 fre "Eliminated" "_M_construct" 1
+120 fre "RPO num lattice == 30" "_M_construct" 1
+120 fre "RPO block visited times == 0" "_M_construct" 2
+120 fre "RPO num values == 30" "_M_construct" 1
+120 fre "RPO num avail == 9" "_M_construct" 1
+120 fre "RPO blocks visited" "_M_construct" 9
+120 fre "RPO blocks" "_M_construct" 11
+120 fre "RPO blocks executable" "_M_construct" 9
+120 fre "RPO block visited times == 1" "_M_construct" 9
+120 fre "RPO iterations == 10" "_M_construct" 1
+122 threadfull "Incremental SSA update" "_M_construct" 1
+122 threadfull "Jumps threaded" "_M_construct" 1
+123 vrp "Incremental SSA update" "_M_construct" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "_M_construct" 7
+125 dce "PHI nodes deleted" "_M_construct" 1
+125 dce "Statements deleted" "_M_construct" 1
+126 stdarg "unused VAR_DECLs removed" "_M_construct" 1
+138 dom "Incremental SSA update" "_M_construct" 1
+138 dom "Redundant expressions eliminated" "_M_construct" 1
+138 dom "Jumps threaded" "_M_construct" 1
+139 copyprop "Copies propagated" "_M_construct" 1
+139 copyprop "Statements deleted" "_M_construct" 2
+142 dce "PHI nodes deleted" "_M_construct" 1
+151 pre "RPO num avail == 10" "_M_construct" 1
+151 pre "Eliminated" "_M_construct" 2
+151 pre "RPO num values == 24" "_M_construct" 1
+151 pre "insert iterations == 1" "_M_construct" 1
+151 pre "RPO block visited times == 1" "_M_construct" 9
+151 pre "Insertions" "_M_construct" 4
+151 pre "compute_antic iterations == 2" "_M_construct" 1
+151 pre "RPO blocks visited" "_M_construct" 9
+151 pre "RPO blocks" "_M_construct" 9
+151 pre "RPO num lattice == 24" "_M_construct" 1
+151 pre "RPO iterations == 10" "_M_construct" 1
+151 pre "RPO blocks executable" "_M_construct" 9
+151 pre "New PHIs" "_M_construct" 2
+201 fre "RPO blocks" "_M_construct" 7
+201 fre "RPO iterations == 10" "_M_construct" 1
+201 fre "RPO num avail == 14" "_M_construct" 1
+201 fre "RPO blocks visited" "_M_construct" 7
+201 fre "RPO num lattice == 28" "_M_construct" 1
+201 fre "RPO blocks executable" "_M_construct" 7
+201 fre "RPO block visited times == 1" "_M_construct" 7
+201 fre "RPO num values == 28" "_M_construct" 1
+292 combine "two-insn combine" "_M_construct" 3
+93 inline "unused VAR_DECLs removed" "__ct_base .constprop" 4
+93 inline "Symbol to SSA rewrite" "__ct_base .constprop" 1
+120 fre "RPO num values == 10" "__ct_base .constprop" 1
+120 fre "RPO num avail == 3" "__ct_base .constprop" 1
+120 fre "RPO blocks visited" "__ct_base .constprop" 3
+120 fre "RPO blocks" "__ct_base .constprop" 3
+120 fre "RPO blocks executable" "__ct_base .constprop" 3
+120 fre "RPO block visited times == 1" "__ct_base .constprop" 3
+120 fre "RPO iterations == 10" "__ct_base .constprop" 1
+120 fre "RPO num lattice == 10" "__ct_base .constprop" 1
+122 threadfull "Incremental SSA update" "__ct_base .constprop" 1
+123 vrp "Incremental SSA update" "__ct_base .constprop" 1
+123 vrp "Statements folded" "__ct_base .constprop" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "__ct_base .constprop" 2
+126 stdarg "unused VAR_DECLs removed" "__ct_base .constprop" 1
+138 dom "Incremental SSA update" "__ct_base .constprop" 1
+151 pre "RPO num values == 9" "__ct_base .constprop" 1
+151 pre "RPO num lattice == 9" "__ct_base .constprop" 1
+151 pre "insert iterations == 1" "__ct_base .constprop" 1
+151 pre "RPO block visited times == 1" "__ct_base .constprop" 1
+151 pre "RPO num avail == 3" "__ct_base .constprop" 1
+151 pre "compute_antic iterations == 2" "__ct_base .constprop" 1
+151 pre "RPO blocks visited" "__ct_base .constprop" 1
+151 pre "RPO blocks" "__ct_base .constprop" 1
+151 pre "RPO iterations == 10" "__ct_base .constprop" 1
+151 pre "RPO blocks executable" "__ct_base .constprop" 1
+201 fre "RPO num values == 9" "__ct_base .constprop" 1
+201 fre "RPO num lattice == 9" "__ct_base .constprop" 1
+201 fre "RPO block visited times == 1" "__ct_base .constprop" 1
+201 fre "RPO num avail == 3" "__ct_base .constprop" 1
+201 fre "RPO blocks visited" "__ct_base .constprop" 1
+201 fre "RPO blocks" "__ct_base .constprop" 1
+201 fre "RPO iterations == 10" "__ct_base .constprop" 1
+201 fre "RPO blocks executable" "__ct_base .constprop" 1
+292 combine "two-insn combine" "__ct_base .constprop" 3
+120 fre "RPO num avail == 55" "main" 1
+120 fre "RPO block visited times == 2" "main" 10
+120 fre "RPO iterations == 12" "main" 1
+120 fre "RPO blocks visited" "main" 59
+120 fre "RPO blocks" "main" 49
+120 fre "RPO blocks executable" "main" 49
+120 fre "RPO num values == 134" "main" 1
+120 fre "RPO block visited times == 1" "main" 39
+120 fre "RPO num lattice == 134" "main" 1
+123 vrp "Incremental SSA update" "main" 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "main" 10
+151 pre "RPO num values == 134" "main" 1
+151 pre "Symbol to SSA rewrite" "main" 1
+151 pre "RPO num avail == 55" "main" 1
+151 pre "insert iterations == 1" "main" 1
+151 pre "RPO block visited times == 1" "main" 74
+151 pre "RPO block visited times == 2" "main" 10
+151 pre "RPO iterations == 11" "main" 1
+151 pre "RPO blocks visited" "main" 94
+151 pre "compute_antic iterations == 3" "main" 1
+151 pre "RPO blocks" "main" 84
+151 pre "RPO blocks executable" "main" 84
+151 pre "RPO num lattice == 134" "main" 1
+157 dce "PHI nodes deleted" "main" 1
+201 fre "RPO num values == 134" "main" 1
+201 fre "RPO num avail == 55" "main" 1
+201 fre "RPO block visited times == 1" "main" 77
+201 fre "RPO blocks visited" "main" 77
+201 fre "RPO blocks" "main" 77
+201 fre "RPO iterations == 10" "main" 1
+201 fre "RPO blocks executable" "main" 77
+201 fre "RPO num lattice == 134" "main" 1
+292 combine "two-insn combine" "main" 33
+93 inline "unused VAR_DECLs removed" "__dt_base " 8
+93 inline "Symbol to SSA rewrite" "__dt_base " 1
+93 inline "Symbol to SSA rewrite" "__dt_base " 1
+120 fre "RPO num values == 13" "__dt_base " 1
+120 fre "RPO num avail == 5" "__dt_base " 1
+120 fre "RPO blocks visited" "__dt_base " 3
+120 fre "RPO blocks" "__dt_base " 3
+120 fre "RPO blocks executable" "__dt_base " 3
+120 fre "RPO block visited times == 1" "__dt_base " 3
+120 fre "RPO iterations == 10" "__dt_base " 1
+120 fre "RPO num lattice == 13" "__dt_base " 1
+123 vrp "Incremental SSA update" "__dt_base " 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "__dt_base " 3
+151 pre "RPO num values == 13" "__dt_base " 1
+151 pre "insert iterations == 1" "__dt_base " 1
+151 pre "RPO block visited times == 1" "__dt_base " 4
+151 pre "compute_antic iterations == 2" "__dt_base " 1
+151 pre "RPO blocks visited" "__dt_base " 4
+151 pre "RPO blocks" "__dt_base " 4
+151 pre "RPO num avail == 5" "__dt_base " 1
+151 pre "RPO iterations == 10" "__dt_base " 1
+151 pre "RPO blocks executable" "__dt_base " 4
+151 pre "RPO num lattice == 13" "__dt_base " 1
+201 fre "RPO num values == 13" "__dt_base " 1
+201 fre "RPO block visited times == 1" "__dt_base " 3
+201 fre "RPO blocks visited" "__dt_base " 3
+201 fre "RPO blocks" "__dt_base " 3
+201 fre "RPO num avail == 5" "__dt_base " 1
+201 fre "RPO iterations == 10" "__dt_base " 1
+201 fre "RPO blocks executable" "__dt_base " 3
+201 fre "RPO num lattice == 13" "__dt_base " 1
+254 resx "Symbol to SSA rewrite" "__dt_base " 1
+292 combine "two-insn combine" "__dt_base " 1
+120 fre "RPO num values == 14" "__dt_del " 1
+120 fre "RPO num lattice == 14" "__dt_del " 1
+120 fre "RPO num avail == 5" "__dt_del " 1
+120 fre "RPO blocks visited" "__dt_del " 3
+120 fre "RPO blocks" "__dt_del " 3
+120 fre "RPO blocks executable" "__dt_del " 3
+120 fre "RPO block visited times == 1" "__dt_del " 3
+120 fre "RPO iterations == 10" "__dt_del " 1
+123 vrp "Incremental SSA update" "__dt_del " 1
+123 vrp "Number of ASSERT_EXPR expressions inserted" "__dt_del " 3
+151 pre "insert iterations == 1" "__dt_del " 1
+151 pre "RPO block visited times == 1" "__dt_del " 4
+151 pre "compute_antic iterations == 2" "__dt_del " 1
+151 pre "RPO blocks visited" "__dt_del " 4
+151 pre "RPO blocks" "__dt_del " 4
+151 pre "RPO num avail == 5" "__dt_del " 1
+151 pre "RPO num values == 14" "__dt_del " 1
+151 pre "RPO num lattice == 14" "__dt_del " 1
+151 pre "RPO iterations == 10" "__dt_del " 1
+151 pre "RPO blocks executable" "__dt_del " 4
+201 fre "RPO num values == 14" "__dt_del " 1
+201 fre "RPO block visited times == 1" "__dt_del " 3
+201 fre "RPO blocks visited" "__dt_del " 3
+201 fre "RPO blocks" "__dt_del " 3
+201 fre "RPO num avail == 5" "__dt_del " 1
+201 fre "RPO iterations == 10" "__dt_del " 1
+201 fre "RPO blocks executable" "__dt_del " 3
+201 fre "RPO num lattice == 14" "__dt_del " 1
+292 combine "two-insn combine" "__dt_del " 1
+93 inline "unused VAR_DECLs removed" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+93 inline "Symbol to SSA rewrite" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+93 inline "Symbol to SSA rewrite" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO num avail == 0" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO blocks visited" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO blocks" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO blocks executable" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO num lattice == 4" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO block visited times == 1" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO iterations == 10" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+120 fre "RPO num values == 4" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "insert iterations == 1" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO num avail == 0" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO block visited times == 1" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "compute_antic iterations == 2" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO blocks visited" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO num lattice == 4" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO blocks" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO iterations == 10" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO blocks executable" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+151 pre "RPO num values == 4" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO num avail == 0" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO block visited times == 1" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO blocks visited" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO num lattice == 4" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO blocks" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO iterations == 10" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO blocks executable" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+201 fre "RPO num values == 4" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 1
+292 combine "two-insn combine" "_GLOBAL__sub_I__Z8logErrorRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_i" 3
+93 inline "unused VAR_DECLs removed" "sighandle" 3
+93 inline "Symbol to SSA rewrite" "sighandle" 1
+93 inline "Symbol to SSA rewrite" "sighandle" 5
+110 ccp "Copies propagated" "sighandle" 9
+110 ccp "Constants propagated" "sighandle" 11
+110 ccp "Statements deleted" "sighandle" 14
+120 fre "Eliminated" "sighandle" 8
+120 fre "RPO num avail == 178" "sighandle" 1
+120 fre "RPO block visited times == 2" "sighandle" 31
+120 fre "RPO iterations == 12" "sighandle" 1
+120 fre "RPO blocks visited" "sighandle" 159
+120 fre "RPO blocks" "sighandle" 128
+120 fre "RPO blocks executable" "sighandle" 128
+120 fre "RPO num values == 354" "sighandle" 1
+120 fre "RPO num lattice == 354" "sighandle" 1
+120 fre "RPO block visited times == 1" "sighandle" 97
+123 vrp "Incremental SSA update" "sighandle" 2
+123 vrp "Number of ASSERT_EXPR expressions inserted" "sighandle" 39
+125 dce "Statements deleted" "sighandle" 3
+126 stdarg "unused VAR_DECLs removed" "sighandle" 7
+128 cselim "if-then-else store replacement" "sighandle" 1
+129 copyprop "Copies propagated" "sighandle" 6
+129 copyprop "Statements deleted" "sighandle" 4
+134 ch "RPO blocks" "sighandle" 11
+134 ch "RPO num values == 4" "sighandle" 1
+134 ch "RPO iterations == 10" "sighandle" 4
+134 ch "Incremental SSA update" "sighandle" 1
+134 ch "RPO blocks visited" "sighandle" 11
+134 ch "RPO num avail == 2" "sighandle" 2
+134 ch "RPO blocks executable" "sighandle" 11
+134 ch "RPO block visited times == 1" "sighandle" 11
+134 ch "RPO num avail == 0" "sighandle" 1
+134 ch "RPO num avail == 1" "sighandle" 1
+134 ch "RPO num values == 3" "sighandle" 1
+134 ch "RPO num lattice == 3" "sighandle" 1
+134 ch "RPO num lattice == 4" "sighandle" 1
+134 ch "RPO num lattice == 5" "sighandle" 2
+134 ch "RPO num values == 5" "sighandle" 2
+134 ch "Eliminated" "sighandle" 2
+138 dom "Redundant expressions eliminated" "sighandle" 1
+151 pre "Insertions" "sighandle" 6
+151 pre "RPO num avail == 180" "sighandle" 1
+151 pre "RPO block visited times == 1" "sighandle" 189
+151 pre "RPO block visited times == 2" "sighandle" 38
+151 pre "RPO iterations == 11" "sighandle" 1
+151 pre "Eliminated" "sighandle" 7
+151 pre "compute_antic iterations == 3" "sighandle" 1
+151 pre "RPO num lattice == 345" "sighandle" 1
+151 pre "Symbol to SSA rewrite" "sighandle" 1
+151 pre "RPO blocks" "sighandle" 227
+151 pre "RPO blocks executable" "sighandle" 227
+151 pre "RPO num values == 345" "sighandle" 1
+151 pre "insert iterations == 1" "sighandle" 1
+151 pre "HOIST inserted" "sighandle" 6
+151 pre "RPO blocks visited" "sighandle" 265
+160 loopinit "Incremental SSA update" "sighandle" 1
+186 slp "SLP optimize perm iterations == 2" "sighandle" 2
+201 fre "Eliminated" "sighandle" 2
+201 fre "RPO block visited times == 1" "sighandle" 186
+201 fre "RPO num values == 351" "sighandle" 1
+201 fre "RPO blocks visited" "sighandle" 186
+201 fre "RPO num avail == 184" "sighandle" 1
+201 fre "RPO blocks" "sighandle" 186
+201 fre "RPO num lattice == 351" "sighandle" 1
+201 fre "RPO iterations == 10" "sighandle" 1
+201 fre "RPO blocks executable" "sighandle" 186
+203 dom "Jumps threaded" "sighandle" 3
+205 threadfull "Jumps threaded" "sighandle" 1
+206 vrp "Statements folded" "sighandle" 11
+206 vrp "Statements deleted" "sighandle" 4
+207 ccp "Copies propagated" "sighandle" 1
+207 ccp "Statements deleted" "sighandle" 1
+212 sink "Sunk statements" "sighandle" 1
+215 widening_mul "widening maccs inserted" "sighandle" 1
+215 widening_mul "widening multiplications inserted" "sighandle" 1
+218 dce "Statements deleted" "sighandle" 2
+292 combine "two-insn combine" "sighandle" 79

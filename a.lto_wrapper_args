@@ -1,0 +1,3 @@
+-fresolution=a.res
+-flinker-output=pie
+a-main.o

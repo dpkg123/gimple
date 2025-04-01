@@ -1,7 +1,7 @@
 
-;; Function std::__cxx11::basic_string<char>::size (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv, funcdef_no=3823, decl_uid=28521, cgraph_uid=1302, symbol_order=1866)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv, funcdef_no=3823, decl_uid=28521, cgraph_uid=1302, symbol_order=1866)
 
-size_type std::__cxx11::basic_string<char>::size (const struct basic_string * const this)
+size_type std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size (const struct basic_string * const this)
 {
   size_type _3;
 
@@ -13,9 +13,9 @@ size_type std::__cxx11::basic_string<char>::size (const struct basic_string * co
 
 
 
-;; Function std::__cxx11::basic_string<char>::length (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv, funcdef_no=3910, decl_uid=28523, cgraph_uid=1389, symbol_order=1955)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::length (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv, funcdef_no=3910, decl_uid=28523, cgraph_uid=1389, symbol_order=1955)
 
-size_type std::__cxx11::basic_string<char>::length (const struct basic_string * const this)
+size_type std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::length (const struct basic_string * const this)
 {
   size_type _3;
 
@@ -27,9 +27,9 @@ size_type std::__cxx11::basic_string<char>::length (const struct basic_string * 
 
 
 
-;; Function std::basic_ostream<char>::operator<< (_ZNSolsEPFRSoS_E, funcdef_no=4083, decl_uid=44474, cgraph_uid=1562, symbol_order=2138)
+;; Function std::ostream::operator<< (_ZNSolsEPFRSoS_E, funcdef_no=4083, decl_uid=44474, cgraph_uid=1562, symbol_order=2138)
 
-struct __ostream_type & std::basic_ostream<char>::operator<< (struct basic_ostream * const this, struct __ostream_type & (*<T720f>) (struct __ostream_type &) __pf)
+struct __ostream_type & std::ostream::operator<< (struct basic_ostream * const this, struct __ostream_type & (*<T720f>) (struct __ostream_type &) __pf)
 {
   struct __ostream_type & (*<T720f>) (struct __ostream_type &) __pf.7_1;
   struct __ostream_type & _6;
@@ -45,9 +45,9 @@ struct __ostream_type & std::basic_ostream<char>::operator<< (struct basic_ostre
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_data (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv, funcdef_no=4101, decl_uid=28201, cgraph_uid=1580, symbol_order=2156)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv, funcdef_no=4101, decl_uid=28201, cgraph_uid=1580, symbol_order=2156)
 
-char * std::__cxx11::basic_string<char>::_M_data (const struct basic_string * const this)
+char * std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data (const struct basic_string * const this)
 {
   char * _3;
 
@@ -59,9 +59,9 @@ char * std::__cxx11::basic_string<char>::_M_data (const struct basic_string * co
 
 
 
-;; Function std::__cxx11::basic_string<char>::data (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv, funcdef_no=3909, decl_uid=28900, cgraph_uid=1388, symbol_order=1954)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::data (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv, funcdef_no=3909, decl_uid=28900, cgraph_uid=1388, symbol_order=1954)
 
-const char * std::__cxx11::basic_string<char>::data (const struct basic_string * const this)
+const char * std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::data (const struct basic_string * const this)
 {
   const char * _4;
 
@@ -73,9 +73,9 @@ const char * std::__cxx11::basic_string<char>::data (const struct basic_string *
 
 
 
-;; Function std::__cxx11::basic_string<char>::c_str (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv, funcdef_no=3729, decl_uid=28898, cgraph_uid=1208, symbol_order=1771)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv, funcdef_no=3729, decl_uid=28898, cgraph_uid=1208, symbol_order=1771)
 
-const char * std::__cxx11::basic_string<char>::c_str (const struct basic_string * const this)
+const char * std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str (const struct basic_string * const this)
 {
   const char * _4;
 
@@ -87,9 +87,9 @@ const char * std::__cxx11::basic_string<char>::c_str (const struct basic_string 
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_get_allocator (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv, funcdef_no=4113, decl_uid=28242, cgraph_uid=1592, symbol_order=2168)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv, funcdef_no=4113, decl_uid=28242, cgraph_uid=1592, symbol_order=2168)
 
-struct allocator_type & std::__cxx11::basic_string<char>::_M_get_allocator (struct basic_string * const this)
+struct allocator_type & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator (struct basic_string * const this)
 {
   struct allocator_type & _2;
 
@@ -101,9 +101,9 @@ struct allocator_type & std::__cxx11::basic_string<char>::_M_get_allocator (stru
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_data (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc, funcdef_no=4119, decl_uid=28195, cgraph_uid=1598, symbol_order=2174)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc, funcdef_no=4119, decl_uid=28195, cgraph_uid=1598, symbol_order=2174)
 
-void std::__cxx11::basic_string<char>::_M_data (struct basic_string * const this, char * __p)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data (struct basic_string * const this, char * __p)
 {
   <bb 2> :
   gimple_assign <ssa_name, this_2(D)->_M_dataplus._M_p, __p_3(D), NULL, NULL>
@@ -113,9 +113,9 @@ void std::__cxx11::basic_string<char>::_M_data (struct basic_string * const this
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_capacity (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm, funcdef_no=4120, decl_uid=28207, cgraph_uid=1599, symbol_order=2175)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_capacity (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm, funcdef_no=4120, decl_uid=28207, cgraph_uid=1599, symbol_order=2175)
 
-void std::__cxx11::basic_string<char>::_M_capacity (struct basic_string * const this, size_type __capacity)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_capacity (struct basic_string * const this, size_type __capacity)
 {
   <bb 2> :
   gimple_assign <ssa_name, this_2(D)->D.28191._M_allocated_capacity, __capacity_3(D), NULL, NULL>
@@ -125,9 +125,9 @@ void std::__cxx11::basic_string<char>::_M_capacity (struct basic_string * const 
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_length (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm, funcdef_no=4121, decl_uid=28198, cgraph_uid=1600, symbol_order=2176)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_length (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm, funcdef_no=4121, decl_uid=28198, cgraph_uid=1600, symbol_order=2176)
 
-void std::__cxx11::basic_string<char>::_M_length (struct basic_string * const this, size_type __length)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_length (struct basic_string * const this, size_type __length)
 {
   <bb 2> :
   gimple_assign <ssa_name, this_2(D)->_M_string_length, __length_3(D), NULL, NULL>
@@ -137,10 +137,10 @@ void std::__cxx11::basic_string<char>::_M_length (struct basic_string * const th
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_use_local_data (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17_M_use_local_dataEv, funcdef_no=4225, decl_uid=28246, cgraph_uid=1704, symbol_order=2286)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_use_local_data (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17_M_use_local_dataEv, funcdef_no=4225, decl_uid=28246, cgraph_uid=1704, symbol_order=2286)
 
 __attribute__((always_inline))
-char * std::__cxx11::basic_string<char>::_M_use_local_data (struct basic_string * const this)
+char * std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_use_local_data (struct basic_string * const this)
 {
   char * _4;
 
@@ -152,9 +152,9 @@ char * std::__cxx11::basic_string<char>::_M_use_local_data (struct basic_string 
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_get_allocator (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv, funcdef_no=4230, decl_uid=28244, cgraph_uid=1709, symbol_order=2291)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv, funcdef_no=4230, decl_uid=28244, cgraph_uid=1709, symbol_order=2291)
 
-const struct allocator_type & std::__cxx11::basic_string<char>::_M_get_allocator (const struct basic_string * const this)
+const struct allocator_type & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator (const struct basic_string * const this)
 {
   const struct allocator_type & _2;
 
@@ -166,13 +166,13 @@ const struct allocator_type & std::__cxx11::basic_string<char>::_M_get_allocator
 
 
 
-;; Function std::basic_ostream<char>::~basic_ostream (_ZNSoD2Ev, funcdef_no=4325, decl_uid=44640, cgraph_uid=1804, symbol_order=2388)
+;; Function std::basic_ostream<char, std::char_traits<char> >::~basic_ostream (_ZNSoD2Ev, funcdef_no=4325, decl_uid=44640, cgraph_uid=1804, symbol_order=2388)
 
-void std::basic_ostream<char>::~basic_ostream (struct basic_ostream * const this, const void * * __vtt_parm)
+void std::basic_ostream<char, std::char_traits<char> >::~basic_ostream (struct basic_ostream * const this, const void * * __vtt_parm)
 {
   const void * _1;
-  int (*) () * _2;
-  int (*) () * _3;
+  int (*__vtbl_ptr_type) () * _2;
+  int (*__vtbl_ptr_type) () * _3;
   long int _4;
   sizetype _5;
   struct basic_ostream * _6;
@@ -194,9 +194,9 @@ void std::basic_ostream<char>::~basic_ostream (struct basic_ostream * const this
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_limit (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8_M_limitEmm, funcdef_no=4439, decl_uid=28257, cgraph_uid=1918, symbol_order=2502)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_limit (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8_M_limitEmm, funcdef_no=4439, decl_uid=28257, cgraph_uid=1918, symbol_order=2502)
 
-size_type std::__cxx11::basic_string<char>::_M_limit (const struct basic_string * const this, size_type __pos, size_type __off)
+size_type std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_limit (const struct basic_string * const this, size_type __pos, size_type __off)
 {
   const bool __testoff;
   long unsigned int _1;
@@ -211,7 +211,6 @@ size_type std::__cxx11::basic_string<char>::_M_limit (const struct basic_string 
   gimple_call <size, _1, this_7(D)>
   gimple_assign <minus_expr, _2, _1, __pos_9(D), NULL>
   gimple_assign <lt_expr, __testoff_11, __off_10(D), _2, NULL>
-  gimple_debug BIND <__testoff, __testoff_11>
   gimple_cond <ne_expr, __testoff_11, 0, NULL, NULL>
     goto <bb 3>; [INV]
   else
@@ -234,9 +233,9 @@ size_type std::__cxx11::basic_string<char>::_M_limit (const struct basic_string 
 
 
 
-;; Function std::basic_ios<char>::rdstate (_ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv, funcdef_no=4441, decl_uid=43677, cgraph_uid=1920, symbol_order=2504)
+;; Function std::basic_ios<char, std::char_traits<char> >::rdstate (_ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv, funcdef_no=4441, decl_uid=43677, cgraph_uid=1920, symbol_order=2504)
 
-iostate std::basic_ios<char>::rdstate (const struct basic_ios * const this)
+iostate std::basic_ios<char, std::char_traits<char> >::rdstate (const struct basic_ios * const this)
 {
   iostate _3;
 
@@ -248,10 +247,10 @@ iostate std::basic_ios<char>::rdstate (const struct basic_ios * const this)
 
 
 
-;; Function std::__cxx11::basic_stringbuf<char>::_M_high_mark (_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE12_M_high_markEv, funcdef_no=4576, decl_uid=76537, cgraph_uid=2055, symbol_order=2639)
+;; Function std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::_M_high_mark (_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE12_M_high_markEv, funcdef_no=4576, decl_uid=76537, cgraph_uid=2055, symbol_order=2639)
 
 __attribute__((always_inline))
-char_type * std::__cxx11::basic_stringbuf<char>::_M_high_mark (const struct basic_stringbuf * const this)
+char_type * std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::_M_high_mark (const struct basic_stringbuf * const this)
 {
   char_type * __egptr;
   char_type * __pptr;
@@ -268,7 +267,6 @@ char_type * std::__cxx11::basic_stringbuf<char>::_M_high_mark (const struct basi
   <bb 2> :
   gimple_assign <addr_expr, _1, &this_8(D)->D.76593, NULL, NULL>
   gimple_call <pptr, __pptr_11, _1>
-  gimple_debug BIND <__pptr, __pptr_11>
   gimple_cond <ne_expr, __pptr_11, 0B, NULL, NULL>
     goto <bb 3>; [INV]
   else
@@ -277,7 +275,6 @@ char_type * std::__cxx11::basic_stringbuf<char>::_M_high_mark (const struct basi
   <bb 3> :
   gimple_assign <addr_expr, _2, &this_8(D)->D.76593, NULL, NULL>
   gimple_call <egptr, __egptr_14, _2>
-  gimple_debug BIND <__egptr, __egptr_14>
   gimple_assign <eq_expr, _3, __egptr_14, 0B, NULL>
   gimple_assign <gt_expr, _4, __pptr_11, __egptr_14, NULL>
   gimple_assign <bit_ior_expr, _5, _3, _4, NULL>
@@ -307,9 +304,9 @@ char_type * std::__cxx11::basic_stringbuf<char>::_M_high_mark (const struct basi
 
 
 
-;; Function std::basic_streambuf<char>::pbase (_ZNKSt15basic_streambufIcSt11char_traitsIcEE5pbaseEv, funcdef_no=4577, decl_uid=38973, cgraph_uid=2056, symbol_order=2640)
+;; Function std::basic_streambuf<char, std::char_traits<char> >::pbase (_ZNKSt15basic_streambufIcSt11char_traitsIcEE5pbaseEv, funcdef_no=4577, decl_uid=38973, cgraph_uid=2056, symbol_order=2640)
 
-char_type * std::basic_streambuf<char>::pbase (const struct basic_streambuf * const this)
+char_type * std::basic_streambuf<char, std::char_traits<char> >::pbase (const struct basic_streambuf * const this)
 {
   char_type * _3;
 
@@ -321,9 +318,9 @@ char_type * std::basic_streambuf<char>::pbase (const struct basic_streambuf * co
 
 
 
-;; Function std::basic_streambuf<char>::pptr (_ZNKSt15basic_streambufIcSt11char_traitsIcEE4pptrEv, funcdef_no=4609, decl_uid=38975, cgraph_uid=2088, symbol_order=2672)
+;; Function std::basic_streambuf<char, std::char_traits<char> >::pptr (_ZNKSt15basic_streambufIcSt11char_traitsIcEE4pptrEv, funcdef_no=4609, decl_uid=38975, cgraph_uid=2088, symbol_order=2672)
 
-char_type * std::basic_streambuf<char>::pptr (const struct basic_streambuf * const this)
+char_type * std::basic_streambuf<char, std::char_traits<char> >::pptr (const struct basic_streambuf * const this)
 {
   char_type * _3;
 
@@ -335,9 +332,9 @@ char_type * std::basic_streambuf<char>::pptr (const struct basic_streambuf * con
 
 
 
-;; Function std::basic_streambuf<char>::egptr (_ZNKSt15basic_streambufIcSt11char_traitsIcEE5egptrEv, funcdef_no=4610, decl_uid=38963, cgraph_uid=2089, symbol_order=2673)
+;; Function std::basic_streambuf<char, std::char_traits<char> >::egptr (_ZNKSt15basic_streambufIcSt11char_traitsIcEE5egptrEv, funcdef_no=4610, decl_uid=38963, cgraph_uid=2089, symbol_order=2673)
 
-char_type * std::basic_streambuf<char>::egptr (const struct basic_streambuf * const this)
+char_type * std::basic_streambuf<char, std::char_traits<char> >::egptr (const struct basic_streambuf * const this)
 {
   char_type * _3;
 
@@ -387,9 +384,9 @@ struct basic_ostream & std::operator<< <char, std::char_traits<char>, std::alloc
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_check (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8_M_checkEmPKc, funcdef_no=4302, decl_uid=28248, cgraph_uid=1781, symbol_order=2365)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_check (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8_M_checkEmPKc, funcdef_no=4302, decl_uid=28248, cgraph_uid=1781, symbol_order=2365)
 
-size_type std::__cxx11::basic_string<char>::_M_check (const struct basic_string * const this, size_type __pos, const char * __s)
+size_type std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_check (const struct basic_string * const this, size_type __pos, const char * __s)
 {
   long unsigned int _1;
   long unsigned int _2;
@@ -416,9 +413,9 @@ size_type std::__cxx11::basic_string<char>::_M_check (const struct basic_string 
 
 
 
-;; Function std::__cxx11::basic_string<char>::replace (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7replaceEmmPKcm, funcdef_no=4396, decl_uid=28756, cgraph_uid=1875, symbol_order=2459)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::replace (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7replaceEmmPKcm, funcdef_no=4396, decl_uid=28756, cgraph_uid=1875, symbol_order=2459)
 
-struct basic_string & std::__cxx11::basic_string<char>::replace (struct basic_string * const this, size_type __pos, size_type __n1, const char * __s, size_type __n2)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::replace (struct basic_string * const this, size_type __pos, size_type __n1, const char * __s, size_type __n2)
 {
   long unsigned int _1;
   long unsigned int _2;
@@ -438,19 +435,19 @@ struct basic_string & std::__cxx11::basic_string<char>::replace (struct basic_st
 
 
 
-;; Function std::basic_ostream<char>::basic_ostream (_ZNSoC2Ev, funcdef_no=4322, decl_uid=44618, cgraph_uid=1801, symbol_order=2385)
+;; Function std::basic_ostream<char, std::char_traits<char> >::basic_ostream (_ZNSoC2Ev, funcdef_no=4322, decl_uid=44618, cgraph_uid=1801, symbol_order=2385)
 
-void std::basic_ostream<char>::basic_ostream (struct basic_ostream * const this, const void * * __vtt_parm)
+void std::basic_ostream<char, std::char_traits<char> >::basic_ostream (struct basic_ostream * const this, const void * * __vtt_parm)
 {
   const void * _1;
-  int (*) () * _2;
-  int (*) () * _3;
+  int (*__vtbl_ptr_type) () * _2;
+  int (*__vtbl_ptr_type) () * _3;
   long int _4;
   sizetype _5;
   struct basic_ostream * _6;
   const void * _7;
-  int (*) () * _8;
-  int (*) () * _9;
+  int (*__vtbl_ptr_type) () * _8;
+  int (*__vtbl_ptr_type) () * _9;
   long int _10;
   sizetype _11;
   struct basic_ios * _12;
@@ -477,12 +474,12 @@ void std::basic_ostream<char>::basic_ostream (struct basic_ostream * const this,
 
 
 
-;; Function std::basic_ios<char>::basic_ios (_ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev, funcdef_no=4315, decl_uid=43778, cgraph_uid=1794, symbol_order=2378)
+;; Function std::basic_ios<char, std::char_traits<char> >::basic_ios (_ZNSt9basic_iosIcSt11char_traitsIcEEC2Ev, funcdef_no=4315, decl_uid=43778, cgraph_uid=1794, symbol_order=2378)
 
-void std::basic_ios<char>::basic_ios (struct basic_ios * const this)
+void std::basic_ios<char, std::char_traits<char> >::basic_ios (struct basic_ios * const this)
 {
   struct ios_base * _1;
-  int (*) () * _2;
+  int (*__vtbl_ptr_type) () * _2;
   struct ios_base * _3;
 
   <bb 2> :
@@ -504,11 +501,11 @@ void std::basic_ios<char>::basic_ios (struct basic_ios * const this)
 
 
 
-;; Function std::basic_streambuf<char>::basic_streambuf (_ZNSt15basic_streambufIcSt11char_traitsIcEEC2Ev, funcdef_no=4573, decl_uid=39053, cgraph_uid=2052, symbol_order=2636)
+;; Function std::basic_streambuf<char, std::char_traits<char> >::basic_streambuf (_ZNSt15basic_streambufIcSt11char_traitsIcEEC2Ev, funcdef_no=4573, decl_uid=39053, cgraph_uid=2052, symbol_order=2636)
 
-void std::basic_streambuf<char>::basic_streambuf (struct basic_streambuf * const this)
+void std::basic_streambuf<char, std::char_traits<char> >::basic_streambuf (struct basic_streambuf * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   struct locale * _2;
   struct locale * _3;
 
@@ -530,10 +527,10 @@ void std::basic_streambuf<char>::basic_streambuf (struct basic_streambuf * const
 
 
 
-;; Function std::__cxx11::basic_string<char>::assign (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6assignERKS4_, funcdef_no=4256, decl_uid=28628, cgraph_uid=1736, symbol_order=2320)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6assignERKS4_, funcdef_no=4256, decl_uid=28628, cgraph_uid=1736, symbol_order=2320)
 
 No longer having address taken: __alloc
-struct basic_string & std::__cxx11::basic_string<char>::assign (struct basic_string * const this, const struct basic_string & __str)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign (struct basic_string * const this, const struct basic_string & __str)
 {
   struct basic_string & _5;
 
@@ -546,9 +543,9 @@ struct basic_string & std::__cxx11::basic_string<char>::assign (struct basic_str
 
 
 
-;; Function std::__cxx11::basic_string<char>::operator= (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_, funcdef_no=4084, decl_uid=28471, cgraph_uid=1563, symbol_order=2139)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator= (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_, funcdef_no=4084, decl_uid=28471, cgraph_uid=1563, symbol_order=2139)
 
-struct basic_string & std::__cxx11::basic_string<char>::operator= (struct basic_string * const this, const struct basic_string & __str)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator= (struct basic_string * const this, const struct basic_string & __str)
 {
   struct basic_string & _5;
   struct basic_string & _6;
@@ -562,9 +559,9 @@ struct basic_string & std::__cxx11::basic_string<char>::operator= (struct basic_
 
 
 
-;; Function std::basic_filebuf<char>::open (_ZNSt13basic_filebufIcSt11char_traitsIcEE4openERKNSt7__cxx1112basic_stringIcS1_SaIcEEESt13_Ios_Openmode, funcdef_no=4447, decl_uid=51238, cgraph_uid=1926, symbol_order=2510)
+;; Function std::basic_filebuf<char, std::char_traits<char> >::open (_ZNSt13basic_filebufIcSt11char_traitsIcEE4openERKNSt7__cxx1112basic_stringIcS1_SaIcEEESt13_Ios_Openmode, funcdef_no=4447, decl_uid=51238, cgraph_uid=1926, symbol_order=2510)
 
-struct __filebuf_type * std::basic_filebuf<char>::open (struct basic_filebuf * const this, const struct string & __s, openmode __mode)
+struct __filebuf_type * std::basic_filebuf<char, std::char_traits<char> >::open (struct basic_filebuf * const this, const struct string & __s, openmode __mode)
 {
   const char * _1;
   struct __filebuf_type * _8;
@@ -580,9 +577,9 @@ struct __filebuf_type * std::basic_filebuf<char>::open (struct basic_filebuf * c
 
 
 
-;; Function std::basic_filebuf<char>::is_open (_ZNKSt13basic_filebufIcSt11char_traitsIcEE7is_openEv, funcdef_no=4333, decl_uid=51232, cgraph_uid=1812, symbol_order=2396)
+;; Function std::basic_filebuf<char, std::char_traits<char> >::is_open (_ZNKSt13basic_filebufIcSt11char_traitsIcEE7is_openEv, funcdef_no=4333, decl_uid=51232, cgraph_uid=1812, symbol_order=2396)
 
-bool std::basic_filebuf<char>::is_open (const struct basic_filebuf * const this)
+bool std::basic_filebuf<char, std::char_traits<char> >::is_open (const struct basic_filebuf * const this)
 {
   const struct __file_type * _1;
   bool _4;
@@ -596,9 +593,9 @@ bool std::basic_filebuf<char>::is_open (const struct basic_filebuf * const this)
 
 
 
-;; Function std::basic_ofstream<char>::is_open (_ZNSt14basic_ofstreamIcSt11char_traitsIcEE7is_openEv, funcdef_no=4092, decl_uid=51631, cgraph_uid=1571, symbol_order=2147)
+;; Function std::basic_ofstream<char, std::char_traits<char> >::is_open (_ZNSt14basic_ofstreamIcSt11char_traitsIcEE7is_openEv, funcdef_no=4092, decl_uid=51631, cgraph_uid=1571, symbol_order=2147)
 
-bool std::basic_ofstream<char>::is_open (struct basic_ofstream * const this)
+bool std::basic_ofstream<char, std::char_traits<char> >::is_open (struct basic_ofstream * const this)
 {
   struct __filebuf_type * _1;
   bool _5;
@@ -619,7 +616,6 @@ bool std::__is_constant_evaluated ()
   bool _1;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <integer_cst, _1, 0, NULL, NULL>
   gimple_return <_1>
 
@@ -627,9 +623,9 @@ bool std::__is_constant_evaluated ()
 
 
 
-;; Function std::__cxx11::basic_string<char>::operator[] (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm, funcdef_no=3818, decl_uid=28550, cgraph_uid=1297, symbol_order=1860)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator[] (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm, funcdef_no=3818, decl_uid=28550, cgraph_uid=1297, symbol_order=1860)
 
-value_type & std::__cxx11::basic_string<char>::operator[] (struct basic_string * const this, size_type __pos)
+value_type & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator[] (struct basic_string * const this, size_type __pos)
 {
   bool _1;
   long unsigned int _2;
@@ -673,7 +669,6 @@ value_type & std::__cxx11::basic_string<char>::operator[] (struct basic_string *
   gimple_call <__builtin_unreachable, NULL>
 
   <bb 8> :
-  gimple_debug BEGIN_STMT
   gimple_call <_M_data, _3, this_9(D)>
   gimple_assign <pointer_plus_expr, _16, _3, __pos_11(D), NULL>
   gimple_return <_16>
@@ -689,7 +684,6 @@ void std::char_traits<char>::assign (char_type & __c1, const char_type & __c2)
   char _1;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <mem_ref, _1, *__c2_3(D), NULL, NULL>
   gimple_assign <ssa_name, *__c1_4(D), _1, NULL, NULL>
   gimple_return <NULL>
@@ -698,9 +692,9 @@ void std::char_traits<char>::assign (char_type & __c1, const char_type & __c2)
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_set_length (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm, funcdef_no=4122, decl_uid=28210, cgraph_uid=1601, symbol_order=2177)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm, funcdef_no=4122, decl_uid=28210, cgraph_uid=1601, symbol_order=2177)
 
-void std::__cxx11::basic_string<char>::_M_set_length (struct basic_string * const this, size_type __n)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length (struct basic_string * const this, size_type __n)
 {
   const char_type D.93657;
   char * _1;
@@ -728,20 +722,17 @@ char_type * std::char_traits<char>::copy (char_type * __s1, const char_type * __
   char_type * _9;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_cond <eq_expr, __n_3(D), 0, NULL, NULL>
     goto <bb 3>; [INV]
   else
     goto <bb 4>; [INV]
 
   <bb 3> :
-  gimple_debug BEGIN_STMT
   gimple_assign <ssa_name, _9, __s1_5(D), NULL, NULL>
   // predicted unlikely by early return (on trees) predictor.
   goto <bb 5>; [INV]
 
   <bb 4> :
-  gimple_debug BEGIN_STMT
   gimple_call <__builtin_memcpy, _8, __s1_5(D), __s2_6(D), __n_3(D)>
 
   <bb 5> :
@@ -752,9 +743,9 @@ char_type * std::char_traits<char>::copy (char_type * __s1, const char_type * __
 
 
 
-;; Function std::__cxx11::basic_string<char>::_S_copy (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm, funcdef_no=4254, decl_uid=28264, cgraph_uid=1733, symbol_order=2317)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm, funcdef_no=4254, decl_uid=28264, cgraph_uid=1733, symbol_order=2317)
 
-void std::__cxx11::basic_string<char>::_S_copy (char * __d, const char * __s, size_type __n)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy (char * __d, const char * __s, size_type __n)
 {
   <bb 2> :
   gimple_cond <eq_expr, __n_2(D), 1, NULL, NULL>
@@ -776,9 +767,9 @@ void std::__cxx11::basic_string<char>::_S_copy (char * __d, const char * __s, si
 
 
 
-;; Function std::__cxx11::basic_string<char>::_S_copy_chars (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_, funcdef_no=4355, decl_uid=28294, cgraph_uid=1834, symbol_order=2418)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_, funcdef_no=4355, decl_uid=28294, cgraph_uid=1834, symbol_order=2418)
 
-void std::__cxx11::basic_string<char>::_S_copy_chars (char * __p, const char * __k1, const char * __k2)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars (char * __p, const char * __k1, const char * __k2)
 {
   long int _1;
   long unsigned int _2;
@@ -793,9 +784,9 @@ void std::__cxx11::basic_string<char>::_S_copy_chars (char * __p, const char * _
 
 
 
-;; Function std::__cxx11::basic_string<char>::_S_copy_chars (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcS5_S5_, funcdef_no=4408, decl_uid=28290, cgraph_uid=1887, symbol_order=2471)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcS5_S5_, funcdef_no=4408, decl_uid=28290, cgraph_uid=1887, symbol_order=2471)
 
-void std::__cxx11::basic_string<char>::_S_copy_chars (char * __p, char * __k1, char * __k2)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars (char * __p, char * __k1, char * __k2)
 {
   long int _1;
   long unsigned int _2;
@@ -817,7 +808,6 @@ _Ios_Openmode std::operator| (_Ios_Openmode __a, _Ios_Openmode __b)
   _Ios_Openmode _3;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <bit_ior_expr, _3, __a_1(D), __b_2(D), NULL>
   gimple_return <_3>
 
@@ -832,7 +822,6 @@ _Ios_Iostate std::operator| (_Ios_Iostate __a, _Ios_Iostate __b)
   _Ios_Iostate _3;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <bit_ior_expr, _3, __a_1(D), __b_2(D), NULL>
   gimple_return <_3>
 
@@ -840,9 +829,9 @@ _Ios_Iostate std::operator| (_Ios_Iostate __a, _Ios_Iostate __b)
 
 
 
-;; Function std::basic_ios<char>::setstate (_ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate, funcdef_no=4311, decl_uid=43682, cgraph_uid=1790, symbol_order=2374)
+;; Function std::basic_ios<char, std::char_traits<char> >::setstate (_ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate, funcdef_no=4311, decl_uid=43682, cgraph_uid=1790, symbol_order=2374)
 
-void std::basic_ios<char>::setstate (struct basic_ios * const this, iostate __state)
+void std::basic_ios<char, std::char_traits<char> >::setstate (struct basic_ios * const this, iostate __state)
 {
   _Ios_Iostate _1;
   _Ios_Iostate _2;
@@ -857,20 +846,20 @@ void std::basic_ios<char>::setstate (struct basic_ios * const this, iostate __st
 
 
 
-;; Function std::basic_ofstream<char>::open (_ZNSt14basic_ofstreamIcSt11char_traitsIcEE4openERKNSt7__cxx1112basic_stringIcS1_SaIcEEESt13_Ios_Openmode, funcdef_no=4332, decl_uid=51639, cgraph_uid=1811, symbol_order=2395)
+;; Function std::basic_ofstream<char, std::char_traits<char> >::open (_ZNSt14basic_ofstreamIcSt11char_traitsIcEE4openERKNSt7__cxx1112basic_stringIcS1_SaIcEEESt13_Ios_Openmode, funcdef_no=4332, decl_uid=51639, cgraph_uid=1811, symbol_order=2395)
 
-void std::basic_ofstream<char>::open (struct basic_ofstream * const this, const struct string & __s, openmode __mode)
+void std::basic_ofstream<char, std::char_traits<char> >::open (struct basic_ofstream * const this, const struct string & __s, openmode __mode)
 {
   struct __filebuf_type * _1;
   _Ios_Openmode _2;
   struct __filebuf_type * _3;
-  int (*) () * _4;
-  int (*) () * _5;
+  int (*__vtbl_ptr_type) () * _4;
+  int (*__vtbl_ptr_type) () * _5;
   long int _6;
   sizetype _7;
   struct basic_ios * _8;
-  int (*) () * _9;
-  int (*) () * _10;
+  int (*__vtbl_ptr_type) () * _9;
+  int (*__vtbl_ptr_type) () * _10;
   long int _11;
   sizetype _12;
   struct basic_ios * _13;
@@ -912,14 +901,14 @@ void std::basic_ofstream<char>::open (struct basic_ofstream * const this, const 
 
 
 
-;; Function std::basic_ofstream<char>::close (_ZNSt14basic_ofstreamIcSt11char_traitsIcEE5closeEv, funcdef_no=4093, decl_uid=51649, cgraph_uid=1572, symbol_order=2148)
+;; Function std::basic_ofstream<char, std::char_traits<char> >::close (_ZNSt14basic_ofstreamIcSt11char_traitsIcEE5closeEv, funcdef_no=4093, decl_uid=51649, cgraph_uid=1572, symbol_order=2148)
 
-void std::basic_ofstream<char>::close (struct basic_ofstream * const this)
+void std::basic_ofstream<char, std::char_traits<char> >::close (struct basic_ofstream * const this)
 {
   struct __filebuf_type * _1;
   struct __filebuf_type * _2;
-  int (*) () * _3;
-  int (*) () * _4;
+  int (*__vtbl_ptr_type) () * _3;
+  int (*__vtbl_ptr_type) () * _4;
   long int _5;
   sizetype _6;
   struct basic_ios * _7;
@@ -958,7 +947,6 @@ streamsize std::ios_base::width (const struct ios_base * const this)
   streamsize _3;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <component_ref, _3, this_2(D)->_M_width, NULL, NULL>
   gimple_return <_3>
 
@@ -970,8 +958,8 @@ streamsize std::ios_base::width (const struct ios_base * const this)
 
 struct basic_ostream & std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, char __c)
 {
-  int (*) () * _1;
-  int (*) () * _2;
+  int (*__vtbl_ptr_type) () * _1;
+  int (*__vtbl_ptr_type) () * _2;
   long int _3;
   sizetype _4;
   struct ios_base * _5;
@@ -1020,16 +1008,15 @@ char_type std::ctype<char>::widen (const struct ctype * const this, char __c)
 {
   char _1;
   int _2;
-  int (*) () * _3;
-  int (*) () * _4;
-  int (*) () _5;
+  int (*__vtbl_ptr_type) () * _3;
+  int (*__vtbl_ptr_type) () * _4;
+  int (*__vtbl_ptr_type) () _5;
   char_type _6;
   char_type _13;
   char_type _14;
   char_type _15;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <component_ref, _1, this_9(D)->_M_widen_ok, NULL, NULL>
   gimple_cond <ne_expr, _1, 0, NULL, NULL>
     goto <bb 3>; [INV]
@@ -1037,16 +1024,13 @@ char_type std::ctype<char>::widen (const struct ctype * const this, char __c)
     goto <bb 4>; [INV]
 
   <bb 3> :
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, _2, __c_11(D), NULL, NULL>
   gimple_assign <array_ref, _15, this_9(D)->_M_widen[_2], NULL, NULL>
   // predicted unlikely by early return (on trees) predictor.
   goto <bb 5>; [INV]
 
   <bb 4> :
-  gimple_debug BEGIN_STMT
   gimple_call <_M_widen_init, NULL, this_9(D)>
-  gimple_debug BEGIN_STMT
   gimple_assign <component_ref, _3, this_9(D)->D.40314._vptr.facet, NULL, NULL>
   gimple_assign <pointer_plus_expr, _4, _3, 48, NULL>
   gimple_assign <mem_ref, _5, *_4, NULL, NULL>
@@ -1061,30 +1045,34 @@ char_type std::ctype<char>::widen (const struct ctype * const this, char __c)
 
 
 
+;; Function std::ctype<char>::do_widen (_ZNKSt5ctypeIcE8do_widenEc, funcdef_no=1533, decl_uid=40248, cgraph_uid=466, symbol_order=499)
+
+char_type std::ctype<char>::do_widen (const struct ctype * const this, char __c)
+{
+  char_type _2;
+
+  <bb 2> :
+  gimple_assign <ssa_name, _2, __c_1(D), NULL, NULL>
+  gimple_return <_2>
+
+}
+
+
+
 ;; Function register_signal (_Z15register_signalv, funcdef_no=3695, decl_uid=88794, cgraph_uid=1174, symbol_order=1737)
 
 void register_signal ()
 {
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 6, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 7, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 8, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 4, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 3, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 11, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 31, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 5, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 24, sighandle>
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, 25, sighandle>
   gimple_return <NULL>
 
@@ -1092,9 +1080,9 @@ void register_signal ()
 
 
 
-;; Function std::__array_traits<char, 128>::_S_ptr (_ZNSt14__array_traitsIcLm128EE6_S_ptrERA128_Kc, funcdef_no=3699, decl_uid=89183, cgraph_uid=1177, symbol_order=1740)
+;; Function std::__array_traits<char, 128ul>::_S_ptr (_ZNSt14__array_traitsIcLm128EE6_S_ptrERA128_Kc, funcdef_no=3699, decl_uid=89183, cgraph_uid=1177, symbol_order=1740)
 
-char * std::__array_traits<char, 128>::_S_ptr (const char[128] & __t)
+char * std::__array_traits<char, 128ul>::_S_ptr (const char[128] & __t)
 {
   char * _2;
 
@@ -1106,10 +1094,10 @@ char * std::__array_traits<char, 128>::_S_ptr (const char[128] & __t)
 
 
 
-;; Function std::array<char, 128>::data (_ZNSt5arrayIcLm128EE4dataEv, funcdef_no=3698, decl_uid=89243, cgraph_uid=1176, symbol_order=1739)
+;; Function std::array<char, 128ul>::data (_ZNSt5arrayIcLm128EE4dataEv, funcdef_no=3698, decl_uid=89243, cgraph_uid=1176, symbol_order=1739)
 
 __attribute__((nodiscard, const))
-value_type * std::array<char, 128>::data (struct array * const this)
+value_type * std::array<char, 128ul>::data (struct array * const this)
 {
   char[128] * _1;
   value_type * _5;
@@ -1147,23 +1135,17 @@ unsigned int std::__detail::__to_chars_len<unsigned int> (unsigned int __value, 
 
   <bb 2> :
   gimple_assign <integer_cst, __n_12, 1, NULL, NULL>
-  gimple_debug BIND <__n, __n_12>
   gimple_assign <mult_expr, _1, __base_13(D), __base_13(D), NULL>
   gimple_assign <nop_expr, __b2_14, _1, NULL, NULL>
-  gimple_debug BIND <__b2, __b2_14>
   gimple_assign <nop_expr, __base.10_2, __base_13(D), NULL, NULL>
   gimple_assign <mult_expr, __b3_15, __b2_14, __base.10_2, NULL>
-  gimple_debug BIND <__b3, __b3_15>
   gimple_assign <nop_expr, __base.11_3, __base_13(D), NULL, NULL>
   gimple_assign <mult_expr, _4, __b3_15, __base.11_3, NULL>
   gimple_assign <nop_expr, __b4_16, _4, NULL, NULL>
-  gimple_debug BIND <__b4, __b4_16>
 
   <bb 3> :
   # gimple_phi <__value_9, __value_17(D)(2), __value_18(11)>
   # gimple_phi <__n_10, __n_12(2), __n_19(11)>
-  gimple_debug BIND <__n, __n_10>
-  gimple_debug BIND <__value, __value_9>
   gimple_assign <nop_expr, __base.12_5, __base_13(D), NULL, NULL>
   gimple_cond <lt_expr, __value_9, __base.12_5, NULL, NULL>
     goto <bb 4>; [INV]
@@ -1213,10 +1195,7 @@ unsigned int std::__detail::__to_chars_len<unsigned int> (unsigned int __value, 
   gimple_assign <nop_expr, _7, __value_9, NULL, NULL>
   gimple_assign <trunc_div_expr, _8, _7, __b4_16, NULL>
   gimple_assign <nop_expr, __value_18, _8, NULL, NULL>
-  gimple_debug BIND <__value, __value_18>
   gimple_assign <plus_expr, __n_19, __n_10, 4, NULL>
-  gimple_debug BIND <__n, __n_19>
-  gimple_debug BEGIN_STMT
   goto <bb 3>; [INV]
 
   <bb 12> :
@@ -1253,15 +1232,12 @@ void std::__detail::__to_chars_10_impl<unsigned int> (char * __first, unsigned i
 
   <bb 2> :
   gimple_assign <plus_expr, __pos_21, __len_20(D), 4294967295, NULL>
-  gimple_debug BIND <__pos, __pos_21>
   goto <bb 4>; [INV]
 
   <bb 3> :
   gimple_assign <trunc_mod_expr, _1, __val_16, 100, NULL>
   gimple_assign <mult_expr, __num_29, _1, 2, NULL>
-  gimple_debug BIND <__num, __num_29>
   gimple_assign <trunc_div_expr, __val_30, __val_16, 100, NULL>
-  gimple_debug BIND <__val, __val_30>
   gimple_assign <plus_expr, _2, __num_29, 1, NULL>
   gimple_assign <nop_expr, _3, __pos_17, NULL, NULL>
   gimple_assign <pointer_plus_expr, _4, __first_24(D), _3, NULL>
@@ -1273,14 +1249,10 @@ void std::__detail::__to_chars_10_impl<unsigned int> (char * __first, unsigned i
   gimple_assign <array_ref, _9, __digits[__num_29], NULL, NULL>
   gimple_assign <ssa_name, *_8, _9, NULL, NULL>
   gimple_assign <plus_expr, __pos_33, __pos_17, 4294967294, NULL>
-  gimple_debug BIND <__pos, __pos_33>
 
   <bb 4> :
   # gimple_phi <__val_16, __val_22(D)(2), __val_30(3)>
   # gimple_phi <__pos_17, __pos_21(2), __pos_33(3)>
-  gimple_debug BIND <__pos, __pos_17>
-  gimple_debug BIND <__val, __val_16>
-  gimple_debug BEGIN_STMT
   gimple_cond <gt_expr, __val_16, 99, NULL, NULL>
     goto <bb 3>; [INV]
   else
@@ -1294,7 +1266,6 @@ void std::__detail::__to_chars_10_impl<unsigned int> (char * __first, unsigned i
 
   <bb 6> :
   gimple_assign <mult_expr, __num_26, __val_16, 2, NULL>
-  gimple_debug BIND <__num, __num_26>
   gimple_assign <plus_expr, _10, __num_26, 1, NULL>
   gimple_assign <pointer_plus_expr, _11, __first_24(D), 1, NULL>
   gimple_assign <array_ref, _12, __digits[_10], NULL, NULL>
@@ -1346,17 +1317,13 @@ size_t __gnu_cxx::char_traits<char>::length (const char_type * __p)
 
   <bb 2> :
   gimple_assign <integer_cst, __i_5, 0, NULL, NULL>
-  gimple_debug BIND <__i, __i_5>
   goto <bb 4>; [INV]
 
   <bb 3> :
   gimple_assign <plus_expr, __i_13, __i_3, 1, NULL>
-  gimple_debug BIND <__i, __i_13>
 
   <bb 4> :
   # gimple_phi <__i_3, __i_5(2), __i_13(3)>
-  gimple_debug BIND <__i, __i_3>
-  gimple_debug BEGIN_STMT
   gimple_assign <pointer_plus_expr, _1, __p_7(D), __i_3, NULL>
   gimple_assign <integer_cst, D.89317, 0, NULL, NULL>
   gimple_call <eq, _2, _1, &D.89317>
@@ -1386,7 +1353,6 @@ size_t std::char_traits<char>::length (const char_type * __s)
   size_t _10;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <__is_constant_evaluated, retval.0_5>
   gimple_cond <ne_expr, retval.0_5, 0, NULL, NULL>
     goto <bb 3>; [INV]
@@ -1394,13 +1360,11 @@ size_t std::char_traits<char>::length (const char_type * __s)
     goto <bb 4>; [INV]
 
   <bb 3> :
-  gimple_debug BEGIN_STMT
   gimple_call <length, _9, __s_6(D)>
   gimple_assign <ssa_name, _10, _9, NULL, NULL>
   goto <bb 5>; [INV]
 
   <bb 4> :
-  gimple_debug BEGIN_STMT
   gimple_call <__builtin_strlen, _7, __s_6(D)>
 
   <bb 5> :
@@ -1415,8 +1379,8 @@ size_t std::char_traits<char>::length (const char_type * __s)
 
 struct basic_ostream & std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, const char * __s)
 {
-  int (*) () * _1;
-  int (*) () * _2;
+  int (*__vtbl_ptr_type) () * _1;
+  int (*__vtbl_ptr_type) () * _2;
   long int _3;
   sizetype _4;
   struct basic_ios * _5;
@@ -1489,17 +1453,11 @@ void monitor_child (pid_t pid)
   struct basic_ostream & _49;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_assign <integer_cst, timeout_25, 400, NULL, NULL>
-  gimple_debug BIND <timeout, timeout_25>
-  gimple_debug BEGIN_STMT
   gimple_assign <integer_cst, i_26, 0, NULL, NULL>
-  gimple_debug BIND <i, i_26>
   goto <bb 16>; [INV]
 
   <bb 3> :
-  gimple_debug BEGIN_STMT
   gimple_call <waitpid, _37, pid_28(D), &status, 1>
 
   <bb 4> :
@@ -1511,7 +1469,6 @@ void monitor_child (pid_t pid)
     goto <bb 14>; [INV]
 
   <bb 5> :
-  gimple_debug BEGIN_STMT
   gimple_assign <var_decl, status.39_2, status, NULL, NULL>
   gimple_assign <bit_and_expr, _3, status.39_2, 127, NULL>
   gimple_cond <eq_expr, _3, 0, NULL, NULL>
@@ -1520,7 +1477,6 @@ void monitor_child (pid_t pid)
     goto <bb 9>; [INV]
 
   <bb 6> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _47, &cout, "[INFO] Script exited with status ">
 
   <bb 7> :
@@ -1536,7 +1492,6 @@ void monitor_child (pid_t pid)
   goto <bb 13>; [INV]
 
   <bb 9> :
-  gimple_debug BEGIN_STMT
   gimple_assign <var_decl, status.41_9, status, NULL, NULL>
   gimple_assign <nop_expr, _10, status.41_9, NULL, NULL>
   gimple_assign <bit_and_expr, _11, _10, 127, NULL>
@@ -1549,7 +1504,6 @@ void monitor_child (pid_t pid)
     goto <bb 13>; [INV]
 
   <bb 10> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _42, &cout, "[ERROR] Script terminated by signal ">
 
   <bb 11> :
@@ -1563,31 +1517,24 @@ void monitor_child (pid_t pid)
   gimple_call <operator<<, NULL, _18, endl>
 
   <bb 13> :
-  gimple_debug BEGIN_STMT
   // predicted unlikely by early return (on trees) predictor.
   gimple_assign <constructor, status, {CLOBBER(eol)}, NULL, NULL>
   goto <bb 23>; [INV]
 
   <bb 14> :
-  gimple_debug BEGIN_STMT
   gimple_call <sleep, NULL, 1>
 
   <bb 15> :
-  gimple_debug BEGIN_STMT
   gimple_assign <plus_expr, i_40, i_20, 1, NULL>
-  gimple_debug BIND <i, i_40>
 
   <bb 16> :
   # gimple_phi <i_20, i_26(2), i_40(15)>
-  gimple_debug BIND <i, i_20>
-  gimple_debug BEGIN_STMT
   gimple_cond <le_expr, i_20, 399, NULL, NULL>
     goto <bb 3>; [INV]
   else
     goto <bb 17>; [INV]
 
   <bb 17> :
-  gimple_debug BEGIN_STMT
   gimple_call <kill, _19, pid_28(D), 9>
   gimple_assign <eq_expr, retval.43_30, _19, 0, NULL>
   gimple_cond <ne_expr, retval.43_30, 0, NULL, NULL>
@@ -1596,20 +1543,16 @@ void monitor_child (pid_t pid)
     goto <bb 20>; [INV]
 
   <bb 18> :
-  gimple_debug BEGIN_STMT
   gimple_call <waitpid, NULL, pid_28(D), &status, 0>
 
   <bb 19> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, NULL, &cerr, "[INFO] Child process killed due to timeout.\n">
   goto <bb 22>; [INV]
 
   <bb 20> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to kill child process.\n">
 
   <bb 21> :
-  gimple_debug BEGIN_STMT
   gimple_call <exit, NULL, 4>
 
   <bb 22> :
@@ -1627,9 +1570,9 @@ gimple_label <<L17>>
 
 
 
-;; Function std::__cxx11::basic_string<char>::insert (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6insertEmPKc, funcdef_no=4199, decl_uid=28704, cgraph_uid=1678, symbol_order=2254)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6insertEmPKc, funcdef_no=4199, decl_uid=28704, cgraph_uid=1678, symbol_order=2254)
 
-struct basic_string & std::__cxx11::basic_string<char>::insert (struct basic_string * const this, size_type __pos, const char * __s)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert (struct basic_string * const this, size_type __pos, const char * __s)
 {
   long unsigned int _1;
   long unsigned int _5;
@@ -1693,9 +1636,9 @@ void std::allocator<char>::~allocator (struct allocator * const this)
 
 
 
-;; Function std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD2Ev, funcdef_no=3811, decl_uid=29563, cgraph_uid=1289, symbol_order=1852)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::~_Alloc_hider (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD2Ev, funcdef_no=3811, decl_uid=29563, cgraph_uid=1289, symbol_order=1852)
 
-void std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (struct _Alloc_hider * const this)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::~_Alloc_hider (struct _Alloc_hider * const this)
 {
   <bb 2> :
   gimple_call <__dt_base , NULL, this_2(D)>
@@ -1706,9 +1649,9 @@ void std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (struct _Allo
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tagEN6_GuardC2EPS4_, funcdef_no=4137, decl_uid=93732, cgraph_uid=1615, symbol_order=2191)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tagEN6_GuardC2EPS4_, funcdef_no=4137, decl_uid=93732, cgraph_uid=1615, symbol_order=2191)
 
-void std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::_Guard (struct _Guard * const this, struct basic_string * __s)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard (struct _Guard * const this, struct basic_string * __s)
 {
   <bb 2> :
   gimple_assign <constructor, *this_2(D), {CLOBBER}, NULL, NULL>
@@ -1719,9 +1662,9 @@ void std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, co
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardC2EPS4_, funcdef_no=4234, decl_uid=94928, cgraph_uid=1712, symbol_order=2294)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardC2EPS4_, funcdef_no=4234, decl_uid=94928, cgraph_uid=1712, symbol_order=2294)
 
-void std::__cxx11::basic_string<char>::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::_Guard (struct _Guard * const this, struct basic_string * __s)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::_Guard (struct _Guard * const this, struct basic_string * __s)
 {
   <bb 2> :
   gimple_assign <constructor, *this_2(D), {CLOBBER}, NULL, NULL>
@@ -1732,11 +1675,11 @@ void std::__cxx11::basic_string<char>::_M_construct<char*>(char*, char*, std::fo
 
 
 
-;; Function std::basic_ios<char>::~basic_ios (_ZNSt9basic_iosIcSt11char_traitsIcEED2Ev, funcdef_no=4318, decl_uid=43792, cgraph_uid=1797, symbol_order=2381)
+;; Function std::basic_ios<char, std::char_traits<char> >::~basic_ios (_ZNSt9basic_iosIcSt11char_traitsIcEED2Ev, funcdef_no=4318, decl_uid=43792, cgraph_uid=1797, symbol_order=2381)
 
-void std::basic_ios<char>::~basic_ios (struct basic_ios * const this)
+void std::basic_ios<char, std::char_traits<char> >::~basic_ios (struct basic_ios * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   struct ios_base * _2;
 
   <bb 2> :
@@ -1751,9 +1694,9 @@ void std::basic_ios<char>::~basic_ios (struct basic_ios * const this)
 
 
 
-;; Function std::__detail::_Quoted_string<const std::__cxx11::basic_string<char>&, char>::_Quoted_string (_ZNSt8__detail14_Quoted_stringIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEcEC2ES8_cc, funcdef_no=4335, decl_uid=93540, cgraph_uid=1814, symbol_order=2398)
+;; Function std::__detail::_Quoted_string<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char>::_Quoted_string (_ZNSt8__detail14_Quoted_stringIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEcEC2ES8_cc, funcdef_no=4335, decl_uid=93540, cgraph_uid=1814, symbol_order=2398)
 
-void std::__detail::_Quoted_string<const std::__cxx11::basic_string<char>&, char>::_Quoted_string (struct _Quoted_string * const this, const struct basic_string & __str, char __del, char __esc)
+void std::__detail::_Quoted_string<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char>::_Quoted_string (struct _Quoted_string * const this, const struct basic_string & __str, char __del, char __esc)
 {
   <bb 2> :
   gimple_assign <constructor, MEM[(struct __as_base  &)this_2(D)], {CLOBBER}, NULL, NULL>
@@ -1771,21 +1714,21 @@ void std::__detail::_Quoted_string<const std::__cxx11::basic_string<char>&, char
 struct _Quoted_string std::quoted<char, std::char_traits<char>, std::allocator<char> > (const struct basic_string & __string, char __delim, char __escape)
 {
   struct _Quoted_string D.93558;
-  struct _Quoted_string D.97667;
+  struct _Quoted_string D.97669;
 
   <bb 2> :
   gimple_call <__ct_comp , NULL, &D.93558, __string_2(D), __delim_3(D), __escape_4(D)>
-  gimple_assign <var_decl, D.97667, D.93558, NULL, NULL>
+  gimple_assign <var_decl, D.97669, D.93558, NULL, NULL>
   gimple_assign <constructor, D.93558, {CLOBBER(eol)}, NULL, NULL>
-  gimple_return <D.97667>
+  gimple_return <D.97669>
 
 }
 
 
 
-;; Function std::__array_traits<char, 128>::_S_ref (_ZNSt14__array_traitsIcLm128EE6_S_refERA128_Kcm, funcdef_no=4338, decl_uid=89180, cgraph_uid=1817, symbol_order=2401)
+;; Function std::__array_traits<char, 128ul>::_S_ref (_ZNSt14__array_traitsIcLm128EE6_S_refERA128_Kcm, funcdef_no=4338, decl_uid=89180, cgraph_uid=1817, symbol_order=2401)
 
-char & std::__array_traits<char, 128>::_S_ref (const char[128] & __t, size_t __n)
+char & std::__array_traits<char, 128ul>::_S_ref (const char[128] & __t, size_t __n)
 {
   char & _3;
 
@@ -1797,10 +1740,10 @@ char & std::__array_traits<char, 128>::_S_ref (const char[128] & __t, size_t __n
 
 
 
-;; Function std::array<char, 128>::operator[] (_ZNSt5arrayIcLm128EEixEm, funcdef_no=4097, decl_uid=89223, cgraph_uid=1576, symbol_order=2152)
+;; Function std::array<char, 128ul>::operator[] (_ZNSt5arrayIcLm128EEixEm, funcdef_no=4097, decl_uid=89223, cgraph_uid=1576, symbol_order=2152)
 
 __attribute__((nodiscard))
-value_type & std::array<char, 128>::operator[] (struct array * const this, size_type __n)
+value_type & std::array<char, 128ul>::operator[] (struct array * const this, size_type __n)
 {
   char[128] * _1;
   value_type & _6;
@@ -1882,67 +1825,50 @@ void execute_script (const struct string & scriptPath)
   struct basic_ostream & _99;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_call <pipe, NULL, &stdout_pipe>
-  gimple_debug BEGIN_STMT
   gimple_call <pipe, NULL, &stderr_pipe>
-  gimple_debug BEGIN_STMT
   gimple_call <fork, pid_52>
-  gimple_debug BIND <pid, pid_52>
-  gimple_debug BEGIN_STMT
   gimple_cond <eq_expr, pid_52, 0, NULL, NULL>
     goto <bb 3>; [INV]
   else
     goto <bb 6>; [INV]
 
   <bb 3> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _1, stdout_pipe[0], NULL, NULL>
   gimple_call <close, NULL, _1>
 
   <bb 4> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _2, stderr_pipe[0], NULL, NULL>
   gimple_call <close, NULL, _2>
 
   <bb 5> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _3, stdout_pipe[1], NULL, NULL>
   gimple_call <dup2, NULL, _3, 1>
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _4, stderr_pipe[1], NULL, NULL>
   gimple_call <dup2, NULL, _4, 2>
-  gimple_debug BEGIN_STMT
   gimple_call <c_str, _5, scriptPath_70(D)>
   gimple_call <execl, NULL, "/bin/bash", "bash", _5, 0>
-  gimple_debug BEGIN_STMT
   gimple_call <_exit, NULL, 1>
 
   <bb 6> :
-  gimple_debug BEGIN_STMT
   gimple_cond <gt_expr, pid_52, 0, NULL, NULL>
     goto <bb 7>; [INV]
   else
     goto <bb 33>; [INV]
 
   <bb 7> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _6, stdout_pipe[1], NULL, NULL>
   gimple_call <close, NULL, _6>
 
   <bb 8> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _7, stderr_pipe[1], NULL, NULL>
   gimple_call <close, NULL, _7>
   goto <bb 11>; [INV]
 
   <bb 9> :
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, n.30_8, n_59, NULL, NULL>
   gimple_call <operator[], _9, &buffer, n.30_8>
   gimple_assign <integer_cst, *_9, 0, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _99, &cout, "[SHINFO] ">
 
   <bb 10> :
@@ -1951,14 +1877,12 @@ void execute_script (const struct string & scriptPath)
   gimple_call <operator<<, NULL, _10, _11>
 
   <bb 11> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _12, stdout_pipe[0], NULL, NULL>
   gimple_call <data, _13, &buffer>
   gimple_call <read, _58, _12, _13, 127>
 
   <bb 12> :
   gimple_assign <ssa_name, n_59, _58, NULL, NULL>
-  gimple_debug BIND <n, n_59>
   gimple_assign <gt_expr, retval.31_60, n_59, 0, NULL>
   gimple_cond <ne_expr, retval.31_60, 0, NULL, NULL>
     goto <bb 9>; [INV]
@@ -1966,11 +1890,9 @@ void execute_script (const struct string & scriptPath)
     goto <bb 15>; [INV]
 
   <bb 13> :
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, n.32_14, n_63, NULL, NULL>
   gimple_call <operator[], _15, &buffer, n.32_14>
   gimple_assign <integer_cst, *_15, 0, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _94, &cerr, "[SHERR] ">
 
   <bb 14> :
@@ -1979,14 +1901,12 @@ void execute_script (const struct string & scriptPath)
   gimple_call <operator<<, NULL, _16, _17>
 
   <bb 15> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _18, stderr_pipe[0], NULL, NULL>
   gimple_call <data, _19, &buffer>
   gimple_call <read, _62, _18, _19, 127>
 
   <bb 16> :
   gimple_assign <ssa_name, n_63, _62, NULL, NULL>
-  gimple_debug BIND <n, n_63>
   gimple_assign <gt_expr, retval.33_64, n_63, 0, NULL>
   gimple_cond <ne_expr, retval.33_64, 0, NULL, NULL>
     goto <bb 13>; [INV]
@@ -1994,22 +1914,17 @@ void execute_script (const struct string & scriptPath)
     goto <bb 17>; [INV]
 
   <bb 17> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _20, stdout_pipe[0], NULL, NULL>
   gimple_call <close, NULL, _20>
 
   <bb 18> :
-  gimple_debug BEGIN_STMT
   gimple_assign <array_ref, _21, stderr_pipe[0], NULL, NULL>
   gimple_call <close, NULL, _21>
 
   <bb 19> :
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_call <waitpid, NULL, pid_52, &status, 0>
 
   <bb 20> :
-  gimple_debug BEGIN_STMT
   gimple_assign <var_decl, status.34_22, status, NULL, NULL>
   gimple_assign <bit_and_expr, _23, status.34_22, 127, NULL>
   gimple_cond <eq_expr, _23, 0, NULL, NULL>
@@ -2018,7 +1933,6 @@ void execute_script (const struct string & scriptPath)
     goto <bb 26>; [INV]
 
   <bb 21> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _79, &cout, "[INFO] Script ">
 
   <bb 22> :
@@ -2042,7 +1956,6 @@ void execute_script (const struct string & scriptPath)
   goto <bb 32>; [INV]
 
   <bb 26> :
-  gimple_debug BEGIN_STMT
   gimple_assign <var_decl, status.36_31, status, NULL, NULL>
   gimple_assign <nop_expr, _32, status.36_31, NULL, NULL>
   gimple_assign <bit_and_expr, _33, _32, 127, NULL>
@@ -2055,7 +1968,6 @@ void execute_script (const struct string & scriptPath)
     goto <bb 32>; [INV]
 
   <bb 27> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _69, &cout, "[ERROR] Script ">
 
   <bb 28> :
@@ -2084,11 +1996,9 @@ void execute_script (const struct string & scriptPath)
   gimple_return <NULL>
 
   <bb 33> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to fork process.\n">
 
   <bb 34> :
-  gimple_debug BEGIN_STMT
   gimple_call <exit, NULL, 1>
 
   <bb 35> :
@@ -2121,9 +2031,9 @@ char * std::__ptr_traits_ptr_to<char*, char, false>::pointer_to (element_type & 
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_local_data (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv, funcdef_no=4108, decl_uid=28203, cgraph_uid=1587, symbol_order=2163)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv, funcdef_no=4108, decl_uid=28203, cgraph_uid=1587, symbol_order=2163)
 
-char * std::__cxx11::basic_string<char>::_M_local_data (struct basic_string * const this)
+char * std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data (struct basic_string * const this)
 {
   char[16] * _1;
   char * _5;
@@ -2160,9 +2070,9 @@ const struct ctype & std::__check_facet<std::ctype<char> > (const struct ctype *
 
 
 
-;; Function std::basic_ios<char>::widen (_ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc, funcdef_no=4312, decl_uid=43732, cgraph_uid=1791, symbol_order=2375)
+;; Function std::basic_ios<char, std::char_traits<char> >::widen (_ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc, funcdef_no=4312, decl_uid=43732, cgraph_uid=1791, symbol_order=2375)
 
-char_type std::basic_ios<char>::widen (const struct basic_ios * const this, char __c)
+char_type std::basic_ios<char, std::char_traits<char> >::widen (const struct basic_ios * const this, char __c)
 {
   const struct __ctype_type * _1;
   const struct ctype & _2;
@@ -2186,8 +2096,8 @@ char_type std::basic_ios<char>::widen (const struct basic_ios * const this, char
 
 struct basic_ostream & std::endl<char, std::char_traits<char> > (struct basic_ostream & __os)
 {
-  int (*) () * _1;
-  int (*) () * _2;
+  int (*__vtbl_ptr_type) () * _1;
+  int (*__vtbl_ptr_type) () * _2;
   long int _3;
   sizetype _4;
   struct basic_ios * _5;
@@ -2216,11 +2126,11 @@ struct basic_ostream & std::endl<char, std::char_traits<char> > (struct basic_os
 
 
 
-;; Function std::basic_streambuf<char>::~basic_streambuf (_ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev, funcdef_no=4444, decl_uid=39061, cgraph_uid=1923, symbol_order=2507)
+;; Function std::basic_streambuf<char, std::char_traits<char> >::~basic_streambuf (_ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev, funcdef_no=4444, decl_uid=39061, cgraph_uid=1923, symbol_order=2507)
 
-void std::basic_streambuf<char>::~basic_streambuf (struct basic_streambuf * const this)
+void std::basic_streambuf<char, std::char_traits<char> >::~basic_streambuf (struct basic_streambuf * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   struct locale * _2;
 
   <bb 2> :
@@ -2235,11 +2145,11 @@ void std::basic_streambuf<char>::~basic_streambuf (struct basic_streambuf * cons
 
 
 
-;; Function std::basic_filebuf<char>::~basic_filebuf (_ZNSt13basic_filebufIcSt11char_traitsIcEED2Ev, funcdef_no=4329, decl_uid=51360, cgraph_uid=1808, symbol_order=2392)
+;; Function std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf (_ZNSt13basic_filebufIcSt11char_traitsIcEED2Ev, funcdef_no=4329, decl_uid=51360, cgraph_uid=1808, symbol_order=2392)
 
-void std::basic_filebuf<char>::~basic_filebuf (struct basic_filebuf * const this)
+void std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf (struct basic_filebuf * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   void * _2;
   struct __file_type * _3;
   struct basic_streambuf * _4;
@@ -2272,16 +2182,16 @@ gimple_label <<L3>>
 
 
 
-;; Function std::basic_ofstream<char>::basic_ofstream (_ZNSt14basic_ofstreamIcSt11char_traitsIcEEC1ERKNSt7__cxx1112basic_stringIcS1_SaIcEEESt13_Ios_Openmode, funcdef_no=4087, decl_uid=51681, cgraph_uid=1566, symbol_order=2142)
+;; Function std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream (_ZNSt14basic_ofstreamIcSt11char_traitsIcEEC1ERKNSt7__cxx1112basic_stringIcS1_SaIcEEESt13_Ios_Openmode, funcdef_no=4087, decl_uid=51681, cgraph_uid=1566, symbol_order=2142)
 
-void std::basic_ofstream<char>::basic_ofstream (struct basic_ofstream * const this, const struct string & __s, openmode __mode)
+void std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream (struct basic_ofstream * const this, const struct string & __s, openmode __mode)
 {
   struct basic_ios * _1;
   struct basic_ostream * _2;
   const void * * _3;
-  int (*) () * _4;
+  int (*__vtbl_ptr_type) () * _4;
   struct basic_ofstream * _5;
-  int (*) () * _6;
+  int (*__vtbl_ptr_type) () * _6;
   struct __filebuf_type * _7;
   struct basic_ios * _8;
   struct basic_streambuf * _9;
@@ -2341,13 +2251,13 @@ gimple_label <<L2>>
 
 
 
-;; Function std::basic_ofstream<char>::~basic_ofstream (_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev, funcdef_no=4090, decl_uid=51717, cgraph_uid=1569, symbol_order=2145)
+;; Function std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream (_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev, funcdef_no=4090, decl_uid=51717, cgraph_uid=1569, symbol_order=2145)
 
-void std::basic_ofstream<char>::~basic_ofstream (struct basic_ofstream * const this)
+void std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream (struct basic_ofstream * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   struct basic_ofstream * _2;
-  int (*) () * _3;
+  int (*__vtbl_ptr_type) () * _3;
   struct __filebuf_type * _4;
   struct basic_ostream * _5;
   const void * * _6;
@@ -2373,9 +2283,9 @@ void std::basic_ofstream<char>::~basic_ofstream (struct basic_ofstream * const t
 
 
 
-;; Function __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator++ (_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEppEv, funcdef_no=4463, decl_uid=73470, cgraph_uid=1942, symbol_order=2526)
+;; Function __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++ (_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEppEv, funcdef_no=4463, decl_uid=73470, cgraph_uid=1942, symbol_order=2526)
 
-struct __normal_iterator & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator++ (struct __normal_iterator * const this)
+struct __normal_iterator & __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++ (struct __normal_iterator * const this)
 {
   const char * _1;
   const char * _2;
@@ -2392,9 +2302,9 @@ struct __normal_iterator & __gnu_cxx::__normal_iterator<const char*, std::__cxx1
 
 
 
-;; Function __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator* (_ZNK9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv, funcdef_no=4464, decl_uid=73466, cgraph_uid=1943, symbol_order=2527)
+;; Function __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator* (_ZNK9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv, funcdef_no=4464, decl_uid=73466, cgraph_uid=1943, symbol_order=2527)
 
-const char & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::operator* (const struct __normal_iterator * const this)
+const char & __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator* (const struct __normal_iterator * const this)
 {
   const char & _3;
 
@@ -2429,9 +2339,9 @@ void std::allocator<char>::allocator (struct allocator * const this, const struc
 
 
 
-;; Function std::__cxx11::basic_string<char>::get_allocator (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv, funcdef_no=4575, decl_uid=28904, cgraph_uid=2054, symbol_order=2638)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::get_allocator (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv, funcdef_no=4575, decl_uid=28904, cgraph_uid=2054, symbol_order=2638)
 
-struct allocator_type std::__cxx11::basic_string<char>::get_allocator (const struct basic_string * const this)
+struct allocator_type std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::get_allocator (const struct basic_string * const this)
 {
   const struct allocator_type & _1;
   struct allocator_type & _5(D);
@@ -2473,9 +2383,9 @@ struct allocator __gnu_cxx::__alloc_traits<std::allocator<char>, char>::_S_selec
 
 
 
-;; Function std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_, funcdef_no=4110, decl_uid=28179, cgraph_uid=1589, symbol_order=2165)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_, funcdef_no=4110, decl_uid=28179, cgraph_uid=1589, symbol_order=2165)
 
-void std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (struct _Alloc_hider * const this, char * __dat, const struct allocator & __a)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider (struct _Alloc_hider * const this, char * __dat, const struct allocator & __a)
 {
   <bb 2> :
   gimple_assign <constructor, *this_2(D), {CLOBBER}, NULL, NULL>
@@ -2487,9 +2397,9 @@ void std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (struct _Alloc
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string<> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEmcRKS3_, funcdef_no=3813, decl_uid=29456, cgraph_uid=1292, symbol_order=1855)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> > (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEmcRKS3_, funcdef_no=3813, decl_uid=29456, cgraph_uid=1292, symbol_order=1855)
 
-void std::__cxx11::basic_string<char>::basic_string<> (struct basic_string * const this, size_type __n, char __c, const struct allocator & __a)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> > (struct basic_string * const this, size_type __n, char __c, const struct allocator & __a)
 {
   struct _Alloc_hider * _1;
   char * _2;
@@ -2536,10 +2446,7 @@ struct string std::__cxx11::to_string (int __val)
   value_type & _22;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_assign <lt_expr, __neg_9, __val_8(D), 0, NULL>
-  gimple_debug BIND <__neg, __neg_9>
-  gimple_debug BEGIN_STMT
   gimple_cond <ne_expr, __neg_9, 0, NULL, NULL>
     goto <bb 3>; [INV]
   else
@@ -2556,11 +2463,7 @@ struct string std::__cxx11::to_string (int __val)
   <bb 5> :
   # gimple_phi <iftmp.8_7, iftmp.8_11(3), iftmp.8_10(4)>
   gimple_assign <ssa_name, __uval_12, iftmp.8_7, NULL, NULL>
-  gimple_debug BIND <__uval, __uval_12>
-  gimple_debug BEGIN_STMT
   gimple_call <__to_chars_len, __len_15, __uval_12, 10>
-  gimple_debug BIND <__len, __len_15>
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, _2, __neg_9, NULL, NULL>
   gimple_assign <plus_expr, _3, __len_15, _2, NULL>
   gimple_assign <nop_expr, _4, _3, NULL, NULL>
@@ -2568,21 +2471,19 @@ struct string std::__cxx11::to_string (int __val)
   gimple_call <__ct_comp , NULL, __str_17(D), _4, 45, &D.29556>
   gimple_call <__dt_comp , NULL, &D.29556>
   gimple_assign <constructor, D.29556, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, _5, __neg_9, NULL, NULL>
   gimple_call <operator[], _22, __str_17(D), _5>
   gimple_assign <ssa_name, _6, _22, NULL, NULL>
   gimple_call <__to_chars_10_impl, NULL, _6, __len_15, __uval_12>
-  gimple_debug BEGIN_STMT
   gimple_return <__str_17(D)>
 
 }
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2ERKS3_, funcdef_no=4287, decl_uid=29248, cgraph_uid=1766, symbol_order=2350)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2ERKS3_, funcdef_no=4287, decl_uid=29248, cgraph_uid=1766, symbol_order=2350)
 
-void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, const struct allocator & __a)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (struct basic_string * const this, const struct allocator & __a)
 {
   struct _Alloc_hider * _1;
   char * _2;
@@ -2601,9 +2502,9 @@ void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const
 
 
 
-;; Function std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcOS3_, funcdef_no=4116, decl_uid=28171, cgraph_uid=1595, symbol_order=2171)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcOS3_, funcdef_no=4116, decl_uid=28171, cgraph_uid=1595, symbol_order=2171)
 
-void std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (struct _Alloc_hider * const this, char * __dat, struct allocator & __a)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider (struct _Alloc_hider * const this, char * __dat, struct allocator & __a)
 {
   <bb 2> :
   gimple_assign <constructor, *this_2(D), {CLOBBER}, NULL, NULL>
@@ -2615,9 +2516,9 @@ void std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (struct _Alloc
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2Ev, funcdef_no=4017, decl_uid=29253, cgraph_uid=1496, symbol_order=2066)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2Ev, funcdef_no=4017, decl_uid=29253, cgraph_uid=1496, symbol_order=2066)
 
-void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (struct basic_string * const this)
 {
   struct allocator D.92505;
   struct _Alloc_hider * _1;
@@ -2640,12 +2541,12 @@ void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const
 
 
 
-;; Function std::__cxx11::basic_stringbuf<char>::basic_stringbuf (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEC2ESt13_Ios_Openmode, funcdef_no=4535, decl_uid=76586, cgraph_uid=2014, symbol_order=2598)
+;; Function std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::basic_stringbuf (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEC2ESt13_Ios_Openmode, funcdef_no=4535, decl_uid=76586, cgraph_uid=2014, symbol_order=2598)
 
-void std::__cxx11::basic_stringbuf<char>::basic_stringbuf (struct basic_stringbuf * const this, openmode __mode)
+void std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::basic_stringbuf (struct basic_stringbuf * const this, openmode __mode)
 {
   struct basic_streambuf * _1;
-  int (*) () * _2;
+  int (*__vtbl_ptr_type) () * _2;
   struct __string_type * _3;
   struct __string_type * _4;
   struct basic_streambuf * _5;
@@ -2665,9 +2566,9 @@ void std::__cxx11::basic_stringbuf<char>::basic_stringbuf (struct basic_stringbu
 
 
 
-;; Function std::__ptr_traits_ptr_to<const char*, const char, false>::pointer_to (_ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_, funcdef_no=4470, decl_uid=95737, cgraph_uid=1949, symbol_order=2533)
+;; Function std::__ptr_traits_ptr_to<char const*, char const, false>::pointer_to (_ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_, funcdef_no=4470, decl_uid=95737, cgraph_uid=1949, symbol_order=2533)
 
-const char * std::__ptr_traits_ptr_to<const char*, const char, false>::pointer_to (const element_type & __r)
+const char * std::__ptr_traits_ptr_to<char const*, char const, false>::pointer_to (const element_type & __r)
 {
   const char * _2;
 
@@ -2679,9 +2580,9 @@ const char * std::__ptr_traits_ptr_to<const char*, const char, false>::pointer_t
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_local_data (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv, funcdef_no=4343, decl_uid=28205, cgraph_uid=1822, symbol_order=2406)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv, funcdef_no=4343, decl_uid=28205, cgraph_uid=1822, symbol_order=2406)
 
-const char * std::__cxx11::basic_string<char>::_M_local_data (const struct basic_string * const this)
+const char * std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data (const struct basic_string * const this)
 {
   const char[16] * _1;
   const char * _5;
@@ -2695,9 +2596,9 @@ const char * std::__cxx11::basic_string<char>::_M_local_data (const struct basic
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_is_local (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv, funcdef_no=4118, decl_uid=28213, cgraph_uid=1597, symbol_order=2173)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv, funcdef_no=4118, decl_uid=28213, cgraph_uid=1597, symbol_order=2173)
 
-bool std::__cxx11::basic_string<char>::_M_is_local (const struct basic_string * const this)
+bool std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local (const struct basic_string * const this)
 {
   char * _1;
   const char * _2;
@@ -2713,9 +2614,9 @@ bool std::__cxx11::basic_string<char>::_M_is_local (const struct basic_string * 
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EOS4_, funcdef_no=3821, decl_uid=29172, cgraph_uid=1300, symbol_order=1864)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EOS4_, funcdef_no=3821, decl_uid=29172, cgraph_uid=1300, symbol_order=1864)
 
-void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, struct basic_string & __str)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (struct basic_string * const this, struct basic_string & __str)
 {
   struct _Alloc_hider * _1;
   char * _2;
@@ -2789,9 +2690,9 @@ struct basic_string std::operator+<char, std::char_traits<char>, std::allocator<
 
 
 
-;; Function std::__distance<const char*> (_ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag, funcdef_no=4476, decl_uid=95811, cgraph_uid=1955, symbol_order=2539)
+;; Function std::__distance<char const*> (_ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag, funcdef_no=4476, decl_uid=95811, cgraph_uid=1955, symbol_order=2539)
 
-difference_type std::__distance<const char*> (const char * __first, const char * __last, struct random_access_iterator_tag D.96410)
+difference_type std::__distance<char const*> (const char * __first, const char * __last, struct random_access_iterator_tag D.96410)
 {
   difference_type _3;
 
@@ -2803,20 +2704,20 @@ difference_type std::__distance<const char*> (const char * __first, const char *
 
 
 
-;; Function std::distance<const char*> (_ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_, funcdef_no=4353, decl_uid=93717, cgraph_uid=1833, symbol_order=2417)
+;; Function std::distance<char const*> (_ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_, funcdef_no=4353, decl_uid=93717, cgraph_uid=1833, symbol_order=2417)
 
 No longer having address taken: __first
 Now a gimple register: __first
 __attribute__((nodiscard))
-difference_type std::distance<const char*> (const char * __first, const char * __last)
+difference_type std::distance<char const*> (const char * __first, const char * __last)
 {
-  struct random_access_iterator_tag D.97494;
+  struct random_access_iterator_tag D.97496;
   const char * __first.5_1;
   difference_type _6;
 
   <bb 2> :
   gimple_assign <ssa_name, __first.5_1, __first_2(D), NULL, NULL>
-  gimple_call <__distance, _6, __first.5_1, __last_4(D), D.97494>
+  gimple_call <__distance, _6, __first.5_1, __last_4(D), D.97496>
   gimple_return <_6>
 
 }
@@ -2844,13 +2745,13 @@ Now a gimple register: __first
 __attribute__((nodiscard))
 difference_type std::distance<char*> (char * __first, char * __last)
 {
-  struct random_access_iterator_tag D.97806;
+  struct random_access_iterator_tag D.97808;
   char * __first.27_1;
   difference_type _6;
 
   <bb 2> :
   gimple_assign <ssa_name, __first.27_1, __first_2(D), NULL, NULL>
-  gimple_call <__distance, _6, __first.27_1, __last_4(D), D.97806>
+  gimple_call <__distance, _6, __first.27_1, __last_4(D), D.97808>
   gimple_return <_6>
 
 }
@@ -2881,9 +2782,9 @@ void std::allocator_traits<std::allocator<char> >::deallocate (struct allocator_
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_destroy (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm, funcdef_no=4251, decl_uid=28221, cgraph_uid=1730, symbol_order=2314)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm, funcdef_no=4251, decl_uid=28221, cgraph_uid=1730, symbol_order=2314)
 
-void std::__cxx11::basic_string<char>::_M_destroy (struct basic_string * const this, size_type __size)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy (struct basic_string * const this, size_type __size)
 {
   struct allocator_type & _1;
   char * _2;
@@ -2900,9 +2801,9 @@ void std::__cxx11::basic_string<char>::_M_destroy (struct basic_string * const t
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_dispose (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv, funcdef_no=4112, decl_uid=28219, cgraph_uid=1591, symbol_order=2167)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv, funcdef_no=4112, decl_uid=28219, cgraph_uid=1591, symbol_order=2167)
 
-void std::__cxx11::basic_string<char>::_M_dispose (struct basic_string * const this)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose (struct basic_string * const this)
 {
   bool _1;
   long unsigned int _2;
@@ -2929,9 +2830,9 @@ void std::__cxx11::basic_string<char>::_M_dispose (struct basic_string * const t
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::~_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tagEN6_GuardD2Ev, funcdef_no=4140, decl_uid=93738, cgraph_uid=1618, symbol_order=2194)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tagEN6_GuardD2Ev, funcdef_no=4140, decl_uid=93738, cgraph_uid=1618, symbol_order=2194)
 
-void std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::~_Guard (struct _Guard * const this)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard (struct _Guard * const this)
 {
   struct basic_string * _1;
   struct basic_string * _2;
@@ -2955,9 +2856,9 @@ void std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, co
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_construct<const char*> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag, funcdef_no=4135, decl_uid=91567, cgraph_uid=1620, symbol_order=2196)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag, funcdef_no=4135, decl_uid=91567, cgraph_uid=1620, symbol_order=2196)
 
-void std::__cxx11::basic_string<char>::_M_construct<const char*> (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.93714)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*> (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.93714)
 {
   struct _Guard __guard;
   size_type __dnew;
@@ -3017,12 +2918,12 @@ gimple_label <<L3>>
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string<> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_, funcdef_no=4041, decl_uid=33889, cgraph_uid=1520, symbol_order=2091)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> > (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_, funcdef_no=4041, decl_uid=33889, cgraph_uid=1520, symbol_order=2091)
 
-void std::__cxx11::basic_string<char>::basic_string<> (struct basic_string * const this, const char * __s, const struct allocator & __a)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> > (struct basic_string * const this, const char * __s, const struct allocator & __a)
 {
   const char * __end;
-  struct forward_iterator_tag D.97467;
+  struct forward_iterator_tag D.97469;
   struct _Alloc_hider * _1;
   char * _2;
   long unsigned int _3;
@@ -3046,8 +2947,7 @@ void std::__cxx11::basic_string<char>::basic_string<> (struct basic_string * con
   gimple_call <length, _14, __s_12(D)>
   gimple_assign <ssa_name, _3, _14, NULL, NULL>
   gimple_assign <pointer_plus_expr, __end_15, __s_12(D), _3, NULL>
-  gimple_debug BIND <__end, __end_15>
-  gimple_call <_M_construct, NULL, this_7(D), __s_12(D), __end_15, D.97467>
+  gimple_call <_M_construct, NULL, this_7(D), __s_12(D), __end_15, D.97469>
 
   <bb 5> :
   gimple_return <NULL>
@@ -3108,11 +3008,11 @@ gimple_label <<L7>>
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcmRKS3_, funcdef_no=3918, decl_uid=29202, cgraph_uid=1397, symbol_order=1963)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcmRKS3_, funcdef_no=3918, decl_uid=29202, cgraph_uid=1397, symbol_order=1963)
 
-void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, const char * __s, size_type __n, const struct allocator & __a)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (struct basic_string * const this, const char * __s, size_type __n, const struct allocator & __a)
 {
-  struct forward_iterator_tag D.97665;
+  struct forward_iterator_tag D.97667;
   struct _Alloc_hider * _1;
   char * _2;
   bool _3;
@@ -3139,7 +3039,7 @@ void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const
 
   <bb 4> :
   gimple_assign <pointer_plus_expr, _6, __s_15(D), __n_16(D), NULL>
-  gimple_call <_M_construct, NULL, this_10(D), __s_15(D), _6, D.97665>
+  gimple_call <_M_construct, NULL, this_10(D), __s_15(D), _6, D.97667>
 
   <bb 5> :
   gimple_return <NULL>
@@ -3154,9 +3054,9 @@ gimple_label <<L2>>
 
 
 
-;; Function std::filesystem::__cxx11::path::string<char> (_ZNKSt10filesystem7__cxx114path6stringIcSt11char_traitsIcESaIcEEENSt7__cxx1112basic_stringIT_T0_T1_EERKSA_, funcdef_no=4052, decl_uid=85194, cgraph_uid=1531, symbol_order=2102)
+;; Function std::filesystem::__cxx11::path::string<char, std::char_traits<char>, std::allocator<char> > (_ZNKSt10filesystem7__cxx114path6stringIcSt11char_traitsIcESaIcEEENSt7__cxx1112basic_stringIT_T0_T1_EERKSA_, funcdef_no=4052, decl_uid=85194, cgraph_uid=1531, symbol_order=2102)
 
-struct basic_string std::filesystem::__cxx11::path::string<char> (const struct path * const this, const struct allocator & __a)
+struct basic_string std::filesystem::__cxx11::path::string<char, std::char_traits<char>, std::allocator<char> > (const struct path * const this, const struct allocator & __a)
 {
   const struct string_type * _1;
   const char * _2;
@@ -3176,9 +3076,9 @@ struct basic_string std::filesystem::__cxx11::path::string<char> (const struct p
 
 
 
-;; Function std::__cxx11::basic_string<char>::~basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev, funcdef_no=3816, decl_uid=29266, cgraph_uid=1295, symbol_order=1858)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev, funcdef_no=3816, decl_uid=29266, cgraph_uid=1295, symbol_order=1858)
 
-void std::__cxx11::basic_string<char>::~basic_string (struct basic_string * const this)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string (struct basic_string * const this)
 {
   struct _Alloc_hider * _1;
 
@@ -3221,21 +3121,18 @@ void logError (const struct string & func, const struct string & file, int line)
   struct basic_ostream & _42;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, &D.88807>
   gimple_call <__ct_comp , NULL, &RED, "\x1b[31m", &D.88807>
 
   <bb 3> :
   gimple_call <__dt_comp , NULL, &D.88807>
   gimple_assign <constructor, D.88807, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, &D.88810>
   gimple_call <__ct_comp , NULL, &RESET, "\x1b[0m", &D.88810>
 
   <bb 4> :
   gimple_call <__dt_comp , NULL, &D.88810>
   gimple_assign <constructor, D.88810, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _23, &cerr, &RED>
 
   <bb 5> :
@@ -3321,11 +3218,11 @@ gimple_label <<L6>>
 
 
 
-;; Function std::__cxx11::basic_stringbuf<char>::~basic_stringbuf (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED2Ev, funcdef_no=4450, decl_uid=76552, cgraph_uid=1928, symbol_order=2512)
+;; Function std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED2Ev, funcdef_no=4450, decl_uid=76552, cgraph_uid=1928, symbol_order=2512)
 
-void std::__cxx11::basic_stringbuf<char>::~basic_stringbuf (struct basic_stringbuf * const this)
+void std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf (struct basic_stringbuf * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   struct __string_type * _2;
   struct basic_streambuf * _3;
 
@@ -3343,16 +3240,16 @@ void std::__cxx11::basic_stringbuf<char>::~basic_stringbuf (struct basic_stringb
 
 
 
-;; Function std::__cxx11::basic_ostringstream<char>::basic_ostringstream (_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev, funcdef_no=4454, decl_uid=76856, cgraph_uid=1933, symbol_order=2517)
+;; Function std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::basic_ostringstream (_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev, funcdef_no=4454, decl_uid=76856, cgraph_uid=1933, symbol_order=2517)
 
-void std::__cxx11::basic_ostringstream<char>::basic_ostringstream (struct basic_ostringstream * const this)
+void std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::basic_ostringstream (struct basic_ostringstream * const this)
 {
   struct basic_ios * _1;
   struct basic_ostream * _2;
   const void * * _3;
-  int (*) () * _4;
+  int (*__vtbl_ptr_type) () * _4;
   struct basic_ostringstream * _5;
-  int (*) () * _6;
+  int (*__vtbl_ptr_type) () * _6;
   struct __stringbuf_type * _7;
   struct basic_ios * _8;
   struct basic_streambuf * _9;
@@ -3407,9 +3304,9 @@ gimple_label <<L2>>
 
 
 
-;; Function std::__cxx11::basic_stringbuf<char>::~basic_stringbuf (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev, funcdef_no=4452, decl_uid=76546, cgraph_uid=1930, symbol_order=2514)
+;; Function std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf (_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev, funcdef_no=4452, decl_uid=76546, cgraph_uid=1930, symbol_order=2514)
 
-void std::__cxx11::basic_stringbuf<char>::~basic_stringbuf (struct basic_stringbuf * const this)
+void std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf (struct basic_stringbuf * const this)
 {
   <bb 2> :
   gimple_call <__dt_comp , NULL, this_2(D)>
@@ -3420,13 +3317,13 @@ void std::__cxx11::basic_stringbuf<char>::~basic_stringbuf (struct basic_stringb
 
 
 
-;; Function std::__cxx11::basic_ostringstream<char>::~basic_ostringstream (_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev, funcdef_no=4457, decl_uid=76868, cgraph_uid=1936, symbol_order=2520)
+;; Function std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream (_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev, funcdef_no=4457, decl_uid=76868, cgraph_uid=1936, symbol_order=2520)
 
-void std::__cxx11::basic_ostringstream<char>::~basic_ostringstream (struct basic_ostringstream * const this)
+void std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream (struct basic_ostringstream * const this)
 {
-  int (*) () * _1;
+  int (*__vtbl_ptr_type) () * _1;
   struct basic_ostringstream * _2;
-  int (*) () * _3;
+  int (*__vtbl_ptr_type) () * _3;
   struct __stringbuf_type * _4;
   struct basic_ostream * _5;
   const void * * _6;
@@ -3452,9 +3349,9 @@ void std::__cxx11::basic_ostringstream<char>::~basic_ostringstream (struct basic
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::~_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardD2Ev, funcdef_no=4237, decl_uid=94934, cgraph_uid=1715, symbol_order=2297)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::~_Guard (_ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardD2Ev, funcdef_no=4237, decl_uid=94934, cgraph_uid=1715, symbol_order=2297)
 
-void std::__cxx11::basic_string<char>::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::~_Guard (struct _Guard * const this)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)::_Guard::~_Guard (struct _Guard * const this)
 {
   struct basic_string * _1;
   struct basic_string * _2;
@@ -3478,9 +3375,9 @@ void std::__cxx11::basic_string<char>::_M_construct<char*>(char*, char*, std::fo
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_construct<char*> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag, funcdef_no=4232, decl_uid=92556, cgraph_uid=1717, symbol_order=2299)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag, funcdef_no=4232, decl_uid=92556, cgraph_uid=1717, symbol_order=2299)
 
-void std::__cxx11::basic_string<char>::_M_construct<char*> (struct basic_string * const this, char * __beg, char * __end, struct forward_iterator_tag D.94910)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*> (struct basic_string * const this, char * __beg, char * __end, struct forward_iterator_tag D.94910)
 {
   struct _Guard __guard;
   size_type __dnew;
@@ -3540,11 +3437,11 @@ gimple_label <<L3>>
 
 
 
-;; Function std::__cxx11::basic_string<char>::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2ERKS4_, funcdef_no=4032, decl_uid=29242, cgraph_uid=1511, symbol_order=2081)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2ERKS4_, funcdef_no=4032, decl_uid=29242, cgraph_uid=1511, symbol_order=2081)
 
-void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, const struct basic_string & __str)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string (struct basic_string * const this, const struct basic_string & __str)
 {
-  struct forward_iterator_tag D.97794;
+  struct forward_iterator_tag D.97796;
   struct allocator D.92567;
   struct _Alloc_hider * _1;
   char * _2;
@@ -3568,7 +3465,7 @@ void std::__cxx11::basic_string<char>::basic_string (struct basic_string * const
   gimple_call <_M_data, _5, __str_13(D)>
   gimple_call <length, _6, __str_13(D)>
   gimple_assign <pointer_plus_expr, _7, _5, _6, NULL>
-  gimple_call <_M_construct, NULL, this_10(D), _4, _7, D.97794>
+  gimple_call <_M_construct, NULL, this_10(D), _4, _7, D.97796>
 
   <bb 3> :
   gimple_return <NULL>
@@ -3590,7 +3487,6 @@ struct string get_log_path ()
   struct string & _2(D);
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, _2(D), &log_path>
   gimple_return <_2(D)>
 
@@ -3619,7 +3515,6 @@ void write_log (const char * msg)
   struct basic_ostream & _32;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <get_log_path, D.89060> [return slot optimization]
 
   <bb 3> :
@@ -3628,7 +3523,6 @@ void write_log (const char * msg)
   <bb 4> :
   gimple_call <__dt_comp , NULL, &D.89060>
   gimple_assign <constructor, D.89060, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <is_open, retval.23_17, &logfile>
   gimple_cond <ne_expr, retval.23_17, 0, NULL, NULL>
     goto <bb 5>; [INV]
@@ -3636,14 +3530,10 @@ void write_log (const char * msg)
     goto <bb 12>; [INV]
 
   <bb 5> :
-  gimple_debug BEGIN_STMT
   gimple_call <time, _1, 0B>
   gimple_assign <ssa_name, t, _1, NULL, NULL>
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_call <localtime, _2, &t>
   gimple_call <strftime, NULL, &timestamp, 100, "%Y-%m-%d %H:%M:%S", _2>
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _25, &logfile.D.51725, "[">
 
   <bb 6> :
@@ -3663,7 +3553,6 @@ void write_log (const char * msg)
   gimple_call <operator<<, NULL, _6, endl>
 
   <bb 10> :
-  gimple_debug BEGIN_STMT
   gimple_call <close, NULL, &logfile>
 
   <bb 11> :
@@ -3674,11 +3563,9 @@ void write_log (const char * msg)
   gimple_return <NULL>
 
   <bb 12> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, NULL, &cerr, "[ERROR] Failed to open log file.\n">
 
   <bb 13> :
-  gimple_debug BEGIN_STMT
   gimple_call <exit, NULL, 123>
 
   <bb 14> :
@@ -3722,12 +3609,8 @@ int main ()
   int _16;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <register_signal, NULL>
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, &result>
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, &D.89312>
   gimple_call <__ct_comp , NULL, &D.89313, "./log.sh", &D.89312>
 
@@ -3739,12 +3622,10 @@ int main ()
   gimple_call <__dt_comp , NULL, &D.89312>
   gimple_assign <constructor, D.89312, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.89313, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <c_str, _1, &result>
   gimple_call <write_log, NULL, _1>
 
   <bb 5> :
-  gimple_debug BEGIN_STMT
   gimple_assign <integer_cst, _16, 0, NULL, NULL>
   gimple_call <__dt_comp , NULL, &result>
   gimple_assign <constructor, result, {CLOBBER(eol)}, NULL, NULL>
@@ -3784,9 +3665,9 @@ gimple_label <<L8>>
 
 
 
-;; Function __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::__normal_iterator (_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS2_, funcdef_no=4538, decl_uid=73508, cgraph_uid=2017, symbol_order=2601)
+;; Function __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::__normal_iterator (_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS2_, funcdef_no=4538, decl_uid=73508, cgraph_uid=2017, symbol_order=2601)
 
-void __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::__normal_iterator (struct __normal_iterator * const this, const char * const & __i)
+void __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::__normal_iterator (struct __normal_iterator * const this, const char * const & __i)
 {
   const char * _1;
 
@@ -3800,35 +3681,35 @@ void __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> 
 
 
 
-;; Function std::__cxx11::basic_string<char>::begin (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv, funcdef_no=4460, decl_uid=28499, cgraph_uid=1939, symbol_order=2523)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::begin (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv, funcdef_no=4460, decl_uid=28499, cgraph_uid=1939, symbol_order=2523)
 
-struct const_iterator std::__cxx11::basic_string<char>::begin (const struct basic_string * const this)
+struct const_iterator std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::begin (const struct basic_string * const this)
 {
   const char * const D.96328;
   struct const_iterator D.96329;
-  struct const_iterator D.97689;
+  struct const_iterator D.97691;
   char * _1;
 
   <bb 2> :
   gimple_call <_M_data, _1, this_3(D)>
   gimple_assign <ssa_name, D.96328, _1, NULL, NULL>
   gimple_call <__ct_comp , NULL, &D.96329, &D.96328>
-  gimple_assign <var_decl, D.97689, D.96329, NULL, NULL>
+  gimple_assign <var_decl, D.97691, D.96329, NULL, NULL>
   gimple_assign <constructor, D.96328, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.96329, {CLOBBER(eol)}, NULL, NULL>
-  gimple_return <D.97689>
+  gimple_return <D.97691>
 
 }
 
 
 
-;; Function std::__cxx11::basic_string<char>::end (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv, funcdef_no=4461, decl_uid=28503, cgraph_uid=1940, symbol_order=2524)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::end (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv, funcdef_no=4461, decl_uid=28503, cgraph_uid=1940, symbol_order=2524)
 
-struct const_iterator std::__cxx11::basic_string<char>::end (const struct basic_string * const this)
+struct const_iterator std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::end (const struct basic_string * const this)
 {
   const char * const D.96331;
   struct const_iterator D.96332;
-  struct const_iterator D.97693;
+  struct const_iterator D.97695;
   char * _1;
   long unsigned int _2;
   char * _3;
@@ -3839,18 +3720,18 @@ struct const_iterator std::__cxx11::basic_string<char>::end (const struct basic_
   gimple_assign <pointer_plus_expr, _3, _1, _2, NULL>
   gimple_assign <ssa_name, D.96331, _3, NULL, NULL>
   gimple_call <__ct_comp , NULL, &D.96332, &D.96331>
-  gimple_assign <var_decl, D.97693, D.96332, NULL, NULL>
+  gimple_assign <var_decl, D.97695, D.96332, NULL, NULL>
   gimple_assign <constructor, D.96331, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.96332, {CLOBBER(eol)}, NULL, NULL>
-  gimple_return <D.97693>
+  gimple_return <D.97695>
 
 }
 
 
 
-;; Function __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::base (_ZNK9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv, funcdef_no=4540, decl_uid=73495, cgraph_uid=2019, symbol_order=2603)
+;; Function __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base (_ZNK9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv, funcdef_no=4540, decl_uid=73495, cgraph_uid=2019, symbol_order=2603)
 
-const char * const & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::base (const struct __normal_iterator * const this)
+const char * const & __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base (const struct __normal_iterator * const this)
 {
   const char * const & _2;
 
@@ -3862,10 +3743,10 @@ const char * const & __gnu_cxx::__normal_iterator<const char*, std::__cxx11::bas
 
 
 
-;; Function __gnu_cxx::operator!=<const char*, std::__cxx11::basic_string<char> > (_ZN9__gnu_cxxneIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESE_, funcdef_no=4462, decl_uid=95685, cgraph_uid=1941, symbol_order=2525)
+;; Function __gnu_cxx::operator!=<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (_ZN9__gnu_cxxneIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESE_, funcdef_no=4462, decl_uid=95685, cgraph_uid=1941, symbol_order=2525)
 
 __attribute__((nodiscard))
-bool __gnu_cxx::operator!=<const char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
+bool __gnu_cxx::operator!=<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
 {
   const char * const & _1;
   const char * _2;
@@ -3927,9 +3808,9 @@ size_type std::allocator_traits<std::allocator<char> >::max_size (const struct a
 
 
 
-;; Function std::__cxx11::basic_string<char>::max_size (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv, funcdef_no=4508, decl_uid=28525, cgraph_uid=1987, symbol_order=2571)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::max_size (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv, funcdef_no=4508, decl_uid=28525, cgraph_uid=1987, symbol_order=2571)
 
-size_type std::__cxx11::basic_string<char>::max_size (const struct basic_string * const this)
+size_type std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::max_size (const struct basic_string * const this)
 {
   const struct allocator_type & _1;
   long unsigned int _2;
@@ -3947,9 +3828,9 @@ size_type std::__cxx11::basic_string<char>::max_size (const struct basic_string 
 
 
 
-;; Function std::__cxx11::basic_string<char>::_M_check_length (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEmmPKc, funcdef_no=4395, decl_uid=28252, cgraph_uid=1874, symbol_order=2458)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_check_length (_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEmmPKc, funcdef_no=4395, decl_uid=28252, cgraph_uid=1874, symbol_order=2458)
 
-void std::__cxx11::basic_string<char>::_M_check_length (const struct basic_string * const this, size_type __n1, size_type __n2, const char * __s)
+void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_check_length (const struct basic_string * const this, size_type __n1, size_type __n2, const char * __s)
 {
   long unsigned int _1;
   long unsigned int _2;
@@ -3978,9 +3859,9 @@ void std::__cxx11::basic_string<char>::_M_check_length (const struct basic_strin
 
 
 
-;; Function std::__cxx11::basic_string<char>::append (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc, funcdef_no=4195, decl_uid=28596, cgraph_uid=1674, symbol_order=2250)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc, funcdef_no=4195, decl_uid=28596, cgraph_uid=1674, symbol_order=2250)
 
-struct basic_string & std::__cxx11::basic_string<char>::append (struct basic_string * const this, const char * __s)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append (struct basic_string * const this, const char * __s)
 {
   const size_type __n;
   const size_type _4;
@@ -3990,7 +3871,6 @@ struct basic_string & std::__cxx11::basic_string<char>::append (struct basic_str
   <bb 2> :
   gimple_call <length, _4, __s_2(D)>
   gimple_assign <ssa_name, __n_5, _4, NULL, NULL>
-  gimple_debug BIND <__n, __n_5>
   gimple_call <_M_check_length, NULL, this_6(D), 0, __n_5, "basic_string::append">
   gimple_call <_M_append, _9, this_6(D), __s_2(D), __n_5>
   gimple_assign <ssa_name, _10, _9, NULL, NULL>
@@ -4018,9 +3898,9 @@ struct basic_string std::operator+<char, std::char_traits<char>, std::allocator<
 
 
 
-;; Function std::_Head_base<0, std::filesystem::__cxx11::path::_List::_Impl*, false>::_M_head (_ZNSt10_Head_baseILm0EPNSt10filesystem7__cxx114path5_List5_ImplELb0EE7_M_headERS6_, funcdef_no=4588, decl_uid=80875, cgraph_uid=2067, symbol_order=2651)
+;; Function std::_Head_base<0ul, std::filesystem::__cxx11::path::_List::_Impl*, false>::_M_head (_ZNSt10_Head_baseILm0EPNSt10filesystem7__cxx114path5_List5_ImplELb0EE7_M_headERS6_, funcdef_no=4588, decl_uid=80875, cgraph_uid=2067, symbol_order=2651)
 
-struct _Impl * & std::_Head_base<0, std::filesystem::__cxx11::path::_List::_Impl*, false>::_M_head (struct _Head_base & __b)
+struct _Impl * & std::_Head_base<0ul, std::filesystem::__cxx11::path::_List::_Impl*, false>::_M_head (struct _Head_base & __b)
 {
   struct _Impl * & _2;
 
@@ -4032,9 +3912,9 @@ struct _Impl * & std::_Head_base<0, std::filesystem::__cxx11::path::_List::_Impl
 
 
 
-;; Function std::_Tuple_impl<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (_ZNSt11_Tuple_implILm0EJPNSt10filesystem7__cxx114path5_List5_ImplENS3_13_Impl_deleterEEE7_M_headERS7_, funcdef_no=4561, decl_uid=80982, cgraph_uid=2040, symbol_order=2624)
+;; Function std::_Tuple_impl<0ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (_ZNSt11_Tuple_implILm0EJPNSt10filesystem7__cxx114path5_List5_ImplENS3_13_Impl_deleterEEE7_M_headERS7_, funcdef_no=4561, decl_uid=80982, cgraph_uid=2040, symbol_order=2624)
 
-struct _Impl * & std::_Tuple_impl<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
+struct _Impl * & std::_Tuple_impl<0ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
 {
   struct _Head_base * _1;
   struct _Impl * & _5;
@@ -4048,9 +3928,9 @@ struct _Impl * & std::_Tuple_impl<0, std::filesystem::__cxx11::path::_List::_Imp
 
 
 
-;; Function std::__get_helper<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt12__get_helperILm0EPNSt10filesystem7__cxx114path5_List5_ImplEJNS3_13_Impl_deleterEEERT0_RSt11_Tuple_implIXT_EJS7_DpT1_EE, funcdef_no=4512, decl_uid=96112, cgraph_uid=1991, symbol_order=2575)
+;; Function std::__get_helper<0ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt12__get_helperILm0EPNSt10filesystem7__cxx114path5_List5_ImplEJNS3_13_Impl_deleterEEERT0_RSt11_Tuple_implIXT_EJS7_DpT1_EE, funcdef_no=4512, decl_uid=96112, cgraph_uid=1991, symbol_order=2575)
 
-struct _Impl * & std::__get_helper<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
+struct _Impl * & std::__get_helper<0ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
 {
   struct _Impl * & _4;
 
@@ -4062,9 +3942,9 @@ struct _Impl * & std::__get_helper<0, std::filesystem::__cxx11::path::_List::_Im
 
 
 
-;; Function std::get<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt3getILm0EJPNSt10filesystem7__cxx114path5_List5_ImplENS3_13_Impl_deleterEEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSB_, funcdef_no=4405, decl_uid=94881, cgraph_uid=1884, symbol_order=2468)
+;; Function std::get<0ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt3getILm0EJPNSt10filesystem7__cxx114path5_List5_ImplENS3_13_Impl_deleterEEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSB_, funcdef_no=4405, decl_uid=94881, cgraph_uid=1884, symbol_order=2468)
 
-struct _Impl * & std::get<0, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct tuple & __t)
+struct _Impl * & std::get<0ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct tuple & __t)
 {
   struct _Tuple_impl * _1;
   struct _Impl * & _5;
@@ -4094,9 +3974,9 @@ struct _Impl * & std::__uniq_ptr_impl<std::filesystem::__cxx11::path::_List::_Im
 
 
 
-;; Function std::_Head_base<1, std::filesystem::__cxx11::path::_List::_Impl_deleter, true>::_M_head (_ZNSt10_Head_baseILm1ENSt10filesystem7__cxx114path5_List13_Impl_deleterELb1EE7_M_headERS5_, funcdef_no=4590, decl_uid=80339, cgraph_uid=2069, symbol_order=2653)
+;; Function std::_Head_base<1ul, std::filesystem::__cxx11::path::_List::_Impl_deleter, true>::_M_head (_ZNSt10_Head_baseILm1ENSt10filesystem7__cxx114path5_List13_Impl_deleterELb1EE7_M_headERS5_, funcdef_no=4590, decl_uid=80339, cgraph_uid=2069, symbol_order=2653)
 
-struct _Impl_deleter & std::_Head_base<1, std::filesystem::__cxx11::path::_List::_Impl_deleter, true>::_M_head (struct _Head_base & __b)
+struct _Impl_deleter & std::_Head_base<1ul, std::filesystem::__cxx11::path::_List::_Impl_deleter, true>::_M_head (struct _Head_base & __b)
 {
   struct _Impl_deleter & _2;
 
@@ -4108,9 +3988,9 @@ struct _Impl_deleter & std::_Head_base<1, std::filesystem::__cxx11::path::_List:
 
 
 
-;; Function std::_Tuple_impl<1, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (_ZNSt11_Tuple_implILm1EJNSt10filesystem7__cxx114path5_List13_Impl_deleterEEE7_M_headERS5_, funcdef_no=4564, decl_uid=80445, cgraph_uid=2043, symbol_order=2627)
+;; Function std::_Tuple_impl<1ul, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (_ZNSt11_Tuple_implILm1EJNSt10filesystem7__cxx114path5_List13_Impl_deleterEEE7_M_headERS5_, funcdef_no=4564, decl_uid=80445, cgraph_uid=2043, symbol_order=2627)
 
-struct _Impl_deleter & std::_Tuple_impl<1, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
+struct _Impl_deleter & std::_Tuple_impl<1ul, std::filesystem::__cxx11::path::_List::_Impl_deleter>::_M_head (struct _Tuple_impl & __t)
 {
   struct _Impl_deleter & _4;
 
@@ -4122,9 +4002,9 @@ struct _Impl_deleter & std::_Tuple_impl<1, std::filesystem::__cxx11::path::_List
 
 
 
-;; Function std::__get_helper<1, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt12__get_helperILm1ENSt10filesystem7__cxx114path5_List13_Impl_deleterEJEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE, funcdef_no=4518, decl_uid=96178, cgraph_uid=1997, symbol_order=2581)
+;; Function std::__get_helper<1ul, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt12__get_helperILm1ENSt10filesystem7__cxx114path5_List13_Impl_deleterEJEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE, funcdef_no=4518, decl_uid=96178, cgraph_uid=1997, symbol_order=2581)
 
-struct _Impl_deleter & std::__get_helper<1, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
+struct _Impl_deleter & std::__get_helper<1ul, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct _Tuple_impl & __t)
 {
   struct _Impl_deleter & _4;
 
@@ -4136,9 +4016,9 @@ struct _Impl_deleter & std::__get_helper<1, std::filesystem::__cxx11::path::_Lis
 
 
 
-;; Function std::get<1, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt3getILm1EJPNSt10filesystem7__cxx114path5_List5_ImplENS3_13_Impl_deleterEEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSB_, funcdef_no=4415, decl_uid=95196, cgraph_uid=1894, symbol_order=2478)
+;; Function std::get<1ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (_ZSt3getILm1EJPNSt10filesystem7__cxx114path5_List5_ImplENS3_13_Impl_deleterEEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSB_, funcdef_no=4415, decl_uid=95196, cgraph_uid=1894, symbol_order=2478)
 
-struct __tuple_element_t & std::get<1, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct tuple & __t)
+struct __tuple_element_t & std::get<1ul, std::filesystem::__cxx11::path::_List::_Impl*, std::filesystem::__cxx11::path::_List::_Impl_deleter> (struct tuple & __t)
 {
   struct __tuple_element_t & _4;
 
@@ -4195,7 +4075,6 @@ void std::unique_ptr<std::filesystem::__cxx11::path::_List::_Impl, std::filesyst
   <bb 2> :
   gimple_assign <addr_expr, _1, &this_6(D)->_M_t.D.82893, NULL, NULL>
   gimple_call <_M_ptr, __ptr_9, _1>
-  gimple_debug BIND <__ptr, __ptr_9>
   gimple_assign <mem_ref, _2, *__ptr_9, NULL, NULL>
   gimple_cond <ne_expr, _2, 0B, NULL, NULL>
     goto <bb 3>; [INV]
@@ -4251,9 +4130,9 @@ void std::filesystem::__cxx11::path::~path (struct path * const this)
 
 
 
-;; Function __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >::__normal_iterator (_ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS1_, funcdef_no=4629, decl_uid=73418, cgraph_uid=2108, symbol_order=2692)
+;; Function __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::__normal_iterator (_ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS1_, funcdef_no=4629, decl_uid=73418, cgraph_uid=2108, symbol_order=2692)
 
-void __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >::__normal_iterator (struct __normal_iterator * const this, char * const & __i)
+void __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::__normal_iterator (struct __normal_iterator * const this, char * const & __i)
 {
   char * _1;
 
@@ -4267,35 +4146,35 @@ void __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >::__n
 
 
 
-;; Function std::__cxx11::basic_string<char>::begin (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv, funcdef_no=4611, decl_uid=28497, cgraph_uid=2090, symbol_order=2674)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::begin (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv, funcdef_no=4611, decl_uid=28497, cgraph_uid=2090, symbol_order=2674)
 
-struct iterator std::__cxx11::basic_string<char>::begin (struct basic_string * const this)
+struct iterator std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::begin (struct basic_string * const this)
 {
   char * const D.97212;
   struct iterator D.97213;
-  struct iterator D.97743;
+  struct iterator D.97745;
   char * _1;
 
   <bb 2> :
   gimple_call <_M_data, _1, this_3(D)>
   gimple_assign <ssa_name, D.97212, _1, NULL, NULL>
   gimple_call <__ct_comp , NULL, &D.97213, &D.97212>
-  gimple_assign <var_decl, D.97743, D.97213, NULL, NULL>
+  gimple_assign <var_decl, D.97745, D.97213, NULL, NULL>
   gimple_assign <constructor, D.97212, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.97213, {CLOBBER(eol)}, NULL, NULL>
-  gimple_return <D.97743>
+  gimple_return <D.97745>
 
 }
 
 
 
-;; Function std::__cxx11::basic_string<char>::end (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv, funcdef_no=4612, decl_uid=28501, cgraph_uid=2091, symbol_order=2675)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::end (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv, funcdef_no=4612, decl_uid=28501, cgraph_uid=2091, symbol_order=2675)
 
-struct iterator std::__cxx11::basic_string<char>::end (struct basic_string * const this)
+struct iterator std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::end (struct basic_string * const this)
 {
   char * const D.97215;
   struct iterator D.97216;
-  struct iterator D.97747;
+  struct iterator D.97749;
   char * _1;
   long unsigned int _2;
   char * _3;
@@ -4306,18 +4185,18 @@ struct iterator std::__cxx11::basic_string<char>::end (struct basic_string * con
   gimple_assign <pointer_plus_expr, _3, _1, _2, NULL>
   gimple_assign <ssa_name, D.97215, _3, NULL, NULL>
   gimple_call <__ct_comp , NULL, &D.97216, &D.97215>
-  gimple_assign <var_decl, D.97747, D.97216, NULL, NULL>
+  gimple_assign <var_decl, D.97749, D.97216, NULL, NULL>
   gimple_assign <constructor, D.97215, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.97216, {CLOBBER(eol)}, NULL, NULL>
-  gimple_return <D.97747>
+  gimple_return <D.97749>
 
 }
 
 
 
-;; Function __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >::base (_ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv, funcdef_no=4631, decl_uid=73405, cgraph_uid=2110, symbol_order=2694)
+;; Function __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base (_ZNK9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv, funcdef_no=4631, decl_uid=73405, cgraph_uid=2110, symbol_order=2694)
 
-char * const & __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >::base (const struct __normal_iterator * const this)
+char * const & __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base (const struct __normal_iterator * const this)
 {
   char * const & _2;
 
@@ -4329,9 +4208,9 @@ char * const & __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<ch
 
 
 
-;; Function __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::__normal_iterator<char*> (_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2IPcvEERKNS0_IT_S8_EE, funcdef_no=4614, decl_uid=73584, cgraph_uid=2093, symbol_order=2677)
+;; Function __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::__normal_iterator<char*, void> (_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2IPcvEERKNS0_IT_S8_EE, funcdef_no=4614, decl_uid=73584, cgraph_uid=2093, symbol_order=2677)
 
-void __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >::__normal_iterator<char*> (struct __normal_iterator * const this, const struct __normal_iterator & __i)
+void __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::__normal_iterator<char*, void> (struct __normal_iterator * const this, const struct __normal_iterator & __i)
 {
   char * const & _1;
   char * _2;
@@ -4347,10 +4226,10 @@ void __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> 
 
 
 
-;; Function __gnu_cxx::operator-<const char*, char*, std::__cxx11::basic_string<char> > (_ZN9__gnu_cxxmiIPKcPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEDTmicldtfp_4baseEcldtfp0_4baseEERKNS_17__normal_iteratorIT_T1_EERKNSB_IT0_SD_EE, funcdef_no=4632, decl_uid=97229, cgraph_uid=2111, symbol_order=2695)
+;; Function __gnu_cxx::operator-<char const*, char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (_ZN9__gnu_cxxmiIPKcPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEDTmicldtfp_4baseEcldtfp0_4baseEERKNS_17__normal_iteratorIT_T1_EERKNSB_IT0_SD_EE, funcdef_no=4632, decl_uid=97229, cgraph_uid=2111, symbol_order=2695)
 
 __attribute__((nodiscard))
-long int __gnu_cxx::operator-<const char*, char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
+long int __gnu_cxx::operator-<char const*, char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
 {
   const char * const & _1;
   const char * _2;
@@ -4370,10 +4249,10 @@ long int __gnu_cxx::operator-<const char*, char*, std::__cxx11::basic_string<cha
 
 
 
-;; Function __gnu_cxx::operator-<const char*, std::__cxx11::basic_string<char> > (_ZN9__gnu_cxxmiIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSC_SF_, funcdef_no=4633, decl_uid=97232, cgraph_uid=2112, symbol_order=2696)
+;; Function __gnu_cxx::operator-<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (_ZN9__gnu_cxxmiIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSC_SF_, funcdef_no=4633, decl_uid=97232, cgraph_uid=2112, symbol_order=2696)
 
 __attribute__((nodiscard))
-difference_type __gnu_cxx::operator-<const char*, std::__cxx11::basic_string<char> > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
+difference_type __gnu_cxx::operator-<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (const struct __normal_iterator & __lhs, const struct __normal_iterator & __rhs)
 {
   const char * const & _1;
   const char * _2;
@@ -4393,9 +4272,9 @@ difference_type __gnu_cxx::operator-<const char*, std::__cxx11::basic_string<cha
 
 
 
-;; Function std::__cxx11::basic_string<char>::replace (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7replaceEN9__gnu_cxx17__normal_iteratorIPKcS4_EES9_PcSA_, funcdef_no=4616, decl_uid=28804, cgraph_uid=2095, symbol_order=2679)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::replace (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7replaceEN9__gnu_cxx17__normal_iteratorIPKcS4_EES9_PcSA_, funcdef_no=4616, decl_uid=28804, cgraph_uid=2095, symbol_order=2679)
 
-struct basic_string & std::__cxx11::basic_string<char>::replace (struct basic_string * const this, struct __const_iterator __i1, struct __const_iterator __i2, char * __k1, char * __k2)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::replace (struct basic_string * const this, struct __const_iterator __i1, struct __const_iterator __i2, char * __k1, char * __k2)
 {
   struct iterator D.97226;
   long int _1;
@@ -4431,9 +4310,9 @@ gimple_label <<L2>>
 
 
 
-;; Function std::__cxx11::basic_string<char>::assign<char*> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6assignIPcvEERS4_T_S8_, funcdef_no=4578, decl_uid=96814, cgraph_uid=2057, symbol_order=2641)
+;; Function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign<char*, void> (_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6assignIPcvEERS4_T_S8_, funcdef_no=4578, decl_uid=96814, cgraph_uid=2057, symbol_order=2641)
 
-struct basic_string & std::__cxx11::basic_string<char>::assign<char*> (struct basic_string * const this, char * __first, char * __last)
+struct basic_string & std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign<char*, void> (struct basic_string * const this, char * __first, char * __last)
 {
   struct iterator D.97124;
   struct __const_iterator D.97132;
@@ -4481,10 +4360,10 @@ gimple_label <<L8>>
 
 
 
-;; Function std::__cxx11::basic_stringbuf<char>::str (_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv, funcdef_no=4541, decl_uid=76494, cgraph_uid=2020, symbol_order=2604)
+;; Function std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::str (_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv, funcdef_no=4541, decl_uid=76494, cgraph_uid=2020, symbol_order=2604)
 
 No longer having address taken: __ret
-struct __string_type std::__cxx11::basic_stringbuf<char>::str (const struct basic_stringbuf * const this)
+struct __string_type std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::str (const struct basic_stringbuf * const this)
 {
   char_type * __hi;
   struct allocator_type D.96746;
@@ -4500,7 +4379,6 @@ struct __string_type std::__cxx11::basic_stringbuf<char>::str (const struct basi
   gimple_call <__dt_comp , NULL, &D.96746>
   gimple_assign <constructor, D.96746, {CLOBBER(eol)}, NULL, NULL>
   gimple_call <_M_high_mark, __hi_15, this_7(D)>
-  gimple_debug BIND <__hi, __hi_15>
   gimple_cond <ne_expr, __hi_15, 0B, NULL, NULL>
     goto <bb 3>; [INV]
   else
@@ -4528,9 +4406,9 @@ gimple_label <<L4>>
 
 
 
-;; Function std::__cxx11::basic_ostringstream<char>::str (_ZNKSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEE3strEv, funcdef_no=4465, decl_uid=76809, cgraph_uid=1944, symbol_order=2528)
+;; Function std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::str (_ZNKSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEE3strEv, funcdef_no=4465, decl_uid=76809, cgraph_uid=1944, symbol_order=2528)
 
-struct __string_type std::__cxx11::basic_ostringstream<char>::str (const struct basic_ostringstream * const this)
+struct __string_type std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::str (const struct basic_ostringstream * const this)
 {
   const struct __stringbuf_type * _1;
   struct __string_type & _4(D);
@@ -4544,9 +4422,9 @@ struct __string_type std::__cxx11::basic_ostringstream<char>::str (const struct 
 
 
 
-;; Function std::__detail::operator<< <char, std::char_traits<char>, const std::__cxx11::basic_string<char>&> (_ZNSt8__detaillsIcSt11char_traitsIcERKNSt7__cxx1112basic_stringIcS2_SaIcEEEEERSt13basic_ostreamIT_T0_ESD_RKNS_14_Quoted_stringIT1_SA_EE, funcdef_no=4337, decl_uid=93570, cgraph_uid=1816, symbol_order=2400)
+;; Function std::__detail::operator<< <char, std::char_traits<char>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&> (_ZNSt8__detaillsIcSt11char_traitsIcERKNSt7__cxx1112basic_stringIcS2_SaIcEEEEERSt13basic_ostreamIT_T0_ESD_RKNS_14_Quoted_stringIT1_SA_EE, funcdef_no=4337, decl_uid=93570, cgraph_uid=1816, symbol_order=2400)
 
-struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, const std::__cxx11::basic_string<char>&> (struct basic_ostream & __os, const struct _Quoted_string & __str)
+struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&> (struct basic_ostream & __os, const struct _Quoted_string & __str)
 {
   struct const_iterator __for_end;
   struct const_iterator __for_begin;
@@ -4573,7 +4451,6 @@ struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, 
 
   <bb 4> :
   gimple_assign <component_ref, __for_range_17, __str_15(D)->_M_string, NULL, NULL>
-  gimple_debug BIND <__for_range, __for_range_17>
   gimple_call <begin, __for_begin, __for_range_17>
   gimple_call <end, __for_end, __for_range_17>
   goto <bb 10>; [INV]
@@ -4581,7 +4458,6 @@ struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, 
   <bb 5> :
   gimple_call <operator*, _2, &__for_begin>
   gimple_assign <mem_ref, __c_37, *_2, NULL, NULL>
-  gimple_debug BIND <__c, __c_37>
   gimple_assign <component_ref, _3, __str_15(D)->_M_delim, NULL, NULL>
   gimple_cond <eq_expr, __c_37, _3, NULL, NULL>
     goto <bb 7>; [INV]
@@ -4603,11 +4479,9 @@ struct basic_ostream & std::__detail::operator<< <char, std::char_traits<char>, 
   gimple_call <operator<<, NULL, &__ostr.D.76876, __c_37>
 
   <bb 9> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator++, NULL, &__for_begin>
 
   <bb 10> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator!=, retval.19_21, &__for_begin, &__for_end>
   gimple_cond <ne_expr, retval.19_21, 0, NULL, NULL>
     goto <bb 5>; [INV]
@@ -4764,26 +4638,18 @@ void sighandle (int sig)
   struct basic_ostream & _83;
 
   <bb 2> :
-  gimple_debug BEGIN_STMT
   gimple_call <signal, NULL, sig_27(D), 0B>
-  gimple_debug BEGIN_STMT
   gimple_call <open, _30, "/proc/self/cmdline", 524288>
 
   <bb 3> :
   gimple_assign <ssa_name, clifd_31, _30, NULL, NULL>
-  gimple_debug BIND <clifd, clifd_31>
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_call <read, _33, clifd_31, &buf, 1024>
 
   <bb 4> :
   gimple_assign <ssa_name, bufsize_34, _33, NULL, NULL>
-  gimple_debug BIND <bufsize, bufsize_34>
-  gimple_debug BEGIN_STMT
   gimple_call <close, NULL, clifd_31>
 
   <bb 5> :
-  gimple_debug BEGIN_STMT
   gimple_call <to_string, D.89125, sig_27(D)> [return slot optimization]
   gimple_call <operator+, D.89126, "[ERROR] Fatal error (", &D.89125> [return slot optimization]
 
@@ -4795,7 +4661,6 @@ void sighandle (int sig)
   gimple_call <__dt_comp , NULL, &D.89125>
   gimple_assign <constructor, D.89125, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.89126, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _44, &cout, &errorMsg>
 
   <bb 8> :
@@ -4803,7 +4668,6 @@ void sighandle (int sig)
   gimple_call <operator<<, NULL, _1, endl>
 
   <bb 9> :
-  gimple_debug BEGIN_STMT
   gimple_call <__ct_comp , NULL, &D.89132>
   gimple_call <__ct_comp , NULL, &D.89133, "sighandle", &D.89132>
 
@@ -4823,12 +4687,10 @@ void sighandle (int sig)
   gimple_call <__dt_comp , NULL, &D.89132>
   gimple_assign <constructor, D.89132, {CLOBBER(eol)}, NULL, NULL>
   gimple_assign <constructor, D.89133, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
   gimple_call <c_str, _2, &errorMsg>
   gimple_call <write_log, NULL, _2>
 
   <bb 13> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _62, &cout, "[INFO] Log file path: ">
 
   <bb 14> :
@@ -4849,24 +4711,17 @@ void sighandle (int sig)
   <bb 18> :
   gimple_call <__dt_comp , NULL, &D.89136>
   gimple_assign <constructor, D.89136, {CLOBBER(eol)}, NULL, NULL>
-  gimple_debug BEGIN_STMT
-  gimple_debug BEGIN_STMT
   gimple_call <backtrace, _72, &array, 50>
 
   <bb 19> :
   gimple_assign <ssa_name, size_73, _72, NULL, NULL>
-  gimple_debug BIND <size, size_73>
-  gimple_debug BEGIN_STMT
   gimple_call <backtrace_symbols, stackTrace_75, &array, size_73>
-  gimple_debug BIND <stackTrace, stackTrace_75>
-  gimple_debug BEGIN_STMT
   gimple_cond <ne_expr, stackTrace_75, 0B, NULL, NULL>
     goto <bb 20>; [INV]
   else
     goto <bb 30>; [INV]
 
   <bb 20> :
-  gimple_debug BEGIN_STMT
   gimple_call <operator<<, _77, &cout, "[INFO] Stack trace:">
 
   <bb 21> :
@@ -4874,17 +4729,13 @@ void sighandle (int sig)
   gimple_call <operator<<, NULL, _6, endl>
 
   <bb 22> :
-  gimple_debug BEGIN_STMT
   gimple_call <write_log, NULL, "[INFO] Stack trace:">
 
   <bb 23> :
-  gimple_debug BEGIN_STMT
   gimple_assign <integer_cst, i_80, 0, NULL, NULL>
-  gimple_debug BIND <i, i_80>
   goto <bb 28>; [INV]
 
   <bb 24> :
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, _7, i_16, NULL, NULL>
   gimple_assign <mult_expr, _8, _7, 8, NULL>
   gimple_assign <pointer_plus_expr, _9, stackTrace_75, _8, NULL>
@@ -4896,7 +4747,6 @@ void sighandle (int sig)
   gimple_call <operator<<, NULL, _11, endl>
 
   <bb 26> :
-  gimple_debug BEGIN_STMT
   gimple_assign <nop_expr, _12, i_16, NULL, NULL>
   gimple_assign <mult_expr, _13, _12, 8, NULL>
   gimple_assign <pointer_plus_expr, _14, stackTrace_75, _13, NULL>
@@ -4904,25 +4754,19 @@ void sighandle (int sig)
   gimple_call <write_log, NULL, _15>
 
   <bb 27> :
-  gimple_debug BEGIN_STMT
   gimple_assign <plus_expr, i_86, i_16, 1, NULL>
-  gimple_debug BIND <i, i_86>
 
   <bb 28> :
   # gimple_phi <i_16, i_80(23), i_86(27)>
-  gimple_debug BIND <i, i_16>
-  gimple_debug BEGIN_STMT
   gimple_cond <lt_expr, i_16, size_73, NULL, NULL>
     goto <bb 24>; [INV]
   else
     goto <bb 29>; [INV]
 
   <bb 29> :
-  gimple_debug BEGIN_STMT
   gimple_call <free, NULL, stackTrace_75>
 
   <bb 30> :
-  gimple_debug BEGIN_STMT
   gimple_call <exit, NULL, 127>
 
   <bb 31> :
